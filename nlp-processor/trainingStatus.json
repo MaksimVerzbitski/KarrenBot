@@ -1,0 +1,13 @@
+{
+  "greetings": true,
+  "greetings.morning": true,
+  "greetings.evening": true,
+  "greetings.bye": true,
+  "chat_initiator": true,
+  "askName": false,
+  "helpYou": false,
+  "agree": true,
+  "userName.botIntroductionAndNameRequest": true,
+  "userName.userNameProvided": true,
+  "botName.userNamesBot": true
+}

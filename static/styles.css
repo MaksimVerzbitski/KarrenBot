@@ -1,0 +1,598 @@
+/* Base styles */
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    background: #eaeaea;
+}
+
+button, button:hover {
+    padding: 0.625rem 0.9375rem;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1rem;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Chat container and rating section */
+#chat-container, #rate-me {
+    box-sizing: border-box;
+}
+
+
+/* Div Wrapper Styles */
+
+
+#div-wrapper{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
+}
+ 
+#chat-container {
+    position: absolute; /* or fixed */
+    max-width: 45vh;
+    /* Changed from .rem to vh*/
+    min-height: 55vh;
+    width: 80%;
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border: 2px solid #706b6b;
+    border-radius: 3px;
+    overflow: hidden;
+    /* transition: all 0.3s ease-in-out; Smooth transition for resizing */
+}
+
+/* Chat header */
+#chat-header, #chat-header:active, .no-drag #chat-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 0.625rem 1rem;
+    background: #f5f5f5;
+    border-bottom: 1px solid #ccc;
+}
+
+#chat-header {
+    cursor: grab;
+}
+
+#chat-header:active {
+    cursor: grabbing;
+}
+
+.no-drag #chat-header {
+    cursor: pointer;
+}
+
+#more-options, #window-controls {
+    position: absolute;
+    padding: 0.3125rem 0;
+}
+
+#more-options {
+    left: 5px;
+}
+
+#window-controls {
+    right: 5px;
+}
+
+#chat-title {
+    font-weight: bold;
+}
+
+.window-control, .window-control:last-child {
+    cursor: pointer;
+    border: none;
+    background: transparent;
+}
+
+.window-control {
+    margin-right: 5px;
+}
+
+.window-control:last-child {
+    margin-right: 0;
+}
+
+/* Chat controls */
+#chat-controls, #clear-chat {
+    text-align: center;
+    padding: 0.625rem;
+    border-bottom: 1px solid #ccc;
+}
+
+#clear-chat {
+    cursor: pointer;
+    display: inline-block;
+    padding: 0.625rem;
+}
+
+
+/* Clear Chat confirmation styles */
+#clear-chat-confirmation {
+    text-align: center; /* Center the confirmation text */
+     /*font-size: 1.25rem;  Slightly larger font size for better visibility */
+    font-weight: bold; /* Make the font weight bold */
+    margin-bottom: 1rem; /* Add some space below the text */
+    color: #333; /* Darker color for better contrast */
+}
+
+/* Buttons container */
+#clear-chat-buttons {
+    display: flex;
+    justify-content: space-around; /* Space around the buttons */
+    align-items: center; /* Center buttons vertically */
+}
+
+/* Individual buttons */
+#confirmClear,
+#startNewSession {
+    margin: 0 10px; /* Space between the buttons */
+    padding: 0.5rem 1rem; /* Adjust padding for better touch targets */
+    font-size: 1rem; /* Ensure text is not too small */
+}
+
+/* Chat log */
+#chat-log {
+    flex-grow: 1;
+    overflow-y: auto; /* Allows for scrolling */
+    padding: 0.3125rem;
+    min-height: 150px; /* Minimum height */
+    max-height: calc(55vh - 29.128440366972477vh); /* Adjust this calculation as needed */
+    border: 2px solid #ffa500;
+    margin: 0.3125rem;
+    flex-direction: column-reverse; /* Keeps newest messages at the bottom */
+}
+
+/* Chat log message styles */
+.user-message {
+    border: 1px solid #ffa500; /* Keep the orange border */
+    color: black; /* Default text color */
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 0.3rem;
+    text-align: right;
+    float: right;
+    clear: both;
+    max-width: 80%;
+    background-color: #fffaf0; /* Light orange background */
+}
+
+.bot-message {
+    border: 1px solid rebeccapurple; /* Purple border */
+    color: white; /* White text color for contrast */
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 0.3rem;
+    text-align: left;
+    float: left;
+    clear: both;
+    max-width: 80%;
+    background-color: rebeccapurple; /* Purple background */
+}
+
+
+.sender-name {
+    font-weight: bold;
+    color: #007bff; /* Choose a color that fits your design */
+    margin-right: 0.5rem; /* Spacing between the name and the message */
+    display: inline-block; /* To apply margin correctly */
+}
+
+/* You can also target the sender name within bot and user messages separately */
+.bot-message .sender-name {
+    color: #ffdd57; /* Example color for bot names */
+}
+
+.user-message .sender-name {
+    color: rebeccapurple; /* Example color for user names */
+}
+
+/* Chat input and related elements */
+#chat-input, #input-container, #chat-text-input, #add-smile, .custom-file-upload, #send-button, #send-button:hover {
+    display: flex;
+    align-items: center;
+}
+
+#chat-input {
+    padding: 0.3125rem;
+    border-top: 1px solid #ccc;
+    padding-top: 0.625rem;
+}
+
+#input-container {
+    flex-grow: 1;
+    border: 2px solid #060606;
+    border-radius: 2px;
+    margin-right: 0.3125rem;
+}
+
+#input-container:focus-within {
+    border: 3px solid #004A9F;
+}
+
+#chat-text-input {
+    flex-grow: 1;
+    padding: 0.625rem 0;
+    width: 100%;
+    border: none;
+    outline: none;
+    margin: 0.3rem 0.3rem;
+}
+
+#add-smile, .custom-file-upload {
+    background: transparent;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#send-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    padding: 0.625rem 0.9375rem;
+    max-width: 6.25rem;
+    justify-content: center;
+}
+
+#send-button:hover {
+    background-color: #0056b3;
+}
+
+/* Rate me section */
+#rate-me {
+    width: auto;
+    margin: 5px;
+    padding: 0.625rem 0;
+    background: #f5f5f5;
+    border-top: 1px solid #ccc;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    box-sizing: border-box;
+}
+
+/* Functionality related styles */
+#chat-container.dragging, #chat-container.minimized, #chat-container.maximized {
+    position: fixed;
+}
+
+#chat-container.dragging {
+    left: unset;
+    top: unset;
+}
+
+#chat-container.minimized {
+    width: 21.45rem;
+    height: 2.4375rem;
+    right: 0;
+    bottom: 0;
+    border-radius: 0;
+    left: auto; 
+    top: auto; 
+    position: fixed;
+} 
+
+#chat-container.maximized {
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    transform: none !important;
+}
+
+
+/* Clear Chat confirmation styles */
+#clear-chat-confirmation {
+    text-align: center;
+    font-size: 1.25rem; /* Larger font for readability */
+    font-weight: bold;
+    margin: 0.5rem 0; /* Reduced margin */
+    color: #333;
+}
+
+/* Buttons container */
+#clear-chat-buttons {
+    display: flex;
+    justify-content: center; /* Center buttons */
+    flex-wrap: wrap; /* Allow buttons to wrap on small screens */
+    gap: 10px; /* Space between buttons */
+}
+
+/* Individual buttons */
+#confirmClear,
+#startNewSession {
+    flex: 1; /* Allow buttons to grow */
+    min-width: 120px; /* Minimum button width */
+     /* padding: 10px; Comfortable touch target */
+    font-size: 1rem;
+    text-align: center;
+}
+
+@media (max-width: 21.25rem) {
+    #chat-container {
+        width: 80%;
+        margin: 0 auto; 
+        padding: 0; 
+        position: static;
+        /* position: fixed; */
+        padding-bottom:1rem;
+    }
+
+    #clear-chat-confirmation {
+        font-size: 1rem; /* Slightly smaller font size */
+    }
+
+    #clear-chat-buttons {
+        gap: 5px; /* Smaller gap between buttons */
+    }
+
+    #confirmClear,
+    #startNewSession {
+         /* padding: 8px; Smaller padding */
+        min-width: 100px; /* Smaller minimum width */
+    }
+
+    /* Adjust the chat log size */
+    #chat-log {
+        padding: 8px; /* Smaller padding */
+        overflow-y: auto;
+    }
+
+    #chat-header, #chat-controls, #chat-input, #rate-me {
+        flex-direction: column;
+        
+        align-items: center;
+    }
+
+    #chat-header {
+        display: grid;
+        grid-template-rows: auto auto auto; 
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #window-controls {
+        grid-row: 1; 
+        position: static; 
+        border-bottom: 1px solid #050505;
+        width: 100%; 
+    }
+
+    #more-options {
+        grid-row: 2; 
+        position: static;
+        width: 100%;
+        border-bottom:1px solid #050505;
+    }
+
+    #chat-title {
+        grid-row: 3; 
+        position: static;
+        width: 100%;
+        order: 0; 
+        padding: 0.625rem 0;
+    }
+
+    #chat-controls {
+        justify-content: center;
+    }
+
+    #chat-log {
+        min-height: 6.25rem; 
+        margin: 0.3125rem; 
+    }
+
+    #chat-input {
+        flex-direction: column;
+        margin: 0.3125rem;
+    }
+
+    #input-container {
+        width: 100%;
+        flex-direction: row;
+        order: 2;
+        justify-content: center;
+        margin: 0 0.3125rem;
+        
+    }
+
+    #chat-text-input {
+        order: 2;
+        flex-grow: 1;
+        border: 1px solid #050505;
+        
+    }
+
+    #add-smile {
+        order: 1;
+    }
+
+    .custom-file-upload {
+        order: 3;
+    }
+
+    #send-button {
+        order: 4;
+        width: 100%;
+        margin-top: 0.625rem;
+        
+    }
+
+    #chat-controls {
+        text-align: center;
+    }
+
+    #rate-me {
+        order: 5;
+        flex-wrap: wrap;
+        padding: 0.625rem 0;
+    }
+
+    #clear-chat {
+        padding: 0.625rem 0.9375rem; 
+        background-color: #007bff; 
+        color: white; 
+        border-radius: 2px; 
+        cursor: pointer; 
+        margin: 0.625rem 0;
+        display: inline-block; 
+        align-items: center;
+    }
+
+    #chat-container.minimized {
+        width: 100%; 
+        height: 2.4375rem; 
+        right: 0;     
+        bottom: 0; 
+    }
+
+    #chat-container.minimized #chat-header {
+        padding: 0 0.625rem; 
+    }
+
+    #chat-container.minimized #chat-log,
+    #chat-container.minimized #chat-input,
+    #chat-container.minimized #chat-controls,
+    #chat-container.minimized #rate-me {
+        display: none;
+    }
+
+    #chat-container.minimized #more-options,
+    #chat-container.minimized #window-controls {
+        position: static; 
+        padding: 0; 
+        margin: 0 0.3125rem; 
+    }
+
+    #chat-container.minimized #chat-title,
+    #chat-container.minimized .window-control {
+        
+        font-size: smaller; 
+        margin: 0; 
+    }
+}
+
+ /* This is equivalent to 286px */
+ @media (max-width: 17.875rem) {
+    #rate-me {
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap; /* Prevent wrapping of child elements */
+    }
+
+    #rate-me span {
+        margin-right: 0.5rem; /* Add some margin to the right of the 'Rate me' text */
+    }
+
+    .rate-button {
+        padding: 0.3rem 0.6rem; /* Decrease padding to fit buttons */
+        margin: 0; /* Remove any default margins */
+        flex: 0 1 auto; /* Allow buttons to shrink */
+    }
+
+    .clear-chat-confirmation {
+        font-size: 0.9rem; /* Reduce font size further for very small screens */
+    }
+
+    /* Adjust button size and spacing for very small screens */
+    #confirmClear,
+    #startNewSession {
+        padding: 0.5rem; /* Reduce padding */
+        margin-bottom: 0.25rem; /* Reduce space between buttons */
+    }
+}
+
+@media (max-width: 9.6875rem) { 
+    #input-container {
+        flex-direction: column;
+        padding: 0.3125rem 0.1rem;
+        border: 2px solid #050505; 
+    }
+
+    #chat-text-input,
+    #add-smile,
+    .custom-file-upload {
+        width: 100%;
+        margin-bottom: 0.3125rem; 
+    }
+
+    #add-smile,
+    .custom-file-upload {
+        order: -1;
+        width: auto;
+    }
+
+    #chat-header {
+        padding: 0.3125rem 0; 
+    }
+
+    #chat-title {
+        font-size: bold;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    #clear-chat-confirmation,
+    #confirmClear,
+    #startNewSession {
+        font-size: 0.9rem; /* Even smaller font size */
+    }
+}
+
+#chat-container.maximized {
+    width: 100%;
+    height: 100%;
+    max-width: 800px; 
+    max-height: 900px; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+#chat-container.minimized {
+    min-height: 0; 
+}
+
+@media (max-width: 1024px) {
+    #chat-container {
+        /* Ensure the container is fully visible and doesn't overflow the viewport */
+        left: auto;
+        right: auto;
+        top: auto;
+        bottom: auto;
+        transform: none;
+    }
+}

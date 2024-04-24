@@ -1,0 +1,91 @@
+22-01-2024 22:25 | Input Validation | Please enter a question.
+
+22-01-2024 22:56 | Input Validation | Please enter a question.
+
+23-01-2024 17:01 | Input Validation | Please enter a question.
+
+23-01-2024 21:54 | Input Validation | Please enter a question.
+
+26-01-2024 21:09 | Input Validation | Please enter a question.
+
+26-01-2024 21:09 | Input Validation | Please enter a question.
+
+26-01-2024 21:58 | Input Validation | Please enter a question.
+
+26-01-2024 21:58 | Input Validation | Input is not valid. Allowed characters: letters, numbers, and special characters (+, -, /, *, =, %, &, @, space, "", '', (, )). Please check and try again.
+
+26-01-2024 22:19 | Input Validation | Please enter a question.
+
+26-01-2024 22:19 | Input Validation | Please enter a question.
+
+26-01-2024 22:21 | Server Communication | TypeError: Cannot read properties of undefined (reading 'messages')
+
+26-01-2024 22:22 | Input Validation | Please enter a question.
+
+26-01-2024 22:22 | Server Communication | TypeError: Cannot read properties of undefined (reading 'messages')
+
+26-01-2024 22:26 | Input Validation | Please enter a question.
+
+26-01-2024 22:26 | Input Validation | Input is not valid. Allowed characters: letters, numbers, and special characters (+, -, /, *, =, %, &, @, space, "", '', (, )). Please check and try again.
+
+26-01-2024 23:01 | Input Validation | Input is not valid. Allowed characters: letters, numbers, and special characters (+, -, /, *, =, %, &, @, space, "", '', (, )). Please check and try again.
+
+27-01-2024 00:52 | Input Validation | Please enter a question.
+
+28-01-2024 16:47 | Input Validation | Please enter a question.
+
+28-01-2024 18:28 | Input Validation | Please enter a question.
+
+04-02-2024 00:34 | Input Validation | Input is not valid. Allowed characters: letters, numbers, and special characters (+, -, /, *, =, %, &, @, space, "", '', (, )). Please check and try again.
+
+15-02-2024 15:02 | Input Validation | Please enter a question.
+
+17-02-2024 18:45 | Input Validation | Input is not valid. Allowed characters: letters, numbers, and special characters (+, -, /, *, =, %, &, @, space, "", '', (, )). Please check and try again.
+
+17-02-2024 19:23 | Input Validation | Input is not valid. Allowed characters: letters, numbers, and special characters (+, -, /, *, =, %, &, @, space, "", '', (, )). Please check and try again.
+
+17-02-2024 19:25 | Input Validation | Input is not valid. Allowed characters: letters, numbers, and special characters (+, -, /, *, =, %, &, @, space, "", '', (, )). Please check and try again.
+
+19-02-2024 20:16 | Server Communication | Error: Server response not OK
+
+19-02-2024 23:08 | Input Validation | Input is not valid. Allowed characters: letters, numbers, and special characters (+, -, /, *, =, %, &, @, space, "", '', (, )). Please check and try again.
+
+22-02-2024 21:03 | Input Validation | Input is not valid. Allowed characters: letters, numbers, and special characters (+, -, /, *, =, %, &, @, space, "", '', (, )). Please check and try again.
+
+25-02-2024 17:25 | Input Validation | Please enter a question.
+
+25-02-2024 17:25 | Input Validation | Please enter a question.
+
+25-02-2024 17:25 | Input Validation | Please enter a question.
+
+02-03-2024 23:48 | Input Validation | Please enter a question.
+
+31-03-2024 12:34 | Input Validation | Input is not valid. Allowed characters: letters, numbers, and special characters (+, -, /, *, =, %, &, @, space, "", '', (, )). Please check and try again.
+
+31-03-2024 12:45 | Input Validation | Input contains invalid characters. Allowed characters: letters, numbers, and special characters (+, -, /, *, =, %, &, @, space, "", '', (, )).
+
+31-03-2024 12:49 | Input Validation | Input contains invalid characters. Allowed characters: letters, numbers, and special characters (+, -, /, *, =, %, &, @, space, "", '', (, )).
+
+31-03-2024 12:50 | Input Validation | Input contains invalid characters. Allowed characters: letters, numbers, and special characters (+, -, /, *, =, %, &, @, space, "", '', (, )).
+
+01-04-2024 21:39 | Server Communication | Error: Server response not OK
+
+01-04-2024 21:46 | Server Communication | Error: Server response not OK
+
+01-04-2024 21:46 | Server Communication | TypeError: response.json is not a function
+
+01-04-2024 21:52 | Server Communication | Error: Server response not OK
+
+01-04-2024 21:52 | Server Communication | TypeError: response.json is not a function
+
+01-04-2024 21:56 | Server Communication | Error: Server response not OK
+
+01-04-2024 21:56 | Server Communication | TypeError: response.json is not a function
+
+01-04-2024 21:57 | Server Communication | Error: Server response not OK
+
+01-04-2024 21:57 | Server Communication | TypeError: response.json is not a function
+
+01-04-2024 22:06 | Server Communication | TypeError: response.json is not a function
+
+01-04-2024 22:06 | Server Communication | Error: Server response not OK

@@ -1,0 +1,1760 @@
+22-01-2024 22:25 | bot | Please enter a question.
+
+22-01-2024 22:56 | bot | Please enter a question.
+
+23-01-2024 17:01 | bot | Please enter a question.
+
+23-01-2024 21:54 | bot | Please enter a question.
+
+26-01-2024 21:08 | user | dfsfsfsd
+
+26-01-2024 21:08 | bot | Echo: dfsfsfsd
+
+26-01-2024 21:09 | bot | Please enter a question.
+
+26-01-2024 21:09 | user | 1111
+
+26-01-2024 21:09 | bot | Echo: 1111
+
+26-01-2024 21:58 | bot | Please enter a question.
+
+26-01-2024 21:58 | bot | Input is not valid. Allowed characters: letters, numbers, and special characters (+, -, /, *, =, %, &, @, space, "", '', (, )). Please check and try again.
+
+26-01-2024 21:58 | user | Maksim
+
+26-01-2024 21:58 | user | Maksim
+
+26-01-2024 21:58 | bot | Echo: Maksim
+
+26-01-2024 22:19 | bot | Please enter a question.
+
+26-01-2024 22:19 | user | fstsdrgdgd
+
+26-01-2024 22:19 | bot | Echo: fstsdrgdgd
+
+26-01-2024 22:19 | bot | Please enter a question.
+
+26-01-2024 22:20 | user | mmmmm
+
+26-01-2024 22:20 | user | mmmmm
+
+26-01-2024 22:20 | bot | Echo: mmmmm
+
+26-01-2024 22:21 | user | xssdfdsfdsf
+
+26-01-2024 22:21 | bot | Echo: xssdfdsfdsf
+
+26-01-2024 22:21 | bot | Error communicating with the server. Please try again later.
+
+26-01-2024 22:22 | bot | Please enter a question.
+
+26-01-2024 22:22 | user | Maksim
+
+26-01-2024 22:22 | bot | Echo: Maksim
+
+26-01-2024 22:22 | bot | Error communicating with the server. Please try again later.
+
+26-01-2024 22:26 | bot | Please enter a question.
+
+26-01-2024 22:26 | bot | Input is not valid. Allowed characters: letters, numbers, and special characters (+, -, /, *, =, %, &, @, space, "", '', (, )). Please check and try again.
+
+26-01-2024 22:26 | user | maksim
+
+26-01-2024 22:26 | bot | Echo: maksim
+
+26-01-2024 23:01 | user | hi
+
+26-01-2024 23:01 | user | hi
+
+26-01-2024 23:01 | bot | Echo: hi
+
+26-01-2024 23:01 | user | hello
+
+26-01-2024 23:01 | user | hello
+
+26-01-2024 23:01 | bot | Echo: hello
+
+26-01-2024 23:01 | user | afnskdfklsfd
+
+26-01-2024 23:01 | bot | Echo: afnskdfklsfd
+
+26-01-2024 23:01 | bot | Input is not valid. Allowed characters: letters, numbers, and special characters (+, -, /, *, =, %, &, @, space, "", '', (, )). Please check and try again.
+
+27-01-2024 00:52 | user | dfsdsdfs
+
+27-01-2024 00:52 | user | dfsdsdfs
+
+27-01-2024 00:52 | bot | Echo: dfsdsdfs
+
+27-01-2024 00:52 | bot | Please enter a question.
+
+28-01-2024 16:47 | bot | Please enter a question.
+
+28-01-2024 18:28 | bot | Please enter a question.
+
+28-01-2024 18:28 | user | fsdfsfdsdf
+
+28-01-2024 18:28 | bot | Echo: fsdfsfdsdf
+
+28-01-2024 18:28 | user | sfsdfsdfs
+
+28-01-2024 18:28 | user | sfsdfsdfs
+
+28-01-2024 18:28 | bot | Echo: sfsdfsdfs
+
+04-02-2024 00:33 | user | aaa
+
+04-02-2024 00:33 | bot | Echo: aaa
+
+04-02-2024 00:34 | user | aaaaaaa
+
+04-02-2024 00:34 | user | aaaaaaa
+
+04-02-2024 00:34 | bot | Echo: aaaaaaa
+
+04-02-2024 00:34 | bot | Input is not valid. Allowed characters: letters, numbers, and special characters (+, -, /, *, =, %, &, @, space, "", '', (, )). Please check and try again.
+
+15-02-2024 12:36 | user | aaaaa
+
+15-02-2024 12:36 | user | aaaaa
+
+15-02-2024 12:36 | bot | Echo: aaaaa
+
+15-02-2024 12:36 | user | aaaaaaaaaaaaaaa
+
+15-02-2024 12:36 | user | aaaaaaaaaaaaaaa
+
+15-02-2024 12:36 | bot | Echo: aaaaaaaaaaaaaaa
+
+15-02-2024 12:36 | user | aaaaaaaaaaaaaaaaaaaaaaa
+
+15-02-2024 12:36 | user | aaaaaaaaaaaaaaaaaaaaaaa
+
+15-02-2024 12:36 | bot | Echo: aaaaaaaaaaaaaaaaaaaaaaa
+
+15-02-2024 12:37 | user | sdadadsasdd
+
+15-02-2024 12:37 | bot | Echo: sdadadsasdd
+
+15-02-2024 12:37 | user | asdadsasdasda
+
+15-02-2024 12:37 | user | asdadsasdasda
+
+15-02-2024 12:37 | bot | Echo: asdadsasdasda
+
+15-02-2024 12:37 | user | sdasdasdasdasd
+
+15-02-2024 12:37 | user | sdasdasdasdasd
+
+15-02-2024 12:37 | bot | Echo: sdasdasdasdasd
+
+15-02-2024 12:37 | user | asdasdasdsaasd
+
+15-02-2024 12:37 | user | asdasdasdsaasd
+
+15-02-2024 12:37 | bot | Echo: asdasdasdsaasd
+
+15-02-2024 12:56 | user | aaaaa
+
+15-02-2024 12:56 | user | aaaaa
+
+15-02-2024 12:56 | bot | Echo: aaaaa
+
+15-02-2024 14:08 | system | Chat cleared
+
+15-02-2024 14:08 | system | Chat cleared
+
+15-02-2024 14:09 | user | sdadasdasdasd
+
+15-02-2024 14:09 | user | sdadasdasdasd
+
+15-02-2024 14:09 | bot | Echo: sdadasdasdasd
+
+15-02-2024 14:09 | user | adasdasdasdasdas
+
+15-02-2024 14:09 | bot | Echo: adasdasdasdasdas
+
+15-02-2024 14:09 | user | asdasdasdasdasd
+
+15-02-2024 14:09 | bot | Echo: asdasdasdasdasd
+
+15-02-2024 14:09 | user | sadasdasdsadasda
+
+15-02-2024 14:09 | user | sadasdasdsadasda
+
+15-02-2024 14:09 | bot | Echo: sadasdasdsadasda
+
+15-02-2024 14:09 | user | asdas
+
+15-02-2024 14:09 | bot | Echo: asdas
+
+15-02-2024 14:09 | system | Chat cleared
+
+15-02-2024 14:09 | user | aaaa
+
+15-02-2024 14:09 | user | aaaa
+
+15-02-2024 14:09 | bot | Echo: aaaa
+
+15-02-2024 14:56 | user | aaaaaaaaaaaaa
+
+15-02-2024 14:56 | user | aaaaaaaaaaaaa
+
+15-02-2024 14:56 | bot | Echo: aaaaaaaaaaaaa
+
+15-02-2024 14:56 | user | aaaaaaaaaaaaaaaaaaaaaa
+
+15-02-2024 14:56 | user | aaaaaaaaaaaaaaaaaaaaaa
+
+15-02-2024 14:56 | bot | Echo: aaaaaaaaaaaaaaaaaaaaaa
+
+15-02-2024 14:56 | user | aaaaaaaaaaaaaaaaaaaaaa
+
+15-02-2024 14:56 | bot | Echo: aaaaaaaaaaaaaaaaaaaaaa
+
+15-02-2024 14:56 | user | aaaaaaaaaaaaa
+
+15-02-2024 14:56 | user | aaaaaaaaaaaaa
+
+15-02-2024 14:56 | bot | Echo: aaaaaaaaaaaaa
+
+15-02-2024 15:01 | user | sdaasasasdasdasd
+
+15-02-2024 15:01 | bot | Echo: sdaasasasdasdasd
+
+15-02-2024 15:01 | user | saasdsadsadasdsad
+
+15-02-2024 15:01 | user | saasdsadsadasdsad
+
+15-02-2024 15:01 | bot | Echo: saasdsadsadasdsad
+
+15-02-2024 15:01 | user | asdasdasdasda
+
+15-02-2024 15:01 | user | asdasdasdasda
+
+15-02-2024 15:01 | bot | Echo: asdasdasdasda
+
+15-02-2024 15:01 | user | aassa
+
+15-02-2024 15:01 | bot | Echo: aassa
+
+15-02-2024 15:02 | user | aaa
+
+15-02-2024 15:02 | user | aaa
+
+15-02-2024 15:02 | bot | Echo: aaa
+
+15-02-2024 15:02 | user | aaaa
+
+15-02-2024 15:02 | bot | Echo: aaaa
+
+15-02-2024 15:02 | bot | Please enter a question.
+
+15-02-2024 15:02 | user | 1111
+
+15-02-2024 15:02 | bot | Echo: 1111
+
+15-02-2024 15:03 | user | dfsdfsdfsds
+
+15-02-2024 15:03 | user | dfsdfsdfsds
+
+15-02-2024 15:03 | bot | Echo: dfsdfsdfsds
+
+15-02-2024 15:03 | user | sdfsdfsdfs
+
+15-02-2024 15:03 | bot | Echo: sdfsdfsdfs
+
+15-02-2024 15:03 | user | Maksim
+
+15-02-2024 15:03 | bot | Echo: Maksim
+
+15-02-2024 15:03 | user | 1
+
+15-02-2024 15:03 | user | 1
+
+15-02-2024 15:03 | bot | Echo: 1
+
+15-02-2024 21:10 | user | aaa
+
+15-02-2024 21:10 | user | aaa
+
+15-02-2024 21:10 | bot | Echo: aaa
+
+15-02-2024 21:26 | user | 111111
+
+15-02-2024 21:26 | user | 111111
+
+15-02-2024 21:26 | bot | Echo: 111111
+
+15-02-2024 21:26 | user | aaaaa
+
+15-02-2024 21:26 | user | aaaaa
+
+15-02-2024 21:26 | bot | Echo: aaaaa
+
+15-02-2024 21:26 | user | qwqe1
+
+15-02-2024 21:26 | user | qwqe1
+
+15-02-2024 21:26 | bot | Echo: qwqe1
+
+15-02-2024 21:26 | user | 1
+
+15-02-2024 21:26 | user | 1
+
+15-02-2024 21:26 | bot | Echo: 1
+
+15-02-2024 22:57 | user | 1
+
+15-02-2024 22:57 | bot | Echo: 1
+
+17-02-2024 18:42 | user | aaa
+
+17-02-2024 18:42 | user | aaa
+
+17-02-2024 18:42 | bot | Echo: aaa
+
+17-02-2024 18:44 | user | aaa
+
+17-02-2024 18:44 | user | asasa
+
+17-02-2024 18:44 | bot | Echo: asasa
+
+17-02-2024 18:44 | user | 11111111
+
+17-02-2024 18:44 | user | 11111111
+
+17-02-2024 18:44 | bot | Echo: 11111111
+
+17-02-2024 18:45 | user | aaa
+
+17-02-2024 18:45 | user | aaa
+
+17-02-2024 18:45 | bot | Echo: aaa
+
+17-02-2024 18:45 | bot | Input is not valid. Allowed characters: letters, numbers, and special characters (+, -, /, *, =, %, &, @, space, "", '', (, )). Please check and try again.
+
+17-02-2024 19:23 | user | ///
+
+17-02-2024 19:23 | bot | Echo: ///
+
+17-02-2024 19:23 | user | /////
+
+17-02-2024 19:23 | user | /////
+
+17-02-2024 19:23 | bot | Echo: /////
+
+17-02-2024 19:23 | bot | Input is not valid. Allowed characters: letters, numbers, and special characters (+, -, /, *, =, %, &, @, space, "", '', (, )). Please check and try again.
+
+17-02-2024 19:25 | bot | Input is not valid. Allowed characters: letters, numbers, and special characters (+, -, /, *, =, %, &, @, space, "", '', (, )). Please check and try again.
+
+17-02-2024 19:29 | user | ////////++++
+
+17-02-2024 19:29 | bot | Echo: ////////++++
+
+17-02-2024 20:01 | user | aaaaa
+
+17-02-2024 20:01 | bot | Echo: aaaaa
+
+19-02-2024 19:39 | user | Hello
+
+19-02-2024 19:39 | user | Hello
+
+19-02-2024 19:39 | bot | Processed: Hello
+
+19-02-2024 20:16 | user | aaaa
+
+19-02-2024 20:16 | bot | Error communicating with the server. Please try again later.
+
+19-02-2024 20:18 | user | 111
+
+19-02-2024 20:18 | user | 111
+
+19-02-2024 20:18 | bot | {'locale': 'en', 'utterance': '111', 'languageGuessed': False, 'localeIso2': 'en', 'language': 'English', 'nluAnswer': {'classifications': [{'intent': 'greetings', 'score': 0}]}, 'classifications': [{'intent': 'greetings', 'score': 0}], 'intent': 'None', 'score': 1, 'domain': 'default', 'entities': [], 'sourceEntities': [], 'answers': [], 'actions': [], 'sentiment': {'score': 0, 'numWords': 1, 'numHits': 0, 'average': 0, 'type': 'senticon', 'locale': 'en', 'vote': 'neutral'}}
+
+19-02-2024 20:19 | user | Hello
+
+19-02-2024 20:19 | user | Hello
+
+19-02-2024 20:19 | bot | {'locale': 'en', 'utterance': 'Hello', 'languageGuessed': False, 'localeIso2': 'en', 'language': 'English', 'explanation': [{'token': '', 'stem': '##exact', 'weight': 1}], 'classifications': [{'intent': 'greetings', 'score': 1}], 'intent': 'greetings', 'score': 1, 'domain': 'default', 'entities': [], 'sourceEntities': [], 'answers': [{'answer': 'Hello!'}, {'answer': 'Hi!'}, {'answer': 'Greetings!'}, {'answer': 'Welcome!'}, {'answer': 'Howdy!'}, {'answer': 'Yo!'}, {'answer': 'Hiya!'}, {'answer': 'Cheers!'}, {'answer': 'Hey!'}, {'answer': 'Salutations!'}, {'answer': 'Hello there!'}, {'answer': 'Good day!'}, {'answer': 'Hi, friend!'}, {'answer': 'Hey there!'}, {'answer': "What's up?"}, {'answer': 'Morning glory!'}, {'answer': 'Evening sun!'}, {'answer': 'Hiya, buddy!'}, {'answer': 'Well met!'}, {'answer': 'Ahoy mate!'}, {'answer': 'Hello! How are you?'}, {'answer': 'Good day to you!'}, {'answer': 'Hi there, friend!'}, {'answer': 'Greetings, fellow human!'}, {'answer': 'Welcome aboard!'}, {'answer': 'Howdy, partner!'}, {'answer': "Yo! What's new?"}, {'answer': 'Hiya! Ready to chat?'}, {'answer': 'Cheers to you!'}, {'answer': "Hey! How's it going?"}, {'answer': 'Hello! Lovely to meet you.'}, {'answer': "Good morning! Bright day, isn't it?"}, {'answer': 'Good evening! How was your day?'}, {'answer': 'Hi, there! Anything exciting today?'}, {'answer': 'Hey, you! Ready for adventure?'}, {'answer': "What's up? Anything interesting?"}, {'answer': 'How goes it? All well?'}, {'answer': 'Hello! Anything I can do for you?'}, {'answer': 'Hi! Here to help you out.'}, {'answer': "Greetings! Let's solve some mysteries."}], 'answer': 'Hiya! Ready to chat?', 'actions': [], 'sentiment': {'score': 0, 'numWords': 1, 'numHits': 0, 'average': 0, 'type': 'senticon', 'locale': 'en', 'vote': 'neutral'}}
+
+19-02-2024 20:20 | user | hey
+
+19-02-2024 20:20 | user | hey
+
+19-02-2024 20:20 | bot | {'locale': 'en', 'utterance': 'hey', 'languageGuessed': False, 'localeIso2': 'en', 'language': 'English', 'nluAnswer': {'classifications': [{'intent': 'greetings', 'score': 1}]}, 'classifications': [{'intent': 'greetings', 'score': 1}], 'intent': 'greetings', 'score': 1, 'domain': 'default', 'entities': [], 'sourceEntities': [], 'answers': [{'answer': 'Hello!'}, {'answer': 'Hi!'}, {'answer': 'Greetings!'}, {'answer': 'Welcome!'}, {'answer': 'Howdy!'}, {'answer': 'Yo!'}, {'answer': 'Hiya!'}, {'answer': 'Cheers!'}, {'answer': 'Hey!'}, {'answer': 'Salutations!'}, {'answer': 'Hello there!'}, {'answer': 'Good day!'}, {'answer': 'Hi, friend!'}, {'answer': 'Hey there!'}, {'answer': "What's up?"}, {'answer': 'Morning glory!'}, {'answer': 'Evening sun!'}, {'answer': 'Hiya, buddy!'}, {'answer': 'Well met!'}, {'answer': 'Ahoy mate!'}, {'answer': 'Hello! How are you?'}, {'answer': 'Good day to you!'}, {'answer': 'Hi there, friend!'}, {'answer': 'Greetings, fellow human!'}, {'answer': 'Welcome aboard!'}, {'answer': 'Howdy, partner!'}, {'answer': "Yo! What's new?"}, {'answer': 'Hiya! Ready to chat?'}, {'answer': 'Cheers to you!'}, {'answer': "Hey! How's it going?"}, {'answer': 'Hello! Lovely to meet you.'}, {'answer': "Good morning! Bright day, isn't it?"}, {'answer': 'Good evening! How was your day?'}, {'answer': 'Hi, there! Anything exciting today?'}, {'answer': 'Hey, you! Ready for adventure?'}, {'answer': "What's up? Anything interesting?"}, {'answer': 'How goes it? All well?'}, {'answer': 'Hello! Anything I can do for you?'}, {'answer': 'Hi! Here to help you out.'}, {'answer': "Greetings! Let's solve some mysteries."}], 'answer': 'Good evening! How was your day?', 'actions': [], 'sentiment': {'score': 0, 'numWords': 1, 'numHits': 0, 'average': 0, 'type': 'senticon', 'locale': 'en', 'vote': 'neutral'}}
+
+19-02-2024 20:23 | user | Yo
+
+19-02-2024 20:23 | bot | {'locale': 'en', 'utterance': 'Yo', 'languageGuessed': False, 'localeIso2': 'en', 'language': 'English', 'explanation': [{'token': '', 'stem': '##exact', 'weight': 1}], 'classifications': [{'intent': 'greetings', 'score': 1}], 'intent': 'greetings', 'score': 1, 'domain': 'default', 'entities': [], 'sourceEntities': [], 'answers': [{'answer': 'Hello!'}, {'answer': 'Hi!'}, {'answer': 'Greetings!'}, {'answer': 'Welcome!'}, {'answer': 'Howdy!'}, {'answer': 'Yo!'}, {'answer': 'Hiya!'}, {'answer': 'Cheers!'}, {'answer': 'Hey!'}, {'answer': 'Salutations!'}, {'answer': 'Hello there!'}, {'answer': 'Good day!'}, {'answer': 'Hi, friend!'}, {'answer': 'Hey there!'}, {'answer': "What's up?"}, {'answer': 'Morning glory!'}, {'answer': 'Evening sun!'}, {'answer': 'Hiya, buddy!'}, {'answer': 'Well met!'}, {'answer': 'Ahoy mate!'}, {'answer': 'Hello! How are you?'}, {'answer': 'Good day to you!'}, {'answer': 'Hi there, friend!'}, {'answer': 'Greetings, fellow human!'}, {'answer': 'Welcome aboard!'}, {'answer': 'Howdy, partner!'}, {'answer': "Yo! What's new?"}, {'answer': 'Hiya! Ready to chat?'}, {'answer': 'Cheers to you!'}, {'answer': "Hey! How's it going?"}, {'answer': 'Hello! Lovely to meet you.'}, {'answer': "Good morning! Bright day, isn't it?"}, {'answer': 'Good evening! How was your day?'}, {'answer': 'Hi, there! Anything exciting today?'}, {'answer': 'Hey, you! Ready for adventure?'}, {'answer': "What's up? Anything interesting?"}, {'answer': 'How goes it? All well?'}, {'answer': 'Hello! Anything I can do for you?'}, {'answer': 'Hi! Here to help you out.'}, {'answer': "Greetings! Let's solve some mysteries."}], 'answer': 'Ahoy mate!', 'actions': [], 'sentiment': {'score': 0, 'numWords': 1, 'numHits': 0, 'average': 0, 'type': 'senticon', 'locale': 'en', 'vote': 'neutral'}}
+
+19-02-2024 20:58 | user | hello
+
+19-02-2024 20:58 | bot | {'locale': 'en', 'utterance': 'hello', 'languageGuessed': False, 'localeIso2': 'en', 'language': 'English', 'explanation': [{'token': '', 'stem': '##exact', 'weight': 1}], 'classifications': [{'intent': 'greetings', 'score': 1}], 'intent': 'greetings', 'score': 1, 'domain': 'default', 'entities': [], 'sourceEntities': [], 'answers': [{'answer': 'Hello!'}, {'answer': 'Hi!'}, {'answer': 'Greetings!'}, {'answer': 'Welcome!'}, {'answer': 'Howdy!'}, {'answer': 'Yo!'}, {'answer': 'Hiya!'}, {'answer': 'Cheers!'}, {'answer': 'Hey!'}, {'answer': 'Salutations!'}, {'answer': 'Hello there!'}, {'answer': 'Good day!'}, {'answer': 'Hi, friend!'}, {'answer': 'Hey there!'}, {'answer': "What's up?"}, {'answer': 'Morning glory!'}, {'answer': 'Evening sun!'}, {'answer': 'Hiya, buddy!'}, {'answer': 'Well met!'}, {'answer': 'Ahoy mate!'}, {'answer': 'Hello! How are you?'}, {'answer': 'Good day to you!'}, {'answer': 'Hi there, friend!'}, {'answer': 'Greetings, fellow human!'}, {'answer': 'Welcome aboard!'}, {'answer': 'Howdy, partner!'}, {'answer': "Yo! What's new?"}, {'answer': 'Hiya! Ready to chat?'}, {'answer': 'Cheers to you!'}, {'answer': "Hey! How's it going?"}, {'answer': 'Hello! Lovely to meet you.'}, {'answer': "Good morning! Bright day, isn't it?"}, {'answer': 'Good evening! How was your day?'}, {'answer': 'Hi, there! Anything exciting today?'}, {'answer': 'Hey, you! Ready for adventure?'}, {'answer': "What's up? Anything interesting?"}, {'answer': 'How goes it? All well?'}, {'answer': 'Hello! Anything I can do for you?'}, {'answer': 'Hi! Here to help you out.'}, {'answer': "Greetings! Let's solve some mysteries."}], 'answer': 'Hiya, buddy!', 'actions': [], 'sentiment': {'score': 0, 'numWords': 1, 'numHits': 0, 'average': 0, 'type': 'senticon', 'locale': 'en', 'vote': 'neutral'}}
+
+19-02-2024 20:59 | user | hello
+
+19-02-2024 21:52 | user | hello
+
+19-02-2024 22:00 | user | Hello
+
+19-02-2024 22:00 | user | Hello
+
+19-02-2024 22:00 | bot | {'locale': 'en', 'utterance': 'en', 'languageGuessed': False, 'localeIso2': 'en', 'language': 'English', 'nluAnswer': {'classifications': [{'intent': 'greetings', 'score': 0}]}, 'classifications': [{'intent': 'greetings', 'score': 0}], 'intent': 'None', 'score': 1, 'domain': 'default', 'entities': [], 'sourceEntities': [], 'answers': [], 'actions': [], 'sentiment': {'score': 0, 'numWords': 1, 'numHits': 0, 'average': 0, 'type': 'senticon', 'locale': 'en', 'vote': 'neutral'}}
+
+19-02-2024 22:01 | user | Hello
+
+19-02-2024 22:03 | user | Yo
+
+19-02-2024 22:03 | user | Yo
+
+19-02-2024 22:03 | bot | {'locale': 'en', 'utterance': 'en', 'languageGuessed': False, 'localeIso2': 'en', 'language': 'English', 'nluAnswer': {'classifications': [{'intent': 'greetings', 'score': 0}]}, 'classifications': [{'intent': 'greetings', 'score': 0}], 'intent': 'None', 'score': 1, 'domain': 'default', 'entities': [], 'sourceEntities': [], 'answers': [], 'actions': [], 'sentiment': {'score': 0, 'numWords': 1, 'numHits': 0, 'average': 0, 'type': 'senticon', 'locale': 'en', 'vote': 'neutral'}}
+
+19-02-2024 22:05 | user | hey
+
+19-02-2024 22:05 | user | hey
+
+19-02-2024 22:05 | bot | {'locale': 'en', 'utterance': 'en', 'languageGuessed': False, 'localeIso2': 'en', 'language': 'English', 'nluAnswer': {'classifications': [{'intent': 'greetings', 'score': 0}]}, 'classifications': [{'intent': 'greetings', 'score': 0}], 'intent': 'None', 'score': 1, 'domain': 'default', 'entities': [], 'sourceEntities': [], 'answers': [], 'actions': [], 'sentiment': {'score': 0, 'numWords': 1, 'numHits': 0, 'average': 0, 'type': 'senticon', 'locale': 'en', 'vote': 'neutral'}}
+
+19-02-2024 22:12 | user | yo
+
+19-02-2024 22:12 | bot | {'locale': 'en', 'utterance': 'en', 'languageGuessed': False, 'localeIso2': 'en', 'language': 'English', 'nluAnswer': {'classifications': [{'intent': 'greetings', 'score': 0}]}, 'classifications': [{'intent': 'greetings', 'score': 0}], 'intent': 'None', 'score': 1, 'domain': 'default', 'entities': [], 'sourceEntities': [], 'answers': [], 'actions': [], 'sentiment': {'score': 0, 'numWords': 1, 'numHits': 0, 'average': 0, 'type': 'senticon', 'locale': 'en', 'vote': 'neutral'}}
+
+19-02-2024 22:20 | user | Hello
+
+19-02-2024 22:20 | user | Hello
+
+19-02-2024 22:20 | bot | {'locale': 'en', 'utterance': 'en', 'languageGuessed': False, 'localeIso2': 'en', 'language': 'English', 'nluAnswer': {'classifications': [{'intent': 'greetings', 'score': 0}]}, 'classifications': [{'intent': 'greetings', 'score': 0}], 'intent': 'None', 'score': 1, 'domain': 'default', 'entities': [], 'sourceEntities': [], 'answers': [], 'actions': [], 'sentiment': {'score': 0, 'numWords': 1, 'numHits': 0, 'average': 0, 'type': 'senticon', 'locale': 'en', 'vote': 'neutral'}}
+
+19-02-2024 22:20 | user | Hi
+
+19-02-2024 22:20 | user | Hi
+
+19-02-2024 22:20 | bot | {'locale': 'en', 'utterance': 'en', 'languageGuessed': False, 'localeIso2': 'en', 'language': 'English', 'nluAnswer': {'classifications': [{'intent': 'greetings', 'score': 0}]}, 'classifications': [{'intent': 'greetings', 'score': 0}], 'intent': 'None', 'score': 1, 'domain': 'default', 'entities': [], 'sourceEntities': [], 'answers': [], 'actions': [], 'sentiment': {'score': 0, 'numWords': 1, 'numHits': 0, 'average': 0, 'type': 'senticon', 'locale': 'en', 'vote': 'neutral'}}
+
+19-02-2024 22:20 | user | What
+
+19-02-2024 22:20 | user | What
+
+19-02-2024 22:20 | bot | {'locale': 'en', 'utterance': 'en', 'languageGuessed': False, 'localeIso2': 'en', 'language': 'English', 'nluAnswer': {'classifications': [{'intent': 'greetings', 'score': 0}]}, 'classifications': [{'intent': 'greetings', 'score': 0}], 'intent': 'None', 'score': 1, 'domain': 'default', 'entities': [], 'sourceEntities': [], 'answers': [], 'actions': [], 'sentiment': {'score': 0, 'numWords': 1, 'numHits': 0, 'average': 0, 'type': 'senticon', 'locale': 'en', 'vote': 'neutral'}}
+
+19-02-2024 22:29 | user | Hello
+
+19-02-2024 22:29 | user | Hello
+
+19-02-2024 22:29 | bot | {'locale': 'en', 'utterance': 'en', 'languageGuessed': False, 'localeIso2': 'en', 'language': 'English', 'nluAnswer': {'classifications': [{'intent': 'greetings', 'score': 0}]}, 'classifications': [{'intent': 'greetings', 'score': 0}], 'intent': 'None', 'score': 1, 'domain': 'default', 'entities': [], 'sourceEntities': [], 'answers': [], 'actions': [], 'sentiment': {'score': 0, 'numWords': 1, 'numHits': 0, 'average': 0, 'type': 'senticon', 'locale': 'en', 'vote': 'neutral'}}
+
+19-02-2024 22:30 | user | Hey
+
+19-02-2024 22:30 | user | Hey
+
+19-02-2024 22:30 | bot | {'locale': 'en', 'utterance': 'en', 'languageGuessed': False, 'localeIso2': 'en', 'language': 'English', 'nluAnswer': {'classifications': [{'intent': 'greetings', 'score': 0}]}, 'classifications': [{'intent': 'greetings', 'score': 0}], 'intent': 'None', 'score': 1, 'domain': 'default', 'entities': [], 'sourceEntities': [], 'answers': [], 'actions': [], 'sentiment': {'score': 0, 'numWords': 1, 'numHits': 0, 'average': 0, 'type': 'senticon', 'locale': 'en', 'vote': 'neutral'}}
+
+19-02-2024 22:32 | user | Hello
+
+19-02-2024 22:32 | user | Hello
+
+19-02-2024 22:32 | bot | {'locale': 'en', 'utterance': 'en', 'languageGuessed': False, 'localeIso2': 'en', 'language': 'English', 'nluAnswer': {'classifications': [{'intent': 'greetings', 'score': 0}]}, 'classifications': [{'intent': 'greetings', 'score': 0}], 'intent': 'None', 'score': 1, 'domain': 'default', 'entities': [], 'sourceEntities': [], 'answers': [], 'actions': [], 'sentiment': {'score': 0, 'numWords': 1, 'numHits': 0, 'average': 0, 'type': 'senticon', 'locale': 'en', 'vote': 'neutral'}}
+
+19-02-2024 22:40 | user | hello
+
+19-02-2024 22:40 | user | hello
+
+19-02-2024 22:40 | bot | {'locale': 'en', 'utterance': 'en', 'languageGuessed': False, 'localeIso2': 'en', 'language': 'English', 'nluAnswer': {'classifications': [{'intent': 'greetings', 'score': 0}]}, 'classifications': [{'intent': 'greetings', 'score': 0}], 'intent': 'None', 'score': 1, 'domain': 'default', 'entities': [], 'sourceEntities': [], 'answers': [], 'actions': [], 'sentiment': {'score': 0, 'numWords': 1, 'numHits': 0, 'average': 0, 'type': 'senticon', 'locale': 'en', 'vote': 'neutral'}}
+
+19-02-2024 22:59 | user | Hey
+
+19-02-2024 22:59 | user | Hey
+
+19-02-2024 22:59 | bot | {'locale': 'en', 'utterance': 'en', 'languageGuessed': False, 'localeIso2': 'en', 'language': 'English', 'nluAnswer': {'classifications': [{'intent': 'greetings', 'score': 0}]}, 'classifications': [{'intent': 'greetings', 'score': 0}], 'intent': 'None', 'score': 1, 'domain': 'default', 'entities': [], 'sourceEntities': [], 'answers': [], 'actions': [], 'sentiment': {'score': 0, 'numWords': 1, 'numHits': 0, 'average': 0, 'type': 'senticon', 'locale': 'en', 'vote': 'neutral'}}
+
+19-02-2024 23:07 | user | Hello
+
+19-02-2024 23:07 | user | Hello
+
+19-02-2024 23:07 | bot | I'm not sure how to respond to that.
+
+19-02-2024 23:08 | bot | Input is not valid. Allowed characters: letters, numbers, and special characters (+, -, /, *, =, %, &, @, space, "", '', (, )). Please check and try again.
+
+19-02-2024 23:08 | user | Hello
+
+19-02-2024 23:09 | user | Hi
+
+19-02-2024 23:09 | user | Hi
+
+19-02-2024 23:09 | bot | Welcome aboard!
+
+19-02-2024 23:11 | user | Hello
+
+19-02-2024 23:11 | user | Hello
+
+19-02-2024 23:11 | bot | Hiya!
+
+19-02-2024 23:13 | user | hello
+
+19-02-2024 23:13 | user | hello
+
+19-02-2024 23:13 | bot | How goes it? All well?
+
+19-02-2024 23:16 | user | Hey
+
+19-02-2024 23:16 | bot | How goes it? All well?
+
+19-02-2024 23:20 | user | Hey
+
+19-02-2024 23:26 | Hey | user
+
+19-02-2024 23:26 | bot | Hello! Lovely to meet you.
+
+19-02-2024 23:32 | Hello | user
+
+19-02-2024 23:32 | user | Hello
+
+19-02-2024 23:32 | bot | Welcome!
+
+19-02-2024 23:32 | Welcome! | bot
+
+19-02-2024 23:32 | Hey | user
+
+19-02-2024 23:32 | user | Hey
+
+19-02-2024 23:32 | bot | Welcome!
+
+19-02-2024 23:32 | Welcome! | bot
+
+19-02-2024 23:32 | Hi | user
+
+19-02-2024 23:32 | user | Hi
+
+19-02-2024 23:32 | bot | Well met!
+
+19-02-2024 23:32 | Well met! | bot
+
+19-02-2024 23:32 | Well Hello There | user
+
+19-02-2024 23:32 | user | Well Hello There
+
+19-02-2024 23:32 | bot | Good day to you!
+
+19-02-2024 23:32 | Good day to you! | bot
+
+19-02-2024 23:47 | Hey | user
+
+19-02-2024 23:47 | user | Hey
+bot | Morning glory!
+
+19-02-2024 23:47 | Morning glory! | bot
+
+19-02-2024 23:52 | Hello | user
+
+19-02-2024 23:52 | user | Hello
+bot | Hello! Anything I can do for you?
+
+19-02-2024 23:52 | Hello! Anything I can do for you? | bot
+
+20-02-2024 18:53 | Hello | user
+
+20-02-2024 18:53 | How goes it? All well? | bot
+
+20-02-2024 18:54 | Hey | user
+
+20-02-2024 18:54 | user | Hey
+bot | What's up? Anything interesting?
+
+20-02-2024 18:54 | What's up? Anything interesting? | bot
+
+20-02-2024 18:54 | Yo | user
+
+20-02-2024 18:54 | user | Yo
+bot | How goes it? All well?
+
+20-02-2024 18:54 | How goes it? All well? | bot
+
+20-02-2024 18:54 | Hello | user
+
+20-02-2024 18:54 | user | Hello
+bot | Yo! What's new?
+
+20-02-2024 18:54 | Yo! What's new? | bot
+
+20-02-2024 20:04 | hello | user
+
+20-02-2024 20:04 | user | hello
+bot | Hi, there! Anything exciting today?
+
+20-02-2024 20:04 | Hi, there! Anything exciting today? | bot
+
+20-02-2024 20:35 | Yo | user
+
+20-02-2024 20:35 | user | Yo
+bot | Hello!
+
+20-02-2024 20:44 | Yo | user
+
+20-02-2024 20:44 | user | Yo
+
+20-02-2024 20:44 | bot | Welcome aboard!
+
+20-02-2024 20:44 | Welcome aboard! | bot
+
+20-02-2024 20:44 | Hello | user
+
+20-02-2024 20:44 | user | Hello
+
+20-02-2024 20:44 | bot | Yo!
+
+20-02-2024 20:44 | Yo! | bot
+
+20-02-2024 21:47 | user | Hello
+
+20-02-2024 21:47 | bot | How goes it? All well?
+
+20-02-2024 21:47 | How goes it? All well? | bot
+
+20-02-2024 21:49 | Hello | user
+
+20-02-2024 21:49 | Hey! | bot
+
+20-02-2024 21:50 | Yo | user
+
+20-02-2024 21:50 | Morning glory! | bot
+
+20-02-2024 21:59 | yo | user
+
+20-02-2024 21:59 | Well met! | bot
+
+20-02-2024 21:59 | Hello | user
+
+20-02-2024 21:59 | Good day to you! | bot
+
+20-02-2024 21:59 | Mama | user
+
+20-02-2024 21:59 | I'm not sure how to respond to that. | bot
+
+20-02-2024 21:59 | Maksim | user
+
+20-02-2024 21:59 | I'm not sure how to respond to that. | bot
+
+20-02-2024 21:59 | Franix90 | user
+
+20-02-2024 21:59 | I'm not sure how to respond to that. | bot
+
+20-02-2024 22:16 | Hello | user
+
+20-02-2024 22:16 | Hello! Lovely to meet you. | bot
+
+20-02-2024 22:45 | Hello | user
+
+20-02-2024 22:45 | Welcome aboard! | bot
+
+20-02-2024 22:46 | Hey | user
+
+20-02-2024 22:46 | Hiya! Ready to chat? | bot
+
+20-02-2024 22:55 | Hey | user
+
+20-02-2024 22:55 | Cheers to you! | bot
+
+20-02-2024 22:55 | Hello | user
+
+20-02-2024 22:55 | Hi there, friend! | bot
+
+20-02-2024 22:55 | Yes Sir | user
+
+20-02-2024 22:55 | I'm not sure how to respond to that. | bot
+
+20-02-2024 22:55 | Hwat | user
+
+20-02-2024 22:55 | I'm not sure how to respond to that. | bot
+
+20-02-2024 22:55 | aasdasd | user
+
+20-02-2024 22:55 | I'm not sure how to respond to that. | bot
+
+20-02-2024 22:55 | asasfasfa | user
+
+20-02-2024 22:55 | I'm not sure how to respond to that. | bot
+
+20-02-2024 22:55 | asfasfasfa | user
+
+20-02-2024 22:55 | I'm not sure how to respond to that. | bot
+
+22-02-2024 10:24 | Hello | user
+
+22-02-2024 10:24 | I'm not sure how to respond to that. | bot
+
+22-02-2024 10:24 | Hi | user
+
+22-02-2024 10:24 | I'm not sure how to respond to that. | bot
+
+22-02-2024 10:26 | Hello | user
+
+22-02-2024 10:26 | I'm not sure how to respond to that. | bot
+
+22-02-2024 10:26 | Hello | user
+
+22-02-2024 10:26 | Hello! How are you? | bot
+
+22-02-2024 10:28 | Yes | user
+
+22-02-2024 10:28 | I'm not sure how to respond to that. | bot
+
+22-02-2024 10:28 | Hey | user
+
+22-02-2024 10:28 | Hiya, buddy! | bot
+
+22-02-2024 10:29 | Hello | user
+
+22-02-2024 10:29 | Hi! | bot
+
+22-02-2024 10:29 | Yes | user
+
+22-02-2024 10:29 | I'm not sure how to respond to that. | bot
+
+22-02-2024 10:29 | Yes | user
+
+22-02-2024 10:29 | I'm not sure how to respond to that. | bot
+
+22-02-2024 10:29 | Yes | user
+
+22-02-2024 10:29 | I'm not sure how to respond to that. | bot
+
+22-02-2024 10:29 | Yes | user
+
+22-02-2024 10:29 | I'm not sure how to respond to that. | bot
+
+22-02-2024 10:30 | Hello | user
+
+22-02-2024 10:30 | Good day to you! | bot
+
+22-02-2024 10:31 | hi | user
+
+22-02-2024 10:31 | Cheers! | bot
+
+22-02-2024 10:31 | Hello | user
+
+22-02-2024 10:31 | Hello! Lovely to meet you. | bot
+
+22-02-2024 10:31 | Hello | user
+
+22-02-2024 10:31 | Good day! | bot
+
+22-02-2024 10:31 | Hello | user
+
+22-02-2024 10:31 | Greetings! | bot
+
+22-02-2024 11:33 | Howdy, partner! | bot
+
+22-02-2024 11:33 | Hey | user
+
+22-02-2024 11:33 | Hiya! | bot
+
+22-02-2024 11:33 | Yo | user
+
+22-02-2024 11:33 | How goes it? All well? | bot
+
+22-02-2024 11:33 | Hello | user
+
+22-02-2024 11:33 | Well met! | bot
+
+22-02-2024 11:33 | Yo | user
+
+22-02-2024 11:33 | Good day to you! | bot
+
+22-02-2024 11:33 | Hey | user
+
+22-02-2024 11:33 | Greetings, fellow human! | bot
+
+22-02-2024 11:34 | aaaa | user
+
+22-02-2024 11:34 | I'm not sure how to respond to that. | bot
+
+22-02-2024 11:34 | aaaaaaaaaaaa | user
+
+22-02-2024 11:34 | I'm not sure how to respond to that. | bot
+
+22-02-2024 11:34 | aaaaaaaaaaaaaaaaa | user
+
+22-02-2024 11:34 | I'm not sure how to respond to that. | bot
+
+22-02-2024 11:34 | aaaaaaaaaaaaaaaaaaaaa | user
+
+22-02-2024 11:34 | I'm not sure how to respond to that. | bot
+
+22-02-2024 13:06 | Hey | user
+
+22-02-2024 13:06 | What's up? Anything interesting? | bot
+
+22-02-2024 13:06 | Hey | user
+
+22-02-2024 13:06 | Ahoy mate! | bot
+
+22-02-2024 13:06 | Hey | user
+
+22-02-2024 13:06 | How goes it? All well? | bot
+
+22-02-2024 13:06 | Hey | user
+
+22-02-2024 13:06 | Hello! How are you? | bot
+
+22-02-2024 13:06 | Hey | user
+
+22-02-2024 13:06 | Hi, there! Anything exciting today? | bot
+
+22-02-2024 13:06 | Hey | user
+
+22-02-2024 13:06 | Howdy, partner! | bot
+
+22-02-2024 13:06 | Hey | user
+
+22-02-2024 13:06 | Hello there! | bot
+
+22-02-2024 13:06 | hey | user
+
+22-02-2024 13:06 | What's up? | bot
+
+22-02-2024 13:13 | hey | user
+
+22-02-2024 13:13 | Greetings! | bot
+
+22-02-2024 13:13 | hey | user
+
+22-02-2024 13:13 | Hi! Here to help you out. | bot
+
+22-02-2024 13:13 | hey | user
+
+22-02-2024 13:13 | Yo! | bot
+
+22-02-2024 13:13 | hey | user
+
+22-02-2024 13:13 | Hello there! | bot
+
+22-02-2024 13:13 | hey | user
+
+22-02-2024 13:13 | Evening sun! | bot
+
+22-02-2024 13:13 | hey | user
+
+22-02-2024 13:13 | Hiya! | bot
+
+22-02-2024 13:13 | hey | user
+
+22-02-2024 13:13 | Greetings! | bot
+
+22-02-2024 13:16 | hey | user
+
+22-02-2024 13:16 | Hiya! Ready to chat? | bot
+
+22-02-2024 13:16 | hey | user
+
+22-02-2024 13:16 | Hi! Here to help you out. | bot
+
+22-02-2024 13:16 | hey | user
+
+22-02-2024 13:16 | Hi, friend! | bot
+
+22-02-2024 13:16 | hey | user
+
+22-02-2024 13:16 | Cheers! | bot
+
+22-02-2024 13:16 | hey | user
+
+22-02-2024 13:16 | Hi! | bot
+
+22-02-2024 13:16 | hey | user
+
+22-02-2024 13:16 | Welcome! | bot
+
+22-02-2024 13:16 | hey | user
+
+22-02-2024 13:16 | Morning glory! | bot
+
+22-02-2024 13:16 | hey | user
+
+22-02-2024 13:16 | What's up? Anything interesting? | bot
+
+22-02-2024 13:17 | hey | user
+
+22-02-2024 13:17 | Hi, friend! | bot
+
+22-02-2024 13:18 | hey | user
+
+22-02-2024 13:18 | Hey there! | bot
+
+22-02-2024 13:18 | hey | user
+
+22-02-2024 13:18 | Hello! How are you? | bot
+
+22-02-2024 13:18 | hey | user
+
+22-02-2024 13:18 | Good morning! Bright day, isn't it? | bot
+
+22-02-2024 13:18 | hey | user
+
+22-02-2024 13:18 | Hi! Here to help you out. | bot
+
+22-02-2024 13:47 | hey | user
+
+22-02-2024 13:47 | Hi! Here to help you out. | bot
+
+22-02-2024 13:47 | hey | user
+
+22-02-2024 13:47 | What's up? Anything interesting? | bot
+
+22-02-2024 13:47 | hey | user
+
+22-02-2024 13:47 | What's up? | bot
+
+22-02-2024 13:47 | hey | user
+
+22-02-2024 13:47 | Good day! | bot
+
+22-02-2024 13:47 | hey | user
+
+22-02-2024 13:47 | Good day! | bot
+
+22-02-2024 13:49 | hey | user
+
+22-02-2024 13:49 | Yo! | bot
+
+22-02-2024 13:49 | hey | user
+
+22-02-2024 13:49 | Good morning! Bright day, isn't it? | bot
+
+22-02-2024 13:49 | hey | user
+
+22-02-2024 13:49 | Yo! What's new? | bot
+
+22-02-2024 13:49 | hey | user
+
+22-02-2024 13:49 | Hey, you! Ready for adventure? | bot
+
+22-02-2024 13:49 | hey | user
+
+22-02-2024 13:49 | Well met! | bot
+
+22-02-2024 14:41 | hey | user
+
+22-02-2024 14:41 | Hey! How's it going? | bot
+
+22-02-2024 14:41 | hey | user
+
+22-02-2024 14:41 | Yo! | bot
+
+22-02-2024 14:41 | hey | user
+
+22-02-2024 14:41 | Hello there! | bot
+
+22-02-2024 14:41 | hey | user
+
+22-02-2024 14:41 | What's up? Anything interesting? | bot
+
+22-02-2024 14:41 | hey | user
+
+22-02-2024 14:41 | Hiya! | bot
+
+22-02-2024 15:01 | Hey | user
+
+22-02-2024 15:01 | What's up? | bot
+
+22-02-2024 15:01 | Hey | user
+
+22-02-2024 15:01 | Evening sun! | bot
+
+22-02-2024 15:01 | Hey | user
+
+22-02-2024 15:01 | Good day to you! | bot
+
+22-02-2024 15:01 | Hey | user
+
+22-02-2024 15:01 | Evening sun! | bot
+
+22-02-2024 15:01 | Hey | user
+
+22-02-2024 15:01 | Greetings! | bot
+
+22-02-2024 15:01 | Hey | user
+
+22-02-2024 15:01 | Howdy, partner! | bot
+
+22-02-2024 15:28 | hey | user
+
+22-02-2024 15:28 | Hiya! Ready to chat? | bot
+
+22-02-2024 15:28 | hey | user
+
+22-02-2024 15:28 | Hiya! | bot
+
+22-02-2024 15:28 | hey | user
+
+22-02-2024 15:28 | Good day to you! | bot
+
+22-02-2024 15:28 | hey | user
+
+22-02-2024 15:28 | Welcome aboard! | bot
+
+22-02-2024 15:28 | hey | user
+
+22-02-2024 15:28 | Morning glory! | bot
+
+22-02-2024 15:30 | Hey | user
+
+22-02-2024 15:30 | Salutations! | bot
+
+22-02-2024 15:30 | Hey | user
+
+22-02-2024 15:30 | Evening sun! | bot
+
+22-02-2024 15:30 | Hey | user
+
+22-02-2024 15:30 | Welcome! | bot
+
+22-02-2024 15:30 | Hey | user
+
+22-02-2024 15:30 | Hi, there! Anything exciting today? | bot
+
+22-02-2024 15:30 | Hey | user
+
+22-02-2024 15:30 | Hi, friend! | bot
+
+22-02-2024 15:32 | hey | user
+
+22-02-2024 15:32 | What's up? | bot
+
+22-02-2024 15:32 | hey | user
+
+22-02-2024 15:32 | Hi! Here to help you out. | bot
+
+22-02-2024 15:32 | hey | user
+
+22-02-2024 15:32 | Good day to you! | bot
+
+22-02-2024 15:32 | hey | user
+
+22-02-2024 15:32 | Greetings! | bot
+
+22-02-2024 17:02 | hey | user
+
+22-02-2024 17:02 | Ahoy mate! | bot
+
+22-02-2024 17:02 | Hello | user
+
+22-02-2024 17:02 | Greetings! | bot
+
+22-02-2024 17:49 | Hello | user
+
+22-02-2024 17:49 | Hiya! Ready to chat? | bot
+
+22-02-2024 17:51 | Hey | user
+
+22-02-2024 17:51 | Evening sun! | bot
+
+22-02-2024 18:28 | Hey | user
+
+22-02-2024 18:28 | Well met! | bot
+
+22-02-2024 18:49 | Hello | user
+
+22-02-2024 18:49 | Greetings, fellow human! | bot
+
+22-02-2024 18:50 | Hey | user
+
+22-02-2024 18:50 | Ahoy mate! | bot
+
+22-02-2024 18:50 | Hello | user
+
+22-02-2024 18:50 | Hiya, buddy! | bot
+
+22-02-2024 19:00 | Hello | user
+
+22-02-2024 19:00 | Good day to you! | bot
+
+22-02-2024 20:04 | Hello | user
+
+22-02-2024 20:04 | Hello there! | bot
+
+22-02-2024 20:04 | What is your name | user
+
+22-02-2024 20:04 | Howdy! | bot
+
+22-02-2024 20:19 | Hello | user
+
+22-02-2024 20:20 | Hey | user
+
+22-02-2024 20:20 | Hello | user
+
+22-02-2024 20:20 | Yo! | bot
+
+22-02-2024 21:03 | Input is not valid. Allowed characters: letters, numbers, and special characters (+, -, /, *, =, %, &, @, space, "", '', (, )). Please check and try again. | bot
+
+22-02-2024 21:12 | Hey | user
+
+22-02-2024 21:12 | Good morning! Bright day, isn't it? | bot
+
+22-02-2024 21:13 | Name | user
+
+22-02-2024 21:13 | I'd like to know who I'm speaking with. Could you tell me your name? | bot
+
+22-02-2024 21:13 | Maksim | user
+
+22-02-2024 21:13 | I'm not sure how to respond to that. | bot
+
+22-02-2024 21:13 | Name | user
+
+22-02-2024 21:13 | I'd like to know who I'm speaking with. Could you tell me your name? | bot
+
+22-02-2024 21:14 | Hello | user
+
+22-02-2024 21:14 | Cheers to you! | bot
+
+23-02-2024 00:11 | Hey | user
+
+23-02-2024 00:11 | ... | bot
+
+23-02-2024 00:11 | Yo! What's new? | bot
+
+23-02-2024 00:11 | Name | user
+
+23-02-2024 00:11 | ... | bot
+
+23-02-2024 00:11 | I'd like to know who I'm speaking with. Could you tell me your name? | bot
+
+23-02-2024 00:11 | Maksim | user
+
+23-02-2024 00:11 | ... | bot
+
+23-02-2024 00:11 | I'm not sure how to respond to that. | bot
+
+23-02-2024 14:21 | Lets talk | user
+
+23-02-2024 14:21 | ... | bot
+
+23-02-2024 14:21 | Listening... What do you need? | bot
+
+23-02-2024 14:22 | Lets chat | user
+
+23-02-2024 14:22 | ... | bot
+
+23-02-2024 14:22 | Welcome! How can I assist you today? | bot
+
+23-02-2024 14:22 | Hello | user
+
+23-02-2024 14:22 | ... | bot
+
+23-02-2024 14:22 | Well met! | bot
+
+23-02-2024 14:38 | Hello | user
+
+23-02-2024 14:38 | ... | bot
+
+23-02-2024 14:38 | Good morning! Bright day, isn't it? | bot
+
+23-02-2024 14:38 | Lets talk | user
+
+23-02-2024 14:38 | ... | bot
+
+23-02-2024 14:38 | Yes, ready to chat. What's up? | bot
+
+24-02-2024 00:45 | ahdajdsa | user
+
+24-02-2024 00:45 | ... | bot
+
+24-02-2024 00:45 | I'm not sure how to respond to that. | bot
+
+24-02-2024 19:40 | Name | user
+
+24-02-2024 19:40 | ... | bot
+
+24-02-2024 19:40 | I'm not sure how to respond to that. | bot
+
+25-02-2024 16:58 | Hello | user
+
+25-02-2024 16:58 | ... | bot
+
+25-02-2024 16:58 | I'm not sure how to respond to that. | bot
+
+25-02-2024 17:25 | Hey | user
+
+25-02-2024 17:25 | ... | bot
+
+25-02-2024 17:25 | Please enter a question. | bot
+
+25-02-2024 17:25 | Morning glory! | bot
+
+25-02-2024 17:25 | Please enter a question. | bot
+
+25-02-2024 17:25 | Please enter a question. | bot
+
+25-02-2024 17:26 | Start | user
+
+25-02-2024 17:26 | ... | bot
+
+25-02-2024 17:26 | Greetings! How may I be of service? | bot
+
+25-02-2024 17:26 | Name | user
+
+25-02-2024 17:26 | ... | bot
+
+25-02-2024 17:26 | Nice to meet you, %name%! How can I assist you today? | bot
+
+25-02-2024 17:26 | Maksim | user
+
+25-02-2024 17:26 | ... | bot
+
+25-02-2024 17:26 | I'm not sure how to respond to that. | bot
+
+25-02-2024 17:26 | My name is Maksim | user
+
+25-02-2024 17:26 | ... | bot
+
+25-02-2024 17:26 | Nice to meet you, %name%! How can I assist you today? | bot
+
+25-02-2024 17:51 | Hello | user
+
+25-02-2024 17:51 | ... | bot
+
+25-02-2024 17:51 | Cheers! | bot
+
+25-02-2024 17:52 | Hello | user
+
+25-02-2024 17:52 | ... | bot
+
+25-02-2024 17:52 | Hi, friend! | bot
+
+25-02-2024 17:52 | Name | user
+
+25-02-2024 17:52 | ... | bot
+
+25-02-2024 17:52 | Hello | user
+
+25-02-2024 17:52 | ... | bot
+
+25-02-2024 17:52 | Ahoy mate! | bot
+
+25-02-2024 18:12 | Hello | user
+
+25-02-2024 18:12 | ... | bot
+
+25-02-2024 18:12 | I'm not sure how to respond to that. | bot
+
+25-02-2024 18:12 | Hello | user
+
+25-02-2024 18:12 | ... | bot
+
+25-02-2024 18:12 | I'm not sure how to respond to that. | bot
+
+25-02-2024 18:13 | Hello | user
+
+25-02-2024 18:13 | ... | bot
+
+25-02-2024 18:13 | I'm not sure how to respond to that. | bot
+
+25-02-2024 18:13 | hi | user
+
+25-02-2024 18:13 | ... | bot
+
+25-02-2024 18:13 | I'm not sure how to respond to that. | bot
+
+25-02-2024 18:13 | Start | user
+
+25-02-2024 18:13 | ... | bot
+
+25-02-2024 18:13 | I'm not sure how to respond to that. | bot
+
+25-02-2024 18:16 | Hi | user
+
+25-02-2024 18:16 | ... | bot
+
+25-02-2024 18:16 | I'm not sure how to respond to that. | bot
+
+25-02-2024 18:18 | Hi | user
+
+25-02-2024 18:18 | ... | bot
+
+25-02-2024 18:18 | I'm not sure how to respond to that. | bot
+
+25-02-2024 18:23 | Start | user
+
+25-02-2024 18:23 | ... | bot
+
+25-02-2024 18:23 | I'm not sure how to respond to that. | bot
+
+25-02-2024 18:23 | Why | user
+
+25-02-2024 18:23 | ... | bot
+
+25-02-2024 18:23 | I'm not sure how to respond to that. | bot
+
+25-02-2024 18:26 | Hello | user
+
+25-02-2024 18:26 | ... | bot
+
+25-02-2024 18:26 | Hiya! | bot
+
+25-02-2024 18:50 | name | user
+
+25-02-2024 18:50 | ... | bot
+
+25-02-2024 18:50 | Nice to meet you, %name%! How can I assist you today? | bot
+
+25-02-2024 18:50 | Start | user
+
+25-02-2024 18:50 | ... | bot
+
+25-02-2024 18:50 | Ready to chat! What's your question? | bot
+
+25-02-2024 23:02 | Hey | user
+
+25-02-2024 23:02 | ... | bot
+
+25-02-2024 23:02 | How goes it? All well? | bot
+
+25-02-2024 23:02 | Start | user
+
+25-02-2024 23:02 | ... | bot
+
+25-02-2024 23:02 | Hello! Let's solve some problems, shall we? | bot
+
+25-02-2024 23:02 | Name | user
+
+25-02-2024 23:02 | ... | bot
+
+25-02-2024 23:02 | Nice to meet you, %name%! How can I assist you today? | bot
+
+26-02-2024 08:51 | Hey | user
+
+26-02-2024 08:51 | ... | bot
+
+26-02-2024 08:51 | Hello! | bot
+
+26-02-2024 08:51 | Start | user
+
+26-02-2024 08:51 | ... | bot
+
+26-02-2024 08:51 | I'm all ears. What do you need to know? | bot
+
+26-02-2024 08:51 | Name | user
+
+26-02-2024 08:51 | ... | bot
+
+26-02-2024 08:51 | Nice to meet you, %name%! How can I assist you today? | bot
+
+26-02-2024 22:36 | Hey | user
+
+26-02-2024 22:36 | ... | bot
+
+26-02-2024 22:36 | Hi! | bot
+
+26-02-2024 22:36 | Start | user
+
+26-02-2024 22:36 | ... | bot
+
+26-02-2024 22:36 | Hi there! Ready to assist. What's the matter? | bot
+
+26-02-2024 22:37 | name | user
+
+26-02-2024 22:37 | ... | bot
+
+26-02-2024 22:37 | Nice to meet you, %name%! How can I assist you today? | bot
+
+28-02-2024 09:56 | morning | user
+
+28-02-2024 09:56 | ... | bot
+
+28-02-2024 09:56 | Hey! | bot
+
+29-02-2024 17:15 | hey | user
+
+29-02-2024 17:15 | ... | bot
+
+29-02-2024 17:15 | There was an error processing your message. | bot
+
+29-02-2024 17:20 | Hey | user
+
+29-02-2024 17:20 | ... | bot
+
+29-02-2024 17:20 | Welcome aboard! | bot
+
+29-02-2024 19:01 | hey | user
+
+29-02-2024 19:01 | ... | bot
+
+29-02-2024 19:01 | Greetings! | bot
+
+29-02-2024 19:01 | hey | user
+
+29-02-2024 19:01 | ... | bot
+
+29-02-2024 19:01 | How goes it? All well? | bot
+
+29-02-2024 19:02 | start | user
+
+29-02-2024 19:02 | ... | bot
+
+29-02-2024 19:02 | Hello! Let's solve some problems, shall we? | bot
+
+02-03-2024 23:48 | User | user
+
+02-03-2024 23:48 | User | bot
+
+02-03-2024 23:48 | User | bot
+
+02-03-2024 23:48 | User | user
+
+02-03-2024 23:48 | User | bot
+
+02-03-2024 23:48 | User | bot
+
+02-03-2024 23:48 | User | user
+
+02-03-2024 23:48 | User | bot
+
+02-03-2024 23:48 | User | bot
+
+02-03-2024 23:48 | User | bot
+
+02-03-2024 23:48 | User | user
+
+02-03-2024 23:48 | User | bot
+
+02-03-2024 23:48 | User | bot
+
+02-03-2024 23:48 | User | user
+
+02-03-2024 23:48 | User | bot
+
+02-03-2024 23:48 | User | bot
+
+31-03-2024 12:34 | User | bot
+
+31-03-2024 12:45 | User | bot
+
+31-03-2024 12:49 | User | bot
+
+31-03-2024 12:50 | User | bot
+
+31-03-2024 12:52 | User | user
+
+31-03-2024 12:52 | User | bot
+
+31-03-2024 12:52 | User | bot
+
+31-03-2024 13:23 | User | bot
+
+31-03-2024 13:23 | User | bot
+
+31-03-2024 16:13 | User | bot
+
+31-03-2024 17:12 | User | bot
+
+31-03-2024 17:23 | User | bot
+
+31-03-2024 17:40 | User | bot
+
+31-03-2024 18:00 | User | bot
+
+31-03-2024 18:13 | User | bot
+
+31-03-2024 18:15 | User | user
+
+31-03-2024 18:15 | User | bot
+
+31-03-2024 18:15 | User | bot
+
+31-03-2024 18:16 | User | user
+
+31-03-2024 18:16 | User | bot
+
+31-03-2024 18:16 | User | bot
+
+31-03-2024 18:16 | User | user
+
+31-03-2024 18:16 | User | bot
+
+31-03-2024 18:16 | User | bot
+
+31-03-2024 18:16 | User | user
+
+31-03-2024 18:16 | User | bot
+
+31-03-2024 18:16 | User | bot
+
+31-03-2024 18:39 | User | user
+
+31-03-2024 18:39 | User | bot
+
+31-03-2024 18:39 | User | bot
+
+31-03-2024 18:39 | User | user
+
+31-03-2024 18:39 | User | bot
+
+31-03-2024 18:39 | User | bot
+
+31-03-2024 18:39 | User | user
+
+31-03-2024 18:39 | User | bot
+
+31-03-2024 18:39 | User | bot
+
+31-03-2024 18:40 | User | bot
+
+01-04-2024 07:48 | User | bot
+
+01-04-2024 17:19 | User | bot
+
+01-04-2024 17:20 | User | bot
+
+01-04-2024 17:20 | User | user
+
+01-04-2024 17:20 | User | user
+
+01-04-2024 17:22 | User | bot
+
+01-04-2024 17:22 | User | bot
+
+01-04-2024 17:22 | User | user
+
+01-04-2024 17:27 | User | bot
+
+01-04-2024 17:27 | User | bot
+
+01-04-2024 17:27 | User | user
+
+01-04-2024 17:27 | User | bot
+
+01-04-2024 17:27 | User | bot
+
+01-04-2024 17:32 | User | bot
+
+01-04-2024 17:32 | User | bot
+
+01-04-2024 17:32 | User | user
+
+01-04-2024 17:32 | User | bot
+
+01-04-2024 17:33 | User | bot
+
+01-04-2024 18:14 | User | bot
+
+01-04-2024 18:15 | User | bot
+
+01-04-2024 18:38 | User | bot
+
+01-04-2024 18:38 | User | bot
+
+01-04-2024 18:38 | User | user
+
+01-04-2024 18:38 | User: Maksim
+
+01-04-2024 18:38 | Bot: {'answer': "I'm not sure how to respond to that."}
+
+01-04-2024 18:38 | User | bot
+
+01-04-2024 18:38 | User | bot
+
+01-04-2024 18:43 | User | bot
+
+01-04-2024 18:44 | User | bot
+
+01-04-2024 18:44 | User | user
+
+01-04-2024 18:44 | User | bot
+
+01-04-2024 18:44 | User | bot
+
+01-04-2024 18:45 | User | bot
+
+01-04-2024 18:45 | User | bot
+
+01-04-2024 18:46 | User | user
+
+01-04-2024 18:46 | User | bot
+
+01-04-2024 18:46 | User | bot
+
+01-04-2024 18:56 | User | bot
+
+01-04-2024 18:57 | User | bot
+
+01-04-2024 19:01 | User | user
+
+01-04-2024 19:01 | User: Maksim
+
+01-04-2024 19:01 | Bot: I'm not sure how to respond to that.
+
+01-04-2024 19:01 | User | bot
+
+01-04-2024 19:01 | User | bot
+
+01-04-2024 19:24 | User | bot
+
+01-04-2024 19:24 | User | bot
+
+01-04-2024 19:24 | User | user
+
+01-04-2024 19:24 | User: My name is Maksim
+
+01-04-2024 19:24 | Bot: Nice to meet you, %name%! How can I assist you today?
+
+01-04-2024 19:24 | User | bot
+
+01-04-2024 19:24 | User | bot
+
+01-04-2024 20:05 | User | bot
+
+01-04-2024 20:05 | User | bot
+
+01-04-2024 20:06 | User | user
+
+01-04-2024 20:06 | User: Maksim
+
+01-04-2024 20:06 | Bot: I'm not sure how to respond to that.
+
+01-04-2024 20:06 | User | bot
+
+01-04-2024 20:06 | User | bot
+
+01-04-2024 20:10 | User | bot
+
+01-04-2024 20:10 | User | bot
+
+01-04-2024 20:10 | User | user
+
+01-04-2024 20:10 | User | bot
+
+01-04-2024 20:10 | User | bot
+
+01-04-2024 21:19 | User | bot
+
+01-04-2024 21:20 | User | bot
+
+01-04-2024 21:39 | User | bot
+
+01-04-2024 21:39 | User | bot
+
+01-04-2024 21:39 | User | user
+
+01-04-2024 21:39 | User | bot
+
+01-04-2024 21:44 | User | bot
+
+01-04-2024 21:44 | User | bot
+
+01-04-2024 21:46 | User | user
+
+01-04-2024 21:46 | User | bot
+
+01-04-2024 21:46 | User | bot
+
+01-04-2024 21:46 | User | bot
+
+01-04-2024 21:52 | User | bot
+
+01-04-2024 21:52 | User | bot
+
+01-04-2024 21:52 | User | user
+
+01-04-2024 21:52 | User | bot
+
+01-04-2024 21:52 | User | bot
+
+01-04-2024 21:55 | User | bot
+
+01-04-2024 21:56 | User | bot
+
+01-04-2024 21:56 | User | user
+
+01-04-2024 21:56 | User | bot
+
+01-04-2024 21:56 | User | bot
+
+01-04-2024 21:57 | User | user
+
+01-04-2024 21:57 | User | bot
+
+01-04-2024 21:57 | User | bot
+
+01-04-2024 22:05 | User | bot
+
+01-04-2024 22:06 | User | bot
+
+01-04-2024 22:06 | User | user
+
+01-04-2024 22:06 | User | bot
+
+01-04-2024 22:06 | User | bot
+
+01-04-2024 22:11 | User | bot
+
+01-04-2024 22:12 | User | bot
+
+01-04-2024 22:12 | User | user
+
+01-04-2024 22:12 | User | bot
+
+01-04-2024 22:12 | User | bot
+
+01-04-2024 22:12 | User | user
+
+01-04-2024 22:12 | User | bot
+
+01-04-2024 22:12 | User | bot
+
+01-04-2024 22:13 | User | user
+
+01-04-2024 22:13 | User | bot
+
+01-04-2024 22:13 | User | bot
+
+01-04-2024 22:13 | User | user
+
+01-04-2024 22:13 | User | bot
+
+01-04-2024 22:13 | User | bot
+
+01-04-2024 22:13 | User | user
+
+01-04-2024 22:13 | User | bot
+
+01-04-2024 22:13 | User | bot
+
+23-04-2024 11:38 | User | user
+
+23-04-2024 11:38 | User | bot
+
+23-04-2024 11:38 | User | bot
+
+23-04-2024 11:38 | User | user
+
+23-04-2024 11:38 | User | bot
+
+23-04-2024 11:38 | User | bot
+
+23-04-2024 11:38 | User | user
+
+23-04-2024 11:38 | User | bot
+
+23-04-2024 11:38 | User | bot
+
+23-04-2024 11:38 | User | bot
+
+23-04-2024 11:38 | User | bot
+
+23-04-2024 19:38 | User | bot
+
+23-04-2024 19:38 | User | user
+
+23-04-2024 19:38 | User | bot
+
+23-04-2024 19:38 | User | bot
+
+23-04-2024 19:38 | User | bot
+
+23-04-2024 19:39 | User | user
+
+23-04-2024 19:39 | User | bot
+
+23-04-2024 19:39 | User | bot
+
+23-04-2024 20:11 | User | user

@@ -1,0 +1,12 @@
+# Node modules and package lock
+/node_modules
+package-lock.json
+
+# Alpine.js specific file
+/KarrenBot/static/alpine/alpine.min.js
+
+# Python cache
+__pycache__
+
+# Directories for commented out codes and images not to be tracked
+/commented_codes/

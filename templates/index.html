@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link rel="stylesheet" href="/static/styles.css">
+    <script src="/static/script.js" defer></script> <!-- Removed defer from this line -->
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.3/dist/cdn.min.js"></script>
+</head>
+<body>
+<div id="div-wrapper">
+    <!-- Main Chat Container -->
+    <main id="chat-container" x-data="chatbotApp()" x-init="initChatbot">
+            
+        <!-- Chat Header -->
+        <header id="chat-header">
+            <span id="more-options">&#8942;</span> <!-- Triple dot icon -->
+            <span id="chat-title">Chat Window</span>
+            <div id="window-controls">
+                <span class="window-control" @click="minimizeChat()">[-]</span>
+                <span class="window-control" @click="maximizeChat()">[0]</span>
+                <span class="window-control" @click="closeChat()">[X]</span>
+            </div>
+        </header>
+
+        <!-- Chat Controls -->
+        <section id="chat-controls">
+            <button id="clear-chat" @click="clearChat()" aria-label="Clear Chat">Clear Chat</button>
+        </section>
+
+        <!-- Chat Log -->
+        <section id="chat-log">
+            <template x-for="message in chatbot.conversationHistory" :key="message.timestamp">
+                <div :class="{'user-message': message.sender === 'user', 'bot-message': message.sender === 'bot'}">
+                    <span x-text="message.message"></span>
+                </div>
+            </template>
+        </section>
+
+        <!-- Chat Input -->
+        <section id="chat-input">
+            <div id="input-container">
+                <input id="chat-text-input" type="text" x-model="userInput" @keyup.enter="sendMessage" placeholder="Type here and press enter...">
+                <button id="add-smile" @click="addSmile()">&#x1F642;</button>
+                <label for="file-upload" class="custom-file-upload">&#x1F4E4;</label>
+                <input id="file-upload" type="file" @change="chatbot.sendFile($event)" style="display: none;"/>
+            </div>
+            <button id="send-button" @click="sendMessage">Send</button>
+        </section>
+
+        <!-- Rating Section -->
+        <footer id="rate-me">
+            <span>Rate me:</span>
+            <button class="rate-button" @click="rateChatbot(1)">1</button>
+            <button class="rate-button" @click="rateChatbot(2)">2</button>
+            <button class="rate-button" @click="rateChatbot(3)">3</button>
+            <button class="rate-button" @click="rateChatbot(4)">4</button>
+            <button class="rate-button" @click="rateChatbot(5)">5</button>
+        </footer>
+    </main>
+
+</div>
+
+
+<!-- Externalized Scripts -->
+<script src="/static/chatbotApp.js"></script>
+<script src="/static/rateChatbot.js"></script>
+</body>
+</html>
