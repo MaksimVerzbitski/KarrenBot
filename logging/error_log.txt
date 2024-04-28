@@ -89,3 +89,11 @@
 01-04-2024 22:06 | Server Communication | TypeError: response.json is not a function
 
 01-04-2024 22:06 | Server Communication | Error: Server response not OK
+
+26-04-2024 05:47 | Input Validation | Please enter a message.
+
+27-04-2024 01:59 | Input Validation | Please enter a message.
+
+28-04-2024 07:30 | Input Validation | Input contains invalid characters. Allowed characters: letters, numbers, and special characters (+, -, /, *, =, %, &, @, space, "", '', (, )).
+
+28-04-2024 10:51 | Input Validation | Input contains invalid characters. Allowed characters: letters, numbers, and special characters (+, -, /, *, =, %, &, @, space, "", '', (, )).

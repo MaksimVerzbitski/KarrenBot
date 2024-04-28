@@ -1,3 +1,6 @@
+# environment variables
+.env
+
 # Node modules and package lock
 /node_modules
 package-lock.json
@@ -10,3 +13,5 @@ __pycache__
 
 # Directories for commented out codes and images not to be tracked
 /commented_codes/
+
+

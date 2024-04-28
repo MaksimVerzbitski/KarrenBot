@@ -33,8 +33,8 @@
         <!-- Chat Log -->
         <section id="chat-log">
             <template x-for="message in chatbot.conversationHistory" :key="message.timestamp">
-                <div :class="{'user-message': message.sender === 'user', 'bot-message': message.sender === 'bot'}">
-                    <span x-text="message.message"></span>
+                <div :class="{'user-message': message.sender === 'User', 'bot-message': message.sender === 'Bot'}">
+                    <strong x-text="message.sender"></strong>: <span x-text="message.message"></span>
                 </div>
             </template>
         </section>

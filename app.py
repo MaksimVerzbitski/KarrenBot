@@ -3,14 +3,19 @@ from flask_cors import CORS
 from datetime import datetime
 import json
 import http.client
-import os
 import random
-#import requests
+
+# Load environment variables
+from dotenv import load_dotenv
+import os
+load_dotenv()
+
 
 
 app = Flask(__name__, static_folder='static', template_folder='templates')
 CORS(app)
-app.secret_key = '555666'
+ 
+app.secret_key = os.getenv('SECRET_KEY')
 
 app_started = True
 
@@ -58,7 +63,7 @@ def log_to_file(log_type, message):
 
 def log_new_session(reload=False):
     """
-    Logs the start of a new session or a page reload with a timestamp.
+    Logs  start new session  + time.
     """
     if reload:
         log_to_file('page_reload', 'Page reloaded')
@@ -82,8 +87,8 @@ def is_new_day(log_file, current_time):
                         last_log_date = datetime.strptime(date_str, "%d-%m-%Y %H:%M").date()
                         return last_log_date != current_time.date()
     except FileNotFoundError:
-        pass  # Treat file not found as a new day
-    return True  # If the file is empty or not found, treat as a new day
+        pass  
+    return True  
 
 
 @app.route("/", methods=["GET"])
@@ -104,11 +109,11 @@ def main_page():
     app_started = False
     return render_template("index.html")
 
-@app.route('/api/random-helpyou-phrase')
 def random_helpyou_phrase():
     phrases = load_phrases()
-    phrase = random.choice(phrases)
-    return jsonify({'phrase': phrase})
+    selected_phrase = random.choice(phrases)
+    print(f"Random help-you phrase selected: {selected_phrase}")  # Log the selected phrase
+    return jsonify(phrase=selected_phrase)
 
 @app.route('/logError', methods=['POST'])
 def log_error():
@@ -116,73 +121,49 @@ def log_error():
     log_to_file('error', f"{error_info['where']} | {error_info['error']}")
     return jsonify({"status": "error logged"})
 
-""" @app.route('/logConversation', methods=['POST'])
-def log_conversation():
-    conversation_info = request.json
-    # Check session flag to avoid re-logging if already logged
-    if session.get('logged_this_session', False):
-        response_status = {"status": "conversation already logged"}
-    else:
-        log_to_file('conversation', f"{conversation_info['sender']} | {conversation_info['message']}")
-        print(f"Logging conversation: {conversation_info['sender']} | {conversation_info['message']}")
-        response_status = {"status": "conversation logged"}
-        session['logged_this_session'] = True  # Set the flag after logging
-    return jsonify(response_status) """
-
 
 @app.route('/logConversation', methods=['POST'])
 def log_conversation():
-    # Check if the conversation has already been logged this session
+    # if conversation has already been logged this session
     if session.get('logged_this_session', False):
         return jsonify({"status": "conversation already logged"})
 
-    # Proceed if no log entry for this session exists
+    # Proceed if no log 
     conversation_info = request.json
     if 'sender' in conversation_info and 'message' in conversation_info:
-        # Log the conversation with correct data
+
         log_to_file('conversation', f"{conversation_info['sender']} | {conversation_info['message']}")
         print(f"Logging conversation: {conversation_info['sender']} | {conversation_info['message']}")
 
-        # Set the session flag to prevent duplicate logging
+        #session flag  duplicate logging
         session['logged_this_session'] = True
         return jsonify({"status": "conversation logged"})
     else:
-        # Return an error if required data is missing
+        #error if is missing
         return jsonify({"status": "invalid data received"})
-
 
 @app.route('/sendMessage', methods=['POST'])
 def send_message():
     user_message = request.json['message']
-    print(f"Received message: {user_message}")  # Log received message
-
-    nlp_response = my_nlp_function(user_message)  # Process the message with NLP
-    print(f"NLP response: {nlp_response}")
-
-    # Make sure to return a JSON response
-    return jsonify(nlp_response)
-
-""" @app.route('/sendMessage', methods=['POST'])
-def send_message():
-    user_message = request.json['message']
-    print(f"Received message: {user_message}")  # Log received message to console for debugging
+    print(f"Received message: {user_message}")  # console for debugging
 
     # Call NLP function and get response
     nlp_response = my_nlp_function(user_message)
-    print(f"NLP response: {nlp_response}")  # Log NLP response to console for debugging
+    print(f"NLP response: {nlp_response}")  # NLP console for debugging
 
-    # Log the conversation with the bot response in a more structured format
+    # Log the conversation with the bot response 
     log_to_file('conversation', f"User: {user_message}")
     if nlp_response.get('answer'):
         log_to_file('conversation', f"Bot: {nlp_response['answer']}")
     else:
         log_to_file('conversation', f"Bot: I'm not sure how to respond to that.")
-
-    return jsonify({
+    #return a JSON response
+    return jsonify(nlp_response)
+    """ return jsonify({
         "response": nlp_response.get('answer', "I'm not sure how to respond to that."),
         "intent": nlp_response.get('intent', 'unknown'),
         "entities": nlp_response.get('entities', {})
-    }) """
+    })  """
 
 
 def my_nlp_function(message):
@@ -193,17 +174,18 @@ def my_nlp_function(message):
         conn.request('POST', '/nlp-process-message', payload, headers)
         response = conn.getresponse()
         data = response.read().decode('utf-8')
+        print(f"NLP function response: {data}")  # Log the response
         if response.status == 200:
             data = json.loads(data)
-            return data  # Return the full response including intent and entities
+            return data
         else:
             print(f"Failed to get a valid response, status code: {response.status}")
             return {"answer": "There was an error processing your message."}
     finally:
         conn.close()
 
-@app.route('/getMessage', methods=['GET'])
 def get_message():
+    print("getMessage called")  # Log the function call
     return jsonify({"message": "Hello, how can I help you?"})
 
 

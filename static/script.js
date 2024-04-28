@@ -10,12 +10,7 @@ class Chatbot {
         this.userName = 'User'; // Default user name
     }
 
-    sendBotMessage(message) {
-        // Directly add the bot message to the conversation history
-        console.log(`Bot sending message: ${message}`);  // Debugging line
-        this.addToConversationHistory(message, 'bot');
-        this.updateChatUI();
-    }
+    
 
     // not sure if this relevant
     setNames(botName, userName) {
@@ -25,7 +20,7 @@ class Chatbot {
         if (userName) {
             this.userName = userName;
         }
-        // Optionally, update the UI to reflect the new names
+        // TODO update the UI  new names
         console.log(`Bot name set to: ${this.botName}, User name set to: ${this.userName}`);
         this.updateChatUI();
     }
@@ -46,38 +41,25 @@ class Chatbot {
     }
 
     logInvalidInput(message) {
-        this.addToConversationHistory(message, 'bot');
+        this.addToConversationHistory(this.botName, message);
         this.updateChatUI();
     }
 
-    // Here update with different logic for name
-    sendMessage(userInput, isBotMessage = false) {
+    // update with different logic for name
+    sendMessage(userInput, sender) {
         console.log(`Sending message: ${userInput}`);
-        if (!isBotMessage) {
-            const validationResponse = this.isValidInput(userInput);
-            if (!validationResponse.isValid) {
-                this.logErrorToServer('Input Validation', validationResponse.message);
-                return;
-            }
-        }
     
-        this.addToConversationHistory(userInput, 'user');
+        const validationResponse = this.isValidInput(userInput);
+        if (!validationResponse.isValid) {
+            this.logErrorToServer('Input Validation', validationResponse.message);
+            return;
+        }
+        
+        this.addToConversationHistory(userInput, sender);
         this.sendToServer(userInput);
     }
 
-    /* sendToServer(message) {
-        console.log(`Sending message to server: ${message}`);
-        fetch('/sendMessage', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ message })
-        })
-        .then(response => this.handleServerResponse(response))
-        .catch(error => {
-            this.logErrorToServer('Server Communication', error.toString());
-            this.addToConversationHistory('Error communicating with the server. Please try again later.', 'bot');
-        });
-    } */
+
 
     sendToServer(message) {
         console.log(`Sending message to server: ${message}`);
@@ -88,49 +70,48 @@ class Chatbot {
         })
         .then(response => {
             if (!response.ok) {
-                throw new Error(`Server responded with status: ${response.status}`);
+                throw new Error(`Server responded with status: ` , response);
+                // throw new Error(`Server responded with status: ${response.status}`);
             }
-            return response.json();  // Ensure this returns a promise of the parsed JSON data
+            return response.json();  // promise of the parsed JSON data
         })
         .then(data => this.handleServerResponse(data))  // Pass the actual data to handleServerResponse
         .catch(error => {
             console.error('Error communicating with server:', error);
             this.logErrorToServer('Server Communication', error.toString());
-            this.addToConversationHistory('Error communicating with the server. Please try again later.', 'bot');
+            this.addToConversationHistory('Error communicating with the server. Please try again later.', this.botName);
             this.updateChatUI();
         });
     }
     
 
-    // here is where should be names updated or logic added to method
+    
     handleServerResponse(data) {
         console.log('Server response data:', data);
-    
-        // Immediately add a 'thinking' indicator in the conversation history
-        this.addToConversationHistory('...', 'bot');
-    
-        // Introduce a delay to simulate the bot 'thinking' before responding
+        
+        //'thinking' indicator 
+        this.addToConversationHistory('...', this.botName);
+        this.updateChatUI();
+
+        // Random delay between 1 to 3 seconds
+        const thinkingDelay = Math.floor(Math.random() * (3000 - 1000 + 1) + 1000);
+
+        // After  delay, show  response
         setTimeout(() => {
-            // Remove the 'thinking' indicator from the conversation history
-            this.conversationHistory.pop();
-    
-            const intent = data.intent; // Use the intent from the data
-            const entities = data.entities; // Use the entities from the data
-    
-            console.log(`Received intent: ${intent}, with entities:`, entities);
-    
-            if (intent === 'userName.userNameProvided' && entities.userName) {
-                this.userName = entities.userName; // Update userName based on the entity
-            } else if (intent === 'botName.userNamesBot' && entities.botName) {
-                this.botName = entities.botName; // Update botName based on the entity
-            }
-    
-            // Add the bot's actual response to the conversation history and update the chat UI
-            const message = data.answer || "I'm not sure how to respond to that.";
-            this.addToConversationHistory(message, 'bot');
+
+            this.conversationHistory = this.conversationHistory.filter(
+                messageObj => messageObj.message !== '...'
+            );
+            
+            //NLP answer or  default response
+            const botMessage = data.answer || "I'm not sure how to respond to that.";
+
+            // bot's  response => conversation history
+            this.addToConversationHistory(botMessage, this.botName);
             this.updateChatUI();
-        }, 1000); // Adjust this delay as needed
-    }
+        }, thinkingDelay);
+    } 
+    
     
     logErrorToServer(where, errorMsg) {
         fetch('/logError', {
@@ -146,12 +127,12 @@ class Chatbot {
     backendCall(userInput) {
         this.performFetch('/sendMessage', { message: userInput })
             .then(data => {
-                this.conversationHistory.pop(); // Remove 'typing...' message
-                this.addToConversationHistory(data.response, 'bot');
+                this.conversationHistory.pop(); 
+                this.addToConversationHistory(data.response, 'Bot');
             })
             .catch(error => {
                 this.logErrorToServer('backendCall', error.toString());
-                this.conversationHistory.pop(); // Remove 'typing...' message in case of error
+                this.conversationHistory.pop(); 
             });
     }
     
@@ -168,47 +149,50 @@ class Chatbot {
     }
 
     receiveMessage(response) {
-        // Logic to receive message from Flask and update messages array
+        // NB! => Mystery = Logic to receive message from Flask and update messages array
         if(response){
-            this.addToConversationHistory(response, 'bot');
+            this.addToConversationHistory(this.botName , response );
         }
         
     }
 
-    //  Maintain Conversation History with correct name
+    //Conversation History with correct name
     addToConversationHistory(message, sender) {
-        console.log(`Adding to history: ${message} by ${sender}`);
-        if (!this.isDuplicateMessage(message, sender)) {
-            const senderName = sender === 'bot' ? this.botName : this.userName;
-            const messageObject = {
-                sender: senderName,
-                message: message,
-                timestamp: new Date().toISOString()
-            };
-            this.conversationHistory.push(messageObject);
-            this.logConversationHistory(message, sender);
-            this.updateChatUI();
+        const lastMessage = this.conversationHistory.slice(-1)[0];
+        if (lastMessage && lastMessage.message === message && lastMessage.sender === sender) {
+            console.log("Duplicate message detected, not adding to history.");
+            return; // Prevent  duplicate 
         }
+        const messageObject = {
+            sender: sender,
+            message: message,
+            timestamp: new Date().toISOString()
+        };
+        this.conversationHistory.push(messageObject);
+        this.updateChatUI();
     }
     
     isDuplicateMessage(message, sender) {
-        const lastMessage = this.conversationHistory.slice(-1)[0]; // Get the last message from the history
+        const lastMessage = this.conversationHistory.slice(-1)[0]; // last message from the history
         if (lastMessage) {
-            // Check if the last message content and sender match the current message and sender
+            // if last message value and sender match CURRENT message and sender
             return lastMessage.message === message && lastMessage.sender === sender;
         }
-        return false; // If there's no last message, it cannot be a duplicate
+        return false; // 
     }
 
-    // make sure it registers correct name into logging
-    logConversationHistory(sender, message) {
-        if (message === '...') return;
-        // Ensure both 'sender' and 'message' are included in the payload
+    // make sure  correct name into logging
+    logConversationHistory(message, sender) {
+        if (message === '...') {
+            console.log("Skipping logging for thinking indicator.");
+            return; 
+        }
+    
         const payload = {
-            sender: sender === 'bot' ? this.botName : this.userName,
+            sender: sender === 'Bot' ? this.botName : this.userName,
             message: message,
-            botName: this.botName,  // Include botName in the payload
-            userName: this.userName // Include userName in the payload
+            botName: this.botName, 
+            userName: this.userName 
         };
     
         fetch('/logConversation', {
@@ -222,24 +206,26 @@ class Chatbot {
             }
             return response.json();
         })
-        .then(data => console.log(data))
+        .then(data => console.log(`Logged: ${data}`))
         .catch(error => console.error('Error logging conversation:', error));
     }
     
-    // here changing user name and bot name
+    
     updateChatUI() {
         const chatLog = document.getElementById('chat-log');
         if (!chatLog) return;
     
-        chatLog.innerHTML = this.conversationHistory.map(messageObject =>
-            `<div class="${messageObject.sender === 'Bot' ? 'bot' : 'user'}-message">
-                <strong>${messageObject.sender}</strong>: ${messageObject.message}
-            </div>`
-        ).join('');
+        chatLog.innerHTML = this.conversationHistory.map(messageObject => {
+            const senderClass = messageObject.sender === this.botName ? 'bot-message' : 'user-message';
+            return `<div class="${senderClass}">
+                        <strong>${messageObject.sender}</strong>: ${messageObject.message}
+                    </div>`;
+        }).join('');
     
-        chatLog.scrollTop = chatLog.scrollHeight; // Scroll to the latest message
+        chatLog.scrollTop = chatLog.scrollHeight; // latest message
     }
 
     
+
 }
 

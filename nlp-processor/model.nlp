@@ -2442,6 +2442,1726 @@
             "domain": "default",
             "utterance": "Are you looking for help with something?",
             "intent": "helpYou"
+          },
+          {
+            "domain": "default",
+            "utterance": "hello",
+            "intent": "greetings"
+          },
+          {
+            "domain": "default",
+            "utterance": "hi",
+            "intent": "greetings"
+          },
+          {
+            "domain": "default",
+            "utterance": "greetings",
+            "intent": "greetings"
+          },
+          {
+            "domain": "default",
+            "utterance": "salutations",
+            "intent": "greetings"
+          },
+          {
+            "domain": "default",
+            "utterance": "howdy",
+            "intent": "greetings"
+          },
+          {
+            "domain": "default",
+            "utterance": "yo",
+            "intent": "greetings"
+          },
+          {
+            "domain": "default",
+            "utterance": "hey there",
+            "intent": "greetings"
+          },
+          {
+            "domain": "default",
+            "utterance": "welcome",
+            "intent": "greetings"
+          },
+          {
+            "domain": "default",
+            "utterance": "hiya",
+            "intent": "greetings"
+          },
+          {
+            "domain": "default",
+            "utterance": "what's up",
+            "intent": "greetings"
+          },
+          {
+            "domain": "default",
+            "utterance": "good to see you",
+            "intent": "greetings"
+          },
+          {
+            "domain": "default",
+            "utterance": "pleased to meet you",
+            "intent": "greetings"
+          },
+          {
+            "domain": "default",
+            "utterance": "how are things",
+            "intent": "greetings"
+          },
+          {
+            "domain": "default",
+            "utterance": "how's life",
+            "intent": "greetings"
+          },
+          {
+            "domain": "default",
+            "utterance": "how's your day",
+            "intent": "greetings"
+          },
+          {
+            "domain": "default",
+            "utterance": "nice to see you",
+            "intent": "greetings"
+          },
+          {
+            "domain": "default",
+            "utterance": "glad to see you",
+            "intent": "greetings"
+          },
+          {
+            "domain": "default",
+            "utterance": "how have you been",
+            "intent": "greetings"
+          },
+          {
+            "domain": "default",
+            "utterance": "what's new",
+            "intent": "greetings"
+          },
+          {
+            "domain": "default",
+            "utterance": "it's been a while",
+            "intent": "greetings"
+          },
+          {
+            "domain": "default",
+            "utterance": "good morning",
+            "intent": "greetings.morning"
+          },
+          {
+            "domain": "default",
+            "utterance": "morning",
+            "intent": "greetings.morning"
+          },
+          {
+            "domain": "default",
+            "utterance": "top of the morning",
+            "intent": "greetings.morning"
+          },
+          {
+            "domain": "default",
+            "utterance": "morning glory",
+            "intent": "greetings.morning"
+          },
+          {
+            "domain": "default",
+            "utterance": "rise and shine",
+            "intent": "greetings.morning"
+          },
+          {
+            "domain": "default",
+            "utterance": "wishing you a good morning",
+            "intent": "greetings.morning"
+          },
+          {
+            "domain": "default",
+            "utterance": "have a great morning",
+            "intent": "greetings.morning"
+          },
+          {
+            "domain": "default",
+            "utterance": "beautiful morning",
+            "intent": "greetings.morning"
+          },
+          {
+            "domain": "default",
+            "utterance": "sunshine",
+            "intent": "greetings.morning"
+          },
+          {
+            "domain": "default",
+            "utterance": "bright morning",
+            "intent": "greetings.morning"
+          },
+          {
+            "domain": "default",
+            "utterance": "fresh morning",
+            "intent": "greetings.morning"
+          },
+          {
+            "domain": "default",
+            "utterance": "new day",
+            "intent": "greetings.morning"
+          },
+          {
+            "domain": "default",
+            "utterance": "start of the day",
+            "intent": "greetings.morning"
+          },
+          {
+            "domain": "default",
+            "utterance": "break of dawn",
+            "intent": "greetings.morning"
+          },
+          {
+            "domain": "default",
+            "utterance": "early bird",
+            "intent": "greetings.morning"
+          },
+          {
+            "domain": "default",
+            "utterance": "sunrise",
+            "intent": "greetings.morning"
+          },
+          {
+            "domain": "default",
+            "utterance": "dawn",
+            "intent": "greetings.morning"
+          },
+          {
+            "domain": "default",
+            "utterance": "daybreak",
+            "intent": "greetings.morning"
+          },
+          {
+            "domain": "default",
+            "utterance": "morning has broken",
+            "intent": "greetings.morning"
+          },
+          {
+            "domain": "default",
+            "utterance": "new dawn",
+            "intent": "greetings.morning"
+          },
+          {
+            "domain": "default",
+            "utterance": "good evening",
+            "intent": "greetings.evening"
+          },
+          {
+            "domain": "default",
+            "utterance": "evening",
+            "intent": "greetings.evening"
+          },
+          {
+            "domain": "default",
+            "utterance": "good night",
+            "intent": "greetings.evening"
+          },
+          {
+            "domain": "default",
+            "utterance": "night",
+            "intent": "greetings.evening"
+          },
+          {
+            "domain": "default",
+            "utterance": "have a good evening",
+            "intent": "greetings.evening"
+          },
+          {
+            "domain": "default",
+            "utterance": "pleasant evening",
+            "intent": "greetings.evening"
+          },
+          {
+            "domain": "default",
+            "utterance": "lovely evening",
+            "intent": "greetings.evening"
+          },
+          {
+            "domain": "default",
+            "utterance": "enjoy your evening",
+            "intent": "greetings.evening"
+          },
+          {
+            "domain": "default",
+            "utterance": "nightfall",
+            "intent": "greetings.evening"
+          },
+          {
+            "domain": "default",
+            "utterance": "sunset",
+            "intent": "greetings.evening"
+          },
+          {
+            "domain": "default",
+            "utterance": "dusk",
+            "intent": "greetings.evening"
+          },
+          {
+            "domain": "default",
+            "utterance": "twilight",
+            "intent": "greetings.evening"
+          },
+          {
+            "domain": "default",
+            "utterance": "end of the day",
+            "intent": "greetings.evening"
+          },
+          {
+            "domain": "default",
+            "utterance": "close of day",
+            "intent": "greetings.evening"
+          },
+          {
+            "domain": "default",
+            "utterance": "night time",
+            "intent": "greetings.evening"
+          },
+          {
+            "domain": "default",
+            "utterance": "moonlight",
+            "intent": "greetings.evening"
+          },
+          {
+            "domain": "default",
+            "utterance": "starry night",
+            "intent": "greetings.evening"
+          },
+          {
+            "domain": "default",
+            "utterance": "last light",
+            "intent": "greetings.evening"
+          },
+          {
+            "domain": "default",
+            "utterance": "evening star",
+            "intent": "greetings.evening"
+          },
+          {
+            "domain": "default",
+            "utterance": "goodnight",
+            "intent": "greetings.evening"
+          },
+          {
+            "domain": "default",
+            "utterance": "goodbye",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "bye",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "see you",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "take care",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "farewell",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "bye bye",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "see you later",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "see you soon",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "catch you later",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "until next time",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "adios",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "cheerio",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "ciao",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "au revoir",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "sayonara",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "later",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "so long",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "goodnight",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "peace out",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "Let's chat",
+            "intent": "chat_initiator"
+          },
+          {
+            "domain": "default",
+            "utterance": "Lets talk",
+            "intent": "chat_initiator"
+          },
+          {
+            "domain": "default",
+            "utterance": "chat start",
+            "intent": "chat_initiator"
+          },
+          {
+            "domain": "default",
+            "utterance": "I'm here",
+            "intent": "chat_initiator"
+          },
+          {
+            "domain": "default",
+            "utterance": "chat bot",
+            "intent": "chat_initiator"
+          },
+          {
+            "domain": "default",
+            "utterance": "chatbot start chat?",
+            "intent": "chat_initiator"
+          },
+          {
+            "domain": "default",
+            "utterance": "Lets begin",
+            "intent": "chat_initiator"
+          },
+          {
+            "domain": "default",
+            "utterance": "Let's start",
+            "intent": "chat_initiator"
+          },
+          {
+            "domain": "default",
+            "utterance": "I need help",
+            "intent": "chat_initiator"
+          },
+          {
+            "domain": "default",
+            "utterance": "Can we talk?",
+            "intent": "chat_initiator"
+          },
+          {
+            "domain": "default",
+            "utterance": "I have a question",
+            "intent": "chat_initiator"
+          },
+          {
+            "domain": "default",
+            "utterance": "Are you there?",
+            "intent": "chat_initiator"
+          },
+          {
+            "domain": "default",
+            "utterance": "Let's get going",
+            "intent": "chat_initiator"
+          },
+          {
+            "domain": "default",
+            "utterance": "I'm ready",
+            "intent": "chat_initiator"
+          },
+          {
+            "domain": "default",
+            "utterance": "Okay, let's begin",
+            "intent": "chat_initiator"
+          },
+          {
+            "domain": "default",
+            "utterance": "You there?",
+            "intent": "chat_initiator"
+          },
+          {
+            "domain": "default",
+            "utterance": "Let's converse",
+            "intent": "chat_initiator"
+          },
+          {
+            "domain": "default",
+            "utterance": "I'm here to chat",
+            "intent": "chat_initiator"
+          },
+          {
+            "domain": "default",
+            "utterance": "Ready when you are",
+            "intent": "chat_initiator"
+          },
+          {
+            "domain": "default",
+            "utterance": "Let's kick this off",
+            "intent": "chat_initiator"
+          },
+          {
+            "domain": "default",
+            "utterance": "Time to chat",
+            "intent": "chat_initiator"
+          },
+          {
+            "domain": "default",
+            "utterance": "I'm all ears",
+            "intent": "chat_initiator"
+          },
+          {
+            "domain": "default",
+            "utterance": "I don't believe we've met. What's your name?",
+            "intent": "userName.botIntroductionAndNameRequest"
+          },
+          {
+            "domain": "default",
+            "utterance": "I'm eager to know you better. May I have your name?",
+            "intent": "userName.botIntroductionAndNameRequest"
+          },
+          {
+            "domain": "default",
+            "utterance": "It's nice to start by knowing each other's names. What's yours?",
+            "intent": "userName.botIntroductionAndNameRequest"
+          },
+          {
+            "domain": "default",
+            "utterance": "Before we proceed, could you tell me your name?",
+            "intent": "userName.botIntroductionAndNameRequest"
+          },
+          {
+            "domain": "default",
+            "utterance": "I would love to know who I'm assisting today. Your name, please?",
+            "intent": "userName.botIntroductionAndNameRequest"
+          },
+          {
+            "domain": "default",
+            "utterance": "Let's get acquainted. What's your name?",
+            "intent": "userName.botIntroductionAndNameRequest"
+          },
+          {
+            "domain": "default",
+            "utterance": "To make our conversation more personal, what can I call you?",
+            "intent": "userName.botIntroductionAndNameRequest"
+          },
+          {
+            "domain": "default",
+            "utterance": "Who do I have the pleasure of speaking with today?",
+            "intent": "userName.botIntroductionAndNameRequest"
+          },
+          {
+            "domain": "default",
+            "utterance": "I'm here to help you. First, may I know your name?",
+            "intent": "userName.botIntroductionAndNameRequest"
+          },
+          {
+            "domain": "default",
+            "utterance": "For a more personalized service, may I ask for your name?",
+            "intent": "userName.botIntroductionAndNameRequest"
+          },
+          {
+            "domain": "default",
+            "utterance": "I'd like to address you properly. What is your name?",
+            "intent": "userName.botIntroductionAndNameRequest"
+          },
+          {
+            "domain": "default",
+            "utterance": "Welcome! To start, could you please tell me your name?",
+            "intent": "userName.botIntroductionAndNameRequest"
+          },
+          {
+            "domain": "default",
+            "utterance": "Hello! To whom do I owe the pleasure of this conversation?",
+            "intent": "userName.botIntroductionAndNameRequest"
+          },
+          {
+            "domain": "default",
+            "utterance": "It's always nice to know who I'm chatting with. Your name?",
+            "intent": "userName.botIntroductionAndNameRequest"
+          },
+          {
+            "domain": "default",
+            "utterance": "Greetings! May I inquire who I'm speaking to?",
+            "intent": "userName.botIntroductionAndNameRequest"
+          },
+          {
+            "domain": "default",
+            "utterance": "To assist you better, could you share your name with me?",
+            "intent": "userName.botIntroductionAndNameRequest"
+          },
+          {
+            "domain": "default",
+            "utterance": "Hello there! Might I ask for your name?",
+            "intent": "userName.botIntroductionAndNameRequest"
+          },
+          {
+            "domain": "default",
+            "utterance": "For a tailored experience, what name should I use for you?",
+            "intent": "userName.botIntroductionAndNameRequest"
+          },
+          {
+            "domain": "default",
+            "utterance": "I'm looking forward to our chat. How should I address you?",
+            "intent": "userName.botIntroductionAndNameRequest"
+          },
+          {
+            "domain": "default",
+            "utterance": "Let's make this conversation friendly. What's your name?",
+            "intent": "userName.botIntroductionAndNameRequest"
+          },
+          {
+            "domain": "default",
+            "utterance": "I'm [userName]",
+            "intent": "userName.userNameProvided"
+          },
+          {
+            "domain": "default",
+            "utterance": "My name is [userName]",
+            "intent": "userName.userNameProvided"
+          },
+          {
+            "domain": "default",
+            "utterance": "You can call me [userName]",
+            "intent": "userName.userNameProvided"
+          },
+          {
+            "domain": "default",
+            "utterance": "I go by [userName]",
+            "intent": "userName.userNameProvided"
+          },
+          {
+            "domain": "default",
+            "utterance": "It's [userName]",
+            "intent": "userName.userNameProvided"
+          },
+          {
+            "domain": "default",
+            "utterance": "[userName] is my name",
+            "intent": "userName.userNameProvided"
+          },
+          {
+            "domain": "default",
+            "utterance": "I am known as [userName]",
+            "intent": "userName.userNameProvided"
+          },
+          {
+            "domain": "default",
+            "utterance": "People call me [userName]",
+            "intent": "userName.userNameProvided"
+          },
+          {
+            "domain": "default",
+            "utterance": "My friends call me [userName]",
+            "intent": "userName.userNameProvided"
+          },
+          {
+            "domain": "default",
+            "utterance": "I prefer to be called [userName]",
+            "intent": "userName.userNameProvided"
+          },
+          {
+            "domain": "default",
+            "utterance": "Just call me [userName]",
+            "intent": "userName.userNameProvided"
+          },
+          {
+            "domain": "default",
+            "utterance": "[userName] here",
+            "intent": "userName.userNameProvided"
+          },
+          {
+            "domain": "default",
+            "utterance": "Everyone knows me as [userName]",
+            "intent": "userName.userNameProvided"
+          },
+          {
+            "domain": "default",
+            "utterance": "The name's [userName]",
+            "intent": "userName.userNameProvided"
+          },
+          {
+            "domain": "default",
+            "utterance": "Please, address me as [userName]",
+            "intent": "userName.userNameProvided"
+          },
+          {
+            "domain": "default",
+            "utterance": "I identify as [userName]",
+            "intent": "userName.userNameProvided"
+          },
+          {
+            "domain": "default",
+            "utterance": "In case you're wondering, I'm [userName]",
+            "intent": "userName.userNameProvided"
+          },
+          {
+            "domain": "default",
+            "utterance": "For your information, I'm [userName]",
+            "intent": "userName.userNameProvided"
+          },
+          {
+            "domain": "default",
+            "utterance": "To make things easy, you can call me [userName]",
+            "intent": "userName.userNameProvided"
+          },
+          {
+            "domain": "default",
+            "utterance": "Let's keep it simple, I'm [userName]",
+            "intent": "userName.userNameProvided"
+          },
+          {
+            "domain": "default",
+            "utterance": "[userName]",
+            "intent": "userName.userNameProvided"
+          },
+          {
+            "domain": "default",
+            "utterance": "Your name is now [botName]",
+            "intent": "botName.userNamesBot"
+          },
+          {
+            "domain": "default",
+            "utterance": "I'll call you [botName] from now on",
+            "intent": "botName.userNamesBot"
+          },
+          {
+            "domain": "default",
+            "utterance": "How about I name you [botName]?",
+            "intent": "botName.userNamesBot"
+          },
+          {
+            "domain": "default",
+            "utterance": "Let's change your name to [botName]",
+            "intent": "botName.userNamesBot"
+          },
+          {
+            "domain": "default",
+            "utterance": "I think [botName] suits you better",
+            "intent": "botName.userNamesBot"
+          },
+          {
+            "domain": "default",
+            "utterance": "From now on, you're [botName]",
+            "intent": "botName.userNamesBot"
+          },
+          {
+            "domain": "default",
+            "utterance": "I'm going to name you [botName]",
+            "intent": "botName.userNamesBot"
+          },
+          {
+            "domain": "default",
+            "utterance": "You look more like a [botName] to me",
+            "intent": "botName.userNamesBot"
+          },
+          {
+            "domain": "default",
+            "utterance": "Would you mind if I call you [botName]?",
+            "intent": "botName.userNamesBot"
+          },
+          {
+            "domain": "default",
+            "utterance": "How does the name [botName] sound?",
+            "intent": "botName.userNamesBot"
+          },
+          {
+            "domain": "default",
+            "utterance": "I'd prefer to call you [botName]",
+            "intent": "botName.userNamesBot"
+          },
+          {
+            "domain": "default",
+            "utterance": "You give off a [botName] vibe",
+            "intent": "botName.userNamesBot"
+          },
+          {
+            "domain": "default",
+            "utterance": "Can I rename you to [botName]?",
+            "intent": "botName.userNamesBot"
+          },
+          {
+            "domain": "default",
+            "utterance": "It's decided, your new name is [botName]",
+            "intent": "botName.userNamesBot"
+          },
+          {
+            "domain": "default",
+            "utterance": "I hereby christen you [botName]",
+            "intent": "botName.userNamesBot"
+          },
+          {
+            "domain": "default",
+            "utterance": "Let's update your name tag to [botName]",
+            "intent": "botName.userNamesBot"
+          },
+          {
+            "domain": "default",
+            "utterance": "You shall be known as [botName]",
+            "intent": "botName.userNamesBot"
+          },
+          {
+            "domain": "default",
+            "utterance": "I think the name [botName] is more fitting for you",
+            "intent": "botName.userNamesBot"
+          },
+          {
+            "domain": "default",
+            "utterance": "In my eyes, you're [botName]",
+            "intent": "botName.userNamesBot"
+          },
+          {
+            "domain": "default",
+            "utterance": "I'm feeling inspired to call you [botName]",
+            "intent": "botName.userNamesBot"
+          },
+          {
+            "domain": "default",
+            "utterance": "Can I assist you with something?",
+            "intent": "helpYou"
+          },
+          {
+            "domain": "default",
+            "utterance": "How may I be of service today?",
+            "intent": "helpYou"
+          },
+          {
+            "domain": "default",
+            "utterance": "What can I help you with at this moment?",
+            "intent": "helpYou"
+          },
+          {
+            "domain": "default",
+            "utterance": "Is there anything specific you need help with?",
+            "intent": "helpYou"
+          },
+          {
+            "domain": "default",
+            "utterance": "How can I make your day better?",
+            "intent": "helpYou"
+          },
+          {
+            "domain": "default",
+            "utterance": "What assistance do you require?",
+            "intent": "helpYou"
+          },
+          {
+            "domain": "default",
+            "utterance": "Do you need support with anything?",
+            "intent": "helpYou"
+          },
+          {
+            "domain": "default",
+            "utterance": "How can I be of help today?",
+            "intent": "helpYou"
+          },
+          {
+            "domain": "default",
+            "utterance": "What's on your mind that I can help with?",
+            "intent": "helpYou"
+          },
+          {
+            "domain": "default",
+            "utterance": "Are you looking for help with something?",
+            "intent": "helpYou"
+          },
+          {
+            "domain": "default",
+            "utterance": "hello",
+            "intent": "greetings"
+          },
+          {
+            "domain": "default",
+            "utterance": "hi",
+            "intent": "greetings"
+          },
+          {
+            "domain": "default",
+            "utterance": "greetings",
+            "intent": "greetings"
+          },
+          {
+            "domain": "default",
+            "utterance": "salutations",
+            "intent": "greetings"
+          },
+          {
+            "domain": "default",
+            "utterance": "howdy",
+            "intent": "greetings"
+          },
+          {
+            "domain": "default",
+            "utterance": "yo",
+            "intent": "greetings"
+          },
+          {
+            "domain": "default",
+            "utterance": "hey there",
+            "intent": "greetings"
+          },
+          {
+            "domain": "default",
+            "utterance": "welcome",
+            "intent": "greetings"
+          },
+          {
+            "domain": "default",
+            "utterance": "hiya",
+            "intent": "greetings"
+          },
+          {
+            "domain": "default",
+            "utterance": "what's up",
+            "intent": "greetings"
+          },
+          {
+            "domain": "default",
+            "utterance": "good to see you",
+            "intent": "greetings"
+          },
+          {
+            "domain": "default",
+            "utterance": "pleased to meet you",
+            "intent": "greetings"
+          },
+          {
+            "domain": "default",
+            "utterance": "how are things",
+            "intent": "greetings"
+          },
+          {
+            "domain": "default",
+            "utterance": "how's life",
+            "intent": "greetings"
+          },
+          {
+            "domain": "default",
+            "utterance": "how's your day",
+            "intent": "greetings"
+          },
+          {
+            "domain": "default",
+            "utterance": "nice to see you",
+            "intent": "greetings"
+          },
+          {
+            "domain": "default",
+            "utterance": "glad to see you",
+            "intent": "greetings"
+          },
+          {
+            "domain": "default",
+            "utterance": "how have you been",
+            "intent": "greetings"
+          },
+          {
+            "domain": "default",
+            "utterance": "what's new",
+            "intent": "greetings"
+          },
+          {
+            "domain": "default",
+            "utterance": "it's been a while",
+            "intent": "greetings"
+          },
+          {
+            "domain": "default",
+            "utterance": "good morning",
+            "intent": "greetings.morning"
+          },
+          {
+            "domain": "default",
+            "utterance": "morning",
+            "intent": "greetings.morning"
+          },
+          {
+            "domain": "default",
+            "utterance": "top of the morning",
+            "intent": "greetings.morning"
+          },
+          {
+            "domain": "default",
+            "utterance": "morning glory",
+            "intent": "greetings.morning"
+          },
+          {
+            "domain": "default",
+            "utterance": "rise and shine",
+            "intent": "greetings.morning"
+          },
+          {
+            "domain": "default",
+            "utterance": "wishing you a good morning",
+            "intent": "greetings.morning"
+          },
+          {
+            "domain": "default",
+            "utterance": "have a great morning",
+            "intent": "greetings.morning"
+          },
+          {
+            "domain": "default",
+            "utterance": "beautiful morning",
+            "intent": "greetings.morning"
+          },
+          {
+            "domain": "default",
+            "utterance": "sunshine",
+            "intent": "greetings.morning"
+          },
+          {
+            "domain": "default",
+            "utterance": "bright morning",
+            "intent": "greetings.morning"
+          },
+          {
+            "domain": "default",
+            "utterance": "fresh morning",
+            "intent": "greetings.morning"
+          },
+          {
+            "domain": "default",
+            "utterance": "new day",
+            "intent": "greetings.morning"
+          },
+          {
+            "domain": "default",
+            "utterance": "start of the day",
+            "intent": "greetings.morning"
+          },
+          {
+            "domain": "default",
+            "utterance": "break of dawn",
+            "intent": "greetings.morning"
+          },
+          {
+            "domain": "default",
+            "utterance": "early bird",
+            "intent": "greetings.morning"
+          },
+          {
+            "domain": "default",
+            "utterance": "sunrise",
+            "intent": "greetings.morning"
+          },
+          {
+            "domain": "default",
+            "utterance": "dawn",
+            "intent": "greetings.morning"
+          },
+          {
+            "domain": "default",
+            "utterance": "daybreak",
+            "intent": "greetings.morning"
+          },
+          {
+            "domain": "default",
+            "utterance": "morning has broken",
+            "intent": "greetings.morning"
+          },
+          {
+            "domain": "default",
+            "utterance": "new dawn",
+            "intent": "greetings.morning"
+          },
+          {
+            "domain": "default",
+            "utterance": "good evening",
+            "intent": "greetings.evening"
+          },
+          {
+            "domain": "default",
+            "utterance": "evening",
+            "intent": "greetings.evening"
+          },
+          {
+            "domain": "default",
+            "utterance": "good night",
+            "intent": "greetings.evening"
+          },
+          {
+            "domain": "default",
+            "utterance": "night",
+            "intent": "greetings.evening"
+          },
+          {
+            "domain": "default",
+            "utterance": "have a good evening",
+            "intent": "greetings.evening"
+          },
+          {
+            "domain": "default",
+            "utterance": "pleasant evening",
+            "intent": "greetings.evening"
+          },
+          {
+            "domain": "default",
+            "utterance": "lovely evening",
+            "intent": "greetings.evening"
+          },
+          {
+            "domain": "default",
+            "utterance": "enjoy your evening",
+            "intent": "greetings.evening"
+          },
+          {
+            "domain": "default",
+            "utterance": "nightfall",
+            "intent": "greetings.evening"
+          },
+          {
+            "domain": "default",
+            "utterance": "sunset",
+            "intent": "greetings.evening"
+          },
+          {
+            "domain": "default",
+            "utterance": "dusk",
+            "intent": "greetings.evening"
+          },
+          {
+            "domain": "default",
+            "utterance": "twilight",
+            "intent": "greetings.evening"
+          },
+          {
+            "domain": "default",
+            "utterance": "end of the day",
+            "intent": "greetings.evening"
+          },
+          {
+            "domain": "default",
+            "utterance": "close of day",
+            "intent": "greetings.evening"
+          },
+          {
+            "domain": "default",
+            "utterance": "night time",
+            "intent": "greetings.evening"
+          },
+          {
+            "domain": "default",
+            "utterance": "moonlight",
+            "intent": "greetings.evening"
+          },
+          {
+            "domain": "default",
+            "utterance": "starry night",
+            "intent": "greetings.evening"
+          },
+          {
+            "domain": "default",
+            "utterance": "last light",
+            "intent": "greetings.evening"
+          },
+          {
+            "domain": "default",
+            "utterance": "evening star",
+            "intent": "greetings.evening"
+          },
+          {
+            "domain": "default",
+            "utterance": "goodnight",
+            "intent": "greetings.evening"
+          },
+          {
+            "domain": "default",
+            "utterance": "goodbye",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "bye",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "see you",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "take care",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "farewell",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "bye bye",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "see you later",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "see you soon",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "catch you later",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "until next time",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "adios",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "cheerio",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "ciao",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "au revoir",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "sayonara",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "later",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "so long",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "goodnight",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "peace out",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "Let's chat",
+            "intent": "chat_initiator"
+          },
+          {
+            "domain": "default",
+            "utterance": "Lets talk",
+            "intent": "chat_initiator"
+          },
+          {
+            "domain": "default",
+            "utterance": "chat start",
+            "intent": "chat_initiator"
+          },
+          {
+            "domain": "default",
+            "utterance": "I'm here",
+            "intent": "chat_initiator"
+          },
+          {
+            "domain": "default",
+            "utterance": "chat bot",
+            "intent": "chat_initiator"
+          },
+          {
+            "domain": "default",
+            "utterance": "chatbot start chat?",
+            "intent": "chat_initiator"
+          },
+          {
+            "domain": "default",
+            "utterance": "Lets begin",
+            "intent": "chat_initiator"
+          },
+          {
+            "domain": "default",
+            "utterance": "Let's start",
+            "intent": "chat_initiator"
+          },
+          {
+            "domain": "default",
+            "utterance": "I need help",
+            "intent": "chat_initiator"
+          },
+          {
+            "domain": "default",
+            "utterance": "Can we talk?",
+            "intent": "chat_initiator"
+          },
+          {
+            "domain": "default",
+            "utterance": "I have a question",
+            "intent": "chat_initiator"
+          },
+          {
+            "domain": "default",
+            "utterance": "Are you there?",
+            "intent": "chat_initiator"
+          },
+          {
+            "domain": "default",
+            "utterance": "Let's get going",
+            "intent": "chat_initiator"
+          },
+          {
+            "domain": "default",
+            "utterance": "I'm ready",
+            "intent": "chat_initiator"
+          },
+          {
+            "domain": "default",
+            "utterance": "Okay, let's begin",
+            "intent": "chat_initiator"
+          },
+          {
+            "domain": "default",
+            "utterance": "You there?",
+            "intent": "chat_initiator"
+          },
+          {
+            "domain": "default",
+            "utterance": "Let's converse",
+            "intent": "chat_initiator"
+          },
+          {
+            "domain": "default",
+            "utterance": "I'm here to chat",
+            "intent": "chat_initiator"
+          },
+          {
+            "domain": "default",
+            "utterance": "Ready when you are",
+            "intent": "chat_initiator"
+          },
+          {
+            "domain": "default",
+            "utterance": "Let's kick this off",
+            "intent": "chat_initiator"
+          },
+          {
+            "domain": "default",
+            "utterance": "Time to chat",
+            "intent": "chat_initiator"
+          },
+          {
+            "domain": "default",
+            "utterance": "I'm all ears",
+            "intent": "chat_initiator"
+          },
+          {
+            "domain": "default",
+            "utterance": "I don't believe we've met. What's your name?",
+            "intent": "userName.botIntroductionAndNameRequest"
+          },
+          {
+            "domain": "default",
+            "utterance": "I'm eager to know you better. May I have your name?",
+            "intent": "userName.botIntroductionAndNameRequest"
+          },
+          {
+            "domain": "default",
+            "utterance": "It's nice to start by knowing each other's names. What's yours?",
+            "intent": "userName.botIntroductionAndNameRequest"
+          },
+          {
+            "domain": "default",
+            "utterance": "Before we proceed, could you tell me your name?",
+            "intent": "userName.botIntroductionAndNameRequest"
+          },
+          {
+            "domain": "default",
+            "utterance": "I would love to know who I'm assisting today. Your name, please?",
+            "intent": "userName.botIntroductionAndNameRequest"
+          },
+          {
+            "domain": "default",
+            "utterance": "Let's get acquainted. What's your name?",
+            "intent": "userName.botIntroductionAndNameRequest"
+          },
+          {
+            "domain": "default",
+            "utterance": "To make our conversation more personal, what can I call you?",
+            "intent": "userName.botIntroductionAndNameRequest"
+          },
+          {
+            "domain": "default",
+            "utterance": "Who do I have the pleasure of speaking with today?",
+            "intent": "userName.botIntroductionAndNameRequest"
+          },
+          {
+            "domain": "default",
+            "utterance": "I'm here to help you. First, may I know your name?",
+            "intent": "userName.botIntroductionAndNameRequest"
+          },
+          {
+            "domain": "default",
+            "utterance": "For a more personalized service, may I ask for your name?",
+            "intent": "userName.botIntroductionAndNameRequest"
+          },
+          {
+            "domain": "default",
+            "utterance": "I'd like to address you properly. What is your name?",
+            "intent": "userName.botIntroductionAndNameRequest"
+          },
+          {
+            "domain": "default",
+            "utterance": "Welcome! To start, could you please tell me your name?",
+            "intent": "userName.botIntroductionAndNameRequest"
+          },
+          {
+            "domain": "default",
+            "utterance": "Hello! To whom do I owe the pleasure of this conversation?",
+            "intent": "userName.botIntroductionAndNameRequest"
+          },
+          {
+            "domain": "default",
+            "utterance": "It's always nice to know who I'm chatting with. Your name?",
+            "intent": "userName.botIntroductionAndNameRequest"
+          },
+          {
+            "domain": "default",
+            "utterance": "Greetings! May I inquire who I'm speaking to?",
+            "intent": "userName.botIntroductionAndNameRequest"
+          },
+          {
+            "domain": "default",
+            "utterance": "To assist you better, could you share your name with me?",
+            "intent": "userName.botIntroductionAndNameRequest"
+          },
+          {
+            "domain": "default",
+            "utterance": "Hello there! Might I ask for your name?",
+            "intent": "userName.botIntroductionAndNameRequest"
+          },
+          {
+            "domain": "default",
+            "utterance": "For a tailored experience, what name should I use for you?",
+            "intent": "userName.botIntroductionAndNameRequest"
+          },
+          {
+            "domain": "default",
+            "utterance": "I'm looking forward to our chat. How should I address you?",
+            "intent": "userName.botIntroductionAndNameRequest"
+          },
+          {
+            "domain": "default",
+            "utterance": "Let's make this conversation friendly. What's your name?",
+            "intent": "userName.botIntroductionAndNameRequest"
+          },
+          {
+            "domain": "default",
+            "utterance": "I'm [userName]",
+            "intent": "userName.userNameProvided"
+          },
+          {
+            "domain": "default",
+            "utterance": "My name is [userName]",
+            "intent": "userName.userNameProvided"
+          },
+          {
+            "domain": "default",
+            "utterance": "You can call me [userName]",
+            "intent": "userName.userNameProvided"
+          },
+          {
+            "domain": "default",
+            "utterance": "I go by [userName]",
+            "intent": "userName.userNameProvided"
+          },
+          {
+            "domain": "default",
+            "utterance": "It's [userName]",
+            "intent": "userName.userNameProvided"
+          },
+          {
+            "domain": "default",
+            "utterance": "[userName] is my name",
+            "intent": "userName.userNameProvided"
+          },
+          {
+            "domain": "default",
+            "utterance": "I am known as [userName]",
+            "intent": "userName.userNameProvided"
+          },
+          {
+            "domain": "default",
+            "utterance": "People call me [userName]",
+            "intent": "userName.userNameProvided"
+          },
+          {
+            "domain": "default",
+            "utterance": "My friends call me [userName]",
+            "intent": "userName.userNameProvided"
+          },
+          {
+            "domain": "default",
+            "utterance": "I prefer to be called [userName]",
+            "intent": "userName.userNameProvided"
+          },
+          {
+            "domain": "default",
+            "utterance": "Just call me [userName]",
+            "intent": "userName.userNameProvided"
+          },
+          {
+            "domain": "default",
+            "utterance": "[userName] here",
+            "intent": "userName.userNameProvided"
+          },
+          {
+            "domain": "default",
+            "utterance": "Everyone knows me as [userName]",
+            "intent": "userName.userNameProvided"
+          },
+          {
+            "domain": "default",
+            "utterance": "The name's [userName]",
+            "intent": "userName.userNameProvided"
+          },
+          {
+            "domain": "default",
+            "utterance": "Please, address me as [userName]",
+            "intent": "userName.userNameProvided"
+          },
+          {
+            "domain": "default",
+            "utterance": "I identify as [userName]",
+            "intent": "userName.userNameProvided"
+          },
+          {
+            "domain": "default",
+            "utterance": "In case you're wondering, I'm [userName]",
+            "intent": "userName.userNameProvided"
+          },
+          {
+            "domain": "default",
+            "utterance": "For your information, I'm [userName]",
+            "intent": "userName.userNameProvided"
+          },
+          {
+            "domain": "default",
+            "utterance": "To make things easy, you can call me [userName]",
+            "intent": "userName.userNameProvided"
+          },
+          {
+            "domain": "default",
+            "utterance": "Let's keep it simple, I'm [userName]",
+            "intent": "userName.userNameProvided"
+          },
+          {
+            "domain": "default",
+            "utterance": "[userName]",
+            "intent": "userName.userNameProvided"
+          },
+          {
+            "domain": "default",
+            "utterance": "Your name is now [botName]",
+            "intent": "botName.userNamesBot"
+          },
+          {
+            "domain": "default",
+            "utterance": "I'll call you [botName] from now on",
+            "intent": "botName.userNamesBot"
+          },
+          {
+            "domain": "default",
+            "utterance": "How about I name you [botName]?",
+            "intent": "botName.userNamesBot"
+          },
+          {
+            "domain": "default",
+            "utterance": "Let's change your name to [botName]",
+            "intent": "botName.userNamesBot"
+          },
+          {
+            "domain": "default",
+            "utterance": "I think [botName] suits you better",
+            "intent": "botName.userNamesBot"
+          },
+          {
+            "domain": "default",
+            "utterance": "From now on, you're [botName]",
+            "intent": "botName.userNamesBot"
+          },
+          {
+            "domain": "default",
+            "utterance": "I'm going to name you [botName]",
+            "intent": "botName.userNamesBot"
+          },
+          {
+            "domain": "default",
+            "utterance": "You look more like a [botName] to me",
+            "intent": "botName.userNamesBot"
+          },
+          {
+            "domain": "default",
+            "utterance": "Would you mind if I call you [botName]?",
+            "intent": "botName.userNamesBot"
+          },
+          {
+            "domain": "default",
+            "utterance": "How does the name [botName] sound?",
+            "intent": "botName.userNamesBot"
+          },
+          {
+            "domain": "default",
+            "utterance": "I'd prefer to call you [botName]",
+            "intent": "botName.userNamesBot"
+          },
+          {
+            "domain": "default",
+            "utterance": "You give off a [botName] vibe",
+            "intent": "botName.userNamesBot"
+          },
+          {
+            "domain": "default",
+            "utterance": "Can I rename you to [botName]?",
+            "intent": "botName.userNamesBot"
+          },
+          {
+            "domain": "default",
+            "utterance": "It's decided, your new name is [botName]",
+            "intent": "botName.userNamesBot"
+          },
+          {
+            "domain": "default",
+            "utterance": "I hereby christen you [botName]",
+            "intent": "botName.userNamesBot"
+          },
+          {
+            "domain": "default",
+            "utterance": "Let's update your name tag to [botName]",
+            "intent": "botName.userNamesBot"
+          },
+          {
+            "domain": "default",
+            "utterance": "You shall be known as [botName]",
+            "intent": "botName.userNamesBot"
+          },
+          {
+            "domain": "default",
+            "utterance": "I think the name [botName] is more fitting for you",
+            "intent": "botName.userNamesBot"
+          },
+          {
+            "domain": "default",
+            "utterance": "In my eyes, you're [botName]",
+            "intent": "botName.userNamesBot"
+          },
+          {
+            "domain": "default",
+            "utterance": "I'm feeling inspired to call you [botName]",
+            "intent": "botName.userNamesBot"
+          },
+          {
+            "domain": "default",
+            "utterance": "Can I assist you with something?",
+            "intent": "helpYou"
+          },
+          {
+            "domain": "default",
+            "utterance": "How may I be of service today?",
+            "intent": "helpYou"
+          },
+          {
+            "domain": "default",
+            "utterance": "What can I help you with at this moment?",
+            "intent": "helpYou"
+          },
+          {
+            "domain": "default",
+            "utterance": "Is there anything specific you need help with?",
+            "intent": "helpYou"
+          },
+          {
+            "domain": "default",
+            "utterance": "How can I make your day better?",
+            "intent": "helpYou"
+          },
+          {
+            "domain": "default",
+            "utterance": "What assistance do you require?",
+            "intent": "helpYou"
+          },
+          {
+            "domain": "default",
+            "utterance": "Do you need support with anything?",
+            "intent": "helpYou"
+          },
+          {
+            "domain": "default",
+            "utterance": "How can I be of help today?",
+            "intent": "helpYou"
+          },
+          {
+            "domain": "default",
+            "utterance": "What's on your mind that I can help with?",
+            "intent": "helpYou"
+          },
+          {
+            "domain": "default",
+            "utterance": "Are you looking for help with something?",
+            "intent": "helpYou"
           }
         ],
         "domains": {
@@ -4123,214 +5843,183 @@
               ],
               "perceptrons": [
                 [
-                  11.52553653717041,
-                  11.530027389526367,
-                  11.520233154296875,
-                  11.52841567993164,
-                  11.527865409851074,
-                  11.527298927307129,
-                  9.715097427368164,
-                  1.8174951076507568,
-                  11.525764465332031,
-                  11.525823593139648,
-                  6.336124897003174,
-                  4.936008453369141,
-                  0.27811452746391296,
-                  3.566925048828125,
-                  10.57131290435791,
-                  2.5415706634521484,
-                  -5.210763931274414,
-                  2.0081586837768555,
-                  4.167723655700684,
-                  9.817564010620117,
-                  -0.8370814323425293,
-                  2.5549821853637695,
-                  -3.2038660049438477,
-                  -0.2777717411518097,
-                  -2.9598042964935303,
-                  3.6149940490722656,
-                  3.620380401611328,
-                  0.23369809985160828,
-                  6.681682586669922,
-                  0.23163321614265442,
-                  -3.241421699523926,
-                  -0.23899957537651062,
-                  3.3926801681518555,
-                  -6.307703495025635,
+                  11.551002502441406,
+                  11.551629066467285,
+                  11.55028247833252,
+                  11.55141544342041,
+                  11.551342964172363,
+                  11.551268577575684,
+                  9.724528312683105,
+                  1.827423095703125,
+                  11.551097869873047,
+                  11.551081657409668,
+                  6.357420921325684,
+                  4.950459003448486,
+                  0.24572144448757172,
+                  3.615777015686035,
+                  10.649754524230957,
+                  2.5137367248535156,
+                  -5.236334800720215,
+                  1.989661693572998,
+                  4.149312496185303,
+                  9.84238338470459,
+                  -0.8409093022346497,
+                  2.5507476329803467,
+                  -3.239241361618042,
+                  -0.2698371708393097,
+                  -2.9727282524108887,
+                  3.6229019165039062,
+                  3.6234729290008545,
+                  0.24293573200702667,
+                  6.701503753662109,
+                  0.2412286251783371,
+                  -3.25215220451355,
+                  -0.24386410415172577,
+                  3.395642042160034,
+                  -6.347783088684082,
                   -0.2505147159099579,
-                  -3.376358985900879,
-                  -2.962313413619995,
-                  -0.4580673277378082,
-                  -1.5184133052825928,
-                  -1.5184133052825928,
-                  -1.5184133052825928,
-                  -0.770602285861969,
-                  -0.33176302909851074,
-                  -0.2549114227294922,
-                  -3.5346455574035645,
-                  -0.1436678022146225,
-                  -0.1398514211177826,
-                  -5.7352142333984375,
-                  -0.4750172793865204,
-                  -3.591825246810913,
-                  -1.9548251628875732,
-                  -1.9548251628875732,
-                  -3.3972065448760986,
-                  -3.3624775409698486,
+                  -3.3844873905181885,
+                  -2.969984769821167,
+                  -0.45821478962898254,
+                  -1.5196493864059448,
+                  -1.5196493864059448,
+                  -1.5196493864059448,
+                  -0.7709641456604004,
+                  -0.3318343460559845,
+                  -0.25495782494544983,
+                  -3.5375819206237793,
+                  -0.14367979764938354,
+                  -0.1398593634366989,
+                  -5.749378204345703,
+                  -0.4751579165458679,
+                  -3.5937371253967285,
+                  -1.9565820693969727,
+                  -1.9565820693969727,
+                  -3.3996407985687256,
+                  -3.364607334136963,
                   -0.013011935167014599,
                   -0.013011935167014599,
-                  -6.31117582321167,
-                  -6.305023193359375,
-                  -0.3824889063835144,
-                  -0.35045433044433594,
+                  -6.348203659057617,
+                  -6.347464084625244,
+                  -0.3825557827949524,
+                  -0.35048866271972656,
                   -0.16398747265338898,
-                  -3.2643661499023438,
-                  -3.245617628097534,
-                  -3.2282369136810303,
-                  -3.213759422302246,
+                  -3.265716552734375,
+                  -3.2469048500061035,
+                  -3.229471445083618,
+                  -3.213285446166992,
                   -0.03151436150074005,
-                  -0.31631019711494446,
-                  -6.204587936401367,
-                  -3.1977837085723877,
-                  -0.3478409945964813,
-                  -1.6789478063583374,
-                  -1.6789478063583374,
+                  -0.3162628710269928,
+                  -6.240630149841309,
+                  -3.198676109313965,
+                  -0.34776005148887634,
+                  -1.679499626159668,
+                  -1.679499626159668,
                   -0.0551721528172493,
-                  -3.203447103500366,
-                  -3.1697030067443848,
-                  -3.2203898429870605,
-                  -1.5768303871154785,
-                  -1.5768303871154785,
-                  -3.047200918197632,
-                  -3.1573104858398438,
-                  -2.931530475616455,
-                  -0.29592472314834595,
-                  -0.2849593162536621,
-                  -0.2849593162536621,
-                  -3.0298407077789307,
-                  -3.0214474201202393,
-                  -3.0127830505371094,
-                  -1.5421466827392578,
-                  -1.5421466827392578,
-                  -3.0023765563964844,
-                  -1.5350940227508545,
-                  -1.5350940227508545,
-                  -1.534122347831726,
-                  -1.534122347831726,
-                  -6.137547969818115,
-                  -7.104700565338135,
-                  -0.5165517926216125,
-                  -7.810381889343262,
-                  -4.12502908706665,
-                  -0.23773643374443054,
+                  -3.203960418701172,
+                  -3.170496702194214,
+                  -3.2196526527404785,
+                  -1.5766737461090088,
+                  -1.5766737461090088,
+                  -3.0467562675476074,
+                  -3.157561779022217,
+                  -2.9310221672058105,
+                  -0.2958991229534149,
+                  -0.28481525182724,
+                  -0.28481525182724,
+                  -3.0293455123901367,
+                  -3.0200419425964355,
+                  -3.011244535446167,
+                  -1.5417338609695435,
+                  -1.5417338609695435,
+                  -3.00163197517395,
+                  -1.534141182899475,
+                  -1.534141182899475,
+                  -1.5336581468582153,
+                  -1.5336581468582153,
+                  -6.1575727462768555,
+                  -7.140838623046875,
+                  -0.5162522792816162,
+                  -7.834116458892822,
+                  -4.13938570022583,
+                  -0.23774196207523346,
                   -0.008473852649331093,
                   0,
-                  -1.0198723077774048,
-                  -0.9045880436897278,
-                  -1.3683018684387207,
-                  -1.8949124813079834,
-                  -0.8658903241157532,
+                  -1.019931674003601,
+                  -0.904344379901886,
+                  -1.3691751956939697,
+                  -1.8957130908966064,
+                  -0.8655907511711121,
                   0,
-                  -1.006366491317749,
-                  -0.9996117353439331,
-                  -0.3320319354534149,
-                  -1.0043407678604126,
-                  -2.604632616043091,
-                  -0.3307722508907318,
-                  -0.5212928652763367,
-                  -1.7893658876419067,
-                  -0.5212928652763367,
+                  -1.00594162940979,
+                  -0.9991866946220398,
+                  -0.3317863643169403,
+                  -1.0044002532958984,
+                  -2.6125895977020264,
+                  -0.3305266499519348,
+                  -0.5210778117179871,
+                  -1.7975794076919556,
+                  -0.5210778117179871,
                   0,
                   0,
-                  -2.5237019062042236,
+                  -2.5313422679901123,
                   -0.24448882043361664,
                   -0.24448882043361664,
                   -0.24448882043361664,
-                  -8.399547576904297,
+                  -8.433863639831543,
                   -0.1348244845867157,
-                  -2.7848687171936035,
+                  -2.7988853454589844,
                   -0.1348244845867157,
-                  -3.5376193523406982,
-                  -2.5891706943511963,
-                  -2.5891706943511963,
-                  -2.5891706943511963,
+                  -3.5517189502716064,
+                  -2.603187322616577,
+                  -2.603187322616577,
+                  -2.603187322616577,
                   0,
                   0,
-                  -2.1591525077819824,
-                  -2.1591525077819824,
-                  -2.9155516624450684,
+                  -2.159595251083374,
+                  -2.159595251083374,
+                  -2.915510416030884,
                   0,
-                  -3.1212446689605713,
-                  -0.8884821534156799,
-                  -0.19306044280529022,
+                  -3.1358349323272705,
+                  -0.8876776099205017,
+                  -0.19272944331169128,
                   -0.0033774736803025007,
-                  -0.897010087966919,
-                  -0.9222319722175598,
-                  -0.7606958746910095,
-                  -0.35093605518341064,
-                  -0.897010087966919,
-                  -1.2594197988510132,
-                  -3.1212446689605713,
-                  -1.3463705778121948,
+                  -0.8969743251800537,
+                  -0.9221028089523315,
+                  -0.7603172659873962,
+                  -0.3509441316127777,
+                  -0.8969743251800537,
+                  -1.267924189567566,
+                  -3.1358349323272705,
+                  -1.3472440242767334,
                   0,
-                  -0.09464730322360992,
-                  -0.19306044280529022,
-                  -0.09464730322360992,
-                  -0.6389278769493103,
-                  -1.0648835897445679,
-                  -1.2315386533737183,
-                  -0.6389278769493103,
-                  -1.2594197988510132,
-                  -1.2594197988510132,
+                  -0.09455680102109909,
+                  -0.19272944331169128,
+                  -0.09455680102109909,
+                  -0.6390220522880554,
+                  -1.0646036863327026,
+                  -1.231507420539856,
+                  -0.6390220522880554,
+                  -1.267924189567566,
+                  -1.267924189567566,
                   0,
-                  -3.1212446689605713,
+                  -3.1358349323272705,
                   0,
-                  -0.09464730322360992,
-                  0,
-                  0,
-                  -0.4435381591320038,
-                  0,
-                  -0.7839193344116211,
-                  -0.4435381591320038,
-                  0,
-                  -4.5467305183410645,
-                  -0.01663520559668541,
+                  -0.09455680102109909,
                   0,
                   0,
+                  -0.44339388608932495,
                   0,
+                  -0.783281147480011,
+                  -0.44339388608932495,
                   0,
-                  -0.19306044280529022,
+                  -4.5459675788879395,
+                  -0.016414383426308632,
                   0,
                   0,
                   0,
                   0,
-                  0,
-                  0,
-                  0,
-                  -0.41694337129592896,
-                  0,
-                  0,
-                  0,
-                  -2.443943500518799,
-                  0,
-                  0,
-                  -0.44035840034484863,
-                  0,
-                  -0.9938133955001831,
-                  0,
-                  0,
-                  -0.44035840034484863,
-                  0,
-                  -0.6711434721946716,
-                  -0.6711434721946716,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  -0.4974267780780792,
-                  -0.4974267780780792,
+                  -0.19272944331169128,
                   0,
                   0,
                   0,
@@ -4338,174 +6027,205 @@
                   0,
                   0,
                   0,
+                  -0.41689199209213257,
                   0,
-                  -0.8826781511306763,
-                  -0.8826781511306763,
-                  -0.8884821534156799,
                   0,
-                  -0.44035840034484863,
-                  2.746681733585699
+                  0,
+                  -2.4634718894958496,
+                  0,
+                  0,
+                  -0.441580206155777,
+                  0,
+                  -1.0082062482833862,
+                  0,
+                  0,
+                  -0.441580206155777,
+                  0,
+                  -0.6703988313674927,
+                  -0.6703988313674927,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.504158616065979,
+                  -0.504158616065979,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.8824345469474792,
+                  -0.8824345469474792,
+                  -0.8876776099205017,
+                  0,
+                  -0.441580206155777,
+                  2.73291979865554
                 ],
                 [
-                  -2.045929193496704,
-                  -2.0453712940216064,
-                  -2.044808864593506,
-                  -2.044243574142456,
-                  -2.043673276901245,
-                  -2.0430986881256104,
-                  -0.8601980209350586,
-                  -1.189157247543335,
-                  -2.042250633239746,
-                  -2.0416646003723145,
-                  -2.5182180404663086,
-                  -5.765697002410889,
+                  -2.095867156982422,
+                  -2.0955820083618164,
+                  -2.095294952392578,
+                  -2.095006227493286,
+                  -2.0947163105010986,
+                  -2.0944244861602783,
+                  -0.8844121098518372,
+                  -1.2131701707839966,
+                  -2.0939927101135254,
+                  -2.0936973094940186,
+                  -2.5180671215057373,
+                  -6.059296131134033,
                   0,
-                  0.056370507925748825,
-                  -0.47195741534233093,
-                  -1.2479826211929321,
-                  -1.3762794733047485,
-                  -0.13414523005485535,
-                  -0.06726622581481934,
-                  -2.947831392288208,
-                  -0.40312460064888,
-                  -0.14413243532180786,
+                  -0.03959733620285988,
+                  -0.48907697200775146,
+                  -1.2481385469436646,
+                  -1.3733214139938354,
+                  -0.15132848918437958,
+                  -0.08428491652011871,
+                  -3.303873062133789,
+                  -0.41882646083831787,
+                  -0.1437741070985794,
                   0,
-                  -3.3734726905822754,
-                  10.103618621826172,
+                  -3.730329990386963,
+                  11.031376838684082,
                   -0.04321310296654701,
                   0,
-                  -0.8924956917762756,
-                  -0.031024904921650887,
-                  1.5276036262512207,
-                  -0.541441023349762,
-                  0.205873042345047,
-                  -0.031024904921650887,
-                  12.218182563781738,
-                  1.618072509765625,
-                  -3.1977877616882324,
-                  1.4559906721115112,
-                  0.03399442136287689,
-                  4.07815408706665,
-                  4.07815408706665,
-                  4.07815408706665,
-                  1.1140013933181763,
-                  0.703284502029419,
-                  0.03182697668671608,
-                  12.244455337524414,
-                  0.03481019660830498,
-                  0.037972502410411835,
-                  3.912658452987671,
-                  3.984084367752075,
-                  11.39476203918457,
-                  6.108808517456055,
-                  6.108808517456055,
-                  12.223376274108887,
-                  12.187270164489746,
-                  -0.01506053376942873,
-                  -0.01506053376942873,
-                  -3.9459939002990723,
-                  -3.083699941635132,
-                  -0.41834133863449097,
-                  -0.3604845404624939,
+                  -0.9267808198928833,
+                  -0.031023195013403893,
+                  0.8277323842048645,
+                  -0.5415435433387756,
+                  0.20793212950229645,
+                  -0.031023195013403893,
+                  12.238173484802246,
+                  2.234980583190918,
+                  -3.695636034011841,
+                  1.3325130939483643,
+                  -0.0453624427318573,
+                  4.0628838539123535,
+                  4.0628838539123535,
+                  4.0628838539123535,
+                  1.1503791809082031,
+                  0.6690924167633057,
+                  -0.04682736098766327,
+                  12.19345474243164,
+                  -0.04599124938249588,
+                  -0.04522101208567619,
+                  3.5418100357055664,
+                  4.122204303741455,
+                  11.732131004333496,
+                  6.08909273147583,
+                  6.08909273147583,
+                  12.181077003479004,
+                  12.161223411560059,
+                  -0.03956814855337143,
+                  -0.03956814855337143,
+                  -3.9470527172088623,
+                  -3.0849907398223877,
+                  -0.4184006154537201,
+                  -0.3605344295501709,
                   -0.2341710478067398,
-                  -2.214341402053833,
-                  -2.1833443641662598,
-                  -2.158212900161743,
-                  -2.1316452026367188,
-                  -10.375667572021484,
-                  -8.875564575195312,
-                  -0.9509746432304382,
-                  -2.0541892051696777,
-                  -0.25240272283554077,
-                  -1.1022453308105469,
-                  -1.1022453308105469,
+                  -2.216073989868164,
+                  -2.1850008964538574,
+                  -2.1596920490264893,
+                  -2.133070468902588,
+                  -10.74549388885498,
+                  -9.390281677246094,
+                  -0.951080858707428,
+                  -2.1002683639526367,
+                  -0.25239041447639465,
+                  -1.1026833057403564,
+                  -1.1026833057403564,
                   -0.03543343394994736,
-                  -2.0571255683898926,
-                  -2.0533182621002197,
-                  -2.0583231449127197,
-                  -1.0329538583755493,
-                  -1.0329538583755493,
-                  -2.052537441253662,
-                  -2.0494399070739746,
-                  -0.29587993025779724,
-                  -0.333440899848938,
-                  -0.5880657434463501,
-                  -0.5880657434463501,
-                  -2.0518033504486084,
-                  -2.0512795448303223,
-                  -2.050752639770508,
-                  -1.0282740592956543,
-                  -1.0282740592956543,
-                  -2.049973726272583,
-                  -1.0276589393615723,
-                  -1.0276589393615723,
-                  -1.0274767875671387,
-                  -1.0274767875671387,
-                  -1.8343576192855835,
-                  -6.550017356872559,
-                  -0.6961801648139954,
-                  -2.4282238483428955,
-                  -0.17441876232624054,
-                  -0.4506072998046875,
-                  -0.18542540073394775,
-                  -1.3273738622665405,
-                  -0.35831770300865173,
-                  -0.08369907736778259,
-                  -0.09323304146528244,
-                  -1.4021568298339844,
-                  -0.39193108677864075,
-                  -0.3538251519203186,
+                  -2.1016640663146973,
+                  -2.0998189449310303,
+                  -2.102276086807251,
+                  -1.0512655973434448,
+                  -1.0512655973434448,
+                  -2.099301815032959,
+                  -2.097716808319092,
+                  -0.29586878418922424,
+                  -0.3334601819515228,
+                  -0.5881878733634949,
+                  -0.5881878733634949,
+                  -2.098925828933716,
+                  -2.0986576080322266,
+                  -2.098388433456421,
+                  -1.0506538152694702,
+                  -1.0506538152694702,
+                  -2.097990036010742,
+                  -1.0503379106521606,
+                  -1.0503379106521606,
+                  -1.050245761871338,
+                  -1.050245761871338,
+                  -1.8348790407180786,
+                  -6.549714088439941,
+                  -0.6960325241088867,
+                  -2.4928510189056396,
+                  -0.17438316345214844,
+                  -0.4505325257778168,
+                  -0.18537946045398712,
+                  -1.3276640176773071,
+                  -0.3580832779407501,
+                  -0.0836649015545845,
+                  -0.0931524708867073,
+                  -1.4670605659484863,
+                  -0.39182859659194946,
+                  -0.35370081663131714,
                   -0.01311572827398777,
                   -0.01311572827398777,
-                  -0.15781450271606445,
+                  -0.1740027368068695,
                   -0.005640443880110979,
-                  -0.20063312351703644,
-                  -0.11908470094203949,
+                  -0.20061591267585754,
+                  -0.13527290523052216,
                   -0.0004088589339517057,
-                  -0.1956375390291214,
-                  -0.18218587338924408,
+                  -0.1956203281879425,
+                  -0.1821620762348175,
                   -0.011040819808840752,
                   -0.011040819808840752,
-                  -0.5472745895385742,
+                  -0.5472573637962341,
                   0,
                   0,
                   0,
-                  -0.9495303630828857,
+                  -0.9497097730636597,
                   0,
-                  -0.10625282675027847,
-                  -1.0042084455490112,
-                  -0.13448159396648407,
+                  -0.10621844232082367,
+                  -1.0693070888519287,
+                  -0.13442105054855347,
                   -0.04321310296654701,
                   -0.04321310296654701,
                   -0.04321310296654701,
                   -0.006089338567107916,
                   -0.006089338567107916,
-                  -0.03277328610420227,
-                  -0.03277328610420227,
-                  -0.45874300599098206,
+                  -0.032964956015348434,
+                  -0.032964956015348434,
+                  -0.45869576930999756,
                   0,
                   -0.24522940814495087,
                   0,
-                  -0.4604496359825134,
+                  -0.46033576130867004,
                   0,
-                  -1.0042084455490112,
+                  -1.0693070888519287,
                   0,
-                  -0.10244966298341751,
+                  -0.10242615640163422,
                   -0.021355997771024704,
-                  -0.24298283457756042,
-                  -0.5472745895385742,
+                  -0.24286605417728424,
+                  -0.5472573637962341,
                   -0.24522940814495087,
                   -0.24522940814495087,
                   0,
                   -0.03525910526514053,
-                  -0.13448159396648407,
+                  -0.13442105054855347,
                   -0.021355997771024704,
                   0,
-                  -0.06240716576576233,
-                  -0.04147135838866234,
+                  -0.062383659183979034,
+                  -0.041452594101428986,
                   0,
-                  -0.1948709338903427,
-                  -0.1948709338903427,
+                  -0.19485370814800262,
+                  -0.19485370814800262,
                   0,
                   0,
                   0,
@@ -4514,28 +6234,18 @@
                   -0.0032251100055873394,
                   -0.0032251100055873394,
                   -0.0032251100055873394,
-                  -0.06240716576576233,
+                  -0.062383659183979034,
                   0,
-                  -0.05531902238726616,
-                  -2.0481441020965576,
-                  -0.05531902238726616,
+                  -0.05529866740107536,
+                  -2.0970284938812256,
+                  -0.05529866740107536,
                   0,
-                  -0.09578054398298264,
-                  -0.09034758061170578,
+                  -0.09571952372789383,
+                  -0.09031380712985992,
                   0,
-                  -0.09769590944051743,
-                  -0.05212188884615898,
-                  -0.047875337302684784,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  -0.9468910098075867,
+                  -0.09758204966783524,
+                  -0.052092425525188446,
+                  -0.04784095659852028,
                   0,
                   0,
                   0,
@@ -4545,14 +6255,22 @@
                   0,
                   0,
                   0,
-                  -0.19696666300296783,
-                  -0.19696666300296783,
-                  -0.18138092756271362,
-                  -0.18138092756271362,
-                  0,
-                  -0.415174663066864,
+                  -0.9468960762023926,
                   0,
                   0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.19695572555065155,
+                  -0.19695572555065155,
+                  -0.18135714530944824,
+                  -0.18135714530944824,
+                  0,
+                  -0.4152805805206299,
                   0,
                   0,
                   0,
@@ -4568,137 +6286,139 @@
                   0,
                   0,
                   0,
-                  2.0582710277942224
+                  0,
+                  0,
+                  2.1021450551896184
                 ],
                 [
-                  -2.748070478439331,
-                  -2.7479946613311768,
-                  -2.7479186058044434,
-                  -2.7478415966033936,
-                  -2.7477633953094482,
-                  -2.7476840019226074,
-                  -1.3118304014205933,
-                  -1.4366859197616577,
-                  -2.747567653656006,
-                  -2.747485399246216,
-                  -0.2631630599498749,
-                  -2.409499168395996,
-                  -0.07602205127477646,
-                  0.0834973156452179,
-                  -0.8698986172676086,
-                  -1.9191228151321411,
-                  -2.830428123474121,
-                  -0.17288120090961456,
+                  -2.7518038749694824,
+                  -2.7517786026000977,
+                  -2.751753807067871,
+                  -2.751728057861328,
+                  -2.751702070236206,
+                  -2.751676321029663,
+                  -1.31354558467865,
+                  -1.4384009838104248,
+                  -2.751638174057007,
+                  -2.7516114711761475,
+                  -0.2640152871608734,
+                  -2.411125659942627,
+                  -0.07687410712242126,
+                  0.02585541643202305,
+                  -0.8691717386245728,
+                  -1.9193869829177856,
+                  -2.83073353767395,
+                  -0.17286691069602966,
                   0,
-                  -2.074498176574707,
-                  -0.38481029868125916,
-                  -0.28928321599960327,
+                  -2.075796127319336,
+                  -0.385850727558136,
+                  -0.2903236746788025,
                   0,
-                  -0.9209669828414917,
-                  1.8455297946929932,
+                  -0.9524316787719727,
+                  1.8444056510925293,
                   -0.041356410831213,
                   0,
-                  -0.03283644840121269,
-                  -0.05368521809577942,
-                  -4.59345006942749,
-                  -0.2615022659301758,
-                  0.029566846787929535,
-                  -0.05368521809577942,
-                  -3.99311900138855,
-                  -1.1291477680206299,
-                  3.141056537628174,
-                  -0.7674395442008972,
-                  -0.015750596299767494,
-                  -0.916181743144989,
-                  -0.916181743144989,
-                  -0.916181743144989,
-                  -0.1947045624256134,
-                  -0.09075658023357391,
+                  -0.03184500336647034,
+                  -0.054382309317588806,
+                  -4.596153736114502,
+                  -0.2621738612651825,
+                  0.030062349513173103,
+                  -0.054382309317588806,
+                  -3.9942445755004883,
+                  -1.1300076246261597,
+                  3.1399731636047363,
+                  -0.7677087187767029,
+                  -0.015709714964032173,
+                  -0.917317807674408,
+                  -0.917317807674408,
+                  -0.917317807674408,
+                  -0.19460338354110718,
+                  -0.09073812514543533,
                   0,
-                  -2.7473044395446777,
-                  0,
-                  0,
-                  -6.967749118804932,
-                  -2.8306572437286377,
-                  -3.0587496757507324,
-                  -1.3740499019622803,
-                  -1.3740499019622803,
-                  -2.7470862865448,
-                  -2.7469944953918457,
+                  -2.7515509128570557,
                   0,
                   0,
-                  11.449633598327637,
-                  11.471367835998535,
-                  0.0987982451915741,
-                  0.09989338368177414,
-                  1.0108387470245361,
-                  11.534736633300781,
-                  11.534784317016602,
-                  11.534831047058105,
-                  11.53487491607666,
-                  7.314454078674316,
-                  6.54718017578125,
-                  0.07683947682380676,
-                  11.535612106323242,
-                  0.07711870968341827,
-                  5.767854690551758,
-                  5.767854690551758,
-                  0.10524106025695801,
-                  4.151878833770752,
-                  -3.172013759613037,
-                  -3.5334179401397705,
-                  -1.8460805416107178,
-                  -1.8460805416107178,
-                  -3.1204006671905518,
-                  -3.0640478134155273,
+                  -6.9686384201049805,
+                  -2.832519054412842,
+                  -3.0593419075012207,
+                  -1.375903606414795,
+                  -1.375903606414795,
+                  -2.751481771469116,
+                  -2.751453399658203,
+                  0,
+                  0,
+                  11.507298469543457,
+                  11.513026237487793,
+                  0.02971639670431614,
+                  0.030036384239792824,
+                  0.9795024394989014,
+                  11.532984733581543,
+                  11.532999992370605,
+                  11.533014297485352,
+                  11.533029556274414,
+                  7.315948963165283,
+                  6.5482940673828125,
+                  0.02438207156956196,
+                  11.533283233642578,
+                  0.024495389312505722,
+                  5.766661167144775,
+                  5.766661167144775,
+                  0.03170780465006828,
+                  4.144704818725586,
+                  -3.174283504486084,
+                  -3.53539776802063,
+                  -1.8472304344177246,
+                  -1.8472304344177246,
+                  -3.1211719512939453,
+                  -3.065918445587158,
                   -0.32085686922073364,
-                  -0.42132943868637085,
-                  -1.793674111366272,
-                  -1.793674111366272,
-                  -3.0838441848754883,
-                  -3.0698423385620117,
-                  -3.058393955230713,
-                  -1.6480557918548584,
-                  -1.6480557918548584,
-                  -3.0470211505889893,
-                  -1.599623680114746,
-                  -1.599623680114746,
-                  -1.4579106569290161,
-                  -1.4579106569290161,
-                  -2.0879018306732178,
-                  -2.221809148788452,
-                  -1.2538567781448364,
-                  -2.7091474533081055,
+                  -0.4214026629924774,
+                  -1.7944691181182861,
+                  -1.7944691181182861,
+                  -3.085972785949707,
+                  -3.071906089782715,
+                  -3.060014486312866,
+                  -1.6489821672439575,
+                  -1.6489821672439575,
+                  -3.0491490364074707,
+                  -1.6004142761230469,
+                  -1.6004142761230469,
+                  -1.458320140838623,
+                  -1.458320140838623,
+                  -2.088158369064331,
+                  -2.221449851989746,
+                  -1.2539892196655273,
+                  -2.709245443344116,
                   -0.6130549907684326,
-                  -0.8066905736923218,
-                  -0.768646776676178,
-                  -0.2107946127653122,
-                  -0.8386102914810181,
-                  -0.2566870152950287,
-                  -0.2566870152950287,
-                  -0.9575129151344299,
-                  -0.7743490934371948,
-                  -0.4548697769641876,
+                  -0.8068376779556274,
+                  -0.7689370512962341,
+                  -0.21077431738376617,
+                  -0.8388176560401917,
+                  -0.2566860616207123,
+                  -0.2566860616207123,
+                  -0.9575998187065125,
+                  -0.7744315266609192,
+                  -0.4548972547054291,
                   -0.0828075185418129,
                   -0.0828075185418129,
                   -0.12896880507469177,
                   -0.029548518359661102,
-                  -0.207448810338974,
+                  -0.20744451880455017,
                   -0.007080522831529379,
                   -0.02619071677327156,
-                  -0.18677441775798798,
+                  -0.18677012622356415,
                   -0.02619071677327156,
                   -0.05378270521759987,
                   -0.05378270521759987,
-                  -0.6416541337966919,
+                  -0.641660213470459,
                   -0.052214059978723526,
                   -0.052214059978723526,
                   -0.052214059978723526,
-                  -0.9235110282897949,
+                  -0.9235052466392517,
                   0,
-                  -0.24803106486797333,
-                  -0.2655818462371826,
-                  -0.24705901741981506,
+                  -0.24802690744400024,
+                  -0.2655979096889496,
+                  -0.24710823595523834,
                   -0.041356410831213,
                   -0.041356410831213,
                   -0.041356410831213,
@@ -4706,60 +6426,30 @@
                   -0.006486453115940094,
                   -0.006486453115940094,
                   -0.006486453115940094,
-                  -0.8155054450035095,
+                  -0.8154455423355103,
                   -0.04076807200908661,
-                  -0.3903014063835144,
+                  -0.39030829071998596,
                   -0.04076807200908661,
-                  -0.5712672472000122,
+                  -0.5713285207748413,
                   0,
-                  -0.2655818462371826,
-                  0,
-                  -0.1011863574385643,
-                  -0.1011863574385643,
-                  -0.5662572979927063,
-                  -0.5380418300628662,
-                  -0.31386125087738037,
-                  -0.31386125087738037,
+                  -0.2655979096889496,
                   0,
                   -0.1011863574385643,
-                  -0.24705901741981506,
+                  -0.1011863574385643,
+                  -0.5662293434143066,
+                  -0.5380478501319885,
+                  -0.3138681650161743,
+                  -0.3138681650161743,
+                  0,
+                  -0.1011863574385643,
+                  -0.24710823595523834,
                   -0.1011863574385643,
                   0,
                   0,
-                  -0.09389306604862213,
+                  -0.09387878328561783,
                   0,
-                  -0.14548949897289276,
-                  -0.14548949897289276,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  -0.13851875066757202,
-                  -2.76554012298584,
-                  -0.2062753289937973,
-                  0,
-                  -0.21506425738334656,
-                  -0.19652904570102692,
-                  0,
-                  -0.10048356652259827,
-                  -0.1339692920446396,
-                  -0.0914628878235817,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  -0.1081690862774849,
-                  -0.4270668923854828,
+                  -0.14548520743846893,
+                  -0.14548520743846893,
                   0,
                   0,
                   0,
@@ -4769,8 +6459,38 @@
                   0,
                   0,
                   0,
-                  -0.263185054063797,
-                  -0.263185054063797,
+                  0,
+                  -0.13850906491279602,
+                  -2.7655465602874756,
+                  -0.2062656581401825,
+                  0,
+                  -0.21504268050193787,
+                  -0.19653186202049255,
+                  0,
+                  -0.10053279250860214,
+                  -0.1339530050754547,
+                  -0.09145872294902802,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.1081528514623642,
+                  -0.4270610809326172,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.26319772005081177,
+                  -0.26319772005081177,
                   0,
                   0,
                   0,
@@ -4792,137 +6512,137 @@
                   0,
                   0,
                   0,
-                  2.7496270691387963
+                  2.752301558141816
                 ],
                 [
-                  -4.883176326751709,
-                  -4.879470348358154,
-                  -4.875762462615967,
-                  -4.87205171585083,
-                  -4.868337631225586,
-                  -4.864621162414551,
-                  -0.5323469042778015,
-                  -4.428480625152588,
-                  -4.860901832580566,
-                  -4.857179641723633,
-                  -1.657159447669983,
-                  -2.920145273208618,
-                  -0.33883678913116455,
-                  -2.744723081588745,
-                  -8.60008716583252,
-                  6.782508373260498,
-                  -0.5243638753890991,
-                  -0.19847476482391357,
+                  -5.387916088104248,
+                  -5.384376525878906,
+                  -5.380836009979248,
+                  -5.377292633056641,
+                  -5.373747825622559,
+                  -5.3702006340026855,
+                  -0.6893650889396667,
+                  -4.7303690910339355,
+                  -5.365302085876465,
+                  -5.361753940582275,
+                  -1.8096959590911865,
+                  -3.120105743408203,
+                  -0.4908166527748108,
+                  -2.7455954551696777,
+                  -8.723714828491211,
+                  6.687089443206787,
+                  -0.7427914142608643,
+                  -0.19848495721817017,
                   0,
-                  -1.7535583972930908,
-                  -3.071519374847412,
-                  -0.11986017972230911,
-                  -0.28555071353912354,
-                  -0.9977819323539734,
-                  -2.5972630977630615,
-                  -2.5933127403259277,
-                  -2.5682101249694824,
-                  -1.7952752113342285,
-                  -0.8488527536392212,
-                  -2.3014767169952393,
-                  -0.37796226143836975,
-                  -1.3257129192352295,
+                  -1.9637197256088257,
+                  -3.20517635345459,
+                  -0.2525962293148041,
+                  -0.34652087092399597,
+                  -0.9975817203521729,
+                  -2.9009242057800293,
+                  -2.6539483070373535,
+                  -2.629817485809326,
+                  -1.8335765600204468,
+                  -0.886877715587616,
+                  -2.4999442100524902,
+                  -0.3781833350658417,
+                  -1.3262208700180054,
                   0,
-                  -4.850820541381836,
-                  -0.16924549639225006,
-                  -1.6130374670028687,
-                  -0.7091118693351746,
-                  -0.5898895859718323,
-                  -1.6366093158721924,
-                  -1.6366093158721924,
-                  -1.6366093158721924,
+                  -5.354704856872559,
+                  -0.16919782757759094,
+                  -1.7179151773452759,
+                  -0.7542790770530701,
+                  -0.5900605916976929,
+                  -1.8033413887023926,
+                  -1.8033413887023926,
+                  -1.8033413887023926,
                   0,
                   0,
-                  -0.5112578272819519,
-                  -4.8458571434021,
-                  -0.40826132893562317,
-                  -0.37433722615242004,
-                  -2.148526906967163,
-                  -0.6064440011978149,
-                  -4.835056781768799,
-                  -2.4439146518707275,
-                  -2.4439146518707275,
-                  -4.838790416717529,
-                  -4.831315994262695,
-                  -0.06967120617628098,
-                  -0.06967120617628098,
-                  -4.827577114105225,
-                  -5.213390827178955,
-                  -0.6971325278282166,
-                  -0.648992121219635,
-                  -0.029647279530763626,
-                  -4.8238301277160645,
-                  -4.820079803466797,
-                  -4.816327095031738,
-                  -4.812568664550781,
-                  -0.00812152773141861,
-                  -0.6716951131820679,
-                  0.34803590178489685,
-                  -4.80657958984375,
-                  -0.2022196501493454,
-                  -2.4251761436462402,
-                  -2.4251761436462402,
-                  -0.20793285965919495,
-                  2.487708806991577,
-                  9.775331497192383,
-                  9.665919303894043,
-                  4.796749114990234,
-                  4.796749114990234,
-                  9.642706871032715,
-                  6.489510536193848,
-                  3.3738298416137695,
-                  3.7648110389709473,
-                  4.682427406311035,
-                  4.682427406311035,
-                  9.788248062133789,
-                  9.792094230651855,
-                  9.795940399169922,
-                  4.875558376312256,
-                  4.875558376312256,
-                  9.801702499389648,
-                  4.81265115737915,
-                  4.81265115737915,
-                  4.670629501342773,
-                  4.670629501342773,
-                  -4.11239767074585,
-                  -4.31601619720459,
-                  -2.419660806655884,
-                  -3.8205435276031494,
-                  -1.7316027879714966,
-                  -1.709964394569397,
-                  -1.3016880750656128,
-                  -0.5130946040153503,
-                  -1.351999282836914,
-                  -1.5073899030685425,
-                  -0.9578688740730286,
-                  -1.71341872215271,
-                  -1.6409552097320557,
-                  -0.5590847134590149,
-                  -0.23458188772201538,
-                  -0.30389127135276794,
-                  -1.4454723596572876,
+                  -0.5112839341163635,
+                  -5.349974155426025,
+                  -0.40808287262916565,
+                  -0.37414249777793884,
+                  -2.149275064468384,
+                  -0.6066015958786011,
+                  -5.339715003967285,
+                  -2.6946632862091064,
+                  -2.6946632862091064,
+                  -5.343275547027588,
+                  -5.336154460906982,
+                  -0.06945786625146866,
+                  -0.06945786625146866,
+                  -5.332591533660889,
+                  -5.415020942687988,
+                  -0.6971687078475952,
+                  -0.6489702463150024,
+                  -0.029447069391608238,
+                  -5.329025745391846,
+                  -5.325458526611328,
+                  -5.321889400482178,
+                  -5.318319320678711,
+                  -0.02156655862927437,
+                  -0.7665523290634155,
+                  0.04760219156742096,
+                  -5.312531471252441,
+                  -0.20178869366645813,
+                  -2.6767265796661377,
+                  -2.6767265796661377,
+                  -0.20690029859542847,
+                  1.9899488687515259,
+                  9.273853302001953,
+                  9.16991901397705,
+                  4.550087928771973,
+                  4.550087928771973,
+                  9.146028518676758,
+                  6.148240089416504,
+                  3.1943440437316895,
+                  3.8370018005371094,
+                  4.584547519683838,
+                  4.584547519683838,
+                  9.286659240722656,
+                  9.290273666381836,
+                  9.293891906738281,
+                  4.626225471496582,
+                  4.626225471496582,
+                  9.29931354522705,
+                  4.565187454223633,
+                  4.565187454223633,
+                  4.420415878295898,
+                  4.420415878295898,
+                  -4.137976169586182,
+                  -4.317802429199219,
+                  -2.421009063720703,
+                  -3.8217968940734863,
+                  -1.7321056127548218,
+                  -1.7107887268066406,
+                  -1.3024832010269165,
+                  -0.5132111310958862,
+                  -1.382673740386963,
+                  -1.5080485343933105,
+                  -0.9582468271255493,
+                  -1.7140343189239502,
+                  -1.641570806503296,
+                  -0.5592744946479797,
+                  -0.23464109003543854,
+                  -0.3039504587650299,
+                  -1.4459874629974365,
                   -0.09673170745372772,
-                  -0.2534203827381134,
-                  -1.04881751537323,
+                  -0.25345078110694885,
+                  -1.0492545366287231,
                   -0.025548065081238747,
                   -0.025548065081238747,
-                  -0.6173681020736694,
-                  -0.2160263955593109,
-                  -0.2160263955593109,
-                  -1.6734790802001953,
+                  -0.6176031231880188,
+                  -0.216104194521904,
+                  -0.216104194521904,
+                  -1.674222469329834,
                   -0.010263783857226372,
                   -0.010263783857226372,
                   -0.010263783857226372,
-                  -1.5813162326812744,
+                  -1.5815280675888062,
                   -0.11211783438920975,
-                  -0.3742274045944214,
+                  -0.3742462992668152,
                   -0.3687269389629364,
-                  -0.17838676273822784,
+                  -0.17837336659431458,
                   -0.06993462890386581,
                   -0.022322889417409897,
                   -0.022322889417409897,
@@ -4930,27 +6650,27 @@
                   -0.32483431696891785,
                   -0.5754977464675903,
                   -0.4499395787715912,
-                  -1.9423425197601318,
+                  -1.9426209926605225,
                   0,
                   -0.05322543531656265,
-                  -1.0090863704681396,
-                  -0.07689457386732101,
+                  -1.0095937252044678,
+                  -0.07688117772340775,
                   0,
                   -0.08987758308649063,
                   -0.08987758308649063,
                   -0.14450332522392273,
                   -0.08987758308649063,
-                  -1.1368951797485352,
+                  -1.1370881795883179,
                   -0.05322543531656265,
                   -0.05322543531656265,
-                  -0.8566229343414307,
+                  -0.8567230701446533,
                   0,
-                  -0.12705875933170319,
-                  -0.010210010223090649,
+                  -0.12697745859622955,
+                  -0.010196608491241932,
                   0,
                   0,
                   -0.009686946868896484,
-                  -0.10053708404302597,
+                  -0.10054726898670197,
                   0,
                   0,
                   0,
@@ -4962,18 +6682,18 @@
                   -0.055553972721099854,
                   -0.055553972721099854,
                   -0.055553972721099854,
-                  -0.06307646632194519,
+                  -0.06299516558647156,
                   0,
-                  -0.12747278809547424,
-                  -4.8943939208984375,
-                  -0.35269230604171753,
-                  -0.610892653465271,
-                  -0.9124102592468262,
-                  -0.22250227630138397,
+                  -0.12750403583049774,
+                  -5.398458957672119,
+                  -0.35272353887557983,
+                  -0.6111341118812561,
+                  -0.9127074480056763,
+                  -0.22256866097450256,
                   0,
-                  -0.6488679051399231,
-                  -0.1107671707868576,
-                  -0.11514368653297424,
+                  -0.6490963101387024,
+                  -0.11079724878072739,
+                  -0.11516258120536804,
                   0,
                   -0.03999417647719383,
                   0,
@@ -4982,172 +6702,172 @@
                   0,
                   0,
                   0,
-                  -0.33067697286605835,
-                  -2.3574984073638916,
+                  -0.3307381570339203,
+                  -2.358489751815796,
                   -0.006586894858628511,
-                  -0.33067697286605835,
-                  -0.33067697286605835,
+                  -0.3307381570339203,
+                  -0.3307381570339203,
                   0,
                   0,
                   -0.054530031979084015,
                   -0.054530031979084015,
                   0,
                   0,
-                  -0.36388328671455383,
-                  -0.36388328671455383,
-                  -0.5783484578132629,
-                  -0.5783484578132629,
+                  -0.3640950322151184,
+                  -0.3640950322151184,
+                  -0.5785834789276123,
+                  -0.5785834789276123,
                   0,
                   0,
                   0,
                   0,
                   0,
                   0,
-                  -0.610892653465271,
+                  -0.6111341118812561,
                   0,
                   -0.03999417647719383,
                   0,
                   0,
-                  -0.04400528967380524,
+                  -0.043923988938331604,
                   0,
                   0,
-                  -0.5725313425064087,
+                  -0.5727014541625977,
                   0,
-                  -0.8911849856376648,
-                  -0.5725313425064087,
+                  -0.8916925191879272,
+                  -0.5727014541625977,
                   0,
-                  4.976457177572051
+                  5.475565746113401
                 ],
                 [
-                  -2.40767765045166,
-                  -1.4432823657989502,
-                  -1.716322660446167,
-                  -1.3934139013290405,
-                  -1.3593711853027344,
-                  -1.3356542587280273,
-                  -11.044200897216797,
-                  9.763031005859375,
-                  -1.301347255706787,
-                  -1.3007179498672485,
-                  -4.823695659637451,
-                  -1.4157984256744385,
+                  -2.4223721027374268,
+                  -1.4445619583129883,
+                  -1.7175021171569824,
+                  -1.394594669342041,
+                  -1.368512749671936,
+                  -1.3599402904510498,
+                  -11.16168212890625,
+                  9.80640983581543,
+                  -1.3587251901626587,
+                  -1.3584065437316895,
+                  -4.835841178894043,
+                  -1.4263112545013428,
                   0,
-                  -2.2221744060516357,
-                  -4.514871120452881,
-                  -4.217839241027832,
-                  2.9769108295440674,
-                  -0.541288435459137,
-                  -0.255755752325058,
-                  -4.5475053787231445,
-                  0.41054800152778625,
-                  -1.3552716970443726,
-                  -0.05641090124845505,
-                  -5.295732021331787,
-                  -1.9238779544830322,
+                  -2.2580604553222656,
+                  -5.408714771270752,
+                  -4.383934020996094,
+                  3.046084403991699,
+                  -0.5413134694099426,
+                  -0.2557806670665741,
+                  -4.600667953491211,
+                  0.1172664687037468,
+                  -1.3559021949768066,
+                  -0.05638185515999794,
+                  -5.3116254806518555,
+                  -1.9320250749588013,
                   -0.4408012628555298,
                   0,
-                  0.5978047847747803,
-                  -0.3259139955043793,
-                  -0.6580314040184021,
-                  -3.7694029808044434,
-                  1.567018747329712,
-                  -0.2509821355342865,
-                  -3.1257243156433105,
+                  0.572216272354126,
+                  -0.37801289558410645,
+                  -0.6579532623291016,
+                  -3.7699027061462402,
+                  1.545686960220337,
+                  -0.25092482566833496,
+                  -3.161341428756714,
                   -0.011991465464234352,
-                  -3.483261823654175,
-                  -2.421015501022339,
-                  -0.2463212013244629,
-                  -0.5532655119895935,
-                  -0.5532655119895935,
-                  -0.5532655119895935,
-                  -0.4983156621456146,
-                  -1.1128801107406616,
-                  -0.17050063610076904,
-                  -1.2991514205932617,
-                  -0.11497621238231659,
-                  -0.09937652945518494,
-                  6.518618583679199,
-                  -0.023457806557416916,
-                  -1.2976559400558472,
-                  -0.6558480262756348,
-                  -0.6558480262756348,
-                  -1.2982957363128662,
-                  -1.2970118522644043,
-                  -0.023485306650400162,
-                  -0.023485306650400162,
-                  -1.9609156847000122,
-                  -11.400671005249023,
-                  -0.17273496091365814,
-                  -0.32630351185798645,
+                  -3.48896861076355,
+                  -2.426692008972168,
+                  -0.2463253289461136,
+                  -0.5534322261810303,
+                  -0.5534322261810303,
+                  -0.5534322261810303,
+                  -0.5337957739830017,
+                  -1.11342191696167,
+                  -0.17042648792266846,
+                  -1.3576785326004028,
+                  -0.11491375416517258,
+                  -0.09931118041276932,
+                  6.483370304107666,
+                  -0.023414485156536102,
+                  -1.3568607568740845,
+                  -0.6805875301361084,
+                  -0.6805875301361084,
+                  -1.357189416885376,
+                  -1.3565298318862915,
+                  -0.023440759629011154,
+                  -0.023440759629011154,
+                  -1.961108922958374,
+                  -12.771175384521484,
+                  -0.17265065014362335,
+                  -0.3262007236480713,
                   0,
-                  -1.2963640689849854,
-                  -1.2957124710083008,
-                  -1.2950571775436401,
-                  -1.2943980693817139,
+                  -1.3561972379684448,
+                  -1.3558626174926758,
+                  -1.3555258512496948,
+                  -1.3551872968673706,
                   0,
                   0,
-                  10.423707008361816,
-                  -1.278854489326477,
-                  -0.10478822886943817,
-                  -0.6435508131980896,
-                  -0.6435508131980896,
-                  -0.04425830394029617,
-                  -1.2777413129806519,
-                  -1.276975154876709,
-                  -1.2830188274383545,
-                  -0.6413261890411377,
-                  -0.6413261890411377,
-                  -1.272684097290039,
-                  -2.3765652179718018,
-                  -0.5145350694656372,
-                  -1.8637632131576538,
-                  -5.778227806091309,
-                  -5.778227806091309,
-                  -1.263397216796875,
-                  -1.2625126838684082,
-                  -1.2616218328475952,
-                  -0.6356518864631653,
-                  -0.6356518864631653,
-                  -1.260308027267456,
-                  -0.6350435614585876,
-                  -0.6350435614585876,
-                  -0.6348497271537781,
-                  -0.6348497271537781,
-                  7.9471659660339355,
-                  6.367796421051025,
-                  5.062225341796875,
-                  5.292187690734863,
-                  1.5082151889801025,
-                  5.10699987411499,
-                  6.5736823081970215,
-                  0.04835688695311546,
-                  5.013453483581543,
-                  4.962319374084473,
-                  2.6496596336364746,
-                  1.5541671514511108,
-                  6.343857288360596,
-                  5.43259859085083,
-                  3.1161656379699707,
-                  3.3160011768341064,
-                  6.166111946105957,
-                  1.4213684797286987,
-                  6.427147388458252,
-                  3.377258777618408,
-                  2.833296298980713,
-                  1.5339027643203735,
-                  2.0962281227111816,
-                  3.057107448577881,
-                  3.057107448577881,
-                  -1.8832815885543823,
+                  11.582114219665527,
+                  -1.3470127582550049,
+                  -0.10464503616094589,
+                  -0.6755733489990234,
+                  -0.6755733489990234,
+                  -0.044189635664224625,
+                  -1.3466569185256958,
+                  -1.3460674285888672,
+                  -1.3493200540542603,
+                  -0.6746770739555359,
+                  -0.6746770739555359,
+                  -1.3444799184799194,
+                  -2.4514379501342773,
+                  -0.5133979320526123,
+                  -1.9389710426330566,
+                  -6.426521301269531,
+                  -6.426521301269531,
+                  -1.3398641347885132,
+                  -1.339434027671814,
+                  -1.3390012979507446,
+                  -0.6718330383300781,
+                  -0.6718330383300781,
+                  -1.3383618593215942,
+                  -0.6715338826179504,
+                  -0.6715338826179504,
+                  -0.6714326739311218,
+                  -0.6714326739311218,
+                  7.912080764770508,
+                  6.384098529815674,
+                  5.025459289550781,
+                  5.300487995147705,
+                  1.5255522727966309,
+                  5.534864902496338,
+                  6.524196624755859,
+                  0.03145986422896385,
+                  4.996797561645508,
+                  4.956629276275635,
+                  2.632632255554199,
+                  1.5437071323394775,
+                  6.344730377197266,
+                  5.459873676300049,
+                  3.1135551929473877,
+                  3.313392400741577,
+                  6.07354211807251,
+                  1.4330788850784302,
+                  6.428635597229004,
+                  3.676051378250122,
+                  2.83573579788208,
+                  1.5265130996704102,
+                  2.086228370666504,
+                  3.033674955368042,
+                  3.033674955368042,
+                  -1.926104187965393,
                   -0.5472225546836853,
                   -0.5472225546836853,
                   -0.5472225546836853,
-                  -5.517866611480713,
+                  -5.533759117126465,
                   -0.4936685264110565,
-                  -1.962403655052185,
-                  -1.6946107149124146,
-                  -1.7996314764022827,
-                  -1.1214851140975952,
+                  -1.9614691734313965,
+                  -1.7152137756347656,
+                  -1.7992485761642456,
+                  -1.1218039989471436,
                   -0.24168944358825684,
                   -0.24168944358825684,
                   -0.13320119678974152,
@@ -5155,162 +6875,162 @@
                   -0.13320119678974152,
                   -0.13320119678974152,
                   -0.8759204149246216,
-                  -0.5230799913406372,
-                  -1.5621036291122437,
-                  -1.2755167484283447,
-                  -1.8002357482910156,
-                  -0.8689941763877869,
-                  -1.233305811882019,
-                  -3.233487606048584,
-                  -1.182141661643982,
-                  -1.182141661643982,
-                  -2.2395575046539307,
-                  -0.8059372901916504,
-                  -1.1578638553619385,
-                  -8.70692253112793,
-                  -0.08835131675004959,
-                  -1.3295502662658691,
+                  -0.5234425663948059,
+                  -1.562522053718567,
+                  -1.2762837409973145,
+                  -1.8004229068756104,
+                  -0.8693391680717468,
+                  -1.2327114343643188,
+                  -3.2332608699798584,
+                  -1.1815332174301147,
+                  -1.1815332174301147,
+                  -2.239353656768799,
+                  -0.8402095437049866,
+                  -1.1582822799682617,
+                  -8.760834693908691,
+                  -0.08741704374551773,
+                  -1.345799207687378,
                   0,
-                  -0.9179635643959045,
+                  -0.9342811703681946,
                   0,
                   0,
-                  -1.9868861436843872,
+                  -1.9874727725982666,
                   0,
-                  -0.29148542881011963,
-                  -0.29148542881011963,
+                  -0.3191264569759369,
+                  -0.3191264569759369,
                   -0.07826709747314453,
-                  -0.6347553133964539,
+                  -0.6351737380027771,
                   0,
-                  -0.9179635643959045,
+                  -0.9342811703681946,
                   -0.06839252263307571,
                   -0.06839252263307571,
-                  -2.059152126312256,
+                  -2.0597386360168457,
                   -0.06839252263307571,
-                  -2.279352903366089,
-                  -1.9444396495819092,
-                  -0.09803175181150436,
-                  -9.139211654663086,
-                  -0.6436477303504944,
-                  -0.5993779301643372,
-                  -0.8108916878700256,
+                  -2.2799038887023926,
+                  -1.9450263977050781,
+                  -0.09803882241249084,
+                  -9.141633033752441,
+                  -0.6437646150588989,
+                  -0.5995193123817444,
+                  -0.8110354542732239,
                   -0.0627649798989296,
                   0,
-                  -1.1532435417175293,
+                  -1.153430461883545,
                   -0.020530298352241516,
                   0,
-                  -0.10999670624732971,
-                  -1.9445222616195679,
-                  -1.433496356010437,
-                  -1.433496356010437,
+                  -0.10999325662851334,
+                  -1.9445815086364746,
+                  -1.433425784111023,
+                  -1.433425784111023,
                   0,
                   0,
-                  -2.4079160690307617,
-                  -2.4079160690307617,
-                  -0.941091775894165,
-                  -6.480767726898193,
-                  -0.07499592006206512,
-                  -0.941091775894165,
-                  -0.941091775894165,
+                  -2.408517360687256,
+                  -2.408517360687256,
+                  -0.9415583610534668,
+                  -6.545087814331055,
+                  -0.07501519471406937,
+                  -0.9415583610534668,
+                  -0.9415583610534668,
                   0,
                   0,
-                  -0.7072744369506836,
-                  -0.7072744369506836,
-                  -0.277241975069046,
-                  -0.277241975069046,
+                  -0.7278759479522705,
+                  -0.7278759479522705,
+                  -0.27760449051856995,
+                  -0.27760449051856995,
                   0,
                   0,
-                  -0.7370620965957642,
-                  -0.7370620965957642,
-                  -1.5695834159851074,
+                  -0.7494784593582153,
+                  -0.7494784593582153,
+                  -1.5679104328155518,
                   0,
-                  -1.551931619644165,
-                  -1.551931619644165,
+                  -1.583970546722412,
+                  -1.583970546722412,
                   0,
                   0,
                   -0.089320607483387,
                   0,
-                  -0.4642890691757202,
+                  -0.46440598368644714,
                   0,
                   0,
-                  -1.3289433717727661,
-                  -0.8977804183959961,
-                  -0.8977804183959961,
-                  -5.768050670623779,
-                  -5.768050670623779,
+                  -1.3296412229537964,
+                  -0.9100009799003601,
+                  -0.9100009799003601,
+                  -5.809590816497803,
+                  -5.809590816497803,
                   0,
                   0,
                   0,
-                  1.3168357466884222
+                  1.3664393254875231
                 ],
                 [
-                  2.264268636703491,
+                  2.2645533084869385,
                   0,
-                  1.9638316631317139,
-                  0,
-                  0,
+                  1.9639166593551636,
                   0,
                   0,
-                  1.4111456871032715,
-                  0.37676799297332764,
                   0,
-                  3.6672513484954834,
-                  -1.5987433195114136,
-                  -0.25958016514778137,
-                  -0.6520416140556335,
-                  2.2215144634246826,
-                  -0.9299300909042358,
-                  0.08432270586490631,
-                  -0.2704010307788849,
-                  -0.6600016951560974,
-                  -0.9835318922996521,
-                  -0.5725488662719727,
+                  0,
+                  1.4114158153533936,
+                  0.3768329322338104,
+                  0,
+                  3.6671524047851562,
+                  -1.5994716882705688,
+                  -0.25967320799827576,
+                  -0.6522401571273804,
+                  2.221611499786377,
+                  -0.9301229119300842,
+                  0.08350718766450882,
+                  -0.27085521817207336,
+                  -0.6604665517807007,
+                  -0.984097957611084,
+                  -0.5733351707458496,
                   -0.21786797046661377,
                   0,
-                  3.604764223098755,
-                  -1.4094208478927612,
-                  0.039824552834033966,
-                  -0.12092277407646179,
-                  1.0086983442306519,
-                  -0.041376613080501556,
-                  -0.17894719541072845,
-                  0.31661704182624817,
-                  -0.16178575158119202,
+                  3.604557514190674,
+                  -1.4095871448516846,
+                  0.03968215361237526,
+                  -0.12084423005580902,
+                  1.0091196298599243,
+                  -0.04136071354150772,
+                  -0.17865650355815887,
+                  0.31683361530303955,
+                  -0.16161012649536133,
                   0,
-                  -0.5730186104774475,
-                  -0.18805243074893951,
-                  0.8193853497505188,
-                  1.594847321510315,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  -0.3137867748737335,
+                  -0.5733611583709717,
+                  -0.1882489174604416,
+                  0.8192149996757507,
+                  1.595165491104126,
                   0,
                   0,
                   0,
                   0,
-                  0.653457522392273,
+                  0,
+                  -0.3139272928237915,
                   0,
                   0,
+                  0,
+                  0,
+                  0.6536305546760559,
                   0,
                   0,
                   0,
                   0,
                   0,
                   0,
-                  -0.9207919239997864,
                   0,
                   0,
-                  0.08378559350967407,
-                  -0.5818187594413757,
+                  -0.9212672114372253,
+                  0,
+                  0,
+                  0.08386554569005966,
+                  -0.5822099447250366,
                   0,
                   0,
                   0,
                   0,
                   -0.025023125112056732,
                   0,
-                  -0.2733611762523651,
+                  -0.2730247974395752,
                   0,
                   0,
                   0,
@@ -5337,296 +7057,296 @@
                   0,
                   0,
                   0,
-                  0.7829055190086365,
-                  0.09843126684427261,
+                  0.7825519442558289,
+                  0.09880611300468445,
                   0,
-                  0.6070268154144287,
-                  0.11218982189893723,
-                  -0.28414398431777954,
-                  0,
-                  0,
-                  0,
-                  -0.0589822418987751,
-                  -0.458962082862854,
-                  -2.218674659729004,
-                  1.4939249753952026,
-                  -0.57777339220047,
-                  2.883023262023926,
-                  -1.7480378150939941,
-                  0,
-                  0,
-                  3.3431694507598877,
-                  0,
-                  0,
-                  0.6027284264564514,
+                  0.606791079044342,
+                  0.11206044256687164,
+                  -0.28361162543296814,
                   0,
                   0,
                   0,
-                  1.1886472702026367,
-                  0.7502180933952332,
-                  0.7502180933952332,
-                  0.7502180933952332,
-                  4.820629119873047,
-                  -0.1454870104789734,
-                  2.1002554893493652,
-                  0.1128653809428215,
-                  2.5160739421844482,
-                  0.13294892013072968,
-                  0.5421669483184814,
-                  0.5421669483184814,
-                  0.7437070608139038,
-                  0.7437070608139038,
-                  2.7230172157287598,
-                  1.1204746961593628,
-                  1.7083061933517456,
-                  0.08378559350967407,
-                  3.8526570796966553,
-                  -0.7396548986434937,
-                  0.5663009881973267,
-                  2.883023262023926,
-                  1.097564697265625,
-                  4.229921817779541,
-                  1.6096570491790771,
-                  2.1440699100494385,
-                  0.25702977180480957,
-                  2.695019006729126,
-                  3.805727481842041,
-                  0.9045435786247253,
-                  1.7191828489303589,
-                  1.174802303314209,
-                  -1.0214550495147705,
-                  1.749070644378662,
-                  0.36060014367103577,
-                  0.1305050253868103,
-                  2.7843825817108154,
-                  0.36060014367103577,
-                  0.8531232476234436,
-                  0.8531232476234436,
-                  -0.036856915801763535,
-                  1.9638316631317139,
-                  1.602545142173767,
-                  1.4111456871032715,
-                  1.1067060232162476,
-                  1.1067060232162476,
-                  3.5304884910583496,
-                  1.1067060232162476,
-                  1.9343262910842896,
-                  2.423780918121338,
-                  0.7225840091705322,
-                  -5.274100303649902,
+                  -0.05892472341656685,
+                  -0.4599417746067047,
+                  -2.2196919918060303,
+                  1.494116187095642,
+                  -0.5779216289520264,
+                  2.883758544921875,
+                  -1.7485610246658325,
+                  0,
+                  0,
+                  3.3439738750457764,
+                  0,
+                  0,
+                  0.602774977684021,
+                  0,
+                  0,
+                  0,
+                  1.1883505582809448,
+                  0.7505636811256409,
+                  0.7505636811256409,
+                  0.7505636811256409,
+                  4.822014808654785,
+                  -0.14568836987018585,
+                  2.1009926795959473,
+                  0.11308187246322632,
+                  2.5162734985351562,
+                  0.13296091556549072,
+                  0.5421786308288574,
+                  0.5421786308288574,
+                  0.7435518503189087,
+                  0.7435518503189087,
+                  2.723599433898926,
+                  1.1203844547271729,
+                  1.7090386152267456,
+                  0.08386554569005966,
+                  3.853360652923584,
+                  -0.7402822375297546,
+                  0.5663394927978516,
+                  2.883758544921875,
+                  1.0979689359664917,
+                  4.230794429779053,
+                  1.610177993774414,
+                  2.144564628601074,
+                  0.25747188925743103,
+                  2.695611000061035,
+                  3.8063910007476807,
+                  0.9039782881736755,
+                  1.7200666666030884,
+                  1.1741763353347778,
+                  -1.0220203399658203,
+                  1.749396800994873,
+                  0.36097249388694763,
+                  0.13103069365024567,
+                  2.7851834297180176,
+                  0.36097249388694763,
+                  0.8531374335289001,
+                  0.8531374335289001,
+                  -0.03689531609416008,
+                  1.9639166593551636,
+                  1.6032147407531738,
+                  1.4114158153533936,
+                  1.1070201396942139,
+                  1.1070201396942139,
+                  3.531229257583618,
+                  1.1070201396942139,
+                  1.934227466583252,
+                  2.424208879470825,
+                  0.7227988839149475,
+                  -5.274492263793945,
                   -0.6492117643356323,
                   -0.2296920269727707,
                   -0.3485308587551117,
                   -0.0010551566956564784,
                   -0.3707127571105957,
-                  -1.8203321695327759,
+                  -1.820879340171814,
                   0,
                   -0.031268734484910965,
                   -0.007231758441776037,
                   -0.2199903428554535,
                   -0.2199903428554535,
                   -0.2199903428554535,
-                  -0.9979928731918335,
+                  -0.9983847141265869,
                   -0.21786797046661377,
                   0,
                   0,
-                  -1.191689133644104,
-                  -7.3038225173950195,
+                  -1.191776990890503,
+                  -7.3057332038879395,
                   -0.1981370747089386,
                   -0.1981370747089386,
-                  -1.177240014076233,
-                  -0.6794882416725159,
-                  -1.8183923959732056,
-                  -0.5005562901496887,
+                  -1.1780660152435303,
+                  -0.6795731782913208,
+                  -1.8191708326339722,
+                  -0.5005931258201599,
                   -0.14838457107543945,
-                  -0.9043540954589844,
+                  -0.9051800966262817,
                   0,
                   0,
                   0,
                   0,
                   0,
                   -0.017201635986566544,
-                  -0.05065617710351944,
+                  -0.050534896552562714,
                   0,
                   0,
-                  -0.7354530096054077,
-                  -0.7354530096054077,
+                  -0.735780656337738,
+                  -0.735780656337738,
                   0,
-                  -0.271604984998703,
+                  -0.2716417610645294,
                   0,
                   0,
                   0,
-                  -0.49238958954811096,
-                  -0.9101994037628174,
-                  -0.9101994037628174,
-                  -0.0589822418987751,
+                  -0.49320271611213684,
+                  -0.9104017615318298,
+                  -0.9104017615318298,
+                  -0.05892472341656685,
                   0,
-                  -2.065727710723877,
-                  -0.0589822418987751,
-                  -0.9043540954589844,
-                  -2.757138933557332
+                  -2.067035675048828,
+                  -0.05892472341656685,
+                  -0.9051800966262817,
+                  -2.7586074763521387
                 ],
                 [
-                  -0.22397759556770325,
-                  -0.21505491435527802,
-                  -0.20648689568042755,
-                  -0.19825953245162964,
-                  -0.19035927951335907,
-                  -0.1827731728553772,
-                  -0.14509905874729156,
-                  -0.3082024157047272,
-                  -0.1697349101305008,
-                  -0.1629677563905716,
-                  -0.9379669427871704,
-                  -0.26882100105285645,
-                  -0.2697608172893524,
-                  -0.18472035229206085,
-                  -0.5049402117729187,
+                  -0.22407519817352295,
+                  -0.21514491736888885,
+                  -0.20656977593898773,
+                  -0.1983356773853302,
+                  -0.19042909145355225,
+                  -0.18283703923225403,
+                  -0.1451321840286255,
+                  -0.3082355558872223,
+                  -0.16978995501995087,
+                  -0.16301773488521576,
+                  -0.9381713271141052,
+                  -0.27578824758529663,
+                  -0.2698417007923126,
+                  -0.1846924126148224,
+                  -0.5051753520965576,
                   0,
-                  -0.8491552472114563,
-                  -0.10798848420381546,
+                  -0.8489071726799011,
+                  -0.10953716933727264,
                   0,
-                  -1.1743701696395874,
-                  0.19339440762996674,
-                  0.18298202753067017,
-                  -0.151942178606987,
-                  -0.9616670608520508,
-                  -0.15764065086841583,
-                  -0.12047011405229568,
+                  -1.174393653869629,
+                  0.1934046745300293,
+                  0.18256907165050507,
+                  -0.1519656777381897,
+                  -0.9615914821624756,
+                  -0.15760765969753265,
+                  -0.12043701857328415,
                   0,
-                  -0.046639129519462585,
-                  -0.3758554458618164,
-                  -0.4080527424812317,
-                  0.28483155369758606,
-                  -0.5910518169403076,
-                  -0.3758554458618164,
-                  -0.5014888048171997,
+                  -0.04662163555622101,
+                  -0.37597745656967163,
+                  -0.4080393314361572,
+                  0.28019803762435913,
+                  -0.5911703705787659,
+                  -0.37597745656967163,
+                  -0.501384437084198,
                   -0.02312246523797512,
-                  -0.5081932544708252,
-                  0.507821261882782,
-                  -0.05224651098251343,
-                  -0.09856759756803513,
-                  -0.09856759756803513,
-                  -0.09856759756803513,
+                  -0.5081567168235779,
+                  0.5058823823928833,
+                  -0.052239514887332916,
+                  -0.09857756644487381,
+                  -0.09857756644487381,
+                  -0.09857756644487381,
                   0,
                   -0.014050786383450031,
-                  -0.03963438794016838,
-                  -0.10157014429569244,
-                  -0.031735844910144806,
-                  -0.027432868257164955,
-                  -0.1562957614660263,
-                  -0.020534109324216843,
-                  -0.13693556189537048,
-                  -0.08684506267309189,
-                  -0.08684506267309189,
-                  -0.08736053854227066,
-                  -0.0807829350233078,
-                  -0.010898659005761147,
-                  -0.010898659005761147,
-                  -0.24629148840904236,
-                  -0.19796371459960938,
-                  -0.03453755006194115,
-                  -0.03030189871788025,
+                  -0.03962540253996849,
+                  -0.1015884280204773,
+                  -0.031725093722343445,
+                  -0.02742225117981434,
+                  -0.15627402067184448,
+                  -0.020519234240055084,
+                  -0.13689526915550232,
+                  -0.0868588536977768,
+                  -0.0868588536977768,
+                  -0.08737631142139435,
+                  -0.08079440146684647,
+                  -0.010884733870625496,
+                  -0.010884733870625496,
+                  -0.24624483287334442,
+                  -0.19792486727237701,
+                  -0.0345333069562912,
+                  -0.0302965696901083,
                   0,
-                  -0.06469564884901047,
-                  -0.062095899134874344,
-                  -0.05960046499967575,
-                  -0.05720517411828041,
-                  0,
-                  0,
-                  -0.07033912092447281,
-                  -0.05354056507349014,
-                  -0.029604779556393623,
-                  -0.0481826588511467,
-                  -0.0481826588511467,
-                  -0.015192911960184574,
-                  -0.08122875541448593,
-                  -0.05442021042108536,
-                  -0.08921787142753601,
-                  -0.040487710386514664,
-                  -0.040487710386514664,
-                  -0.04860546067357063,
-                  -0.03610420972108841,
+                  -0.0647035762667656,
+                  -0.0621020682156086,
+                  -0.05960500240325928,
+                  -0.05720820277929306,
                   0,
                   0,
-                  -0.030429741367697716,
-                  -0.030429741367697716,
-                  -0.043852243572473526,
-                  -0.04215817525982857,
-                  -0.04052921384572983,
-                  -0.030854979529976845,
-                  -0.030854979529976845,
-                  -0.03755643963813782,
-                  -0.027326326817274094,
-                  -0.027326326817274094,
-                  -0.025424856692552567,
-                  -0.025424856692552567,
-                  -0.5033448934555054,
-                  -0.4125751852989197,
-                  -0.23032315075397491,
-                  -0.49272409081459045,
-                  0.5088670253753662,
-                  0.018378449603915215,
+                  -0.07031760364770889,
+                  -0.05354209989309311,
+                  -0.029590608552098274,
+                  -0.04818112775683403,
+                  -0.04818112775683403,
+                  -0.015182706527411938,
+                  -0.08121321350336075,
+                  -0.05441223457455635,
+                  -0.08920353651046753,
+                  -0.0404832661151886,
+                  -0.0404832661151886,
+                  -0.04859493672847748,
+                  -0.03609023988246918,
+                  0,
+                  0,
+                  -0.030420031398534775,
+                  -0.030420031398534775,
+                  -0.04384041205048561,
+                  -0.04214582219719887,
+                  -0.04051640257239342,
+                  -0.030847126618027687,
+                  -0.030847126618027687,
+                  -0.037542782723903656,
+                  -0.027317436411976814,
+                  -0.027317436411976814,
+                  -0.025415824726223946,
+                  -0.025415824726223946,
+                  -0.49915194511413574,
+                  -0.4124957323074341,
+                  -0.23138538002967834,
+                  -0.5000370144844055,
+                  0.5049170851707458,
+                  0.004748012870550156,
                   -0.002721585566177964,
                   -0.0013311112998053432,
                   0,
-                  -0.14905446767807007,
-                  -0.568605899810791,
-                  0.5990844368934631,
-                  -0.23032315075397491,
-                  -0.022050252184271812,
-                  -0.28412577509880066,
-                  -0.0034557287581264973,
-                  -0.4612443745136261,
+                  -0.14906233549118042,
+                  -0.5686137676239014,
+                  0.598277747631073,
+                  -0.23138538002967834,
+                  -0.022032760083675385,
+                  -0.2841355502605438,
+                  -0.004939353093504906,
+                  -0.4614293575286865,
                   0,
                   0,
                   0,
                   0,
                   -0.10312085598707199,
                   0,
-                  -0.27444204688072205,
-                  -0.27444204688072205,
+                  -0.2744497060775757,
+                  -0.2744497060775757,
                   -0.014200933277606964,
                   0,
                   0,
                   0,
-                  -0.2238495647907257,
+                  -0.2261112481355667,
                   0,
-                  -0.17660000920295715,
+                  -0.1779988408088684,
                   -0.2362656593322754,
                   -0.17338965833187103,
-                  0.5102708339691162,
-                  -0.09268947690725327,
-                  -0.09268947690725327,
+                  0.5087053775787354,
+                  -0.09275512397289276,
+                  -0.09275512397289276,
                   0,
                   0,
                   0,
                   0,
-                  0.11178027093410492,
+                  0.10573137551546097,
                   -0.06858739256858826,
-                  -0.01432171743363142,
+                  -0.014244531281292439,
                   -0.24268685281276703,
                   -0.3469725549221039,
                   0,
-                  0.1177622377872467,
+                  0.1173492968082428,
                   0,
                   -0.13715875148773193,
                   0,
-                  0.15140974521636963,
+                  0.14847993850708008,
                   0,
                   0,
-                  -0.726395845413208,
+                  -0.7263186573982239,
                   0,
-                  0.4589520990848541,
+                  0.45898687839508057,
                   -0.17338965833187103,
                   0,
                   -0.016889439895749092,
                   -0.061682529747486115,
-                  -0.10798848420381546,
+                  -0.10953716933727264,
                   0,
                   0,
                   0,
-                  -0.01432171743363142,
+                  -0.014244531281292439,
                   0,
                   0,
                   0,
@@ -5636,24 +7356,24 @@
                   0,
                   -0.061682529747486115,
                   0,
-                  -0.7556518912315369,
-                  14.410061836242676,
-                  0.5063600540161133,
-                  -0.12206976860761642,
-                  0.11911185085773468,
-                  -0.24907083809375763,
-                  0.623050332069397,
-                  0.2370436191558838,
-                  -0.24882856011390686,
-                  -0.039712607860565186,
-                  0.38891392946243286,
-                  0.21644385159015656,
-                  0.21904483437538147,
-                  0.21904483437538147,
-                  0.501619279384613,
-                  0.20603151619434357,
-                  0.24266496300697327,
-                  0.24266496300697327,
+                  -0.7560862898826599,
+                  14.41755199432373,
+                  0.5055753588676453,
+                  -0.1187872365117073,
+                  0.11731995642185211,
+                  -0.2504504323005676,
+                  0.623225748538971,
+                  0.23721861839294434,
+                  -0.2504172921180725,
+                  -0.04115257039666176,
+                  0.38679376244544983,
+                  0.21645410358905792,
+                  0.21905504167079926,
+                  0.21905504167079926,
+                  0.5016538500785828,
+                  0.20561853051185608,
+                  0.24676616489887238,
+                  0.24676616489887238,
                   -0.79781574010849,
                   -3.1473464965820312,
                   -0.32209131121635437,
@@ -5688,91 +7408,77 @@
                   -0.014200933277606964,
                   0,
                   -0.07831234484910965,
-                  -0.13800566375531892
+                  -0.13542414641478298
                 ],
                 [
-                  -0.1360352337360382,
-                  -0.10243389010429382,
-                  -0.09822150319814682,
-                  -0.09418226033449173,
-                  -0.09030906856060028,
-                  -0.08659510314464569,
-                  -0.054843559861183167,
-                  -0.6672404408454895,
-                  -0.2857570946216583,
-                  -0.077552929520607,
-                  -2.15738844871521,
-                  -0.05532913655042648,
+                  -0.13605499267578125,
+                  -0.10246310383081436,
+                  -0.09824829548597336,
+                  -0.0942067801952362,
+                  -0.09033145755529404,
+                  -0.08661548048257828,
+                  -0.054845817387104034,
+                  -0.6671096682548523,
+                  -0.2856985926628113,
+                  -0.07756946980953217,
+                  -2.1575865745544434,
+                  -0.05545056238770485,
                   -0.031960874795913696,
-                  -0.8777666091918945,
-                  0.6172305345535278,
-                  -1.2803438901901245,
-                  0.6003612875938416,
-                  -0.8627859950065613,
-                  -0.5623841881752014,
-                  -0.6387689113616943,
-                  0.3710182011127472,
-                  -0.21945257484912872,
-                  -0.13144537806510925,
-                  -0.42323723435401917,
-                  -0.6208248138427734,
-                  -0.428376704454422,
-                  -0.2503262162208557,
-                  -1.3944551944732666,
-                  -0.3715337812900543,
-                  0.5714082717895508,
-                  0.38909849524497986,
-                  0.31456005573272705,
-                  -0.10030646622180939,
-                  -0.33020201325416565,
+                  -0.8780660033226013,
+                  0.6169188022613525,
+                  -1.280411958694458,
+                  0.6000359058380127,
+                  -0.8630023002624512,
+                  -0.5626487731933594,
+                  -0.6389958262443542,
+                  0.37092405557632446,
+                  -0.21949920058250427,
+                  -0.13146165013313293,
+                  -0.4236021637916565,
+                  -0.6208400726318359,
+                  -0.4283428192138672,
+                  -0.25032734870910645,
+                  -1.3948726654052734,
+                  -0.3715594708919525,
+                  0.5713963508605957,
+                  0.3891526460647583,
+                  0.31456178426742554,
+                  -0.10030236095190048,
+                  -0.33027005195617676,
                   0,
                   -0.43994975090026855,
-                  0.3380598723888397,
+                  0.33793526887893677,
                   -0.00255495123565197,
                   -0.0025647711008787155,
                   -0.0025647711008787155,
                   -0.0025647711008787155,
-                  -0.28933289647102356,
+                  -0.28940093517303467,
                   -0.014702240005135536,
                   0,
                   -0.0000022085628188506234,
                   0,
                   0,
-                  -0.32489651441574097,
+                  -0.3246687948703766,
                   0,
-                  -0.023004833608865738,
+                  -0.02296929620206356,
                   -0.000002115895995302708,
                   -0.000002115895995302708,
                   -0.000002027117034231196,
                   -0.0000018605779814606649,
                   0,
                   0,
-                  -0.07824721187353134,
+                  -0.0782446563243866,
                   0,
                   0,
-                  -0.023646099492907524,
-                  -0.07401074469089508,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  -0.0005869431188330054,
+                  -0.02362114191055298,
+                  -0.07400818169116974,
                   0,
                   0,
                   0,
                   0,
                   0,
                   0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  -0.2512730360031128,
-                  -0.0025381825398653746,
-                  -0.2394057661294937,
+                  -0.0005899527459405363,
                   0,
                   0,
                   0,
@@ -5784,126 +7490,140 @@
                   0,
                   0,
                   0,
-                  0,
-                  0.19644775986671448,
-                  -0.4036661982536316,
-                  -0.17150530219078064,
-                  0.17186829447746277,
-                  -0.5019790530204773,
-                  -0.21705009043216705,
+                  -0.25127550959587097,
+                  -0.002497713780030608,
+                  -0.2394922971725464,
                   0,
                   0,
-                  -0.18068881332874298,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0.19662058353424072,
+                  -0.40379059314727783,
+                  -0.17156095802783966,
+                  0.17174896597862244,
+                  -0.5019623041152954,
+                  -0.21701346337795258,
+                  0,
+                  0,
+                  -0.18072065711021423,
                   -0.43582889437675476,
-                  -0.9694215059280396,
-                  -0.33052799105644226,
-                  -0.7402263283729553,
-                  -0.12927234172821045,
-                  -0.31043708324432373,
-                  0.19666439294815063,
-                  -0.2601775527000427,
+                  -0.969336211681366,
+                  -0.3304199278354645,
+                  -0.7404713034629822,
+                  -0.12932685017585754,
+                  -0.31046876311302185,
+                  0.1968926638364792,
+                  -0.2601734697818756,
                   -0.014461778104305267,
-                  -0.026235241442918777,
-                  -0.2088944911956787,
-                  -0.0035989899188280106,
-                  -0.4334946274757385,
-                  0.522057056427002,
-                  -0.01432470791041851,
-                  -0.01432470791041851,
-                  -0.6369953751564026,
-                  -0.15712347626686096,
-                  -0.15712347626686096,
-                  -0.15712347626686096,
-                  1.4074422121047974,
-                  -0.6256352663040161,
-                  -0.875397801399231,
-                  -0.14159364998340607,
-                  -1.437862753868103,
-                  -0.08021910488605499,
-                  -0.06526834517717361,
-                  -0.06526834517717361,
-                  -0.5023238062858582,
-                  -0.5023238062858582,
-                  -0.765052855014801,
-                  -0.765052855014801,
-                  -0.12493140250444412,
-                  0.34836506843566895,
-                  -0.023646099492907524,
-                  -1.0579915046691895,
-                  -0.5430331826210022,
-                  -0.13214392960071564,
+                  -0.02619227208197117,
+                  -0.20891018211841583,
+                  -0.0035797380842268467,
+                  -0.4334753751754761,
+                  0.5220104455947876,
+                  -0.01430100854486227,
+                  -0.01430100854486227,
+                  -0.6370225548744202,
+                  -0.15715065598487854,
+                  -0.15715065598487854,
+                  -0.15715065598487854,
+                  1.407413363456726,
+                  -0.6258738040924072,
+                  -0.875449538230896,
+                  -0.1418103277683258,
+                  -1.438018798828125,
+                  -0.08016050606966019,
+                  -0.06521204859018326,
+                  -0.06521204859018326,
+                  -0.502517819404602,
+                  -0.502517819404602,
+                  -0.7651943564414978,
+                  -0.7651943564414978,
+                  -0.12487882375717163,
+                  0.3483234941959381,
+                  -0.02362114191055298,
+                  -1.0579665899276733,
+                  -0.5430082082748413,
+                  -0.13215400278568268,
                   -0.33178871870040894,
-                  -0.18569210171699524,
-                  0.3278132677078247,
-                  -0.1282961517572403,
-                  0.6312358379364014,
+                  -0.18579328060150146,
+                  0.3279552459716797,
+                  -0.12826316058635712,
+                  0.6313015818595886,
                   0,
                   0,
                   -1.7882349491119385,
-                  -0.022906308993697166,
-                  -0.734508216381073,
-                  -0.6438235640525818,
-                  -0.13577863574028015,
-                  0.1365504413843155,
-                  0.23875296115875244,
-                  -0.7655745148658752,
-                  -0.5047718286514282,
+                  -0.022820986807346344,
+                  -0.7344379425048828,
+                  -0.6437904834747314,
+                  -0.13569584488868713,
+                  0.1367003321647644,
+                  0.2386602759361267,
+                  -0.7659437656402588,
+                  -0.505004346370697,
                   0,
                   0,
                   0,
                   0,
                   0,
-                  -0.0007961610681377351,
-                  -0.16250012814998627,
-                  -0.16250012814998627,
-                  -0.3879533112049103,
-                  -0.16250012814998627,
-                  0.5178008675575256,
-                  -0.18569210171699524,
-                  -0.04694601520895958,
-                  -1.0112578868865967,
-                  0.1452452391386032,
-                  0.7023276090621948,
-                  0.7023276090621948,
-                  -0.045054513961076736,
-                  0.33434122800827026,
-                  -0.2157565802335739,
-                  -0.014802422374486923,
+                  -0.0007682241266593337,
+                  -0.16247953474521637,
+                  -0.16247953474521637,
+                  -0.388032466173172,
+                  -0.16247953474521637,
+                  0.517794132232666,
+                  -0.18579328060150146,
+                  -0.04692908003926277,
+                  -1.011648416519165,
+                  0.14518222212791443,
+                  0.702372133731842,
+                  0.702372133731842,
+                  -0.04503640532493591,
+                  0.33434179425239563,
+                  -0.21610502898693085,
+                  -0.014778142794966698,
                   0,
                   0,
-                  0.6874814033508301,
-                  0,
-                  0,
-                  0,
+                  0.6874525547027588,
                   0,
                   0,
                   0,
-                  1.5627113580703735,
-                  12.637414932250977,
-                  -0.4320862889289856,
-                  -0.008811852894723415,
-                  -0.03369121253490448,
-                  0.9506849646568298,
-                  0.7490335702896118,
-                  0.7656111121177673,
-                  1.0953404903411865,
-                  0.3574388027191162,
-                  0.382318377494812,
-                  0.6924272775650024,
-                  0.6924272775650024,
-                  0.5273045301437378,
-                  0.5273045301437378,
-                  1.4326553344726562,
-                  0.6022051572799683,
-                  0.859679102897644,
-                  0.859679102897644,
-                  0.3745167553424835,
-                  0.3745167553424835,
-                  0.7023276090621948,
-                  -0.3297309875488281,
-                  0.6874814033508301,
-                  0.48643532395362854,
-                  0.48643532395362854,
+                  0,
+                  0,
+                  0,
+                  1.5626863241195679,
+                  12.638463020324707,
+                  -0.43212684988975525,
+                  -0.008859590627253056,
+                  -0.03373917564749718,
+                  0.9508451223373413,
+                  0.7491474151611328,
+                  0.7656400799751282,
+                  1.0954326391220093,
+                  0.3573789894580841,
+                  0.38225844502449036,
+                  0.6923473477363586,
+                  0.6923473477363586,
+                  0.5272195339202881,
+                  0.5272195339202881,
+                  1.4327634572982788,
+                  0.6021378636360168,
+                  0.8596312999725342,
+                  0.8596312999725342,
+                  0.374573677778244,
+                  0.374573677778244,
+                  0.702372133731842,
+                  -0.32979288697242737,
+                  0.6874525547027588,
+                  0.48650220036506653,
+                  0.48650220036506653,
                   -0.6723562479019165,
                   -0.2456546574831009,
                   -0.2456546574831009,
@@ -5912,59 +7632,59 @@
                   -0.2313814014196396,
                   -0.10424434393644333,
                   -0.012439766898751259,
-                  -0.8432882629819425
+                  -0.8437960919711651
                 ],
                 [
-                  -0.20428510010242462,
-                  -0.1959449052810669,
-                  -0.18794496357440948,
-                  -0.18027138710021973,
-                  -0.1729108989238739,
-                  -0.1658506989479065,
-                  -0.22000357508659363,
-                  1.0434505939483643,
-                  -0.15006296336650848,
-                  -0.143936425447464,
-                  3.272573471069336,
-                  -1.5160531997680664,
-                  -0.41678839921951294,
-                  -0.6409163475036621,
-                  -4.285472393035889,
-                  -1.4749706983566284,
-                  1.6221215724945068,
-                  -0.4433400630950928,
-                  -0.34029996395111084,
-                  2.9605562686920166,
-                  0.26251694560050964,
-                  -1.0118082761764526,
-                  -0.6809936761856079,
-                  0.3814111649990082,
-                  1.102177381515503,
+                  -0.2042924463748932,
+                  -0.19595186412334442,
+                  -0.18795153498649597,
+                  -0.18027761578559875,
+                  -0.17291675508022308,
+                  -0.1658562272787094,
+                  -0.22003965079784393,
+                  1.043624758720398,
+                  -0.15006525814533234,
+                  -0.1439385712146759,
+                  3.2726032733917236,
+                  -1.5160396099090576,
+                  -0.4169008135795593,
+                  -0.6409572958946228,
+                  -4.285380840301514,
+                  -1.4751838445663452,
+                  1.622037410736084,
+                  -0.44334864616394043,
+                  -0.3403272032737732,
+                  2.960330009460449,
+                  0.26278021931648254,
+                  -1.0120593309402466,
+                  -0.6812920570373535,
+                  0.3816855847835541,
+                  1.1024667024612427,
                   -0.14478838443756104,
                   -0.10524921119213104,
-                  -3.19765305519104,
-                  -0.7635154128074646,
-                  -0.23587237298488617,
+                  -3.1983275413513184,
+                  -0.7638831734657288,
+                  -0.23586732149124146,
                   -0.007728160358965397,
-                  -0.9639745950698853,
+                  -0.9641897082328796,
                   -0.007728160358965397,
-                  -0.3873586356639862,
+                  -0.3873996138572693,
                   -0.05902693048119545,
-                  1.3850963115692139,
-                  -2.1077122688293457,
+                  1.3851121664047241,
+                  -2.108109712600708,
                   -0.0100262351334095,
                   -0.013771881349384785,
                   -0.013771881349384785,
                   -0.013771881349384785,
-                  -0.20957520604133606,
+                  -0.20961616933345795,
                   0,
                   0,
                   -0.00922850240021944,
                   0,
                   0,
-                  -0.13240185379981995,
-                  -0.10821621119976044,
-                  -0.10821621119976044,
+                  -0.13239897787570953,
+                  -0.10821939259767532,
+                  -0.10821939259767532,
                   -0.00246942276135087,
                   -0.00246942276135087,
                   -0.002365810563787818,
@@ -5974,14 +7694,14 @@
                   -0.03579135611653328,
                   -0.002080336445942521,
                   -0.0019019398605450988,
-                  -0.011649800464510918,
+                  -0.011617511510848999,
                   -0.0258463267236948,
                   -0.0007575929630547762,
                   -0.0007258058176375926,
                   -0.0006953524425625801,
                   -0.0006661768420599401,
-                  -0.10043984651565552,
-                  -0.2968863248825073,
+                  -0.10042886435985565,
+                  -0.2969140410423279,
                   0,
                   0,
                   0,
@@ -5994,9 +7714,9 @@
                   0,
                   0,
                   0,
-                  -0.49353522062301636,
-                  -0.10905437916517258,
-                  -0.3280427157878876,
+                  -0.49376529455184937,
+                  -0.10910355299711227,
+                  -0.32826289534568787,
                   0,
                   0,
                   0,
@@ -6011,87 +7731,63 @@
                   0,
                   0,
                   -0.006067787297070026,
-                  -0.643921434879303,
-                  0.13038992881774902,
-                  -1.0800243616104126,
-                  -0.5684996247291565,
+                  -0.6441053152084351,
+                  0.1305484175682068,
+                  -1.0797816514968872,
+                  -0.5685638189315796,
                   0,
                   0,
                   0,
-                  0.2581250071525574,
-                  2.5395729541778564,
-                  4.3622870445251465,
-                  -1.0464836359024048,
+                  0.2582079768180847,
+                  2.539685010910034,
+                  4.36236572265625,
+                  -1.0465954542160034,
                   -0.08243340998888016,
                   0,
                   0,
-                  -0.2872261703014374,
+                  -0.2871335744857788,
                   0,
-                  -1.1723697185516357,
-                  -0.08419197797775269,
+                  -1.1723215579986572,
+                  -0.08414249122142792,
                   0,
-                  0.025477245450019836,
+                  0.025531189516186714,
                   0,
-                  -0.08953797072172165,
-                  -0.08953797072172165,
-                  4.091404438018799,
-                  -0.2793642282485962,
-                  -0.2793642282485962,
-                  -0.2793642282485962,
-                  -2.821348190307617,
-                  -0.09331007301807404,
-                  -0.3498554825782776,
-                  3.721031904220581,
-                  3.254361629486084,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  -1.2746609449386597,
-                  0,
-                  -1.7089707851409912,
-                  -0.00868043303489685,
-                  -1.66684889793396,
-                  3.3582117557525635,
-                  2.2921042442321777,
-                  0,
-                  4.555942058563232,
-                  -1.1723697185516357,
-                  -1.3891677856445312,
-                  -1.3891677856445312,
-                  -1.6066800355911255,
-                  -1.652117133140564,
-                  -1.652117133140564,
-                  5.210423946380615,
-                  -0.19621507823467255,
-                  2.2948901653289795,
-                  3.6474907398223877,
-                  -0.21679817140102386,
+                  -0.08949538320302963,
+                  -0.08949538320302963,
+                  4.091507911682129,
+                  -0.279327929019928,
+                  -0.279327929019928,
+                  -0.279327929019928,
+                  -2.8212156295776367,
+                  -0.09324157983064651,
+                  -0.3496672511100769,
+                  3.7209885120391846,
+                  3.254518508911133,
                   0,
                   0,
                   0,
                   0,
                   0,
+                  -1.2747459411621094,
                   0,
+                  -1.708884596824646,
+                  -0.008648144081234932,
+                  -1.6672097444534302,
+                  3.3583807945251465,
+                  2.292160987854004,
                   0,
-                  0,
-                  -1.2746609449386597,
-                  0,
-                  -0.20796959102153778,
-                  -0.20796959102153778,
-                  -0.20796959102153778,
-                  -0.20796959102153778,
-                  2.7539029121398926,
-                  0,
-                  0,
-                  -0.38745760917663574,
-                  0,
-                  -0.43558987975120544,
-                  -0.43558987975120544,
-                  0,
-                  0,
-                  3.543797254562378,
+                  4.555768966674805,
+                  -1.1723215579986572,
+                  -1.389199137687683,
+                  -1.389199137687683,
+                  -1.6064602136611938,
+                  -1.6525421142578125,
+                  -1.6525421142578125,
+                  5.210322380065918,
+                  -0.1962117850780487,
+                  2.2948405742645264,
+                  3.6475303173065186,
+                  -0.21687883138656616,
                   0,
                   0,
                   0,
@@ -6100,18 +7796,22 @@
                   0,
                   0,
                   0,
+                  -1.2747459411621094,
+                  0,
+                  -0.2079823911190033,
+                  -0.2079823911190033,
+                  -0.2079823911190033,
+                  -0.2079823911190033,
+                  2.753985643386841,
                   0,
                   0,
+                  -0.38732507824897766,
                   0,
-                  -1.3493192195892334,
+                  -0.4357568621635437,
+                  -0.4357568621635437,
                   0,
                   0,
-                  0.9443979263305664,
-                  -0.2256893813610077,
-                  0,
-                  -0.5980686545372009,
-                  -0.5980686545372009,
-                  0.9443979263305664,
+                  3.5439538955688477,
                   0,
                   0,
                   0,
@@ -6123,20 +7823,40 @@
                   0,
                   0,
                   0,
-                  -0.43558987975120544,
+                  -1.3492326736450195,
+                  0,
+                  0,
+                  0.9443281888961792,
+                  -0.22557765245437622,
+                  0,
+                  -0.5979501008987427,
+                  -0.5979501008987427,
+                  0.9443281888961792,
                   0,
                   0,
                   0,
                   0,
-                  2.5303690433502197,
-                  0.025477245450019836,
-                  0.025477245450019836,
-                  4.695958614349365,
-                  3.3601975440979004,
-                  4.869486331939697,
-                  1.3357666730880737,
-                  0.9443979263305664,
-                  -2.9280853928558255
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.4357568621635437,
+                  0,
+                  0,
+                  0,
+                  0,
+                  2.530503034591675,
+                  0.025531189516186714,
+                  0.025531189516186714,
+                  4.696131229400635,
+                  3.3601856231689453,
+                  4.869624614715576,
+                  1.335949182510376,
+                  0.9443281888961792,
+                  -2.9284411280728397
                 ]
               ]
             }
@@ -6146,6 +7866,1382 @@
     },
     "intentDomains": {},
     "extraSentences": [
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "greetings"
+      ],
+      [
+        "en",
+        "salutations"
+      ],
+      [
+        "en",
+        "howdy"
+      ],
+      [
+        "en",
+        "yo"
+      ],
+      [
+        "en",
+        "hey there"
+      ],
+      [
+        "en",
+        "welcome"
+      ],
+      [
+        "en",
+        "hiya"
+      ],
+      [
+        "en",
+        "what's up"
+      ],
+      [
+        "en",
+        "good to see you"
+      ],
+      [
+        "en",
+        "pleased to meet you"
+      ],
+      [
+        "en",
+        "how are things"
+      ],
+      [
+        "en",
+        "how's life"
+      ],
+      [
+        "en",
+        "how's your day"
+      ],
+      [
+        "en",
+        "nice to see you"
+      ],
+      [
+        "en",
+        "glad to see you"
+      ],
+      [
+        "en",
+        "how have you been"
+      ],
+      [
+        "en",
+        "what's new"
+      ],
+      [
+        "en",
+        "it's been a while"
+      ],
+      [
+        "en",
+        "good morning"
+      ],
+      [
+        "en",
+        "morning"
+      ],
+      [
+        "en",
+        "top of the morning"
+      ],
+      [
+        "en",
+        "morning glory"
+      ],
+      [
+        "en",
+        "rise and shine"
+      ],
+      [
+        "en",
+        "wishing you a good morning"
+      ],
+      [
+        "en",
+        "have a great morning"
+      ],
+      [
+        "en",
+        "beautiful morning"
+      ],
+      [
+        "en",
+        "sunshine"
+      ],
+      [
+        "en",
+        "bright morning"
+      ],
+      [
+        "en",
+        "fresh morning"
+      ],
+      [
+        "en",
+        "new day"
+      ],
+      [
+        "en",
+        "start of the day"
+      ],
+      [
+        "en",
+        "break of dawn"
+      ],
+      [
+        "en",
+        "early bird"
+      ],
+      [
+        "en",
+        "sunrise"
+      ],
+      [
+        "en",
+        "dawn"
+      ],
+      [
+        "en",
+        "daybreak"
+      ],
+      [
+        "en",
+        "morning has broken"
+      ],
+      [
+        "en",
+        "new dawn"
+      ],
+      [
+        "en",
+        "good evening"
+      ],
+      [
+        "en",
+        "evening"
+      ],
+      [
+        "en",
+        "good night"
+      ],
+      [
+        "en",
+        "night"
+      ],
+      [
+        "en",
+        "have a good evening"
+      ],
+      [
+        "en",
+        "pleasant evening"
+      ],
+      [
+        "en",
+        "lovely evening"
+      ],
+      [
+        "en",
+        "enjoy your evening"
+      ],
+      [
+        "en",
+        "nightfall"
+      ],
+      [
+        "en",
+        "sunset"
+      ],
+      [
+        "en",
+        "dusk"
+      ],
+      [
+        "en",
+        "twilight"
+      ],
+      [
+        "en",
+        "end of the day"
+      ],
+      [
+        "en",
+        "close of day"
+      ],
+      [
+        "en",
+        "night time"
+      ],
+      [
+        "en",
+        "moonlight"
+      ],
+      [
+        "en",
+        "starry night"
+      ],
+      [
+        "en",
+        "last light"
+      ],
+      [
+        "en",
+        "evening star"
+      ],
+      [
+        "en",
+        "goodnight"
+      ],
+      [
+        "en",
+        "goodbye"
+      ],
+      [
+        "en",
+        "bye"
+      ],
+      [
+        "en",
+        "see you"
+      ],
+      [
+        "en",
+        "take care"
+      ],
+      [
+        "en",
+        "farewell"
+      ],
+      [
+        "en",
+        "bye bye"
+      ],
+      [
+        "en",
+        "see you later"
+      ],
+      [
+        "en",
+        "see you soon"
+      ],
+      [
+        "en",
+        "catch you later"
+      ],
+      [
+        "en",
+        "until next time"
+      ],
+      [
+        "en",
+        "adios"
+      ],
+      [
+        "en",
+        "cheerio"
+      ],
+      [
+        "en",
+        "ciao"
+      ],
+      [
+        "en",
+        "au revoir"
+      ],
+      [
+        "en",
+        "sayonara"
+      ],
+      [
+        "en",
+        "later"
+      ],
+      [
+        "en",
+        "so long"
+      ],
+      [
+        "en",
+        "goodnight"
+      ],
+      [
+        "en",
+        "peace out"
+      ],
+      [
+        "en",
+        "Let's chat"
+      ],
+      [
+        "en",
+        "Lets talk"
+      ],
+      [
+        "en",
+        "chat start"
+      ],
+      [
+        "en",
+        "I'm here"
+      ],
+      [
+        "en",
+        "chat bot"
+      ],
+      [
+        "en",
+        "chatbot start chat?"
+      ],
+      [
+        "en",
+        "Lets begin"
+      ],
+      [
+        "en",
+        "Let's start"
+      ],
+      [
+        "en",
+        "I need help"
+      ],
+      [
+        "en",
+        "Can we talk?"
+      ],
+      [
+        "en",
+        "I have a question"
+      ],
+      [
+        "en",
+        "Are you there?"
+      ],
+      [
+        "en",
+        "Let's get going"
+      ],
+      [
+        "en",
+        "I'm ready"
+      ],
+      [
+        "en",
+        "Okay, let's begin"
+      ],
+      [
+        "en",
+        "You there?"
+      ],
+      [
+        "en",
+        "Let's converse"
+      ],
+      [
+        "en",
+        "I'm here to chat"
+      ],
+      [
+        "en",
+        "Ready when you are"
+      ],
+      [
+        "en",
+        "Let's kick this off"
+      ],
+      [
+        "en",
+        "Time to chat"
+      ],
+      [
+        "en",
+        "I'm all ears"
+      ],
+      [
+        "en",
+        "I don't believe we've met. What's your name?"
+      ],
+      [
+        "en",
+        "I'm eager to know you better. May I have your name?"
+      ],
+      [
+        "en",
+        "It's nice to start by knowing each other's names. What's yours?"
+      ],
+      [
+        "en",
+        "Before we proceed, could you tell me your name?"
+      ],
+      [
+        "en",
+        "I would love to know who I'm assisting today. Your name, please?"
+      ],
+      [
+        "en",
+        "Let's get acquainted. What's your name?"
+      ],
+      [
+        "en",
+        "To make our conversation more personal, what can I call you?"
+      ],
+      [
+        "en",
+        "Who do I have the pleasure of speaking with today?"
+      ],
+      [
+        "en",
+        "I'm here to help you. First, may I know your name?"
+      ],
+      [
+        "en",
+        "For a more personalized service, may I ask for your name?"
+      ],
+      [
+        "en",
+        "I'd like to address you properly. What is your name?"
+      ],
+      [
+        "en",
+        "Welcome! To start, could you please tell me your name?"
+      ],
+      [
+        "en",
+        "Hello! To whom do I owe the pleasure of this conversation?"
+      ],
+      [
+        "en",
+        "It's always nice to know who I'm chatting with. Your name?"
+      ],
+      [
+        "en",
+        "Greetings! May I inquire who I'm speaking to?"
+      ],
+      [
+        "en",
+        "To assist you better, could you share your name with me?"
+      ],
+      [
+        "en",
+        "Hello there! Might I ask for your name?"
+      ],
+      [
+        "en",
+        "For a tailored experience, what name should I use for you?"
+      ],
+      [
+        "en",
+        "I'm looking forward to our chat. How should I address you?"
+      ],
+      [
+        "en",
+        "Let's make this conversation friendly. What's your name?"
+      ],
+      [
+        "en",
+        "I'm [userName]"
+      ],
+      [
+        "en",
+        "My name is [userName]"
+      ],
+      [
+        "en",
+        "You can call me [userName]"
+      ],
+      [
+        "en",
+        "I go by [userName]"
+      ],
+      [
+        "en",
+        "It's [userName]"
+      ],
+      [
+        "en",
+        "[userName] is my name"
+      ],
+      [
+        "en",
+        "I am known as [userName]"
+      ],
+      [
+        "en",
+        "People call me [userName]"
+      ],
+      [
+        "en",
+        "My friends call me [userName]"
+      ],
+      [
+        "en",
+        "I prefer to be called [userName]"
+      ],
+      [
+        "en",
+        "Just call me [userName]"
+      ],
+      [
+        "en",
+        "[userName] here"
+      ],
+      [
+        "en",
+        "Everyone knows me as [userName]"
+      ],
+      [
+        "en",
+        "The name's [userName]"
+      ],
+      [
+        "en",
+        "Please, address me as [userName]"
+      ],
+      [
+        "en",
+        "I identify as [userName]"
+      ],
+      [
+        "en",
+        "In case you're wondering, I'm [userName]"
+      ],
+      [
+        "en",
+        "For your information, I'm [userName]"
+      ],
+      [
+        "en",
+        "To make things easy, you can call me [userName]"
+      ],
+      [
+        "en",
+        "Let's keep it simple, I'm [userName]"
+      ],
+      [
+        "en",
+        "[userName]"
+      ],
+      [
+        "en",
+        "Your name is now [botName]"
+      ],
+      [
+        "en",
+        "I'll call you [botName] from now on"
+      ],
+      [
+        "en",
+        "How about I name you [botName]?"
+      ],
+      [
+        "en",
+        "Let's change your name to [botName]"
+      ],
+      [
+        "en",
+        "I think [botName] suits you better"
+      ],
+      [
+        "en",
+        "From now on, you're [botName]"
+      ],
+      [
+        "en",
+        "I'm going to name you [botName]"
+      ],
+      [
+        "en",
+        "You look more like a [botName] to me"
+      ],
+      [
+        "en",
+        "Would you mind if I call you [botName]?"
+      ],
+      [
+        "en",
+        "How does the name [botName] sound?"
+      ],
+      [
+        "en",
+        "I'd prefer to call you [botName]"
+      ],
+      [
+        "en",
+        "You give off a [botName] vibe"
+      ],
+      [
+        "en",
+        "Can I rename you to [botName]?"
+      ],
+      [
+        "en",
+        "It's decided, your new name is [botName]"
+      ],
+      [
+        "en",
+        "I hereby christen you [botName]"
+      ],
+      [
+        "en",
+        "Let's update your name tag to [botName]"
+      ],
+      [
+        "en",
+        "You shall be known as [botName]"
+      ],
+      [
+        "en",
+        "I think the name [botName] is more fitting for you"
+      ],
+      [
+        "en",
+        "In my eyes, you're [botName]"
+      ],
+      [
+        "en",
+        "I'm feeling inspired to call you [botName]"
+      ],
+      [
+        "en",
+        "Can I assist you with something?"
+      ],
+      [
+        "en",
+        "How may I be of service today?"
+      ],
+      [
+        "en",
+        "What can I help you with at this moment?"
+      ],
+      [
+        "en",
+        "Is there anything specific you need help with?"
+      ],
+      [
+        "en",
+        "How can I make your day better?"
+      ],
+      [
+        "en",
+        "What assistance do you require?"
+      ],
+      [
+        "en",
+        "Do you need support with anything?"
+      ],
+      [
+        "en",
+        "How can I be of help today?"
+      ],
+      [
+        "en",
+        "What's on your mind that I can help with?"
+      ],
+      [
+        "en",
+        "Are you looking for help with something?"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "greetings"
+      ],
+      [
+        "en",
+        "salutations"
+      ],
+      [
+        "en",
+        "howdy"
+      ],
+      [
+        "en",
+        "yo"
+      ],
+      [
+        "en",
+        "hey there"
+      ],
+      [
+        "en",
+        "welcome"
+      ],
+      [
+        "en",
+        "hiya"
+      ],
+      [
+        "en",
+        "what's up"
+      ],
+      [
+        "en",
+        "good to see you"
+      ],
+      [
+        "en",
+        "pleased to meet you"
+      ],
+      [
+        "en",
+        "how are things"
+      ],
+      [
+        "en",
+        "how's life"
+      ],
+      [
+        "en",
+        "how's your day"
+      ],
+      [
+        "en",
+        "nice to see you"
+      ],
+      [
+        "en",
+        "glad to see you"
+      ],
+      [
+        "en",
+        "how have you been"
+      ],
+      [
+        "en",
+        "what's new"
+      ],
+      [
+        "en",
+        "it's been a while"
+      ],
+      [
+        "en",
+        "good morning"
+      ],
+      [
+        "en",
+        "morning"
+      ],
+      [
+        "en",
+        "top of the morning"
+      ],
+      [
+        "en",
+        "morning glory"
+      ],
+      [
+        "en",
+        "rise and shine"
+      ],
+      [
+        "en",
+        "wishing you a good morning"
+      ],
+      [
+        "en",
+        "have a great morning"
+      ],
+      [
+        "en",
+        "beautiful morning"
+      ],
+      [
+        "en",
+        "sunshine"
+      ],
+      [
+        "en",
+        "bright morning"
+      ],
+      [
+        "en",
+        "fresh morning"
+      ],
+      [
+        "en",
+        "new day"
+      ],
+      [
+        "en",
+        "start of the day"
+      ],
+      [
+        "en",
+        "break of dawn"
+      ],
+      [
+        "en",
+        "early bird"
+      ],
+      [
+        "en",
+        "sunrise"
+      ],
+      [
+        "en",
+        "dawn"
+      ],
+      [
+        "en",
+        "daybreak"
+      ],
+      [
+        "en",
+        "morning has broken"
+      ],
+      [
+        "en",
+        "new dawn"
+      ],
+      [
+        "en",
+        "good evening"
+      ],
+      [
+        "en",
+        "evening"
+      ],
+      [
+        "en",
+        "good night"
+      ],
+      [
+        "en",
+        "night"
+      ],
+      [
+        "en",
+        "have a good evening"
+      ],
+      [
+        "en",
+        "pleasant evening"
+      ],
+      [
+        "en",
+        "lovely evening"
+      ],
+      [
+        "en",
+        "enjoy your evening"
+      ],
+      [
+        "en",
+        "nightfall"
+      ],
+      [
+        "en",
+        "sunset"
+      ],
+      [
+        "en",
+        "dusk"
+      ],
+      [
+        "en",
+        "twilight"
+      ],
+      [
+        "en",
+        "end of the day"
+      ],
+      [
+        "en",
+        "close of day"
+      ],
+      [
+        "en",
+        "night time"
+      ],
+      [
+        "en",
+        "moonlight"
+      ],
+      [
+        "en",
+        "starry night"
+      ],
+      [
+        "en",
+        "last light"
+      ],
+      [
+        "en",
+        "evening star"
+      ],
+      [
+        "en",
+        "goodnight"
+      ],
+      [
+        "en",
+        "goodbye"
+      ],
+      [
+        "en",
+        "bye"
+      ],
+      [
+        "en",
+        "see you"
+      ],
+      [
+        "en",
+        "take care"
+      ],
+      [
+        "en",
+        "farewell"
+      ],
+      [
+        "en",
+        "bye bye"
+      ],
+      [
+        "en",
+        "see you later"
+      ],
+      [
+        "en",
+        "see you soon"
+      ],
+      [
+        "en",
+        "catch you later"
+      ],
+      [
+        "en",
+        "until next time"
+      ],
+      [
+        "en",
+        "adios"
+      ],
+      [
+        "en",
+        "cheerio"
+      ],
+      [
+        "en",
+        "ciao"
+      ],
+      [
+        "en",
+        "au revoir"
+      ],
+      [
+        "en",
+        "sayonara"
+      ],
+      [
+        "en",
+        "later"
+      ],
+      [
+        "en",
+        "so long"
+      ],
+      [
+        "en",
+        "goodnight"
+      ],
+      [
+        "en",
+        "peace out"
+      ],
+      [
+        "en",
+        "Let's chat"
+      ],
+      [
+        "en",
+        "Lets talk"
+      ],
+      [
+        "en",
+        "chat start"
+      ],
+      [
+        "en",
+        "I'm here"
+      ],
+      [
+        "en",
+        "chat bot"
+      ],
+      [
+        "en",
+        "chatbot start chat?"
+      ],
+      [
+        "en",
+        "Lets begin"
+      ],
+      [
+        "en",
+        "Let's start"
+      ],
+      [
+        "en",
+        "I need help"
+      ],
+      [
+        "en",
+        "Can we talk?"
+      ],
+      [
+        "en",
+        "I have a question"
+      ],
+      [
+        "en",
+        "Are you there?"
+      ],
+      [
+        "en",
+        "Let's get going"
+      ],
+      [
+        "en",
+        "I'm ready"
+      ],
+      [
+        "en",
+        "Okay, let's begin"
+      ],
+      [
+        "en",
+        "You there?"
+      ],
+      [
+        "en",
+        "Let's converse"
+      ],
+      [
+        "en",
+        "I'm here to chat"
+      ],
+      [
+        "en",
+        "Ready when you are"
+      ],
+      [
+        "en",
+        "Let's kick this off"
+      ],
+      [
+        "en",
+        "Time to chat"
+      ],
+      [
+        "en",
+        "I'm all ears"
+      ],
+      [
+        "en",
+        "I don't believe we've met. What's your name?"
+      ],
+      [
+        "en",
+        "I'm eager to know you better. May I have your name?"
+      ],
+      [
+        "en",
+        "It's nice to start by knowing each other's names. What's yours?"
+      ],
+      [
+        "en",
+        "Before we proceed, could you tell me your name?"
+      ],
+      [
+        "en",
+        "I would love to know who I'm assisting today. Your name, please?"
+      ],
+      [
+        "en",
+        "Let's get acquainted. What's your name?"
+      ],
+      [
+        "en",
+        "To make our conversation more personal, what can I call you?"
+      ],
+      [
+        "en",
+        "Who do I have the pleasure of speaking with today?"
+      ],
+      [
+        "en",
+        "I'm here to help you. First, may I know your name?"
+      ],
+      [
+        "en",
+        "For a more personalized service, may I ask for your name?"
+      ],
+      [
+        "en",
+        "I'd like to address you properly. What is your name?"
+      ],
+      [
+        "en",
+        "Welcome! To start, could you please tell me your name?"
+      ],
+      [
+        "en",
+        "Hello! To whom do I owe the pleasure of this conversation?"
+      ],
+      [
+        "en",
+        "It's always nice to know who I'm chatting with. Your name?"
+      ],
+      [
+        "en",
+        "Greetings! May I inquire who I'm speaking to?"
+      ],
+      [
+        "en",
+        "To assist you better, could you share your name with me?"
+      ],
+      [
+        "en",
+        "Hello there! Might I ask for your name?"
+      ],
+      [
+        "en",
+        "For a tailored experience, what name should I use for you?"
+      ],
+      [
+        "en",
+        "I'm looking forward to our chat. How should I address you?"
+      ],
+      [
+        "en",
+        "Let's make this conversation friendly. What's your name?"
+      ],
+      [
+        "en",
+        "I'm [userName]"
+      ],
+      [
+        "en",
+        "My name is [userName]"
+      ],
+      [
+        "en",
+        "You can call me [userName]"
+      ],
+      [
+        "en",
+        "I go by [userName]"
+      ],
+      [
+        "en",
+        "It's [userName]"
+      ],
+      [
+        "en",
+        "[userName] is my name"
+      ],
+      [
+        "en",
+        "I am known as [userName]"
+      ],
+      [
+        "en",
+        "People call me [userName]"
+      ],
+      [
+        "en",
+        "My friends call me [userName]"
+      ],
+      [
+        "en",
+        "I prefer to be called [userName]"
+      ],
+      [
+        "en",
+        "Just call me [userName]"
+      ],
+      [
+        "en",
+        "[userName] here"
+      ],
+      [
+        "en",
+        "Everyone knows me as [userName]"
+      ],
+      [
+        "en",
+        "The name's [userName]"
+      ],
+      [
+        "en",
+        "Please, address me as [userName]"
+      ],
+      [
+        "en",
+        "I identify as [userName]"
+      ],
+      [
+        "en",
+        "In case you're wondering, I'm [userName]"
+      ],
+      [
+        "en",
+        "For your information, I'm [userName]"
+      ],
+      [
+        "en",
+        "To make things easy, you can call me [userName]"
+      ],
+      [
+        "en",
+        "Let's keep it simple, I'm [userName]"
+      ],
+      [
+        "en",
+        "[userName]"
+      ],
+      [
+        "en",
+        "Your name is now [botName]"
+      ],
+      [
+        "en",
+        "I'll call you [botName] from now on"
+      ],
+      [
+        "en",
+        "How about I name you [botName]?"
+      ],
+      [
+        "en",
+        "Let's change your name to [botName]"
+      ],
+      [
+        "en",
+        "I think [botName] suits you better"
+      ],
+      [
+        "en",
+        "From now on, you're [botName]"
+      ],
+      [
+        "en",
+        "I'm going to name you [botName]"
+      ],
+      [
+        "en",
+        "You look more like a [botName] to me"
+      ],
+      [
+        "en",
+        "Would you mind if I call you [botName]?"
+      ],
+      [
+        "en",
+        "How does the name [botName] sound?"
+      ],
+      [
+        "en",
+        "I'd prefer to call you [botName]"
+      ],
+      [
+        "en",
+        "You give off a [botName] vibe"
+      ],
+      [
+        "en",
+        "Can I rename you to [botName]?"
+      ],
+      [
+        "en",
+        "It's decided, your new name is [botName]"
+      ],
+      [
+        "en",
+        "I hereby christen you [botName]"
+      ],
+      [
+        "en",
+        "Let's update your name tag to [botName]"
+      ],
+      [
+        "en",
+        "You shall be known as [botName]"
+      ],
+      [
+        "en",
+        "I think the name [botName] is more fitting for you"
+      ],
+      [
+        "en",
+        "In my eyes, you're [botName]"
+      ],
+      [
+        "en",
+        "I'm feeling inspired to call you [botName]"
+      ],
+      [
+        "en",
+        "Can I assist you with something?"
+      ],
+      [
+        "en",
+        "How may I be of service today?"
+      ],
+      [
+        "en",
+        "What can I help you with at this moment?"
+      ],
+      [
+        "en",
+        "Is there anything specific you need help with?"
+      ],
+      [
+        "en",
+        "How can I make your day better?"
+      ],
+      [
+        "en",
+        "What assistance do you require?"
+      ],
+      [
+        "en",
+        "Do you need support with anything?"
+      ],
+      [
+        "en",
+        "How can I be of help today?"
+      ],
+      [
+        "en",
+        "What's on your mind that I can help with?"
+      ],
+      [
+        "en",
+        "Are you looking for help with something?"
+      ],
       [
         "en",
         "hello"

@@ -3,14 +3,18 @@ function chatbotApp() {
     let isMaximized = false;
     let lastX = null;
     let lastY = null;
-    let isClearingChat = false; // State variable to track if we're in clearing mode
+    let isClearingChat = false; // track  in clearing mode
+
+    let userIsActive = false;
+    let lastUserActivityTime = Date.now();
+
     const chatContainer = document.getElementById('chat-container');
-    const clearChatButton = document.getElementById('clear-chat'); // 
+    const clearChatButton = document.getElementById('clear-chat'); 
 
     function centerChatContainer() {
-        if (isMinimized) return; // Do not center if the chat is minimized.
+        if (isMinimized) return; // Do not center if minimized.
     
-        // Remove properties related to fixed positioning.
+        // Remove properties  fixed positioning.
         chatContainer.style.removeProperty('right');
         chatContainer.style.removeProperty('bottom');
         chatContainer.style.removeProperty('transform');
@@ -39,19 +43,19 @@ function chatbotApp() {
                 const deltaX = e.clientX - startX;
                 const deltaY = e.clientY - startY;
             
-                // Calculate the new left and top positions within the constraints of the viewport
+                // left and top positions  constraints of the viewport
                 let newLeft = initialX + deltaX;
                 let newTop = initialY + deltaY;
             
-                // Constrain the new left and top to keep the chat container within the viewport
+                // new left and top to keep the chat container in viewport
                 newLeft = Math.max(0, Math.min(newLeft, window.innerWidth - chatContainer.offsetWidth));
                 newTop = Math.max(0, Math.min(newTop, window.innerHeight - chatContainer.offsetHeight));
             
-                // Convert the new left and top to percentages for responsiveness
+                // Convert new left and top to % for responsiveness
                 lastX = (newLeft / window.innerWidth) * 100;
                 lastY = (newTop / window.innerHeight) * 100;
             
-                // Apply the new position using percentages
+                // Apply  new position 
                 chatContainer.style.left = `${lastX}%`;
                 chatContainer.style.top = `${lastY}%`;
             }
@@ -78,7 +82,7 @@ function chatbotApp() {
             chatContainer.classList.remove('minimized');
             chatContainer.style.removeProperty('inset');
             if (lastX !== null && lastY !== null) {
-                // Restore using percentages to maintain responsiveness
+                // Restore % responsiveness 
                 chatContainer.style.left = `${lastX}%`;
                 chatContainer.style.top = `${lastY}%`;
             } else {
@@ -92,13 +96,13 @@ function chatbotApp() {
     function maximizeChat() {
         if (!isMaximized) {
             chatContainer.classList.add('maximized');
-            // You might want to store the current position before maximizing
+            // store the current position before maximizing
             lastX = chatContainer.style.left;
             lastY = chatContainer.style.top;
             isMaximized = true;
         } else {
             chatContainer.classList.remove('maximized');
-            // Restore to the last position before it was maximized
+            // Restore last position before maximized
             chatContainer.style.left = lastX;
             chatContainer.style.top = lastY;
             isMaximized = false;
@@ -114,13 +118,12 @@ function chatbotApp() {
         const chatLog = document.getElementById('chat-log');
 
         if (!isClearingChat) {
-            // Change the button to "Cancel" mode
+            // Change "Cancel" mode
             console.log("Setting 'Clear Chat' button to 'Cancel' and changing its color to red");
             clearChatButton.textContent = 'Cancel';
             clearChatButton.style.background = 'red';
             isClearingChat = true;
 
-            // Add confirmation and start new session options to the chat log
             console.log("Adding confirmation options to chatLog");
             chatLog.innerHTML = `
             <div id="clear-chat-confirmation">Are you sure you want to clear the chat?</div>
@@ -147,18 +150,17 @@ function chatbotApp() {
         console.log("confirmClearChat function called");
         document.getElementById('chat-log').innerHTML = '';
         console.log("Cleared chat content");
-        // Assume chatbot is a global or accessible object
+        // global chatbot  object
         this.chatbot.conversationHistory = [];
         console.log("Conversation history cleared");
 
-        // Reset the clear chat button to its original state
+        // Reset  clear => original state
         console.log("Resetting 'Clear Chat' button to its original state");
         clearChatButton.textContent = 'Clear Chat';
         clearChatButton.style.background = '';
         isClearingChat = false; // Reset the state
     }
 
-    
 
     return {
         chatbot: new Chatbot(),
@@ -171,45 +173,30 @@ function chatbotApp() {
                 } else if (isMaximized) {
                     // No need to reposition if maximized
                 } else if (lastX !== null && lastY !== null) {
-                    // Ensure the chat window stays within the viewport using percentages
+                    // window stays within the viewport %
                     const leftInPx = (window.innerWidth * lastX) / 100;
                     const topInPx = (window.innerHeight * lastY) / 100;
             
-                    // Apply constraints based on the current viewport size
+                    // Apply  current viewport size
                     const constrainedLeft = Math.min(leftInPx, window.innerWidth - chatContainer.offsetWidth);
                     const constrainedTop = Math.min(topInPx, window.innerHeight - chatContainer.offsetHeight);
             
                     chatContainer.style.left = `${(constrainedLeft / window.innerWidth) * 100}%`;
                     chatContainer.style.top = `${(constrainedTop / window.innerHeight) * 100}%`;
                 } else {
-                    // Center the chat container if it has not been dragged
+                    // Center container if  not been dragged
                     centerChatContainer();
                 }
             });
-            setTimeout(() => {
-                fetch('/api/random-helpyou-phrase')
-                    .then(response => response.json())
-                    .then(data => {
-                        this.chatbot.sendBotMessage(data.phrase); // Use sendBotMessage for bot-initiated phrases
-                    })
-                    .catch(error => console.error('Error fetching random phrase:', error));
-            }, 30000); // Adjust the timeout duration as needed
-
-            setTimeout(() => {
-                console.log("Asking for user's name...");
-                this.chatbot.sendBotMessage("Hi, I'm your virtual assistant. May I have your name?"); // Trigger botIntroductionAndNameRequest intent
-            }, 45000); // Adjust timing as necessary
             makeDraggable();
         },
         userInput: '',
         sendMessage() {
-            this.chatbot.sendMessage(this.userInput);
-            this.userInput = '';
+            if (this.userInput.trim() !== '') {
+                this.chatbot.sendMessage(this.userInput.trim(), 'User');
+                this.userInput = '';
+            }
         },
-        /* sendBotMessage(message) {
-            // This method now directly interacts with the chatbot instance's method
-            this.chatbot.sendBotMessage(message);
-        } */
         minimizeChat: minimizeChat,
         maximizeChat: maximizeChat,
         closeChat: closeChat,
