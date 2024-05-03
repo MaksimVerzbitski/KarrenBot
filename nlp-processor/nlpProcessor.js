@@ -1,81 +1,51 @@
 const express = require('express');
+const bodyParser = require('body-parser');
 const { NlpManager } = require('node-nlp');
-const fs = require('fs');
+const trainnlp = require('./train-nlp');
 const path = require('path');
-const { defineIntents, intentNames } = require('./intents');
+const fs = require('fs')
 
 const app = express();
+app.use(bodyParser.json());
+
 const port = 3000;
+const manager = new NlpManager({ languages: ['en'], ner: { builtins: [] }, threshold: 0.5, forceNER: true });
+const modelPath = path.join(__dirname, 'model.nlp');
+// training.json -> not implemented jet
+const trainingDataPath = path.join(__dirname, 'training.json');
 
-
-/* const modelPath = './nlp-processor/model.nlp';
-const trainingStatusPath = './nlp-processor/trainingStatus.json'; */
-
-
-const basePath = path.join(__dirname);  // `__dirname` is the root of  project
-const modelPath = path.join(basePath, 'model.nlp');
-const trainingStatusPath = path.join(basePath,'trainingStatus.json');
-
-app.use(express.json());
-
-// Instantiate NLP manager
-const manager = new NlpManager({ languages: ['en'] });
-
-async function checkAndTrainModel() {
-  let trainingStatus = {};
-  if (fs.existsSync(trainingStatusPath)) {
-    trainingStatus = JSON.parse(fs.readFileSync(trainingStatusPath, 'utf8'));
-  }
-
-  const needsTraining = intentNames.some(intentName => !trainingStatus[intentName]);
-
-  if (needsTraining) {
-    console.log('Training needed, starting training...');
-    defineIntents(manager);
-    await manager.train();
-    manager.save(modelPath);
-    console.log('Training completed and model saved.');
-
-    // Update training status for all intents to true
-    intentNames.forEach(intentName => {
-      trainingStatus[intentName] = true;
-    });
-    fs.writeFileSync(trainingStatusPath, JSON.stringify(trainingStatus, null, 2));
-  } else {
-    console.log('No training needed.');
-  }
-}
-
+// Load or train model on startup
 async function loadModel() {
-  if (fs.existsSync(modelPath)) {
-    await manager.load(modelPath);
-    console.log('Model loaded successfully.');
-    checkAndTrainModel();
-  } else {
-    console.log('Model not found, initiating training.');
-    await checkAndTrainModel();
-  }
+  await trainnlp(manager);
+  console.log('Model is ready to use.');
 }
 
-// Process messages using NLP manager
+loadModel();
+
+//New method for name saving
+function saveNewName(name, language, gender) {
+  const data = fs.existsSync(trainingDataPath) ? JSON.parse(fs.readFileSync(trainingDataPath)) : {};
+  if (!data[language]) data[language] = {};
+  if (!data[language][gender]) data[language][gender] = [];
+  data[language][gender].push(name);
+  fs.writeFileSync(trainingDataPath, JSON.stringify(data, null, 2));
+}
+
 app.post('/nlp-process-message', async (req, res) => {
   const { message } = req.body;
-
   try {
       const response = await manager.process('en', message);
-      console.log("NLP Output:", response);
-      // Check if the response includes naming intents and handle accordingly
-      if (response.intent.startsWith('userName.') || response.intent.startsWith('botName.')) {
-          // Assuming the response structure includes entities
-          const entities = response.entities.reduce((acc, entity) => {
-              acc[entity.entity] = entity.option; // Map entities to their values
-              return acc;
-          }, {});
+      console.log("NLP Full Response:", JSON.stringify(response, null, 2));
+      // Find the name entity
+      const nameEntity = response.entities.find(entity => entity.entity === 'person');
+      let answer = response.answer || "I'm not sure how to respond to that.";
 
-          res.json({ intent: response.intent, entities: entities, answer: response.answer });
-      } else {
-          res.json({ answer: response.answer || "I'm not sure how to respond to that." });
+      // Replace the placeholder with the actual name
+      if (nameEntity && response.answer) {
+          answer = response.answer.replace('{{name}}', nameEntity.sourceText);
       }
+
+      res.json({ answer });
   } catch (error) {
       console.error('Error processing message:', error);
       res.status(500).send('Error processing your message.');
@@ -83,9 +53,4 @@ app.post('/nlp-process-message', async (req, res) => {
 });
 
 
-// Load the model on server start
-loadModel().then(() => {
-    app.listen(port, () => console.log(`Server running on http://localhost:${port}`));
-});
-
-
+app.listen(port, () => console.log(`Server running on http://localhost:${port}`));

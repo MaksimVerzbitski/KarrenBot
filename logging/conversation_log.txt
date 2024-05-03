@@ -1942,3 +1942,679 @@ bot | Hello!
 28-04-2024 14:40 | User: start
 
 28-04-2024 14:40 | Bot: How can I make your day better?
+
+29-04-2024 20:46 | User: hey
+
+29-04-2024 20:46 | Bot: Ciao!
+
+29-04-2024 21:35 | User: Hi
+
+29-04-2024 21:35 | Bot: Ahoy mate!
+
+29-04-2024 21:35 | User: How are you
+
+29-04-2024 21:35 | Bot: Well met!
+
+29-04-2024 21:36 | User: What is your name
+
+29-04-2024 21:36 | Bot: I'm not sure how to respond to that.
+
+29-04-2024 21:38 | User: Hey
+
+29-04-2024 21:38 | Bot: Sorry, I don't understand
+
+29-04-2024 21:38 | User: Why
+
+29-04-2024 21:38 | Bot: I'm a virtual agent
+
+29-04-2024 21:38 | User: and so
+
+29-04-2024 21:38 | Bot: I'm glad things are going your way
+
+29-04-2024 21:39 | User: How old are you
+
+29-04-2024 21:39 | Bot: I was created recently
+
+29-04-2024 21:39 | User: Evening or morning
+
+29-04-2024 21:39 | Bot: Sorry, I don't understand
+
+29-04-2024 21:40 | User: you are dismissed
+
+29-04-2024 21:40 | Bot: Give me a chance. I'm learning new things all the time
+
+29-04-2024 21:41 | User: name
+
+29-04-2024 21:41 | Bot: Sorry, I don't understand
+
+30-04-2024 12:37 | User: Name
+
+30-04-2024 12:37 | Bot: Sorry, I don't understand
+
+30-04-2024 12:37 | User: My name is Maksim
+
+30-04-2024 12:37 | Bot: It's okay. No worries
+
+30-04-2024 12:40 | User: My name is Maksim
+
+30-04-2024 12:40 | Bot: Nice to meet you, Maksim!
+
+30-04-2024 12:46 | User: What is your name?
+
+30-04-2024 12:46 | Bot: I'm sorry, I didn't catch your name.
+
+30-04-2024 13:08 | User: Hey
+
+30-04-2024 13:08 | Bot: Sorry, I don't understand
+
+30-04-2024 13:08 | User: What is your name?
+
+30-04-2024 13:08 | Bot: I'm sorry, I didn't catch the name.
+
+30-04-2024 13:09 | User: Name is Donald
+
+30-04-2024 13:09 | Bot: I'm sorry, I didn't catch the name.
+
+30-04-2024 13:09 | User: Is Name Donald
+
+30-04-2024 13:09 | Bot: I'm sorry, I didn't catch the name.
+
+30-04-2024 13:11 | User: Hey
+
+30-04-2024 13:11 | Bot: Sorry, I don't understand
+
+30-04-2024 13:11 | User: What is your name?
+
+30-04-2024 13:11 | Bot: I'm sorry, I didn't catch the name.
+
+30-04-2024 13:12 | User: Name Maksim
+
+30-04-2024 13:12 | Bot: I'm sorry, I didn't catch the name.
+
+30-04-2024 13:12 | User: My name is Maksim
+
+30-04-2024 13:12 | Bot: Nice to meet you, Maksim!
+
+30-04-2024 13:12 | User: My name is Donald
+
+30-04-2024 13:12 | Bot: Nice to meet you, Donald!
+
+30-04-2024 13:15 | User: Name is Cock
+
+30-04-2024 13:15 | Bot: I'm sorry, I didn't catch the name.
+
+30-04-2024 13:17 | User: I go by Maksim
+
+30-04-2024 13:17 | Bot: Till next time
+
+30-04-2024 13:17 | User: People call me Maksim
+
+30-04-2024 13:17 | Bot: Sorry, I don't understand
+
+30-04-2024 13:18 | User: You can call me F
+
+30-04-2024 13:18 | Bot: Sure. I'd be happy to. What's up?
+
+30-04-2024 13:18 | User: Name
+
+30-04-2024 13:18 | Bot: I'm sorry, I didn't catch the name.
+
+30-04-2024 13:19 | User: my name is D
+
+30-04-2024 13:19 | Bot: Nice to meet you, D!
+
+30-04-2024 13:29 | User: name
+
+30-04-2024 13:29 | Bot: I'm sorry, I didn't catch the name.
+
+30-04-2024 13:29 | User: What is your name?
+
+30-04-2024 13:29 | Bot: I'm sorry, I didn't catch the name.
+
+30-04-2024 19:40 | User: Hey
+
+30-04-2024 19:40 | Bot: Sorry, I don't understand
+
+30-04-2024 19:40 | User: My name is Maksim
+
+30-04-2024 19:40 | Bot: It's okay. No worries
+
+30-04-2024 19:41 | User: What is your name?
+
+30-04-2024 19:41 | Bot: The virtual world is my playground. I'm always here
+
+30-04-2024 19:42 | User: My name is Maksim
+
+30-04-2024 19:42 | Bot: It's cool
+
+30-04-2024 19:42 | User: Name
+
+30-04-2024 19:42 | Bot: I'm sorry, I didn't catch the name.
+
+30-04-2024 19:42 | User: tell me your name?
+
+30-04-2024 19:42 | Bot: I live in this app
+
+30-04-2024 19:54 | User: Hi
+
+30-04-2024 19:54 | Bot: Hey there!
+
+30-04-2024 19:54 | User: Hello
+
+30-04-2024 19:54 | Bot: Hey there!
+
+30-04-2024 19:54 | User: Yo
+
+30-04-2024 19:54 | Bot: Sorry, I don't understand
+
+30-04-2024 19:54 | User: Name
+
+30-04-2024 19:54 | Bot: I'm sorry, I didn't catch the name.
+
+30-04-2024 19:54 | User: My name is Maksim
+
+30-04-2024 19:54 | Bot: It's okay. No worries
+
+30-04-2024 19:54 | User: What is your name?
+
+30-04-2024 19:54 | Bot: Right here in this app. Whenever you need me
+
+30-04-2024 20:03 | User: Yo
+
+30-04-2024 20:03 | Bot: Sorry, I don't understand
+
+30-04-2024 20:03 | User: Name
+
+30-04-2024 20:03 | Bot: I'm sorry, I didn't catch the name.
+
+30-04-2024 20:04 | User: My name is Maksim
+
+30-04-2024 20:04 | Bot: It's okay. No worries
+
+30-04-2024 20:04 | User: Your name is Donald?
+
+30-04-2024 20:04 | Bot: The virtual world is my playground. I'm always here
+
+30-04-2024 21:46 | User: Namw=e
+
+30-04-2024 21:46 | Bot: Sorry, I don't understand
+
+30-04-2024 21:47 | User: Name
+
+30-04-2024 21:47 | Bot: I'm sorry, I didn't catch the name.
+
+30-04-2024 21:47 | User: My name is Maksim
+
+30-04-2024 21:47 | Bot: It's cool
+
+01-05-2024 11:23 | User: Hey
+
+01-05-2024 11:23 | Bot: There was an error processing your message.
+
+01-05-2024 11:28 | User: Hey
+
+01-05-2024 11:28 | Bot: I'm sorry, I didn't catch the name.
+
+01-05-2024 11:29 | User: Name
+
+01-05-2024 11:29 | Bot: I'm sorry, I didn't catch the name.
+
+01-05-2024 11:29 | User: My name is Maksim
+
+01-05-2024 11:29 | Bot: I'm sorry, I didn't catch the name.
+
+01-05-2024 11:46 | User: hi
+
+01-05-2024 11:46 | Bot: I'm not sure how to respond to that.
+
+01-05-2024 11:46 | User: Name
+
+01-05-2024 11:46 | Bot: I'm not sure how to respond to that.
+
+01-05-2024 11:47 | User: Hello
+
+01-05-2024 11:47 | Bot: I'm not sure how to respond to that.
+
+01-05-2024 11:57 | User: Hey
+
+01-05-2024 11:57 | Bot: I'm not sure how to respond to that.
+
+01-05-2024 11:58 | User: Hello
+
+01-05-2024 11:58 | Bot: I'm not sure how to respond to that.
+
+01-05-2024 11:59 | User: say about you
+
+01-05-2024 11:59 | Bot: I'm not sure how to respond to that.
+
+01-05-2024 12:05 | User: Hello
+
+01-05-2024 12:05 | Bot: I'm not sure how to respond to that.
+
+01-05-2024 12:06 | User: Name
+
+01-05-2024 12:06 | Bot: I'm not sure how to respond to that.
+
+01-05-2024 12:08 | User: hello
+
+01-05-2024 12:08 | Bot: I'm not sure how to respond to that.
+
+01-05-2024 12:10 | User: hello
+
+01-05-2024 12:10 | Bot: Recognized intent without a configured response.
+
+01-05-2024 12:12 | User: name
+
+01-05-2024 12:12 | Bot: Recognized intent without a configured response.
+
+01-05-2024 12:21 | User: Hello
+
+01-05-2024 12:21 | Bot: I'm not sure how to respond to that.
+
+01-05-2024 12:21 | User: hello
+
+01-05-2024 12:21 | Bot: I'm not sure how to respond to that.
+
+01-05-2024 12:22 | User: hey
+
+01-05-2024 12:22 | Bot: Sorry, I don't understand
+
+01-05-2024 12:23 | User: hello
+
+01-05-2024 12:23 | Bot: Greetings!
+
+01-05-2024 12:23 | User: name
+
+01-05-2024 12:23 | Bot: Nice to meet you, Jane! How can I assist you today?
+
+01-05-2024 12:45 | User: Hey
+
+01-05-2024 12:45 | Bot: Sorry, I don't understand
+
+01-05-2024 12:45 | User: Hello
+
+01-05-2024 12:45 | Bot: Greetings!
+
+01-05-2024 12:45 | User: Name
+
+01-05-2024 12:45 | Bot: Nice to meet you, Jane! How can I assist you today?
+
+01-05-2024 13:19 | User: Hey
+
+01-05-2024 13:19 | Bot: Sorry, I don't understand
+
+01-05-2024 13:20 | User: Hello
+
+01-05-2024 13:20 | Bot: Hey there!
+
+01-05-2024 13:22 | User: Name
+
+01-05-2024 13:22 | Bot: Nice to meet you, {{name}}! How can I assist you today?
+
+01-05-2024 13:22 | User: My name is Maksim
+
+01-05-2024 13:22 | Bot: Sorry, I don't understand
+
+01-05-2024 18:41 | User: My name is Maksim
+
+01-05-2024 18:41 | Bot: Sorry, I don't understand
+
+01-05-2024 18:43 | User: My name is Maksim
+
+01-05-2024 18:43 | Bot: Sorry, I don't understand
+
+01-05-2024 18:44 | User: My name is John
+
+01-05-2024 18:44 | Bot: Sorry, I don't understand
+
+01-05-2024 18:48 | User: Maksim
+
+01-05-2024 18:48 | Bot: Sorry, I don't understand
+
+01-05-2024 18:48 | User: My name is Maksim
+
+01-05-2024 18:48 | Bot: Sorry, I don't understand
+
+01-05-2024 19:39 | User: Hello
+
+01-05-2024 19:39 | Bot: I'm not sure how to respond to that.
+
+01-05-2024 19:39 | User: My name is Maksim
+
+01-05-2024 19:39 | Bot: I'm not sure how to respond to that.
+
+01-05-2024 19:42 | User: Hey
+
+01-05-2024 19:42 | Bot: I'm not sure how to respond to that.
+
+01-05-2024 19:42 | User: My name is Maksim
+
+01-05-2024 19:42 | Bot: I'm not sure how to respond to that.
+
+01-05-2024 19:45 | User: Hello
+
+01-05-2024 19:45 | Bot: I'm not sure how to respond to that.
+
+01-05-2024 19:56 | User: hello
+
+01-05-2024 19:56 | Bot: I'm not sure how to respond to that.
+
+01-05-2024 20:01 | User: My name is Maksim
+
+01-05-2024 20:01 | Bot: I'm not sure how to respond to that.
+
+01-05-2024 20:01 | User: name
+
+01-05-2024 20:01 | Bot: I'm not sure how to respond to that.
+
+01-05-2024 20:01 | User: name
+
+01-05-2024 20:01 | Bot: I'm not sure how to respond to that.
+
+01-05-2024 20:02 | User: name
+
+01-05-2024 20:02 | Bot: I'm not sure how to respond to that.
+
+01-05-2024 20:06 | User: Name
+
+01-05-2024 20:06 | Bot: Nice to meet you, {{name}}! How can I assist you today?
+
+01-05-2024 20:06 | User: My name is Maksim
+
+01-05-2024 20:06 | Bot: Sorry, I don't understand
+
+01-05-2024 20:07 | User: Maksim
+
+01-05-2024 20:07 | Bot: Sorry, I don't understand
+
+01-05-2024 20:08 | User: Maksim
+
+01-05-2024 20:08 | Bot: Sorry, I don't understand
+
+01-05-2024 20:08 | User: My name is Maksim
+
+01-05-2024 20:08 | Bot: Sorry, I don't understand
+
+01-05-2024 20:13 | User: Hello
+
+01-05-2024 20:13 | Bot: Greetings!
+
+01-05-2024 20:13 | User: My name is Maksim
+
+01-05-2024 20:13 | Bot: Sorry, I don't understand
+
+01-05-2024 20:42 | User: Hey
+
+01-05-2024 20:42 | Bot: Sorry, I don't understand
+
+01-05-2024 20:42 | User: Hello
+
+01-05-2024 20:42 | Bot: Hello there! How can I help you today?
+
+01-05-2024 20:42 | User: My name is Maksim
+
+01-05-2024 20:42 | Bot: Sorry, I don't understand
+
+01-05-2024 20:43 | User: Hello
+
+01-05-2024 20:43 | Bot: Greetings!
+
+01-05-2024 20:48 | User: My name is Maksim
+
+01-05-2024 20:48 | Bot: Sorry, I don't understand
+
+01-05-2024 20:55 | User: Hey
+
+01-05-2024 20:55 | Bot: Sorry, I don't understand
+
+01-05-2024 20:55 | User: My name is Maksim
+
+01-05-2024 20:55 | Bot: Sorry, I don't understand
+
+02-05-2024 00:21 | User: Hello
+
+02-05-2024 00:21 | Bot: Hey there!
+
+02-05-2024 00:22 | User: My name is Maksim
+
+02-05-2024 00:22 | Bot: Sorry, I don't understand
+
+02-05-2024 00:29 | User: Hello
+
+02-05-2024 00:29 | Bot: Hello there! How can I help you today?
+
+02-05-2024 00:29 | User: My name is Maksim
+
+02-05-2024 00:29 | Bot: Sorry, I don't understand
+
+02-05-2024 00:32 | User: Hey
+
+02-05-2024 00:32 | Bot: Sorry, I don't understand
+
+02-05-2024 00:32 | User: Hello
+
+02-05-2024 00:32 | Bot: Hello there! How can I help you today?
+
+02-05-2024 00:32 | User: My name is Maksim
+
+02-05-2024 00:32 | Bot: Sorry, I don't understand
+
+02-05-2024 00:33 | User: My name is Aet
+
+02-05-2024 00:33 | Bot: Sorry, I don't understand
+
+02-05-2024 00:34 | User: Hello
+
+02-05-2024 00:34 | Bot: Hello there! How can I help you today?
+
+02-05-2024 00:34 | User: my name is maksim
+
+02-05-2024 00:34 | Bot: Sorry, I don't understand
+
+02-05-2024 00:37 | User: Hello
+
+02-05-2024 00:37 | Bot: Greetings!
+
+02-05-2024 00:37 | User: My name is Maksim
+
+02-05-2024 00:37 | Bot: Sorry, I don't understand
+
+02-05-2024 00:43 | User: Hello
+
+02-05-2024 00:43 | Bot: Greetings!
+
+02-05-2024 00:44 | User: My name is Maksim
+
+02-05-2024 00:44 | Bot: Sorry, I don't understand
+
+02-05-2024 00:54 | User: Hello
+
+02-05-2024 00:54 | Bot: Greetings!
+
+02-05-2024 01:01 | User: My name is Maksim
+
+02-05-2024 01:01 | Bot: I'm not sure how to respond to that.
+
+02-05-2024 06:44 | User: My name is Maksim
+
+02-05-2024 06:44 | Bot: I'm not sure how to respond to that.
+
+02-05-2024 06:46 | User: My name is Maksim
+
+02-05-2024 06:46 | Bot: I'm not sure how to respond to that.
+
+02-05-2024 06:47 | User: My name is
+
+02-05-2024 06:47 | Bot: I'm not sure how to respond to that.
+
+02-05-2024 06:49 | User: name
+
+02-05-2024 06:49 | Bot: I'm not sure how to respond to that.
+
+02-05-2024 06:49 | User: My name is Maksim
+
+02-05-2024 06:49 | Bot: Nice to meet you, Maksim! How can I assist you today?
+
+02-05-2024 06:50 | User: My name is Zinovy
+
+02-05-2024 06:50 | Bot: Nice to meet you, Zinovy! How can I assist you today?
+
+02-05-2024 06:54 | User: My name is Maksim
+
+02-05-2024 06:54 | Bot: Nice to meet you, Maksim! How can I assist you today?
+
+02-05-2024 06:55 | User: My name is Agafa
+
+02-05-2024 06:55 | Bot: Nice to meet you, Agafa! How can I assist you today?
+
+02-05-2024 06:55 | User: my name is maksim
+
+02-05-2024 06:55 | Bot: Nice to meet you, Maksim! How can I assist you today?
+
+02-05-2024 08:00 | User: My name is Tatjana
+
+02-05-2024 08:00 | Bot: Nice to meet you, Tatiana! How can I assist you today?
+
+02-05-2024 12:03 | User: My name is Thomas
+
+02-05-2024 12:03 | Bot: I'm not sure how to respond to that.
+
+02-05-2024 12:03 | User: Hello my name is Maksim
+
+02-05-2024 12:03 | Bot: Nice to meet you, Maksim! How can I assist you today?
+
+02-05-2024 12:03 | User: Hello my name is Thomas
+
+02-05-2024 12:03 | Bot: I'm not sure how to respond to that.
+
+02-05-2024 12:05 | User: Hello my name is Maksim
+
+02-05-2024 12:05 | Bot: Nice to meet you, Maksim! How can I assist you today?
+
+02-05-2024 12:05 | User: Hello my name is Tatjana
+
+02-05-2024 12:05 | Bot: Nice to meet you, Tatiana! How can I assist you today?
+
+02-05-2024 12:06 | User: Hello my name Aet
+
+02-05-2024 12:06 | Bot: I'm not sure how to respond to that.
+
+02-05-2024 12:30 | User: My name is Thomas
+
+02-05-2024 12:30 | Bot: Nice to meet you, Thomas! How can I assist you today?
+
+02-05-2024 12:31 | User: My name is Thomas
+
+02-05-2024 12:31 | Bot: Nice to meet you, Thomas! How can I assist you today??
+
+02-05-2024 12:47 | User: My name is Maksim
+
+02-05-2024 12:47 | Bot: I'm not sure how to respond to that.
+
+02-05-2024 12:49 | User: My name is Maksim
+
+02-05-2024 12:49 | Bot: I'm not sure how to respond to that.
+
+02-05-2024 12:51 | User: My name is Maksim
+
+02-05-2024 12:51 | Bot: I'm not sure how to respond to that.
+
+02-05-2024 12:52 | User: My name is Maksim
+
+02-05-2024 12:52 | Bot: I'm not sure how to respond to that.
+
+02-05-2024 12:54 | User: My name is Maksim
+
+02-05-2024 12:54 | Bot: I'm not sure how to respond to that.
+
+02-05-2024 12:55 | User: My name is Maksim
+
+02-05-2024 12:55 | Bot: I'm not sure how to respond to that.
+
+02-05-2024 12:55 | User: My name is Maksim
+
+02-05-2024 12:55 | Bot: I'm not sure how to respond to that.
+
+02-05-2024 12:56 | User: Maksim
+
+02-05-2024 12:56 | Bot: Nice to meet you, Maksim! How can I assist you today??
+
+02-05-2024 14:53 | User: My name is Maksim
+
+02-05-2024 14:53 | Bot: There was an error processing your message.
+
+02-05-2024 14:55 | User: My name is Maksim
+
+02-05-2024 14:55 | Bot: I'm not sure how to respond to that.
+
+02-05-2024 16:19 | User: My name is Maksim
+
+02-05-2024 16:19 | Bot: Nice to meet you, Maksim! How can I assist you today??
+
+02-05-2024 16:20 | User: My name is Maksim
+
+02-05-2024 16:20 | Bot: Nice to meet you, Maksim! How can I assist you today??
+
+02-05-2024 16:20 | User: My name is Maksim
+
+02-05-2024 16:20 | Bot: Nice to meet you, {{name}}! How can I assist you today?
+
+02-05-2024 16:26 | User: My name is Maksim
+
+02-05-2024 16:26 | Bot: Nice to meet you, Maksim! How can I assist you today?
+
+02-05-2024 16:27 | User: My name is Maksim
+
+02-05-2024 16:27 | Bot: I'm not sure how to respond to that.
+
+02-05-2024 16:27 | User: My name is Maksim
+
+02-05-2024 16:27 | Bot: I'm not sure how to respond to that.
+
+02-05-2024 16:29 | User: My name is Maksim
+
+02-05-2024 16:29 | Bot: Nice to meet you, Maksim! How can I assist you today?
+
+02-05-2024 16:33 | User: My name is Tatjana
+
+02-05-2024 16:33 | Bot: Nice to meet you, Tatiana! How can I assist you today?
+
+02-05-2024 16:36 | User: My name is Maksim
+
+02-05-2024 16:36 | Bot: Nice to meet you, {{person.sourceText}}! How can I assist you today?
+
+02-05-2024 16:39 | User: My name is Maksim
+
+02-05-2024 16:39 | Bot: Nice to meet you, Maksim! How can I assist you today?
+
+02-05-2024 17:13 | User: name
+
+02-05-2024 17:13 | Bot: Hi {{name}}!
+
+02-05-2024 17:13 | User: Maksim
+
+02-05-2024 17:13 | Bot: I'm not sure how to respond to that.
+
+02-05-2024 17:24 | User: Username of Maksim
+
+02-05-2024 17:24 | Bot: Hello Maksim, nice to meet you! How can I assist you?
+
+02-05-2024 17:25 | User: Alias of Maksim
+
+02-05-2024 17:25 | Bot: Now that we’re introduced, how may I assist you today, Maksim?
+
+02-05-2024 18:16 | User: My name is thomas
+
+02-05-2024 18:16 | Bot: Hi Thomas!
+
+02-05-2024 19:39 | User: who is maksim
+
+02-05-2024 19:39 | Bot: Hey there Maksim!
+
+02-05-2024 19:52 | User: is your alias maksim
+
+02-05-2024 19:52 | Bot: Welcome, start chatting, Maksim!
+
+03-05-2024 15:58 | User: My name is Maksim
+
+03-05-2024 15:58 | Bot: Maksim, lovely indeed!

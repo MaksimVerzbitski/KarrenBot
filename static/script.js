@@ -31,10 +31,11 @@ class Chatbot {
             return { isValid: false, message: 'Please enter a message.' };
         }
     
-        const allowedTextRegex = /^[a-zA-Z0-9\+\-\/\*=%&@\s"'\(\)]+$/;
+        // Updated regex to include ?, !
+        const allowedTextRegex = /^[a-zA-Z0-9\+\-\/\*=%&@\s"'\(\)?!]+$/;
         if (!allowedTextRegex.test(input)) {
-            this.logInvalidInput('Input contains invalid characters. Allowed characters: letters, numbers, and special characters (+, -, /, *, =, %, &, @, space, "", \'\', (, )).');
-            return { isValid: false, message: 'Input contains invalid characters. Allowed characters: letters, numbers, and special characters (+, -, /, *, =, %, &, @, space, "", \'\', (, )).' };
+            this.logInvalidInput('Input contains invalid characters. Allowed characters: letters, numbers, and special characters (+, -, /, *, =, %, &, @, space, "", \'\', (, ), ?, !).');
+            return { isValid: false, message: 'Input contains invalid characters. Allowed characters: letters, numbers, and special characters (+, -, /, *, =, %, &, @, space, "", \'\', (, ), ?, !).' };
         }
     
         return { isValid: true, message: '' };
