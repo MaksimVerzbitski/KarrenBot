@@ -2618,3 +2618,327 @@ bot | Hello!
 03-05-2024 15:58 | User: My name is Maksim
 
 03-05-2024 15:58 | Bot: Maksim, lovely indeed!
+
+03-05-2024 21:45 | User: My name is Maksim
+
+03-05-2024 21:45 | Bot: I'm not sure how to respond to that.
+
+03-05-2024 21:46 | User: My name is Maksim
+
+03-05-2024 21:46 | Bot: Nice one Maksim!
+
+03-05-2024 21:46 | User: My name is Elf
+
+03-05-2024 21:46 | Bot: {{name}}, greetings!
+
+03-05-2024 22:22 | User: My name is Maksim
+
+03-05-2024 22:22 | Bot: Now that we’re introduced, how may I assist you today, Maksim?
+
+03-05-2024 22:23 | User: My name is Gnezk
+
+03-05-2024 22:23 | Bot: Welcome aboard, {{name}}!
+
+03-05-2024 22:24 | User: Maksim
+
+03-05-2024 22:24 | Bot: I'm not sure how to respond to that.
+
+03-05-2024 22:24 | User: Name Maksim
+
+03-05-2024 22:24 | Bot: I appreciate you sharing your name, Maksim. How can I be of service to you now?
+
+03-05-2024 22:25 | User: My name is Alf6as
+
+03-05-2024 22:25 | Bot: Welcome aboard, {{name}}!
+
+04-05-2024 00:02 | User: My name is Maksim
+
+04-05-2024 00:02 | Bot: Hello Maksim!
+
+04-05-2024 00:02 | User: My name is Mrks
+
+04-05-2024 00:02 | Bot: Thank you for sharing your name, but I couldn't recognize it in my list.
+
+04-05-2024 17:23 | User: My name is Maksim
+
+04-05-2024 17:23 | Bot: Now I know new russian masculine name Maksim. You learn something every day!
+
+04-05-2024 17:24 | User: My name is Alf6
+
+04-05-2024 17:24 | Bot: I'm not sure how to respond to that.
+
+04-05-2024 17:25 | User: My name is Alf6
+
+04-05-2024 17:25 | Bot: I'm not sure how to respond to that.
+
+04-05-2024 17:26 | User: My name is Maksim
+
+04-05-2024 17:26 | Bot: Now I know new russian masculine name Maksim. You learn something every day!
+
+04-05-2024 17:29 | User: My name is Maksim
+
+04-05-2024 17:29 | Bot: Now I know new russian masculine name Maksim. You learn something every day!
+
+04-05-2024 17:37 | User: My name is Alf6
+
+04-05-2024 17:37 | Bot: {{name}}, lovely indeed!
+
+04-05-2024 17:48 | User: My name is Maksim
+
+04-05-2024 17:48 | Bot: I already know the name Maksim.
+
+04-05-2024 17:48 | User: My name is Alf6
+
+04-05-2024 17:48 | Bot: I don't recognize this name. Could you tell me if it is a masculine or feminine name and from which language?
+
+04-05-2024 17:50 | User: masculine and english
+
+04-05-2024 17:50 | Bot: I'm not sure how to respond to that.
+
+04-05-2024 17:56 | User: My name is Maksim
+
+04-05-2024 17:56 | Bot: I already know the name Maksim.
+
+04-05-2024 17:56 | User: My name is Alf6
+
+04-05-2024 17:56 | Bot: I don't recognize this name. Could you please specify if the name is masculine or feminine and its language?
+
+04-05-2024 17:57 | User: masculine and english
+
+04-05-2024 17:57 | Bot: I'm not sure how to respond to that.
+
+04-05-2024 17:57 | User: My name is Maksim
+
+04-05-2024 17:57 | Bot: I already know the name Maksim.
+
+04-05-2024 17:57 | User: My name is Alf6
+
+04-05-2024 17:57 | Bot: I don't recognize this name. Could you please specify if the name is masculine or feminine and its language?
+
+04-05-2024 17:57 | User: masculine and english
+
+04-05-2024 17:57 | Bot: I'm not sure how to respond to that.
+
+04-05-2024 18:00 | User: My name is Maksim
+
+04-05-2024 18:00 | Bot: I already know the name Maksim.
+
+04-05-2024 18:00 | User: My name is Alf6
+
+04-05-2024 18:00 | Bot: I don't recognize this name. Could you please specify if the name is masculine or feminine and its language?
+
+04-05-2024 18:00 | User: masculine english
+
+04-05-2024 18:00 | Bot: I'm not sure how to respond to that.
+
+04-05-2024 19:00 | User: My name is Maksim
+
+04-05-2024 19:00 | Bot: I don't recognize this name. Could you please specify if the name is masculine or feminine and its language?
+
+04-05-2024 19:35 | User: My name is Maksim
+
+04-05-2024 19:35 | Bot: There was an error processing your message.
+
+04-05-2024 19:38 | User: My name is Maksim
+
+04-05-2024 19:38 | Bot: Welcome, good start, Maksim!
+
+04-05-2024 19:44 | User: My name is Maksim
+
+04-05-2024 19:44 | Bot: Maksim, pleasure meeting you!
+
+04-05-2024 19:45 | User: My name is Elf6
+
+04-05-2024 19:45 | Bot: Hello, glad meeting you, {{name}}!
+
+04-05-2024 19:54 | User: My name is Maksim
+
+04-05-2024 19:54 | Bot: There was an error processing your message.
+
+04-05-2024 20:00 | User: My name is Maksim
+
+04-05-2024 20:00 | Bot: There was an error processing your message.
+
+04-05-2024 20:01 | User: My name is Maksim
+
+04-05-2024 20:01 | Bot: There was an error processing your message.
+
+04-05-2024 20:05 | User: My name is maksim
+
+04-05-2024 20:05 | Bot: There was an error processing your message.
+
+04-05-2024 20:08 | User: My name is Maksim
+
+04-05-2024 20:08 | Bot: I don't recognize this name. Could you please specify if the name is masculine or feminine and its language?
+
+04-05-2024 22:31 | User: My name is Maksim
+
+04-05-2024 22:31 | Bot: I don't recognize this name. Could you please specify if the name is masculine or feminine and its language?
+
+04-05-2024 22:31 | User: My name is Maksim
+
+04-05-2024 22:31 | Bot: Maksim, noted.
+
+04-05-2024 22:31 | User: My name is Elf66
+
+04-05-2024 22:31 | Bot: Hello {{name}}, nice to meet you! How can I assist you?
+
+04-05-2024 22:44 | User: My name is Maksim
+
+04-05-2024 22:44 | Bot: Greetings, how are you, Maksim?
+
+04-05-2024 22:45 | User: My name is Elf66
+
+04-05-2024 22:45 | Bot: Greetings, friend {{name}}!
+
+04-05-2024 23:02 | User: My name is Maksim
+
+04-05-2024 23:02 | Bot: Hello there, Maksim!
+
+04-05-2024 23:02 | User: My name is Alfdsf
+
+04-05-2024 23:02 | Bot: Welcome aboard {{name}}! What’s the first thing you’d like to discuss?
+
+04-05-2024 23:04 | User: My name is Maksiom
+
+04-05-2024 23:04 | Bot: Welcome Maksim! I'm here to assist you. What’s on your mind today?
+
+04-05-2024 23:04 | User: My name is Adasds
+
+04-05-2024 23:04 | Bot: Nice to meet you, {{name}}! How can I assist you today?
+
+04-05-2024 23:06 | User: My name is Maksim
+
+04-05-2024 23:06 | Bot: Greetings, friend Maksim!
+
+04-05-2024 23:07 | User: My name is Alf66
+
+04-05-2024 23:07 | Bot: Welcome aboard, {{name}}!
+
+04-05-2024 23:08 | User: My name is Maksim
+
+04-05-2024 23:08 | Bot: Nice to meet you, Maksim! How can I assist you today?
+
+04-05-2024 23:08 | User: My name is zfdsf
+
+04-05-2024 23:08 | Bot: Welcome, good start, {{name}}!
+
+04-05-2024 23:11 | User: My name is Maksim
+
+04-05-2024 23:11 | Bot: There was an error processing your message.
+
+04-05-2024 23:12 | User: My name is Maksim
+
+04-05-2024 23:12 | Bot: There was an error processing your message.
+
+04-05-2024 23:17 | User: My  name is Maksin
+
+04-05-2024 23:17 | Bot: Hi Maksim!
+
+04-05-2024 23:17 | User: My name is Dsad
+
+04-05-2024 23:17 | Bot: Hello, nice meeting you, {{name}}!
+
+04-05-2024 23:27 | User: My name is Maksim
+
+04-05-2024 23:27 | Bot: Registered, Maksim.
+
+04-05-2024 23:28 | User: My name is Vdgf
+
+04-05-2024 23:28 | Bot: Welcome {{name}}! I'm here to assist you. What’s on your mind today?
+
+04-05-2024 23:30 | User: My name is Maksim
+
+04-05-2024 23:30 | Bot: Now that we’re introduced, how may I assist you today, Maksim?
+
+04-05-2024 23:31 | User: My name is sdfsd
+
+04-05-2024 23:31 | Bot: Well met, {{name}}!
+
+04-05-2024 23:46 | User: Maksim
+
+04-05-2024 23:46 | Bot: Error processing name data. Please check the server logs.
+
+04-05-2024 23:49 | User: My name is Maksim
+
+04-05-2024 23:49 | Bot: I appreciate you sharing your name, Maksim. How can I be of service to you now?
+
+04-05-2024 23:49 | User: My name is fddf
+
+04-05-2024 23:49 | Bot: Welcome, start chatting, {{name}}!
+
+05-05-2024 00:09 | User: My name is Maksim
+
+05-05-2024 00:09 | Bot: Greetings, what's next Maksim?
+
+05-05-2024 00:09 | User: My name is dsfsd
+
+05-05-2024 00:09 | Bot: It's received, {{name}}.
+
+05-05-2024 00:22 | User: My name is Maksim
+
+05-05-2024 00:22 | Bot: Error processing name data. Please check the server logs.
+
+05-05-2024 00:28 | User: My name is Maksim
+
+05-05-2024 00:28 | Bot: Training data file is missing or empty. Cannot process the name.
+
+05-05-2024 00:30 | User: My name is Maksim
+
+05-05-2024 00:30 | Bot: Training data file is missing or empty. Cannot process the name.
+
+05-05-2024 00:31 | User: My name is Maksim
+
+05-05-2024 00:31 | Bot: Error processing name data. Please check the server logs.
+
+05-05-2024 00:32 | User: My name is Maksim
+
+05-05-2024 00:32 | Bot: There was an error processing your message.
+
+05-05-2024 00:37 | User: Maksim
+
+05-05-2024 00:37 | Bot: There was an error processing your message.
+
+05-05-2024 00:38 | User: Maksim
+
+05-05-2024 00:38 | Bot: There was an error processing your message.
+
+05-05-2024 00:40 | User: My name is Maksim
+
+05-05-2024 00:40 | Bot: Error processing your name.
+
+05-05-2024 00:42 | User: Maksim
+
+05-05-2024 00:42 | Bot: Error processing name data. Please check the server logs.
+
+05-05-2024 00:44 | User: Maksim
+
+05-05-2024 00:44 | Bot: I don't recognize this name. Could you please specify if the name is masculine or feminine and its language?
+
+05-05-2024 00:44 | User: My name is Maksim
+
+05-05-2024 00:44 | Bot: I'm not sure how to respond to that.
+
+05-05-2024 00:52 | User: Maksim
+
+05-05-2024 00:52 | Bot: Error processing name data. Please check the server logs.
+
+05-05-2024 00:56 | User: Maksim
+
+05-05-2024 00:56 | Bot: Error processing name data. Please check the server logs.
+
+05-05-2024 01:00 | User: Maksim
+
+05-05-2024 01:00 | Bot: I'm not sure how to respond to that.
+
+05-05-2024 01:01 | User: My name is Maksim
+
+05-05-2024 01:01 | Bot: Maksim, recorded!
+
+05-05-2024 01:01 | User: Maksim
+
+05-05-2024 01:01 | Bot: I'm not sure how to respond to that.
+
+05-05-2024 01:01 | User: That is my name Maksim
+
+05-05-2024 01:01 | Bot: Welcome, good start, Maksim!

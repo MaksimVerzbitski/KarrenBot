@@ -3,28 +3,58 @@
 <head>
 <meta charset="UTF-8">
 <title>Code Help Request Form</title>
+<style>
+    textarea {
+        width: 90%; /* Makes the textarea take 90% of the containing element */
+        height: 150px; /* Fixed height for better control */
+        margin: 10px 0; /* Adds space above and below the textarea */
+        padding: 8px; /* Adds space inside the textarea around the text */
+        box-sizing: border-box; /* Includes padding and border in the width and height */
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centers the form contents horizontally */
+        padding: 20px;
+    }
+    label {
+        font-weight: bold;
+        margin-top: 20px; /* Adds space above the label */
+    }
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer; /* Changes the cursor to a pointer when hovering over the button */
+    }
+</style>
 </head>
 <body>
 <form id="helpRequestForm">
-    <label for="persona">PERSONA:</label><br>
-    <textarea id="persona" name="persona" rows="4" cols="50"></textarea><br>
+    <label for="persona">PERSONA:</label>
+    <textarea id="persona" name="persona"></textarea>
 
-    <label for="task">TASK:</label><br>
-    <textarea id="task" name="task" rows="4" cols="50"></textarea><br>
+    <label for="task">TASK:</label>
+    <textarea id="task" name="task"></textarea>
 
-    <label for="code">CODE:</label><br>
-    <textarea id="code" name="code" rows="6" cols="50"></textarea><br>
+    <label for="code">CODE:</label>
+    <textarea id="code" name="code"></textarea>
 
-    <label for="issue">ISSUE:</label><br>
-    <textarea id="issue" name="issue" rows="4" cols="50"></textarea><br>
+    <label for="issue">ISSUE:</label>
+    <textarea id="issue" name="issue"></textarea>
 
-    <label for="expectedOutcome">EXPECTED OUTCOME:</label><br>
-    <textarea id="expectedOutcome" name="expectedOutcome" rows="4" cols="50"></textarea><br>
+    <label for="expectedOutcome">EXPECTED OUTCOME:</label>
+    <textarea id="expectedOutcome" name="expectedOutcome"></textarea>
 
     <button type="button" onclick="submitForm()">Submit</button>
 </form>
 
 <script>
+document.querySelectorAll('textarea').forEach(textarea => {
+    textarea.addEventListener('focus', function() {
+        this.select(); // Selects all text in textarea on focus
+    });
+});
+
 function submitForm() {
     const formData = {
         persona: document.getElementById('persona').value,

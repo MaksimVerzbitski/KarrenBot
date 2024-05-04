@@ -140,7 +140,7 @@ async function trainNames(manager){
       for (const [key, names] of Object.entries(namesByGenderAndLanguage)) {
         manager.addNamedEntityText('person', key, ['en'], names);
       }
-    
+      
     
     
     const documents = [

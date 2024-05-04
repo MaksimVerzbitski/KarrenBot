@@ -1204,3 +1204,106 @@ app.post('/nlp-process-message', async (req, res) => {
 });
 
 app.listen(port, () => console.log(`Server running on http://localhost:${port}`));
+
+
+04/05
+
+// Function to check if a name is recognized
+function isNameRecognized(name) {
+  const namesByGenderAndLanguage = {
+    'englishMasculine': ["Abe", "Abraham", "Adrien", "Alan", "Albemarle", "Alex", "Alexander", "Alistair", "Almon", "Alton", ...],
+    'englishFeminine': ["Alyce", "Amethyst", "Amity", "Arleen", "Ashley", "Aspen", "Audra", "Ava", "Aya", ...],
+    'estonianMasculine': [...],
+    'estonianFeminine': [...], 
+    'russianFeminine': [...],
+    'russianMasculine': [...]
+  };
+
+  for (const [key, names] of Object.entries(namesByGenderAndLanguage)) {
+    if (names.includes(name)) {
+      return { recognized: true, category: key };
+    }
+  }
+  return { recognized: false, category: null };
+}
+
+app.post('/nlp-process-message', async (req, res) => {
+  const { message } = req.body;
+  try {
+    const response = await manager.process('en', message);
+    const nameEntity = response.entities.find(entity => entity.entity === 'person');
+    let answer = "I'm not sure how to respond to that.";
+
+    if (nameEntity) {
+      const nameCheck = isNameRecognized(nameEntity.sourceText);
+      if (nameCheck.recognized) {
+        answer = `Hello ${nameEntity.sourceText}, I see you are listed as ${nameCheck.category}. How can I help you today?`;
+      } else {
+        console.log(`Unrecognized name in the phrase: ${nameEntity.sourceText}`);
+        answer = `Thank you for sharing your name, ${nameEntity.sourceText}, but I couldn't recognize it in my list. Could you tell me more about your gender and language?`;
+      }
+    }
+
+    res.json({ answer });
+  } catch (error) {
+    console.error('Error processing message:', error);
+    res.status(500).send('Error processing your message.');
+  }
+});
+
+
+const fs = require('fs');
+const path = require('path');
+const trainingDataPath = path.join(__dirname, 'trainingNames.json'); // Ensure the path is correct
+
+function loadNamesData() {
+    try {
+        if (fs.existsSync(trainingDataPath)) {
+            const data = fs.readFileSync(trainingDataPath, 'utf8');
+            return JSON.parse(data);
+        } else {
+            return {}; // Return an empty object if the file does not exist
+        }
+    } catch (error) {
+        console.error('Failed to read or parse the names data:', error);
+        return {};
+    }
+}
+
+function saveNewName(name, language, gender) {
+    const namesData = loadNamesData();
+    if (!namesData[language]) namesData[language] = {};
+    if (!namesData[language][gender]) namesData[language][gender] = [];
+
+    if (!namesData[language][gender].includes(name)) {
+        namesData[language][gender].push(name);
+        try {
+            fs.writeFileSync(trainingDataPath, JSON.stringify(namesData, null, 2));
+            console.log(`New name ${name} added to the training data.`);
+        } catch (error) {
+            console.error('Failed to save the new name:', error);
+        }
+    }
+}
+
+function handleNameResponse(response, res) {
+    const namesData = loadNamesData();
+    const nameEntity = response.entities.find(entity => entity.entity === 'person');
+    let answer = response.answer || "I'm not sure how to respond to that.";
+
+    if (nameEntity) {
+        const { option: languageGender, sourceText: name } = nameEntity;
+        const [language, gender] = languageGender.split(/(?=[A-Z])/);
+        const genderKey = gender.toLowerCase();
+        const languageKey = language.toLowerCase();
+
+        if (!namesData[languageKey] || !namesData[languageKey][genderKey] || !namesData[languageKey][genderKey].includes(name)) {
+            answer = `I don't recognize this name. Could you please specify if the name is masculine or feminine and its language?`;
+            saveNewName(name, languageKey, genderKey);
+        } else {
+            answer = response.answer.replace('{{name}}', name); // Ensure this template is replaced properly
+        }
+    }
+
+    res.json({ answer });
+}

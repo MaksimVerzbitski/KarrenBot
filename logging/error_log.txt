@@ -103,3 +103,13 @@
 30-04-2024 12:40 | Input Validation | Input contains invalid characters. Allowed characters: letters, numbers, and special characters (+, -, /, *, =, %, &, @, space, "", '', (, )).
 
 30-04-2024 12:45 | Input Validation | Input contains invalid characters. Allowed characters: letters, numbers, and special characters (+, -, /, *, =, %, &, @, space, "", '', (, )).
+
+04-05-2024 18:52 | Server Communication | Error: Server responded with status: 
+
+04-05-2024 18:53 | Server Communication | Error: Server responded with status: 
+
+05-05-2024 00:34 | Server Communication | Error: Server responded with status: 
+
+05-05-2024 00:41 | Input Validation | Input contains invalid characters. Allowed characters: letters, numbers, and special characters (+, -, /, *, =, %, &, @, space, "", '', (, ), ?, !).
+
+05-05-2024 00:50 | Input Validation | Input contains invalid characters. Allowed characters: letters, numbers, and special characters (+, -, /, *, =, %, &, @, space, "", '', (, ), ?, !).
