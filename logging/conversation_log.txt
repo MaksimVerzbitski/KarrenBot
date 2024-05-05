@@ -3074,3 +3074,35 @@ bot | Hello!
 05-05-2024 14:58 | User: Maksim
 
 05-05-2024 14:58 | Bot: Hello Maksim, how can I help you today?
+
+05-05-2024 15:18 | User: Maksim
+
+05-05-2024 15:18 | Bot: Hello Maksim, how can I help you today?
+
+05-05-2024 15:20 | User: Maksim
+
+05-05-2024 15:20 | Bot: Hello Maksim, how can I help you today?
+
+05-05-2024 17:37 | User: Maksim
+
+05-05-2024 17:37 | Bot: Nice one Maksim!
+
+05-05-2024 17:38 | User: My name is Alf6
+
+05-05-2024 17:38 | Bot: Pleased to meet you Alf6! How may I assist you right now?
+
+05-05-2024 17:39 | User: Maksim
+
+05-05-2024 17:39 | Bot: Hello there, Maksim!
+
+05-05-2024 19:59 | User: My name is Maksim
+
+05-05-2024 19:59 | Bot: Acknowledged, Maksim.
+
+05-05-2024 19:59 | User: My name is Alf6
+
+05-05-2024 19:59 | Bot: Acknowledged, Alf6.
+
+05-05-2024 20:00 | User: My name is Alf6
+
+05-05-2024 20:00 | Bot: It's received, Alf6.

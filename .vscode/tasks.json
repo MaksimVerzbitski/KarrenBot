@@ -1,0 +1,53 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run Flask App",
+            "type": "shell",
+            "command": "python",
+            "args": [
+                "-m",
+                "flask",
+                "run",
+                "--debug",
+                "--host=127.0.0.1",
+                "--port=5001"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Run NLP Processor",
+            "type": "shell",
+            "command": "nodemon",
+            "args": [
+                "nlpProcessor.js"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/nlp-processor"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated"
+            },
+            "problemMatcher": []
+        }
+    ],
+    "compounds": [
+        {
+            "name": "Run Both",
+            "tasks": ["Run Flask App", "Run NLP Processor"]
+        }
+    ]
+}
