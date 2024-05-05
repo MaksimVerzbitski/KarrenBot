@@ -1307,3 +1307,31 @@ function handleNameResponse(response, res) {
 
     res.json({ answer });
 }
+
+"scripts": {
+    "prestart": "node train-nlp.js",
+    "start": "node nlpProcessor.js"
+}
+
+
+function handleNameResponse(response, res) {
+  // Default answer when no specific response is determined
+  let answer = response.answer || "I'm not sure how to respond to that.";
+
+  // Attempt to find a 'person' entity from the NLP response
+  const nameEntity = response.entities.find(entity => entity.entity === 'person');
+
+  // Use the found name or extract potential name from the user input if the NLP didn't identify it
+  const nameToUse = nameEntity ? nameEntity.sourceText : extractName(response.utterance);
+
+  // Replace the placeholder with the extracted or found name
+  if (nameToUse) {
+    answer = response.answer.replace('{{name}}', nameToUse);
+  } else {
+    // Fallback if no name is identified
+    answer = response.answer.replace('{{name}}', 'Guest');
+  }
+
+  // Send the processed answer as the response
+  res.json({ answer });
+}

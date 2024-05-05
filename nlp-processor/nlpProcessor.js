@@ -21,56 +21,75 @@ async function loadModel() {
 loadModel();
 
 
-/* function handleNameResponse(response, res) {
-  const namesData = loadNamesData(); // Assume this function is properly loading the names data
-  const nameEntity = response.entities.find(entity => entity.entity === 'person');
-  let answer = "I'm not sure how to respond to that."; // Default response if no other is set
 
-  if (nameEntity) {
-    try {
-      const { option: languageGender, sourceText: name } = nameEntity;
-      const [language, gender] = languageGender.split(/(?=[A-Z])/);
-      const genderKey = gender.toLowerCase();
-      const languageKey = language.toLowerCase();
-
-      if (!namesData[languageKey] || !namesData[languageKey][genderKey] || !namesData[languageKey][genderKey].includes(name)) {
-        answer = `I don't recognize this name. Could you please specify if the name is masculine or feminine and its language?`;
-        saveNewName(name, languageKey, genderKey);
-      } else {
-        // Ensure that response.answer is not undefined before trying to replace it
-        answer = response.answer ? response.answer.replace('{{name}}', name) : `Hello ${name}, how can I help you today?`;
-      }
-    } catch (error) {
-      console.error('Error handling name:', error);
-      answer = "Error processing name data. Please check the server logs.";
-    }
+function loadTrainingData() {
+  if (fs.existsSync(trainingDataPath)) {
+      return JSON.parse(fs.readFileSync(trainingDataPath, 'utf8'));
+  } else {
+      // Ensure minimum categories exist
+      return {
+          "russianMasculine": [],
+          "russianFeminine": [],
+          "englishMasculine": [],
+          "englishFeminine": [],
+          "estonianMasculine": [],
+          "estonianFeminine": []
+      };
   }
+}
 
-  res.json({ answer });
-} */
-
-function saveNewName(name, language, gender) {
-  const data = fs.existsSync(trainingDataPath) ? JSON.parse(fs.readFileSync(trainingDataPath, 'utf-8')) : {};
-  if (!data[language]) data[language] = {};
-  if (!data[language][gender]) data[language][gender] = [];
-  if (!data[language][gender].includes(name)) {
-    data[language][gender].push(name);
-    fs.writeFileSync(trainingDataPath, JSON.stringify(data, null, 2));
-    console.log(`New name ${name} added to the training data.`);
-  }
+function saveTrainingData(data) {
+  fs.writeFileSync(trainingDataPath, JSON.stringify(data, null, 2));
 }
 
 
 function handleNameResponse(response, res) {
-  const nameEntity = response.entities.find(entity => entity.entity === 'person');
-  let answer = response.answer || "I'm not sure how to respond to that.";
+  let answer = "I'm not sure how to respond to that.";
 
-  if (nameEntity && response.answer) {
-    answer = response.answer.replace('{{name}}', nameEntity.sourceText);
+  const nameEntity = response.entities.find(entity => entity.entity === 'person');
+  const nameToUse = nameEntity ? nameEntity.sourceText : extractName(response.utterance);
+
+  if (nameToUse) {
+    if (response.answer) {
+      // Only use replace if response.answer is defined
+      answer = response.answer.replace('{{name}}', nameToUse);
+    } else {
+      // Provide a default greeting if no answer is available in the response
+      answer = `Hello ${nameToUse}, how can I help you today?`;
+    }
+  } else if (!nameToUse && response.answer) {
+    // If no name but response.answer exists, use a default name placeholder
+    answer = response.answer.replace('{{name}}', 'Guest');
   }
 
+  // Send the processed answer to the client
   res.json({ answer });
 }
+
+
+function extractName(inputText) {
+  // RegEx various ways a name 
+  const patterns = [
+    /(?:my name is|I am known as|you can call me|I go by|it's|I'm|people call me|my friends call me|I prefer to be called|just call me) ([\w\s\-']+)/i,
+    /(?:^|\s)([\w\s\-']+)(?:,?\s+is my name|,?\s+here|,?\s+everyone knows me as|,?\s+the name's|,?\s+please address me as|,?\s+i identify as)/i,
+    /in case you're wondering, I'm ([\w\s\-']+)/i,
+    /for your information, I'm ([\w\s\-']+)/i,
+    /to make things easy, you can call me ([\w\s\-']+)/i,
+    /let's keep it simple, I'm ([\w\s\-']+)/i,
+    /^\s*([\w\s\-']+)/i // "[userName]"
+  ];
+
+  // Check each pattern to find a match
+  for (let pattern of patterns) {
+    const match = inputText.match(pattern);
+    if (match) {
+      return match[1].trim(); // Return the first captured group, trimmed of any extra whitespace
+    }
+  }
+
+  return null; // Return null 
+}
+
 app.post('/nlp-process-message', async (req, res) => {
   const { message } = req.body;
   try {
@@ -85,102 +104,4 @@ app.post('/nlp-process-message', async (req, res) => {
 
 app.listen(port, () => console.log(`Server running on http://localhost:${port}`));
 
-/*
 
-app.post('/nlp-process-message', async (req, res) => {
-  const { message } = req.body;
-  try {
-    const response = await manager.process('en', message);
-    const nameEntity = response.entities.find(entity => entity.entity === 'person');
-    let answer = "I'm not sure how to respond to that.";
-
-    if (nameEntity) {
-      if (flatKnownNames.includes(nameEntity.sourceText)) {
-        // Known name logic
-        answer = response.answers.length > 0 ? response.answers[0].answer : "Hello, how can I help you today?";
-        answer = answer.replace('{{name}}', nameEntity.sourceText);
-      } else {
-        // Unknown name logic
-        tempStorage = { name: nameEntity.sourceText, awaitingDetails: true };
-        answer = "I don't recognize this name. Could you please specify if the name is masculine or feminine and its language?";
-      }
-    }
-
-    res.json({ answer });
-  } catch (error) {
-    console.error('Error processing message:', error);
-    res.status(500).send('Error processing your message.');
-  }
-});
-
-*/
-
-/* app.post('/nlp-process-message', async (req, res) => {
-  const { message } = req.body;
-  try {
-      const response = await manager.process('en', message);
-      console.log("NLP Full Response:", JSON.stringify(response, null, 2));
-      // Find the name entity
-      const nameEntity = response.entities.find(entity => entity.entity === 'person');
-      let answer = response.answer || "I'm not sure how to respond to that.";
-
-      // Replace the placeholder with the actual name
-      if (nameEntity && response.answer) {
-          answer = response.answer.replace('{{name}}', nameEntity.sourceText);
-          // Check if name is recognized, otherwise log it
-      } else if (response.intent === 'user.provideName' && response.score > 0.5) {
-          // If intent is about providing a name but no name entity found
-          console.log('Unrecognized name in the phrase:', message);
-          answer = "Thank you for sharing your name, but I couldn't recognize it in my list.";
-      }
-
-      res.json({ answer });
-  } catch (error) {
-      console.error('Error processing message:', error);
-      res.status(500).send('Error processing your message.');
-  }
-});
- */
-
-
-/* app.post('/nlp-process-message', async (req, res) => {
-  const { message } = req.body;
-  try {
-      const response = await manager.process('en', message);
-      console.log("NLP Full Response:", JSON.stringify(response, null, 2));
-      const nameEntity = response.entities.find(entity => entity.entity === 'person');
-      let answer = response.answer || "I'm not sure how to respond to that.";
-
-      if (response.intent === 'user.provideName' && nameEntity) {
-          if (!tempStorage.awaitingDetails) {
-              // Store the name temporarily and request more details
-              tempStorage = { name: nameEntity.sourceText, awaitingDetails: true };
-              answer = "I don't recognize this name. Could you please specify if the name is masculine or feminine and its language?";
-          } else {
-              // Attempt to parse the response for gender and language
-              const details = parseDetails(message);
-              if (details) {
-                  saveNewName(tempStorage.name, details.language, details.gender);
-                  answer = `Now I know a new ${details.gender} name in ${details.language}: ${tempStorage.name}.`;
-                  tempStorage = {}; // Clear the storage after handling
-              } else {
-                  answer = "Could you please clarify the gender and language? For example, 'masculine english'.";
-              }
-          }
-      } else if (tempStorage.awaitingDetails) {
-          const details = parseDetails(message);
-          if (details) {
-              saveNewName(tempStorage.name, details.language, details.gender);
-              answer = `Now I know a new ${details.gender} name in ${details.language}: ${tempStorage.name}.`;
-              tempStorage = {}; // Clear the storage after handling
-          } else {
-              answer = "Could you please clarify the gender and language? For example, 'masculine english'.";
-          }
-      }
-
-      res.json({ answer });
-  } catch (error) {
-      console.error('Error processing message:', error);
-      res.status(500).send('Error processing your message.');
-  }
-}); */

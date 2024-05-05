@@ -1,0 +1,83 @@
+/* function handleNameResponse(response, req, res) {
+    // Safely extract context or initialize it if undefined
+    const context = req.body.context || {};
+
+    let answer = response.answer || "I'm not sure how to respond to that.";
+    const trainingData = loadTrainingData();
+
+    if (context.pendingQuestion === 'language' && context.name) {
+        context.language = response.utterance.trim().toLowerCase();
+        context.pendingQuestion = 'gender';
+        answer = `${context.language} noted. Male or female?`;
+    } else if (context.pendingQuestion === 'gender' && context.name && context.language) {
+        const gender = response.utterance.trim().toLowerCase();
+        const key = `${context.language}${gender.charAt(0).toUpperCase() + gender.slice(1)}`;
+
+        if (!trainingData[key]) {
+            trainingData[key] = [];
+        }
+        
+        if (!trainingData[key].includes(context.name)) {
+            trainingData[key].push(context.name);
+            saveTrainingData(trainingData);
+            answer = `Nice to meet you, ${context.name}. New name for me in the ${context.language} ${gender} category.`;
+        } else {
+            answer = `${context.name} is already known to me in the ${context.language} ${gender} category.`;
+        }
+
+        // Reset context after processing complete
+        context.name = undefined;
+        context.language = undefined;
+        context.pendingQuestion = undefined;
+    } else if (!context.name) {
+        const nameToUse = extractName(response.utterance);
+        if (nameToUse) {
+            context.name = nameToUse;
+            context.pendingQuestion = 'language';
+            answer = `${nameToUse}, recorded! What language is this name (russian, english, or estonian)?`;
+        }
+    }
+
+    // Ensure the updated context is sent back in the response
+    res.json({ answer, context });
+} */
+
+
+/* function handleNameResponse(response, res) {
+  const namesData = loadNamesData(); // Assume this function is properly loading the names data
+  const nameEntity = response.entities.find(entity => entity.entity === 'person');
+  let answer = "I'm not sure how to respond to that."; // Default response if no other is set
+
+  if (nameEntity) {
+    try {
+      const { option: languageGender, sourceText: name } = nameEntity;
+      const [language, gender] = languageGender.split(/(?=[A-Z])/);
+      const genderKey = gender.toLowerCase();
+      const languageKey = language.toLowerCase();
+
+      if (!namesData[languageKey] || !namesData[languageKey][genderKey] || !namesData[languageKey][genderKey].includes(name)) {
+        answer = `I don't recognize this name. Could you please specify if the name is masculine or feminine and its language?`;
+        saveNewName(name, languageKey, genderKey);
+      } else {
+        // Ensure that response.answer is not undefined before trying to replace it
+        answer = response.answer ? response.answer.replace('{{name}}', name) : `Hello ${name}, how can I help you today?`;
+      }
+    } catch (error) {
+      console.error('Error handling name:', error);
+      answer = "Error processing name data. Please check the server logs.";
+    }
+  }
+
+  res.json({ answer });
+} */
+
+/* function saveNewName(name, language, gender) {
+  const data = fs.existsSync(trainingDataPath) ? JSON.parse(fs.readFileSync(trainingDataPath, 'utf-8')) : {};
+  if (!data[language]) data[language] = {};
+  if (!data[language][gender]) data[language][gender] = [];
+  if (!data[language][gender].includes(name)) {
+    data[language][gender].push(name);
+    fs.writeFileSync(trainingDataPath, JSON.stringify(data, null, 2));
+    console.log(`New name ${name} added to the training data.`);
+  }
+} */

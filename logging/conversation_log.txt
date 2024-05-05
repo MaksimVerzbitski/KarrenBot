@@ -2942,3 +2942,135 @@ bot | Hello!
 05-05-2024 01:01 | User: That is my name Maksim
 
 05-05-2024 01:01 | Bot: Welcome, good start, Maksim!
+
+05-05-2024 11:23 | User: My name is Maksim
+
+05-05-2024 11:23 | Bot: Registered, Maksim.
+
+05-05-2024 11:24 | User: My name is Maksim
+
+05-05-2024 11:24 | Bot: Welcome aboard Maksim! What’s the first thing you’d like to discuss?
+
+05-05-2024 11:24 | User: My name is Alf6
+
+05-05-2024 11:24 | Bot: {{name}}, lovely indeed!
+
+05-05-2024 11:29 | User: My name is Maksim
+
+05-05-2024 11:29 | Bot: Hi Maksim!
+
+05-05-2024 11:29 | User: My name is Alf6
+
+05-05-2024 11:29 | Bot: Hello there, Guest!
+
+05-05-2024 11:34 | User: My name is Maksim
+
+05-05-2024 11:34 | Bot: Hi Maksim!
+
+05-05-2024 11:34 | User: My name is Elf6
+
+05-05-2024 11:34 | Bot: Nice to meet you, Elf6! How can I assist you today?
+
+05-05-2024 11:35 | User: My name is Al6
+
+05-05-2024 11:35 | Bot: Al6, lovely indeed!
+
+05-05-2024 11:35 | User: Name Al66
+
+05-05-2024 11:35 | Bot: Hello, nice meeting you, Guest!
+
+05-05-2024 11:39 | User: My name is Maksim
+
+05-05-2024 11:39 | Bot: Greetings, how are you, Maksim?
+
+05-05-2024 11:39 | User: My name is Elf6
+
+05-05-2024 11:39 | Bot: Now that we’re introduced, how may I assist you today, Elf6?
+
+05-05-2024 11:39 | User: You can call me Sedr
+
+05-05-2024 11:39 | Bot: Hello there, Sedr!
+
+05-05-2024 11:49 | User: My name is Maksim
+
+05-05-2024 11:49 | Bot: Maksim, recorded!
+
+05-05-2024 11:49 | User: My name is Al6
+
+05-05-2024 11:49 | Bot: Hi Al6, I'm glad we're getting to know each other. What can I do for you?
+
+05-05-2024 11:49 | User: you can call me ADLER
+
+05-05-2024 11:49 | Bot: Registered, ADLER.
+
+05-05-2024 12:08 | User: My name is Maksim
+
+05-05-2024 12:08 | Bot: There was an error processing your message.
+
+05-05-2024 12:19 | User: My name is Maksim
+
+05-05-2024 12:19 | Bot: There was an error processing your message.
+
+05-05-2024 12:21 | User: My name is Maksim
+
+05-05-2024 12:21 | Bot: There was an error processing your message.
+
+05-05-2024 12:47 | User: Maksim
+
+05-05-2024 12:47 | Bot: There was an error processing your message.
+
+05-05-2024 13:04 | User: Maksim
+
+05-05-2024 13:04 | Bot: There was an error processing your message.
+
+05-05-2024 13:04 | User: Maksim
+
+05-05-2024 13:04 | Bot: There was an error processing your message.
+
+05-05-2024 13:09 | User: Maksim
+
+05-05-2024 13:09 | Bot: There was an error processing your message.
+
+05-05-2024 13:12 | User: Maksim
+
+05-05-2024 13:12 | Bot: There was an error processing your message.
+
+05-05-2024 13:49 | User: Maksim
+
+05-05-2024 13:49 | Bot: There was an error processing your message.
+
+05-05-2024 13:51 | User: Maksim
+
+05-05-2024 13:51 | Bot: There was an error processing your message.
+
+05-05-2024 13:56 | User: Maksim
+
+05-05-2024 13:56 | Bot: There was an error processing your message.
+
+05-05-2024 14:01 | User: Maksim
+
+05-05-2024 14:01 | Bot: Hello Maksim, how can I help you today?
+
+05-05-2024 14:01 | User: My name is Alf6
+
+05-05-2024 14:01 | Bot: I'm delighted to make your acquaintance Alf6. What would you like to talk about?
+
+05-05-2024 14:07 | User: Maksim
+
+05-05-2024 14:07 | Bot: There was an error processing your message.
+
+05-05-2024 14:55 | User: Maksim
+
+05-05-2024 14:55 | Bot: Hello Maksim, how can I help you today?
+
+05-05-2024 14:56 | User: My name is Al67
+
+05-05-2024 14:56 | Bot: Nice to meet you, Al67!
+
+05-05-2024 14:56 | User: I am known as GOGOGO
+
+05-05-2024 14:56 | Bot: Hi again, GOGOGO!
+
+05-05-2024 14:58 | User: Maksim
+
+05-05-2024 14:58 | Bot: Hello Maksim, how can I help you today?
