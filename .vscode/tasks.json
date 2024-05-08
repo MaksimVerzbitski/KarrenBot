@@ -33,10 +33,7 @@
             "options": {
                 "cwd": "${workspaceFolder}/nlp-processor"
             },
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
+            "group": "test",
             "presentation": {
                 "reveal": "always",
                 "panel": "dedicated"

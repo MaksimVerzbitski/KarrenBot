@@ -201,11 +201,11 @@ button:hover {
 
 /* You can also target the sender name within bot and user messages separately */
 .bot-message .sender-name {
-    color: #ffdd57; /* Example color for bot names */
+    color: #df7315; /* Example color for bot names */
 }
 
 .user-message .sender-name {
-    color: rebeccapurple; /* Example color for user names */
+    color: rgb(153, 19, 198); /* Example color for user names */
 }
 
 /* Chat input and related elements */

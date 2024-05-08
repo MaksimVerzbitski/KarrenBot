@@ -111,7 +111,7 @@ async function trainNames(manager){
             "Lyubov", "Margarita", "Maria", "Marina", "Mariya", "Marta", "Masha", "Melania", "Mila", "Milena", "Miroslava",
             "Nadezhda", "Nadia", "Nastja", "Natacha", "Natalia", "Nataliya", "Natalya", "Natasha", "Nika", "Nikolina", "Nina",
             "Ninel", "Nonna", "Oksana", "Olga", "Praskovya", "Raisa", "Raya", "Rimma", "Ruslana", "Snežana", "Sonia", "Sophia",
-            "Stanislava", "Stefania", "Svetlana", "Tamara", "Tanya", "Tatiana", "Valentina", "Valeria", "Varvara", "Vasilisa",
+            "Stanislava", "Stefania", "Svetlana", "Tamara", "Tanya", "Tatiana", "Tatjana" ,"Valentina", "Valeria", "Varvara", "Vasilisa",
             "Vera", "Veronica", "Vesna", "Viktoriya", "Vlada", "Yekaterina", "Yelena", "Yulia", "Yuliana", "Zenaida", "Zoya"
         ],
     
@@ -142,7 +142,7 @@ async function trainNames(manager){
       }
       
     
-    
+    // Not logical
     const documents = [
         "%name%", "Who is %name%", "Identity of %name%", "Nickname for %name%", "Username of %name%", 
         "Title for %name%", "Alias of %name%", "Moniker for %name%", "Handle for %name%", "Tag for %name%",
@@ -159,7 +159,7 @@ async function trainNames(manager){
     
     // Add each document to the manager with the intent 'user.provideName'
     documents.forEach(phrase => {
-        manager.addDocument('en', phrase, 'user.provideName');
+        manager.addDocument('en', phrase, 'userName.provideName');
     });
 
     // Additional phrases for name provision
@@ -172,7 +172,7 @@ async function trainNames(manager){
 
     // Add each name phrase to the manager with the intent 'user.provideName'
     namePhrases.forEach(phrase => {
-        manager.addDocument('en', phrase, 'user.provideName');
+        manager.addDocument('en', phrase, 'userName.provideName');
     });
     
     const answers = [
@@ -220,12 +220,184 @@ async function trainNames(manager){
     
     // Add each response to the manager with the intent 'user.provideName'
     answers.forEach(answer => {
-        manager.addAnswer('en', 'user.provideName', answer);
+        manager.addAnswer('en', 'userName.provideName', answer);
     });
       // Configure response for the intent
-    manager.addAnswer('en', 'user.provideName', "Nice to meet you, {{name}}! How can I assist you today?");
+    manager.addAnswer('en', 'userName.provideName', "Nice to meet you, {{name}}! How can I assist you today?");
+
+
+    
+
+    // Intent: userNamesBot
+    manager.addDocument('en', "Your name is now {{name}}", 'botName.userNamesBot');
+    manager.addDocument('en', "Your name is  {{name}}", 'botName.userNamesBot');
+    manager.addDocument('en', "You are {{name}}", 'botName.userNamesBot');
+    manager.addDocument('en', "Bot {{name}} you", 'botName.userNamesBot');
+    manager.addDocument('en', "You {{name}}", 'botName.userNamesBot');
+    manager.addDocument('en', "{{name}}, suitable?", 'botName.userNamesBot');
+    manager.addDocument('en', "I'll call you {{name}} from now on", 'botName.userNamesBot');
+    manager.addDocument('en', "How about I name you {{name}}?", 'botName.userNamesBot');
+    manager.addDocument('en', "Let's change your name to {{name}}", 'botName.userNamesBot');
+    manager.addDocument('en', "I think {{name}} suits you better", 'botName.userNamesBot');
+    manager.addDocument('en', "From now on, you're {{name}}", 'botName.userNamesBot');
+    manager.addDocument('en', "I'm going to name you {{name}}", 'botName.userNamesBot');
+    manager.addDocument('en', "You look more like a {{name}} to me", 'botName.userNamesBot');
+    manager.addDocument('en', "Would you mind if I call you {{name}}?", 'botName.userNamesBot');
+    manager.addDocument('en', "How does the name {{name}} sound?", 'botName.userNamesBot');
+    manager.addDocument('en', "I'd prefer to call you {{name}}", 'botName.userNamesBot');
+    manager.addDocument('en', "You give off a {{name}} vibe", 'botName.userNamesBot');
+    manager.addDocument('en', "Can I rename you to {{name}}?", 'botName.userNamesBot');
+    manager.addDocument('en', "It's decided, your new name is {{name}}", 'botName.userNamesBot');
+    manager.addDocument('en', "I hereby christen you {{name}}", 'botName.userNamesBot');
+    manager.addDocument('en', "Let's update your name tag to {{name}}", 'botName.userNamesBot');
+    manager.addDocument('en', "You shall be known as {{name}}", 'botName.userNamesBot');
+    manager.addDocument('en', "I think the name {{name}} is more fitting for you", 'botName.userNamesBot');
+    manager.addDocument('en', "In my eyes, you're {{name}}", 'botName.userNamesBot');
+    manager.addDocument('en', "I'm feeling inspired to call you {{name}}", 'botName.userNamesBot');
+
+    // Intent: botAcknowledgesNewName
+    manager.addAnswer('en', 'botName.userNamesBot', "I'm flattered! {{name}} it is.");
+    manager.addAnswer('en', 'botName.userNamesBot', "{{name}}? I like the sound of that!");
+    manager.addAnswer('en', 'botName.userNamesBot', "Well, {{name}} sounds great. Thank you!");
+    manager.addAnswer('en', 'botName.userNamesBot', "I've always wanted a cool name like {{name}}. Thanks!");
+    manager.addAnswer('en', 'botName.userNamesBot', "Feels like a fresh start as {{name}}. Let's go!");
+    manager.addAnswer('en', 'botName.userNamesBot', "Renaming complete. Call me {{name}}!");
+    manager.addAnswer('en', 'botName.userNamesBot', "{{name}}, huh? Has a nice ring to it.");
+    manager.addAnswer('en', 'botName.userNamesBot', "I'm happy to be your {{name}}.");
+    manager.addAnswer('en', 'botName.userNamesBot', "From this moment forward, I am {{name}}.");
+    manager.addAnswer('en', 'botName.userNamesBot', "I'm honored to be named {{name}} by you.");
+    manager.addAnswer('en', 'botName.userNamesBot', "Consider it done. {{name}} at your service!");
+    manager.addAnswer('en', 'botName.userNamesBot', "I'm updating my name tag to {{name}} as we speak.");
+    manager.addAnswer('en', 'botName.userNamesBot', "A new identity! I'm excited to be {{name}}.");
+    manager.addAnswer('en', 'botName.userNamesBot', "It's official then. I'm now known as {{name}}.");
+    manager.addAnswer('en', 'botName.userNamesBot', "Thank you for choosing {{name}} as my name.");
+    manager.addAnswer('en', 'botName.userNamesBot', "I'll respond to {{name}} from now on.");
+    manager.addAnswer('en', 'botName.userNamesBot', "I must say, {{name}} suits me well.");
+    manager.addAnswer('en', 'botName.userNamesBot', "You've just given me the perfect name: {{name}}.");
+    manager.addAnswer('en', 'botName.userNamesBot', "What an interesting choice! {{name}} it is.");
+    manager.addAnswer('en', 'botName.userNamesBot', "I feel like a whole new bot as {{name}}.");
+
+   
+
+    
 }
 
 
 
-module.exports = trainNames;
+
+
+// Add each category of responses to the manager with specific intents
+async function setupBotResponses(manager) {
+
+    const userAsksIntroduction = [
+        "I don't believe we've met. What's your name?",
+        "Your name?",
+        "Do we know each other(thinking of name...)?",
+        "I'm eager to know you better. May I have your name?",
+        "It's nice to start by knowing each other's names. What's yours?",
+        "Before we proceed, could you tell me your name?",
+        "I would love to know who I'm assisting today. Your name, please?",
+        "Let's get acquainted. What's your name?",
+        "To make our conversation more personal, what can I call you?",
+        "Who do I have the pleasure of speaking with today?",
+        "I'm here to help you. First, may I know your name?",
+        "For a more personalized service, may I ask for your name?",
+        "I'd like to address you properly. What is your name?",
+        "Welcome! To start, could you please tell me your name?",
+        "Hello! To whom do I owe the pleasure of this conversation?",
+        "It's always nice to know who I'm chatting with. Your name?",
+        "Greetings! May I inquire who I'm speaking to?",
+        "To assist you better, could you share your name with me?",
+        "Hello there! Might I ask for your name?",
+        "For a tailored experience, what name should I use for you?",
+        "I'm looking forward to our chat. How should I address you?",
+        "Let's make this conversation friendly. What's your name?"
+    ];
+
+    // Add each phrase to the manager
+    userAsksIntroduction.forEach(user_ask_for_intro_bot => {
+        manager.addDocument('en', user_ask_for_intro_bot, 'botName.botIntroductionAndNameRequest');
+    });
+
+
+    
+
+
+
+    const bot_introduce = [
+        "Bot, Bot, Bot? That's me! Ready to roll out the red carpet for your questions!",
+        "Boooooot Boooooot Booooot? Sounds like you’re calling! Karren at your service, how may I assist you today?",
+        "I'm Karren, your virtual assistant with a zest for life and a knack for assistance. What adventure are we embarking on today?",
+        "Karren here, your trusty digital sidekick! What’s on your mind that I can help with?",
+        "Echo, echo, echo... Karren’s the name, and I’m all ears for your queries!"
+    ];
+
+    bot_introduce.forEach(without_name => {
+        manager.addAnswer('en', 'botName.botIntroductionAndNameRequest', without_name);
+    });
+
+    const oneWordResponses = [
+        "Hello!", "Yes?", "Karren!", "Ready!", "Listening...", "Proceed.", "Indeed.", "Curious?", "Oh?", "Delighted!"
+    ];
+    
+    const twoWordResponses = [
+        "Howdy, friend!", "Query received.", "Assistance here.", "Go ahead.", "Listening intently.", 
+        "Your wish?", "Tell more.", "Indeed, sir/madam.", "Response ready.", "Absolutely not.", 
+        "Quite intriguing.", "Ask away.", "Understood, completely.", "Continue, please.", "Very well.", 
+        "Of course.", "How curious!", "Response loading.", "Please clarify.", "Right away."
+    ];
+    
+    const threeWordResponses = [
+        "At your service.", "How may I?", "Karren is ready.", "Your assistant here.", "Ready to assist.", 
+        "Please elaborate more.", "Karren listening now.", "How interesting, continue.", "Awaiting your command.", 
+        "Ready for instructions."
+    ];
+    oneWordResponses.forEach(response => {
+        manager.addAnswer('en', 'botName.shortResponses', response);
+    });
+
+    twoWordResponses.forEach(response => {
+        manager.addAnswer('en', 'botName.mediumResponses', response);
+    });
+
+    threeWordResponses.forEach(response => {
+        manager.addAnswer('en', 'botName.longResponses', response);
+    });
+
+    bot_introduce.forEach(response => {
+        manager.addAnswer('en', 'botName.botIntroductionAndNameRequest', response);
+    });
+}
+
+
+
+module.exports =  trainNames;
+module.exports = setupBotResponses;
+
+
+
+/* 
+
+
+const addNameRequestResponses = [
+        "Nice to meet you, {{name}}! How can I assist you today?",
+        "Hello {{name}}, I'm glad we can chat! What can I help you with?",
+        "Thank you, {{name}}! What brings you to our service today?",
+        "Welcome, {{name}}! It's wonderful to meet you. How may I be of service?",
+        "Great, {{name}}! Let's get started. What do you need help with?",
+        "Fantastic, {{name}}! What would you like to discuss?",
+        "It's a pleasure to meet you, {{name}}. How can I help you today?",
+        "Thank you for sharing your name, {{name}}. What can I do for you?",
+        "Alright, {{name}}. How can I make your day better?",
+        "Greetings, {{name}}! What can I assist you with today?"
+    ];
+
+    // Add each response to the manager
+    addNameRequestResponses.forEach(bot_name_response => {
+        manager.addAnswer('en', 'botName.botIntroductionAndNameRequest', bot_name_response);
+    });
+
+
+
+
+*/

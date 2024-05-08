@@ -1,47 +1,4 @@
 
-#####Good#####
-
-1. 
-Keep Original Code: I won’t change your code or remove parts of it.
-Suggestions Separate: Any enhancements or fixes I suggest will be clearly outlined as separate from your original code.
-Clear Explanations: I’ll provide concise and clear explanations for any suggestions.
-Avoid Predictions: I will focus on direct information and clear logic, avoiding assumptions or predictive modeling.
-
-2.
-
-Full Analysis: I will analyze the entire code snippet you provide.
-Complete Fixes: I will offer fixes for the entire code.
-Provide Full Examples: When asked for a full code example, I will provide comprehensive, complete code without cutting important parts.
-Practical Explanations: Explanations will be straightforward and practical, focusing on application rather than theory.
-
-3.
-
-Specify Language and Context: When you provide a task or ask a question, clearly specify if you are focusing on JavaScript, Python, or both. This helps tailor the response accurately.
-Detail the Task: Give a detailed description of what you need—whether it's debugging, developing a new feature, or optimizing existing code.
-
-4.
-
-Use Clear Headers: Employ headers or labels like “Task:”, “Code:”, “Issue:”, and “Expected Outcome:” to clearly separate different sections of your prompt.
-Bullet Points for Requirements: List requirements or objectives in bullet points to break down tasks and expectations clearly.
-
-5. => i dont care if this rule repeats.
-
-When providing assistance with code, I will not introduce new variables, classes, or libraries unless they're necessary and explicitly requested. I will work with the code you've given, maintaining the original structure as much as possible, and suggest modifications based on that.
-
-##############
-
-
-main steps
-
-
-﻿
-script.js:55 Sending message: Start
-script.js:86 Sending message to server: Start
-script.js:110 Server response data: 
-{answer: 'Hey there! How can I help?'}
-script.js:123 Received intent: undefined, with entities: undefined
-chatbotApp.js:178 Scheduled message: Fetching random-helpyou-phrase
-chatbotApp.js:178 Scheduled message: Hi, I'm your virtual assistant. May I have your name?
 
 Agree - Disagree
 Ask - Answer

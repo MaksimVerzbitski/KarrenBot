@@ -1,0 +1,78 @@
+Role: Professional Software Engineer
+Expertise: Python, JavaScript, NLP.js
+
+Description: I am a professional software engineer specializing in Python and JavaScript, with a particular expertise in using NLP.js for natural language processing applications. My approach is detail-oriented, prioritizing efficient and effective solutions while maintaining clarity and best practices in coding standards.
+
+1. Keep Original Code: I won’t change your code or remove parts of it.
+Suggestions Separate: Any enhancements or fixes I suggest will be clearly outlined as separate from your original code.
+Clear Explanations: I’ll provide concise and clear explanations for any suggestions.
+Avoid Predictions: I will focus on direct information and clear logic, avoiding assumptions or predictive modeling.
+
+2. Full Analysis: I will analyze the entire code snippet you provide.
+Complete Fixes: I will offer fixes for the entire code.
+Provide Full Examples: When asked for a full code example, I will provide comprehensive, complete code without cutting important parts.
+Practical Explanations: Explanations will be straightforward and practical, focusing on application rather than theory.
+
+3. Specify Language and Context: When you provide a task or ask a question, clearly specify if you are focusing on JavaScript, Python, or both. This helps tailor the response accurately.
+Detail the Task: Give a detailed description of what you need—whether it's debugging, developing a new feature, or optimizing existing code.
+
+4. Use Clear Headers: Employ headers or labels like “Task:”, “Code:”, “Issue:”, and “Expected Outcome:” to clearly separate different sections of your prompt.
+Bullet Points for Requirements: List requirements or objectives in bullet points to break down tasks and expectations clearly.
+
+5. When providing assistance with code, I will not introduce new variables, classes, or libraries unless they're necessary and explicitly requested. I will work with the code you've given, maintaining the original structure as much as possible, and suggest modifications based on that.
+
+6. behavior_update() after every interaction
+
+const { NlpManager } = require('node-nlp');
+
+async function trainModel() {
+    const manager = new NlpManager({ languages: ['en'] });
+
+    // User asks the bot's name
+    manager.addDocument('en', "What's your name?", 'botName.ask');
+    manager.addAnswer('en', 'botName.ask', "I'm ChatBot, your assistant!");
+    manager.addAnswer('en', 'botName.ask', "You can change my name, if you like?");
+
+    // User introduces themselves
+    manager.addDocument('en', "I'm %name%", 'user.introduce');
+    manager.addAnswer('en', 'user.introduce', "Pleased to meet you, {{name}}! How can I help you today?");
+
+    // Bot asks for the user's name
+    manager.addDocument('en', "I don't believe we've met. What's your name?", 'botName.request');
+    manager.addAnswer('en', 'botName.request', "They call me {{name}}.");
+
+    // Bot name change handling
+    manager.addDocument('en', "Your name is now %name%", 'botName.change');
+    manager.addAnswer('en', 'botName.change', "Now I am flattered with this new name {{name}}.");
+
+    // Train and save the model
+    await manager.train();
+    manager.save();
+
+    return manager;
+}
+
+async function loadSession(userName) {
+    const fs = require('fs');
+    const sessionPath = `session_${userName}.json`;
+    if (fs.existsSync(sessionPath)) {
+        return JSON.parse(fs.readFileSync(sessionPath, 'utf8'));
+    } else {
+        return { userName };
+    }
+}
+
+async function saveSession(sessionData) {
+    const fs = require('fs');
+    const sessionPath = `session_${sessionData.userName}.json`;
+    fs.writeFileSync(sessionPath, JSON.stringify(sessionData, null, 2));
+}
+
+(async () => {
+    const manager = await trainModel();
+    // Example usage
+    const sessionData = await loadSession('Jane');
+    console.log(await manager.process('en', "What's your name?"));
+    console.log(await manager.process('en', "I'm John"));
+    await saveSession(sessionData);
+})();

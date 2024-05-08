@@ -39,10 +39,10 @@ def log_to_file(log_type, message):
 
     if log_file:
         with open(log_file, 'a+') as file:
-            file.seek(0)  # Move to the start of the file
-            first_character = file.read(1)  # Read the first character
+            file.seek(0)  # start of the file
+            first_character = file.read(1)  # first character
 
-            # Insert a new line only if the file is not empty
+            #  new line only if  is not empty
             if first_character:
                 file.write("\n")
 
@@ -53,11 +53,11 @@ def log_to_file(log_type, message):
                 else:
                     file.write(f"======== | New Session started: {formatted_time} | =============\n")
             
-            # Log formatting for page reload - no new line check as it's part of session log
+            # Log formatting for page reload 
             elif log_type == 'page_reload':
                 file.write(f"{formatted_time} | SessionStart: Same Session | Page reload!\n")
             
-            # General log entry format for other log types
+            # General log entry 
             log_entry = f"{formatted_time} | {message}\n"
             file.write(log_entry)
 
@@ -90,7 +90,7 @@ def is_new_day(log_file, current_time):
         pass  
     return True  
 
-
+# Main page
 @app.route("/", methods=["GET"])
 def main_page():
     global app_started
@@ -131,15 +131,18 @@ def log_conversation():
     # Proceed if no log 
     conversation_info = request.json
     if 'sender' in conversation_info and 'message' in conversation_info:
+        # Determine the sender's name based on the session or default
+        sender_name = session.get('userName', 'User') if conversation_info['sender'] == 'User' else session.get('botName', 'Bot')
 
-        log_to_file('conversation', f"{conversation_info['sender']} | {conversation_info['message']}")
-        print(f"Logging conversation: {conversation_info['sender']} | {conversation_info['message']}")
+        # Log the conversation using the resolved sender name
+        log_to_file('conversation', f"{sender_name} | {conversation_info['message']}")
+        print(f"Logging conversation: {sender_name} | {conversation_info['message']}")
 
-        #session flag  duplicate logging
+        # Set session flag to prevent duplicate logging
         session['logged_this_session'] = True
         return jsonify({"status": "conversation logged"})
     else:
-        #error if is missing
+        # Error if necessary data is missing
         return jsonify({"status": "invalid data received"})
 
 @app.route('/sendMessage', methods=['POST'])
@@ -147,23 +150,21 @@ def send_message():
     user_message = request.json['message']
     print(f"Received message: {user_message}")  # console for debugging
 
+    user_name = session.get('userName', 'User')  # Use session value
+    bot_name = session.get('botName', 'Bot')  # Use session value
     # Call NLP function and get response
     nlp_response = my_nlp_function(user_message)
     print(f"NLP response: {nlp_response}")  # NLP console for debugging
 
     # Log the conversation with the bot response 
-    log_to_file('conversation', f"User: {user_message}")
+    log_to_file('conversation', f"{user_name}: {user_message}")
     if nlp_response.get('answer'):
-        log_to_file('conversation', f"Bot: {nlp_response['answer']}")
+        log_to_file('conversation', f"{bot_name}: {nlp_response['answer']}")
     else:
-        log_to_file('conversation', f"Bot: I'm not sure how to respond to that.")
+        log_to_file('conversation', f"{bot_name}: I'm not sure how to respond to that.")
     #return a JSON response
     return jsonify(nlp_response)
-    """ return jsonify({
-        "response": nlp_response.get('answer', "I'm not sure how to respond to that."),
-        "intent": nlp_response.get('intent', 'unknown'),
-        "entities": nlp_response.get('entities', {})
-    })  """
+    
 
 
 def my_nlp_function(message):
@@ -189,6 +190,27 @@ def get_message():
     return jsonify({"message": "Hello, how can I help you?"})
 
 
+@app.route('/setNames', methods=['POST'])
+def set_names():
+    names_info = request.get_json()  # Get the JSON data from the request
+    updated = False
+
+    # Check and update botName if provided
+    if 'botName' in names_info and names_info['botName'] != session.get('botName'):
+        session['botName'] = names_info['botName']
+        log_to_file('bot_name_change', f"Bot name changed to: {session['botName']}")
+        updated = True
+
+    # Check and update userName if provided
+    if 'userName' in names_info and names_info['userName'] != session.get('userName'):
+        session['userName'] = names_info['userName']
+        log_to_file('user_name_change', f"User name changed to: {session['userName']}")
+        updated = True
+
+    if updated:
+        return jsonify({"status": "Names updated successfully"})
+    else:
+        return jsonify({"status": "No changes detected"})
 
 
 if __name__ == '__main__':

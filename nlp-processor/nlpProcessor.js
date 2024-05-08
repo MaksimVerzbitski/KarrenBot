@@ -1,9 +1,14 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const { NlpManager } = require('node-nlp');
-const trainnlp = require('./train-nlp');
+const trainnlp = require('./train-nlp.js');
 const path = require('path');
 const fs = require('fs');
+
+// Import the ServerChatbot class
+const ServerChatbot = require('./ServerChatbot');
+
+const chatbot = new ServerChatbot();
 
 const app = express();
 app.use(bodyParser.json());
@@ -21,7 +26,7 @@ async function loadModel() {
 loadModel();
 
 
-
+// not usedd
 function loadTrainingData() {
   if (fs.existsSync(trainingDataPath)) {
       return JSON.parse(fs.readFileSync(trainingDataPath, 'utf8'));
@@ -38,34 +43,50 @@ function loadTrainingData() {
   }
 }
 
+// not used
 function saveTrainingData(data) {
   fs.writeFileSync(trainingDataPath, JSON.stringify(data, null, 2));
 }
 
 
-function handleNameResponse(response, res) {
-  let answer = "I'm not sure how to respond to that.";
 
+
+
+function handleNameResponse(chatbot,response, res) {
+  let answer = response.answer || "I'm not sure how to respond to that.";
   const nameEntity = response.entities.find(entity => entity.entity === 'person');
   const nameToUse = nameEntity ? nameEntity.sourceText : extractName(response.utterance);
 
   if (nameToUse) {
-    if (response.answer) {
-      // Only use replace if response.answer is defined
-      answer = response.answer.replace('{{name}}', nameToUse);
-    } else {
-      // Provide a default greeting if no answer is available in the response
-      answer = `Hello ${nameToUse}, how can I help you today?`;
-    }
+      chatbot.setUserName(nameToUse); // Set user name in Chatbot instance
+      if (response.answer) {
+          answer = response.answer.replace('{{name}}', nameToUse);
+      } else {
+          answer = `Hello ${nameToUse}, how can I help you today?`;
+      }
   } else if (!nameToUse && response.answer) {
-    // If no name but response.answer exists, use a default name placeholder
-    answer = response.answer.replace('{{name}}', 'Guest');
+      answer = response.answer.replace('{{name}}', 'Guest');
   }
 
-  // Send the processed answer to the client
-  res.json({ answer });
-}
+  res.json({
+    answer: answer,
+    userName: chatbot.userName,
+    botName: chatbot.botName  
+  });
+} 
 
+/* //  message handling logic for bot
+if (message.toLowerCase().includes('bot') && /(\b\w+\b)(?:.*?\b\1\b){2,}/.test(message.toLowerCase())) {
+  return handleRepetitions(message);
+} */
+
+function handleRepetitions(input) {
+  const count = (input.match(/bot/gi) || []).length;
+  if (count > 2) {
+      return "Playing our favorite echo game, aren’t we? How can I help you today?";
+  }
+  return "Just getting my circuits warmed up! What can I do for you?";
+}
 
 function extractName(inputText) {
   // RegEx various ways a name 
@@ -95,7 +116,7 @@ app.post('/nlp-process-message', async (req, res) => {
   try {
     const response = await manager.process('en', message);
     console.log("NLP Full Response:", JSON.stringify(response, null, 2));
-    handleNameResponse(response, res);
+    handleNameResponse(chatbot,response, res);
   } catch (error) {
     console.error('Error processing message:', error);
     res.status(500).send('Error processing your message.');

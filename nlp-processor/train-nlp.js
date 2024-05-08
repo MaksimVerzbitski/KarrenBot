@@ -2,6 +2,7 @@ const path = require('path');
 const fs = require('fs');
 const readline = require('readline');
 const trainNames = require('./train-names');
+const setupBotResponses = require('./train-names')
 
 
 
@@ -33,9 +34,10 @@ module.exports = async function trainnlp(manager) {
       }
   }
 
-  // Execute name training if deciding to train or if no model exists
+  // Execute name training 
   await trainNames(manager);
-
+  
+  await setupBotResponses(manager);
   // Training the general model
   console.log('Training the general model, please wait...');
   await manager.train();

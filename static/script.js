@@ -4,15 +4,11 @@ class Chatbot {
     
         this.messages = [];
 
-        this.expectingBotName = false;
-        this.expectingUserName = false;
-        this.botName = 'Bot'; // Default bot name
-        this.userName = 'User'; // Default user name
+        this.botName = localStorage.getItem('botName') || 'Bot'; 
+        this.userName = localStorage.getItem('userName') || 'User'; 
+        this.updateChatUI(); // Update UI on initialization to reflect stored names
     }
 
-    
-
-    // not sure if this relevant
     setNames(botName, userName) {
         if (botName) {
             this.botName = botName;
@@ -20,9 +16,24 @@ class Chatbot {
         if (userName) {
             this.userName = userName;
         }
-        // TODO update the UI  new names
         console.log(`Bot name set to: ${this.botName}, User name set to: ${this.userName}`);
-        this.updateChatUI();
+        this.updateNamesOnServer(botName, userName);
+        this.updateChatUI();  // Ensure this is called
+    }
+
+    updateNamesOnServer(botName, userName) {
+        fetch('/setNames', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ botName, userName })
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log('Names updated on server:', data);
+        })
+        .catch(error => {
+            console.error('Failed to update names on server:', error);
+        });
     }
 
     isValidInput(input) {
@@ -89,7 +100,9 @@ class Chatbot {
     
     handleServerResponse(data) {
         console.log('Server response data:', data);
-        
+        if (data.userName) {
+            this.setNames(this.botName, data.userName);  // Update the username
+        }
         //'thinking' indicator 
         this.addToConversationHistory('...', this.botName);
         this.updateChatUI();
@@ -115,12 +128,16 @@ class Chatbot {
     
     
     logErrorToServer(where, errorMsg) {
+        console.error('Error from ' + where + ':', errorMsg); // Log to console for immediate feedback
         fetch('/logError', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({ where: where, error: errorMsg })
+            body: JSON.stringify({ where, error: errorMsg })
+        }).catch(error => {
+            console.error('Failed to log error to server:', error);
+            // Optionally handle failed logging => redirection
         });
     }
     
@@ -211,22 +228,17 @@ class Chatbot {
         .catch(error => console.error('Error logging conversation:', error));
     }
     
-    
     updateChatUI() {
         const chatLog = document.getElementById('chat-log');
         if (!chatLog) return;
-    
+
         chatLog.innerHTML = this.conversationHistory.map(messageObject => {
             const senderClass = messageObject.sender === this.botName ? 'bot-message' : 'user-message';
             return `<div class="${senderClass}">
-                        <strong>${messageObject.sender}</strong>: ${messageObject.message}
+                        <strong class="sender-name">${messageObject.sender === 'Bot' ? this.botName : this.userName}</strong>: ${messageObject.message}
                     </div>`;
         }).join('');
-    
-        chatLog.scrollTop = chatLog.scrollHeight; // latest message
+        chatLog.scrollTop = chatLog.scrollHeight;
     }
-
     
-
 }
-

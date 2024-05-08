@@ -1,3 +1,44 @@
+function handleNameResponse(chatbot, response, res) {
+    let answer = "I'm not sure how to respond to that.";
+    const nameEntity = response.entities.find(entity => entity.entity === 'person');
+    const nameToUse = nameEntity ? nameEntity.sourceText : extractName(response.utterance);
+
+    if (nameToUse) {
+        chatbot.setUserName(nameToUse);  // Assuming setUserName updates the userName
+        answer = response.answer ? response.answer.replace('{{name}}', nameToUse) : `Hello ${nameToUse}, how can I help you today?`;
+    } else {
+        answer = response.answer ? response.answer.replace('{{name}}', 'Guest') : answer;
+    }
+
+    res.json({
+        answer: answer,
+        userName: chatbot.userName,  // Send the updated user name back to the client
+        botName: chatbot.botName  // Send the updated bot name if necessary
+    });
+}
+
+
+updateChatUI() {
+        // Update elements reflecting the names
+        const botNameDisplay = document.getElementById('bot-name-display');
+        const userNameDisplay = document.getElementById('user-name-display');
+        if (botNameDisplay && userNameDisplay) {
+            botNameDisplay.textContent = this.botName;
+            userNameDisplay.textContent = this.userName;
+        }
+
+        // Update chat messages as previously defined
+        const chatLog = document.getElementById('chat-log');
+        chatLog.innerHTML = this.conversationHistory.map(msg => {
+            const senderClass = msg.sender === this.botName ? 'bot-message' : 'user-message';
+            return `<div class="${senderClass}">
+                        <strong class="sender-name">${msg.sender}</strong>: ${msg.message}
+                    </div>`;
+        }).join('');
+        chatLog.scrollTop = chatLog.scrollHeight;
+    }
+
+
 /* function handleNameResponse(response, req, res) {
     // Safely extract context or initialize it if undefined
     const context = req.body.context || {};
@@ -81,3 +122,56 @@
     console.log(`New name ${name} added to the training data.`);
   }
 } */
+
+
+
+Sisukord
+Autorideklaratsioon
+Kasutatud terminoloogia
+Sissejuhatus
+KarrenBoti Tutvustus
+Projekti Ülevaade
+Tehnoloogiate valik ja põhjendus
+Arhitektuur ja komponendid
+Kasutaja interaktsioon ja kogemus
+Tulevikuperspektiivid ja laiendatavus
+Projekti kavandamine ja haldamine
+Kasutatud Terminoloogia
+Flask: Pythoni mikro veebirakenduste raamistik.
+Node-NLP: NLP raamatukogu Node.js keskkonnas.
+JSON: Andmevorming andmete vahetamiseks.
+Git/GitHub: Vahendid versioonihalduseks.
+1. KarrenBoti Tutvustus
+1.1 Projekti Ülevaade
+"KarrenBot" kasutab NLP tehnoloogiaid pakkumaks intuitiivset kasutajakogemust, sujuvat integratsiooni eri sektorites.
+
+1.2 Probleem ja Lahendus
+
+Suhtluspuudulikkus: Eriti eakate kasutajate raskused suhtlusrobotitega.
+Emotsionaalne suhtlus: Arendusjärgus, tulevikus täiustamisele kuuluv.
+1.3 Kasutatavad Tehnoloogiad
+
+Python/Flask: Serveripoolne loogika.
+Node.js/Node-NLP: Klientpoolne käitumine ja NLP funktsioonid.
+1.4 Arhitektuur ja Komponendid
+
+Serveripoolne Loogika: Andmevahetus, API-de haldus.
+Klientpoolne Käitumine: Interaktiivsus, kasutajaliidese reageerimine.
+NLP Integreerimine: Koolitus ja andmetöötlus.
+Kasutajaliidese Disain: UI/UX disaini standardid ja rakendused.
+1.5 Kasutaja Interaktsioon
+
+Funktsionaalsus: Vestlusliidese võimekus.
+Reageerimine: Kasutaja tegevustele vastamine.
+Isiksus: Boti isiksuse arendus.
+Tagasiside: Kasutajate hinnangute kogumine ja analüüs.
+2. Projekti Kavandamine ja Haldamine
+2.1 Nõuete Analüüs: Kasutajavajaduste kogumine ja analüüsimine.
+2.2 Arendusprotsess: Agile metoodikate rakendamine.
+2.3 Probleemide Lahendamine: Vigade tuvastamine ja kõrvaldamine.
+2.4 Dokumentatsioon: Järjepidev dokumentide uuendamine ja haldamine.
+
+3. Tehnoloogilised Valikud ja Otsused
+Raamistike Valik: Miks eelistati Flaski ja Node-NLP.
+Arendusvahendid: VS Code, Git kasutamine.
+Turvalisus: Andmekaitse praktikad ja privaatsuse haldamine.
