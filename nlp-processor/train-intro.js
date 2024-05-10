@@ -1,4 +1,4 @@
-function defineIntents(manager) {
+async function defineIntents(manager) {
     // chat initiation
     const chatInitiatorPhrases = [
       "Let's chat",
@@ -63,11 +63,6 @@ function defineIntents(manager) {
     
     
     // ===================================================================================================================================
-  
-    manager.addNamedEntityText('userName', 'userName', ['en'], []);
-    manager.addNamedEntityText('botName', 'botName', ['en'], []);
-  
-  
     // new intent 
     const helpYouPhrases = [
       "Can I assist you with something?",
@@ -130,7 +125,7 @@ function defineIntents(manager) {
     manager.addAnswer('en', 'agree', 'Certainly, please do.');
   }
   
-  const intentNames = [
+  /* const intentNames = [
     'greetings',
     'greetings.morning',
     'greetings.evening',
@@ -141,7 +136,7 @@ function defineIntents(manager) {
     'botName.userNamesBot',
     'agree',
     // Add any other intent names here
-  ];
+  ]; */
 
 
   const greetingsExamples = [
@@ -268,27 +263,6 @@ function defineIntents(manager) {
   ];
   byeResponses.forEach(response => manager.addAnswer('en', 'greetings.bye', response));
   
-  module.exports = { defineIntents, intentNames }
+  module.exports = { defineIntents }
   
   
-  
-    //bot asks user for a name => NOT IN USE!
-  /*   
-    manager.addDocument('en', 'May I know your name?', 'askName');
-    manager.addDocument('en', 'What do they call you?', 'askName');
-    manager.addDocument('en', 'Can you tell me your name?', 'askName');
-    manager.addDocument('en', "What's your name?", 'askName');
-    manager.addDocument('en', 'Who are you?', 'askName');
-    manager.addDocument('en', 'Your name?', 'askName');
-    manager.addDocument('en', 'Name?', 'askName');
-    manager.addDocument('en', 'Whom am I speaking with?', 'askName');
-    manager.addDocument('en', 'Do you have a name?', 'askName');
-    manager.addDocument('en', 'Could you share your name?', 'askName');
-    manager.addDocument('en', 'What should I call you?', 'askName');
-    manager.addDocument('en', 'Are you named?', 'askName');
-    manager.addDocument('en', 'What do you go by?', 'askName');
-    manager.addDocument('en', 'Identify yourself, please?', 'askName');
-  
-    manager.addAnswer('en', 'askName', 'Nice to meet you, %name%! How can I assist you today?'); 
-    
-  */

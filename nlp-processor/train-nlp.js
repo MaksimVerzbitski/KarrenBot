@@ -3,7 +3,7 @@ const fs = require('fs');
 const readline = require('readline');
 const trainNames = require('./train-names');
 const setupBotResponses = require('./train-names')
-
+const defineIntents = require("./train-intro")
 
 
 const modelPath = path.join(__dirname, 'model.nlp');
@@ -38,6 +38,8 @@ module.exports = async function trainnlp(manager) {
   await trainNames(manager);
   
   await setupBotResponses(manager);
+
+  await defineIntents(manager);
   // Training the general model
   console.log('Training the general model, please wait...');
   await manager.train();

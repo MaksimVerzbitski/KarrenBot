@@ -26,31 +26,6 @@ async function loadModel() {
 loadModel();
 
 
-// not usedd
-function loadTrainingData() {
-  if (fs.existsSync(trainingDataPath)) {
-      return JSON.parse(fs.readFileSync(trainingDataPath, 'utf8'));
-  } else {
-      // Ensure minimum categories exist
-      return {
-          "russianMasculine": [],
-          "russianFeminine": [],
-          "englishMasculine": [],
-          "englishFeminine": [],
-          "estonianMasculine": [],
-          "estonianFeminine": []
-      };
-  }
-}
-
-// not used
-function saveTrainingData(data) {
-  fs.writeFileSync(trainingDataPath, JSON.stringify(data, null, 2));
-}
-
-
-
-
 
 function handleNameResponse(chatbot,response, res) {
   let answer = response.answer || "I'm not sure how to respond to that.";
@@ -75,18 +50,7 @@ function handleNameResponse(chatbot,response, res) {
   });
 } 
 
-/* //  message handling logic for bot
-if (message.toLowerCase().includes('bot') && /(\b\w+\b)(?:.*?\b\1\b){2,}/.test(message.toLowerCase())) {
-  return handleRepetitions(message);
-} */
 
-function handleRepetitions(input) {
-  const count = (input.match(/bot/gi) || []).length;
-  if (count > 2) {
-      return "Playing our favorite echo game, aren’t we? How can I help you today?";
-  }
-  return "Just getting my circuits warmed up! What can I do for you?";
-}
 
 function extractName(inputText) {
   // RegEx various ways a name 
@@ -126,3 +90,37 @@ app.post('/nlp-process-message', async (req, res) => {
 app.listen(port, () => console.log(`Server running on http://localhost:${port}`));
 
 
+// not usedd
+/* function loadTrainingData() {
+  if (fs.existsSync(trainingDataPath)) {
+      return JSON.parse(fs.readFileSync(trainingDataPath, 'utf8'));
+  } else {
+      // Ensure minimum categories exist
+      return {
+          "russianMasculine": [],
+          "russianFeminine": [],
+          "englishMasculine": [],
+          "englishFeminine": [],
+          "estonianMasculine": [],
+          "estonianFeminine": []
+      };
+  }
+} */
+
+// not used
+/* function saveTrainingData(data) {
+  fs.writeFileSync(trainingDataPath, JSON.stringify(data, null, 2));
+} */
+
+/* //  message handling logic for bot
+if (message.toLowerCase().includes('bot') && /(\b\w+\b)(?:.*?\b\1\b){2,}/.test(message.toLowerCase())) {
+  return handleRepetitions(message);
+} */
+
+/* function handleRepetitions(input) {
+  const count = (input.match(/bot/gi) || []).length;
+  if (count > 2) {
+      return "Playing our favorite echo game, aren’t we? How can I help you today?";
+  }
+  return "Just getting my circuits warmed up! What can I do for you?";
+} */

@@ -3302,3 +3302,11 @@ bot | Hello!
 09-05-2024 00:09 | Maksim: Maksim
 
 09-05-2024 00:09 | Bot: Hello Maksim, how can I help you today?
+
+09-05-2024 09:42 | Maksim: Maksim
+
+09-05-2024 09:42 | Bot: Hello Maksim, how can I help you today?
+
+09-05-2024 17:04 | Maksim: Maksim
+
+09-05-2024 17:04 | Bot: Hello Maksim, how can I help you today?
