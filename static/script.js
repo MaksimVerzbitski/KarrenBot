@@ -10,15 +10,20 @@ class Chatbot {
     }
 
     setNames(botName, userName) {
-        if (botName) {
+        let updated = false;
+        if (botName && this.botName !== botName) {
             this.botName = botName;
+            console.log(`Bot name set to: ${this.botName}`);
+            updated = true;
         }
-        if (userName) {
+        if (userName && this.userName !== userName) {
             this.userName = userName;
+            console.log(`User name set to: ${this.userName}`);
+            updated = true;
         }
-        console.log(`Bot name set to: ${this.botName}, User name set to: ${this.userName}`);
-        this.updateNamesOnServer(botName, userName);
-        this.updateChatUI();  // Ensure this is called
+        if (updated) {
+            this.updateChatUI();  // Ensure the UI is updated only if there was a change
+        }
     }
 
     updateNamesOnServer(botName, userName) {
@@ -100,31 +105,28 @@ class Chatbot {
     
     handleServerResponse(data) {
         console.log('Server response data:', data);
-        if (data.userName) {
-            this.setNames(this.botName, data.userName);  // Update the username
+    
+        // Update the names only if necessary
+        if (data.userName && this.userName !== data.userName) {
+            this.userName = data.userName;
+            console.log(`User name updated to: ${this.userName}`);
         }
-        //'thinking' indicator 
-        this.addToConversationHistory('...', this.botName);
+        if (data.botName && this.botName !== data.botName) {
+            this.botName = data.botName;
+            console.log(`Bot name updated to: ${this.botName}`);
+        }
+    
+        // Update UI after setting names
         this.updateChatUI();
-
-        // Random delay between 1 to 3 seconds
-        const thinkingDelay = Math.floor(Math.random() * (3000 - 1000 + 1) + 1000);
-
-        // After  delay, show  response
+    
+        // Process the rest of the response
+        const thinkingDelay = Math.floor(Math.random() * 2000 + 1000);
         setTimeout(() => {
-
-            this.conversationHistory = this.conversationHistory.filter(
-                messageObj => messageObj.message !== '...'
-            );
-            
-            //NLP answer or  default response
             const botMessage = data.answer || "I'm not sure how to respond to that.";
-
-            // bot's  response => conversation history
             this.addToConversationHistory(botMessage, this.botName);
             this.updateChatUI();
         }, thinkingDelay);
-    } 
+    }
     
     
     logErrorToServer(where, errorMsg) {
@@ -231,14 +233,41 @@ class Chatbot {
     updateChatUI() {
         const chatLog = document.getElementById('chat-log');
         if (!chatLog) return;
-
+    
         chatLog.innerHTML = this.conversationHistory.map(messageObject => {
-            const senderClass = messageObject.sender === this.botName ? 'bot-message' : 'user-message';
+            const senderName = messageObject.sender === 'User' ? this.userName : this.botName;
+            const senderClass = messageObject.sender === 'User' ? 'user-message' : 'bot-message';
             return `<div class="${senderClass}">
-                        <strong class="sender-name">${messageObject.sender === 'Bot' ? this.botName : this.userName}</strong>: ${messageObject.message}
+                        <strong class="sender-name">${senderName}</strong>: ${messageObject.message}
                     </div>`;
         }).join('');
         chatLog.scrollTop = chatLog.scrollHeight;
+    }
+
+    updateBotName(newName) {
+        fetch('/updateBotName', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ newBotName: newName })
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                // Assume the bot's name can appear multiple times and needs to be updated everywhere
+                const nameElements = document.querySelectorAll('.sender-name.bot');
+                nameElements.forEach(element => {
+                    element.textContent = data.botName; // Update all elements with the new name
+                });
+    
+                // Optionally, update the global botName if stored and used elsewhere in your application
+                this.botName = data.botName;
+            } else {
+                console.error('Failed to update bot name');
+            }
+        })
+        .catch(error => console.error('Error updating bot name:', error));
     }
     
 }

@@ -1335,3 +1335,66 @@ function handleNameResponse(response, res) {
   // Send the processed answer as the response
   res.json({ answer });
 }
+
+
+
+GPT
+Based on the log entries and the sequence of messages you provided, it looks like there's an issue with how user inputs that are intended to change the bot's name are being processed and recognized. The system seems to be accepting "Bot Tatjana you" as a regular message, which indicates a need to adjust how commands (particularly those intended to set bot names) are interpreted and executed. Here's a refined approach to ensure your chatbot correctly handles such inputs and updates bot names without mixing them with regular conversation responses:
+
+Refinements Needed in Your Code
+Distinguish Bot Commands from Regular Messages: Update the logic to differentiate commands like "Bot Tatjana you" from regular user messages. This can involve adding specific parsing logic in the chatbot's message handling function to look for these commands.
+
+Execute Command Actions: Once a command is recognized (e.g., to change the bot's name), execute the associated action without logging it as a regular conversation message.
+
+Proposed Solution
+Here's how you can update your sendMessage function in script.js to better handle name change commands:
+
+javascript
+Copy code
+sendMessage(userInput, sender) {
+    console.log(`Sending message: ${userInput}`);
+    
+    // Check if the input is a command to change the bot's name
+    const botNameCommand = userInput.match(/^Bot (\w+) you$/i);
+    if (botNameCommand) {
+        const newBotName = botNameCommand[1];
+        this.setNames(newBotName, null);  // Update the bot's name without changing the user's name
+        this.addToConversationHistory(`Thanks, I'm now known as ${newBotName}. How can I assist you further?`, 'Bot');
+        this.updateChatUI();
+        return;  // Exit early to avoid sending the command as a regular message
+    }
+
+    const validationResponse = this.isValidInput(userInput);
+    if (!validationResponse.isValid) {
+        this.logErrorToServer('Input Validation', validationResponse.message);
+        return;
+    }
+    
+    this.addToConversationHistory(userInput, sender);
+    this.sendToServer(userInput);
+}
+
+
+app.post('/nlp-process-message', async (req, res) => {
+    const { message } = req.body;
+    const botNameCommand = message.match(/^Bot (\w+) you$/i);
+    if (botNameCommand) {
+        const newBotName = botNameCommand[1];
+        chatbot.setBotName(newBotName);
+        res.json({
+            answer: `Thanks, I'm now known as ${newBotName}. How can I assist you further?`,
+            botName: chatbot.botName,
+            userName: chatbot.userName
+        });
+        return;  // Handle bot name change command without further NLP processing
+    }
+
+    try {
+        const response = await manager.process('en', message);
+        console.log("NLP Full Response:", JSON.stringify(response, null, 2));
+        handleNameResponse(chatbot, response, res);
+    } catch (error) {
+        console.error('Error processing message:', error);
+        res.status(500).send('Error processing your message.');
+    }
+});

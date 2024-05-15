@@ -39,97 +39,334 @@
         "trainByDomain": false,
         "keepStopwords": true,
         "stemDict": {
-          "believ,do,have,i,is,met,name,not,we,what,your": {
+          "name": {
             "domain": "default",
-            "intent": "botName.botIntroductionAndNameRequest"
+            "intent": "userName.provideName"
           },
-          "name,your": {
+          "is,name,who": {
             "domain": "default",
-            "intent": "botName.botIntroductionAndNameRequest"
+            "intent": "userName.provideName"
           },
-          "do,each,know,name,of,other,think,we": {
+          "ident,name,of": {
             "domain": "default",
-            "intent": "botName.botIntroductionAndNameRequest"
+            "intent": "userName.provideName"
           },
-          "am,better,eager,have,i,i,know,may,name,to,you,your": {
+          "for,name,nicknam": {
             "domain": "default",
-            "intent": "botName.botIntroductionAndNameRequest"
+            "intent": "userName.provideName"
           },
-          "by,each,is,is,is,it,know,name,nice,other,start,to,what,your": {
+          "name,of,usernam": {
             "domain": "default",
-            "intent": "botName.botIntroductionAndNameRequest"
+            "intent": "userName.provideName"
           },
-          "befor,could,me,name,proceed,tell,we,you,your": {
+          "for,name,titl": {
             "domain": "default",
-            "intent": "botName.botIntroductionAndNameRequest"
+            "intent": "userName.provideName"
           },
-          "am,assist,i,i,know,love,name,pleas,to,today,who,would,your": {
+          "alia,name,of": {
             "domain": "default",
-            "intent": "botName.botIntroductionAndNameRequest"
+            "intent": "userName.provideName"
           },
-          "acquaint,get,is,is,let,name,what,your": {
+          "for,monik,name": {
             "domain": "default",
-            "intent": "botName.botIntroductionAndNameRequest"
+            "intent": "userName.provideName"
           },
-          "call,can,convers,i,make,more,our,person,to,what,you": {
+          "for,name,person": {
             "domain": "default",
-            "intent": "botName.botIntroductionAndNameRequest"
+            "intent": "userName.provideName"
           },
-          "do,have,i,of,pleasur,speak,the,today,who,with": {
+          "for,for,handl,name,name,person": {
             "domain": "default",
-            "intent": "botName.botIntroductionAndNameRequest"
+            "intent": "userName.provideName"
           },
-          "am,first,help,here,i,i,know,may,name,to,you,your": {
+          "for,name,tag": {
             "domain": "default",
-            "intent": "botName.botIntroductionAndNameRequest"
+            "intent": "userName.provideName"
           },
-          "a,ask,for,for,i,may,more,name,person,servic,your": {
+          "identifi,name,pleas": {
             "domain": "default",
-            "intent": "botName.botIntroductionAndNameRequest"
+            "intent": "userName.provideName"
           },
-          "address,had,i,is,like,name,proper,to,what,you,your": {
+          "is,name,name,your": {
             "domain": "default",
-            "intent": "botName.botIntroductionAndNameRequest"
+            "intent": "userName.provideName"
           },
-          "could,me,name,pleas,start,tell,to,welcom,you,your": {
+          "be,could,name,there": {
             "domain": "default",
-            "intent": "botName.botIntroductionAndNameRequest"
+            "intent": "userName.provideName"
           },
-          "convers,do,hello,i,of,owe,pleasur,the,this,to,whom": {
+          "confirm,ident,name,of,pleas": {
             "domain": "default",
-            "intent": "botName.botIntroductionAndNameRequest"
+            "intent": "userName.provideName"
           },
-          "alway,am,chat,i,is,it,know,name,nice,to,who,with,your": {
+          "call,first,is,name,what": {
             "domain": "default",
-            "intent": "botName.botIntroductionAndNameRequest"
+            "intent": "userName.provideName"
           },
-          "am,greet,i,i,inquir,may,speak,to,who": {
+          "name,name,say,the": {
             "domain": "default",
-            "intent": "botName.botIntroductionAndNameRequest"
+            "intent": "userName.provideName"
           },
-          "assist,better,could,me,name,share,to,with,you,you,your": {
+          "confirm,name,of,state": {
             "domain": "default",
-            "intent": "botName.botIntroductionAndNameRequest"
+            "intent": "userName.provideName"
           },
-          "ask,for,hello,i,might,name,there,your": {
+          "alia,is,name,your": {
             "domain": "default",
-            "intent": "botName.botIntroductionAndNameRequest"
+            "intent": "userName.provideName"
           },
-          "a,experi,for,for,i,name,should,tailor,use,what,you": {
+          "ident,is,name,of,the,what": {
             "domain": "default",
-            "intent": "botName.botIntroductionAndNameRequest"
+            "intent": "userName.provideName"
           },
-          "address,am,chat,forward,how,i,i,look,our,should,to,you": {
+          "as,is,known,name,what": {
             "domain": "default",
-            "intent": "botName.botIntroductionAndNameRequest"
+            "intent": "userName.provideName"
           },
-          "convers,friend,is,is,let,make,name,this,what,your": {
+          "correct,i,if,is,know,may,name": {
             "domain": "default",
-            "intent": "botName.botIntroductionAndNameRequest"
+            "intent": "userName.provideName"
+          },
+          "is,name,name,what,your": {
+            "domain": "default",
+            "intent": "userName.provideName"
+          },
+          "are,name,you": {
+            "domain": "default",
+            "intent": "userName.provideName"
+          },
+          "are,confirm,if,name,you": {
+            "domain": "default",
+            "intent": "userName.provideName"
+          },
+          "be,might,name,you": {
+            "domain": "default",
+            "intent": "userName.provideName"
+          },
+          "can,name,respond,you": {
+            "domain": "default",
+            "intent": "userName.provideName"
+          },
+          "doe,name,name,person,what": {
+            "domain": "default",
+            "intent": "userName.provideName"
+          },
+          "carri,doe,doe,name,name,name,name,person,what,what": {
+            "domain": "default",
+            "intent": "userName.provideName"
+          },
+          "can,name,specifi": {
+            "domain": "default",
+            "intent": "userName.provideName"
+          },
+          "address,as,do,i,name,who": {
+            "domain": "default",
+            "intent": "userName.provideName"
+          },
+          "could,me,name,name,pleas,tell,you,your": {
+            "domain": "default",
+            "intent": "userName.provideName"
+          },
+          "am,i,i,know,like,name,speak,to,who,with,would": {
+            "domain": "default",
+            "intent": "userName.provideName"
+          },
+          "mind,name,name,share,their,would": {
+            "domain": "default",
+            "intent": "userName.provideName"
+          },
+          "correct,for,is,name,our,record": {
+            "domain": "default",
+            "intent": "userName.provideName"
+          },
+          "introduc,name,pleas,yourself": {
+            "domain": "default",
+            "intent": "userName.provideName"
+          },
+          "acquaint,get,is,let,name,name,s,what,your": {
+            "domain": "default",
+            "intent": "userName.provideName"
+          },
+          "befor,have,i,may,name,name,proceed,we,your": {
+            "domain": "default",
+            "intent": "userName.provideName"
+          },
+          "catch,didn,i,it,name,name,t,was,what,your": {
+            "domain": "default",
+            "intent": "userName.provideName"
+          },
+          "could,know,let,me,name,name,pleas,you,your": {
+            "domain": "default",
+            "intent": "userName.provideName"
+          },
+          "could,inform,me,name,name,of,pleas,you,your": {
+            "domain": "default",
+            "intent": "userName.provideName"
+          },
+          "is,my,name,name": {
+            "domain": "default",
+            "intent": "userName.provideName"
+          },
+          "am,i,name": {
+            "domain": "default",
+            "intent": "userName.provideName"
+          },
+          "call,me,name": {
+            "domain": "default",
+            "intent": "userName.provideName"
+          },
+          "did,i,name,nicknam,provid,this": {
+            "domain": "default",
+            "intent": "userName.provideName"
+          },
+          "botnam,is,name,now,your": {
+            "domain": "default",
+            "intent": "botName.userNamesBot"
+          },
+          "botnam,is,name,your": {
+            "domain": "default",
+            "intent": "botName.userNamesBot"
+          },
+          "are,botnam,you": {
+            "domain": "default",
+            "intent": "botName.userNamesBot"
+          },
+          "bot,botnam,you": {
+            "domain": "default",
+            "intent": "botName.userNamesBot"
+          },
+          "botnam,you": {
+            "domain": "default",
+            "intent": "botName.userNamesBot"
+          },
+          "botnam,suitabl": {
+            "domain": "default",
+            "intent": "botName.userNamesBot"
+          },
+          "botnam,call,from,i,now,on,will,you": {
+            "domain": "default",
+            "intent": "botName.userNamesBot"
+          },
+          "about,botnam,how,i,name,you": {
+            "domain": "default",
+            "intent": "botName.userNamesBot"
+          },
+          "botnam,chang,is,let,name,to,your": {
+            "domain": "default",
+            "intent": "botName.userNamesBot"
+          },
+          "botnam,botnameperson,i,person,suit,think,you": {
+            "domain": "default",
+            "intent": "botName.userNamesBot"
+          },
+          "better,botnam,botnam,botnameperson,i,i,person,suit,suit,think,think,you,you": {
+            "domain": "default",
+            "intent": "botName.userNamesBot"
+          },
+          "are,botnam,from,now,on,you": {
+            "domain": "default",
+            "intent": "botName.userNamesBot"
+          },
+          "am,botnam,go,i,name,to,you": {
+            "domain": "default",
+            "intent": "botName.userNamesBot"
+          },
+          "a,botnam,botnameperson,like,look,me,person,to,you": {
+            "domain": "default",
+            "intent": "botName.userNamesBot"
+          },
+          "a,a,botnam,botnam,botnameperson,like,like,look,look,me,me,more,person,to,to,you,you": {
+            "domain": "default",
+            "intent": "botName.userNamesBot"
+          },
+          "botnam,call,i,if,mind,would,you,you": {
+            "domain": "default",
+            "intent": "botName.userNamesBot"
+          },
+          "botnam,doe,how,name,sound,the": {
+            "domain": "default",
+            "intent": "botName.userNamesBot"
+          },
+          "botnam,call,had,i,prefer,to,you": {
+            "domain": "default",
+            "intent": "botName.userNamesBot"
+          },
+          "a,botnam,give,off,vibe,you": {
+            "domain": "default",
+            "intent": "botName.userNamesBot"
+          },
+          "botnam,can,i,renam,to,you": {
+            "domain": "default",
+            "intent": "botName.userNamesBot"
+          },
+          "botnam,decid,is,is,it,name,new,your": {
+            "domain": "default",
+            "intent": "botName.userNamesBot"
+          },
+          "botnam,christen,herebi,i,you": {
+            "domain": "default",
+            "intent": "botName.userNamesBot"
+          },
+          "botnam,is,let,name,tag,to,updat,your": {
+            "domain": "default",
+            "intent": "botName.userNamesBot"
+          },
+          "as,be,botnam,known,shall,you": {
+            "domain": "default",
+            "intent": "botName.userNamesBot"
+          },
+          "botnam,botnameperson,fit,for,i,is,name,person,the,think,you": {
+            "domain": "default",
+            "intent": "botName.userNamesBot"
+          },
+          "botnam,botnam,botnameperson,fit,fit,for,for,i,i,is,is,more,name,name,person,the,the,think,think,you,you": {
+            "domain": "default",
+            "intent": "botName.userNamesBot"
+          },
+          "are,botnam,eye,in,my,you": {
+            "domain": "default",
+            "intent": "botName.userNamesBot"
+          },
+          "am,botnam,call,feel,i,inspir,to,you": {
+            "domain": "default",
+            "intent": "botName.userNamesBot"
+          },
+          "bot,botnam": {
+            "domain": "default",
+            "intent": "botName.userNamesBot"
+          },
+          "botnam,call,i,is,what,will,you": {
+            "domain": "default",
+            "intent": "botName.userNamesBot"
+          },
+          "are,botnam,call,now,you": {
+            "domain": "default",
+            "intent": "botName.userNamesBot"
+          },
+          "botnam,botnameperson,meet,new,our,person": {
+            "domain": "default",
+            "intent": "botName.userNamesBot"
+          },
+          "botnam,botnam,botnameperson,friend,meet,meet,new,new,our,our,person": {
+            "domain": "default",
+            "intent": "botName.userNamesBot"
+          },
+          "botnam,botnameperson,everyon,person,say,to": {
+            "domain": "default",
+            "intent": "botName.userNamesBot"
+          },
+          "botnam,botnam,botnameperson,everyon,everyon,hello,person,say,say,to,to": {
+            "domain": "default",
+            "intent": "botName.userNamesBot"
+          },
+          "as,botnam,i,of,think,you": {
+            "domain": "default",
+            "intent": "botName.userNamesBot"
           }
         },
         "intentDict": {
-          "botName.botIntroductionAndNameRequest": "default"
+          "userName.provideName": "default",
+          "botName.userNamesBot": "default"
         },
         "useStemDict": true,
         "domains": {
@@ -154,37 +391,275 @@
             "keepStopwords": true,
             "docs": [
               {
-                "intent": "botName.botIntroductionAndNameRequest",
+                "intent": "userName.provideName",
                 "tokens": [
+                  "name"
+                ]
+              },
+              {
+                "intent": "userName.provideName",
+                "tokens": [
+                  "who",
+                  "is",
+                  "name"
+                ]
+              },
+              {
+                "intent": "userName.provideName",
+                "tokens": [
+                  "ident",
+                  "of",
+                  "name"
+                ]
+              },
+              {
+                "intent": "userName.provideName",
+                "tokens": [
+                  "nicknam",
+                  "for",
+                  "name"
+                ]
+              },
+              {
+                "intent": "userName.provideName",
+                "tokens": [
+                  "usernam",
+                  "of",
+                  "name"
+                ]
+              },
+              {
+                "intent": "userName.provideName",
+                "tokens": [
+                  "titl",
+                  "for",
+                  "name"
+                ]
+              },
+              {
+                "intent": "userName.provideName",
+                "tokens": [
+                  "alia",
+                  "of",
+                  "name"
+                ]
+              },
+              {
+                "intent": "userName.provideName",
+                "tokens": [
+                  "monik",
+                  "for",
+                  "name"
+                ]
+              },
+              {
+                "intent": "userName.provideName",
+                "tokens": [
+                  "person",
+                  "for",
+                  "name"
+                ]
+              },
+              {
+                "intent": "userName.provideName",
+                "tokens": [
+                  "person",
+                  "for",
+                  "name",
+                  "handl",
+                  "for",
+                  "name"
+                ]
+              },
+              {
+                "intent": "userName.provideName",
+                "tokens": [
+                  "tag",
+                  "for",
+                  "name"
+                ]
+              },
+              {
+                "intent": "userName.provideName",
+                "tokens": [
+                  "pleas",
+                  "identifi",
+                  "name"
+                ]
+              },
+              {
+                "intent": "userName.provideName",
+                "tokens": [
+                  "is",
+                  "your",
+                  "name",
+                  "name"
+                ]
+              },
+              {
+                "intent": "userName.provideName",
+                "tokens": [
+                  "could",
+                  "name",
+                  "be",
+                  "there"
+                ]
+              },
+              {
+                "intent": "userName.provideName",
+                "tokens": [
+                  "pleas",
+                  "confirm",
+                  "ident",
+                  "of",
+                  "name"
+                ]
+              },
+              {
+                "intent": "userName.provideName",
+                "tokens": [
+                  "first",
+                  "what",
+                  "is",
+                  "name",
+                  "call"
+                ]
+              },
+              {
+                "intent": "userName.provideName",
+                "tokens": [
+                  "say",
+                  "the",
+                  "name",
+                  "name"
+                ]
+              },
+              {
+                "intent": "userName.provideName",
+                "tokens": [
+                  "confirm",
+                  "state",
+                  "of",
+                  "name"
+                ]
+              },
+              {
+                "intent": "userName.provideName",
+                "tokens": [
+                  "is",
+                  "your",
+                  "alia",
+                  "name"
+                ]
+              },
+              {
+                "intent": "userName.provideName",
+                "tokens": [
+                  "what",
+                  "is",
+                  "the",
+                  "ident",
+                  "of",
+                  "name"
+                ]
+              },
+              {
+                "intent": "userName.provideName",
+                "tokens": [
+                  "what",
+                  "is",
+                  "known",
+                  "as",
+                  "name"
+                ]
+              },
+              {
+                "intent": "userName.provideName",
+                "tokens": [
+                  "what",
+                  "name",
+                  "doe",
+                  "name",
+                  "person",
+                  "what",
+                  "name",
+                  "doe",
+                  "name",
+                  "carri"
+                ]
+              },
+              {
+                "intent": "userName.provideName",
+                "tokens": [
+                  "name",
+                  "what",
+                  "is",
                   "your",
                   "name"
                 ]
               },
               {
-                "intent": "botName.botIntroductionAndNameRequest",
+                "intent": "userName.provideName",
                 "tokens": [
-                  "i",
-                  "am",
-                  "eager",
-                  "to",
-                  "know",
+                  "are",
                   "you",
-                  "better",
-                  "may",
-                  "i",
-                  "have",
-                  "your",
                   "name"
                 ]
               },
               {
-                "intent": "botName.botIntroductionAndNameRequest",
+                "intent": "userName.provideName",
                 "tokens": [
-                  "befor",
-                  "we",
-                  "proceed",
+                  "confirm",
+                  "if",
+                  "you",
+                  "are",
+                  "name"
+                ]
+              },
+              {
+                "intent": "userName.provideName",
+                "tokens": [
+                  "might",
+                  "you",
+                  "be",
+                  "name"
+                ]
+              },
+              {
+                "intent": "userName.provideName",
+                "tokens": [
+                  "name",
+                  "can",
+                  "you",
+                  "respond"
+                ]
+              },
+              {
+                "intent": "userName.provideName",
+                "tokens": [
+                  "can",
+                  "name",
+                  "specifi"
+                ]
+              },
+              {
+                "intent": "userName.provideName",
+                "tokens": [
+                  "who",
+                  "do",
+                  "i",
+                  "address",
+                  "as",
+                  "name"
+                ]
+              },
+              {
+                "intent": "userName.provideName",
+                "tokens": [
                   "could",
                   "you",
+                  "name",
+                  "pleas",
                   "tell",
                   "me",
                   "your",
@@ -192,363 +667,716 @@
                 ]
               },
               {
-                "intent": "botName.botIntroductionAndNameRequest",
+                "intent": "userName.provideName",
                 "tokens": [
+                  "name",
+                  "i",
+                  "would",
+                  "like",
+                  "to",
+                  "know",
+                  "who",
+                  "i",
+                  "am",
+                  "speak",
+                  "with"
+                ]
+              },
+              {
+                "intent": "userName.provideName",
+                "tokens": [
+                  "would",
+                  "name",
+                  "mind",
+                  "share",
+                  "their",
+                  "name"
+                ]
+              },
+              {
+                "intent": "userName.provideName",
+                "tokens": [
+                  "for",
+                  "our",
+                  "record",
+                  "is",
+                  "name",
+                  "correct"
+                ]
+              },
+              {
+                "intent": "userName.provideName",
+                "tokens": [
+                  "name",
+                  "pleas",
+                  "introduc",
+                  "yourself"
+                ]
+              },
+              {
+                "intent": "userName.provideName",
+                "tokens": [
+                  "name",
                   "let",
                   "is",
                   "get",
                   "acquaint",
                   "what",
-                  "is",
+                  "s",
                   "your",
                   "name"
                 ]
               },
               {
-                "intent": "botName.botIntroductionAndNameRequest",
+                "intent": "userName.provideName",
                 "tokens": [
-                  "who",
-                  "do",
-                  "i",
-                  "have",
-                  "the",
-                  "pleasur",
-                  "of",
-                  "speak",
-                  "with",
-                  "today"
-                ]
-              },
-              {
-                "intent": "botName.botIntroductionAndNameRequest",
-                "tokens": [
-                  "for",
-                  "a",
-                  "more",
-                  "person",
-                  "servic",
+                  "befor",
+                  "we",
+                  "proceed",
+                  "name",
                   "may",
                   "i",
-                  "ask",
-                  "for",
+                  "have",
                   "your",
                   "name"
                 ]
               },
               {
-                "intent": "botName.botIntroductionAndNameRequest",
+                "intent": "userName.provideName",
                 "tokens": [
-                  "welcom",
-                  "to",
-                  "start",
+                  "name",
+                  "i",
+                  "didn",
+                  "t",
+                  "catch",
+                  "your",
+                  "name",
+                  "what",
+                  "was",
+                  "it"
+                ]
+              },
+              {
+                "intent": "userName.provideName",
+                "tokens": [
+                  "name",
                   "could",
                   "you",
                   "pleas",
-                  "tell",
+                  "let",
                   "me",
-                  "your",
-                  "name"
-                ]
-              },
-              {
-                "intent": "botName.botIntroductionAndNameRequest",
-                "tokens": [
-                  "it",
-                  "is",
-                  "alway",
-                  "nice",
-                  "to",
                   "know",
-                  "who",
-                  "i",
-                  "am",
-                  "chat",
-                  "with",
                   "your",
                   "name"
                 ]
               },
               {
-                "intent": "botName.botIntroductionAndNameRequest",
+                "intent": "userName.provideName",
                 "tokens": [
-                  "to",
-                  "assist",
-                  "you",
-                  "better",
+                  "name",
+                  "pleas",
                   "could",
                   "you",
-                  "share",
+                  "inform",
+                  "me",
+                  "of",
                   "your",
-                  "name",
-                  "with",
-                  "me"
+                  "name"
                 ]
               },
               {
-                "intent": "botName.botIntroductionAndNameRequest",
+                "intent": "userName.provideName",
                 "tokens": [
-                  "for",
-                  "a",
-                  "tailor",
-                  "experi",
-                  "what",
+                  "my",
                   "name",
-                  "should",
+                  "is",
+                  "name"
+                ]
+              },
+              {
+                "intent": "userName.provideName",
+                "tokens": [
                   "i",
-                  "use",
-                  "for",
+                  "am",
+                  "name"
+                ]
+              },
+              {
+                "intent": "userName.provideName",
+                "tokens": [
+                  "call",
+                  "me",
+                  "name"
+                ]
+              },
+              {
+                "intent": "userName.provideName",
+                "tokens": [
+                  "i",
+                  "did",
+                  "provid",
+                  "this",
+                  "nicknam",
+                  "name"
+                ]
+              },
+              {
+                "intent": "botName.userNamesBot",
+                "tokens": [
+                  "your",
+                  "name",
+                  "is",
+                  "now",
+                  "botnam"
+                ]
+              },
+              {
+                "intent": "botName.userNamesBot",
+                "tokens": [
+                  "your",
+                  "name",
+                  "is",
+                  "botnam"
+                ]
+              },
+              {
+                "intent": "botName.userNamesBot",
+                "tokens": [
+                  "you",
+                  "are",
+                  "botnam"
+                ]
+              },
+              {
+                "intent": "botName.userNamesBot",
+                "tokens": [
+                  "bot",
+                  "botnam",
                   "you"
                 ]
               },
               {
-                "intent": "botName.botIntroductionAndNameRequest",
+                "intent": "botName.userNamesBot",
+                "tokens": [
+                  "you",
+                  "botnam"
+                ]
+              },
+              {
+                "intent": "botName.userNamesBot",
+                "tokens": [
+                  "botnam",
+                  "suitabl"
+                ]
+              },
+              {
+                "intent": "botName.userNamesBot",
+                "tokens": [
+                  "i",
+                  "will",
+                  "call",
+                  "you",
+                  "botnam",
+                  "from",
+                  "now",
+                  "on"
+                ]
+              },
+              {
+                "intent": "botName.userNamesBot",
+                "tokens": [
+                  "how",
+                  "about",
+                  "i",
+                  "name",
+                  "you",
+                  "botnam"
+                ]
+              },
+              {
+                "intent": "botName.userNamesBot",
                 "tokens": [
                   "let",
                   "is",
-                  "make",
-                  "this",
-                  "convers",
-                  "friend",
-                  "what",
-                  "is",
+                  "chang",
                   "your",
-                  "name"
+                  "name",
+                  "to",
+                  "botnam"
                 ]
               },
               {
-                "intent": "botName.botIntroductionAndNameRequest",
+                "intent": "botName.userNamesBot",
                 "tokens": [
-                  "for",
-                  "a",
-                  "more",
-                  "person",
-                  "servic",
-                  "may",
                   "i",
-                  "ask",
-                  "for",
-                  "your",
-                  "name"
+                  "think",
+                  "botnam",
+                  "suit",
+                  "you",
+                  "person",
+                  "botnameperson"
                 ]
               },
               {
-                "intent": "botName.botIntroductionAndNameRequest",
+                "intent": "botName.userNamesBot",
+                "tokens": [
+                  "i",
+                  "think",
+                  "botnam",
+                  "suit",
+                  "you",
+                  "person",
+                  "botnameperson",
+                  "i",
+                  "think",
+                  "botnam",
+                  "suit",
+                  "you",
+                  "better"
+                ]
+              },
+              {
+                "intent": "botName.userNamesBot",
+                "tokens": [
+                  "from",
+                  "now",
+                  "on",
+                  "you",
+                  "are",
+                  "botnam"
+                ]
+              },
+              {
+                "intent": "botName.userNamesBot",
+                "tokens": [
+                  "i",
+                  "am",
+                  "go",
+                  "to",
+                  "name",
+                  "you",
+                  "botnam"
+                ]
+              },
+              {
+                "intent": "botName.userNamesBot",
+                "tokens": [
+                  "you",
+                  "look",
+                  "person",
+                  "botnameperson",
+                  "like",
+                  "a",
+                  "botnam",
+                  "to",
+                  "me"
+                ]
+              },
+              {
+                "intent": "botName.userNamesBot",
+                "tokens": [
+                  "you",
+                  "look",
+                  "person",
+                  "botnameperson",
+                  "like",
+                  "a",
+                  "botnam",
+                  "to",
+                  "me",
+                  "you",
+                  "look",
+                  "more",
+                  "like",
+                  "a",
+                  "botnam",
+                  "to",
+                  "me"
+                ]
+              },
+              {
+                "intent": "botName.userNamesBot",
+                "tokens": [
+                  "would",
+                  "you",
+                  "mind",
+                  "if",
+                  "i",
+                  "call",
+                  "you",
+                  "botnam"
+                ]
+              },
+              {
+                "intent": "botName.userNamesBot",
+                "tokens": [
+                  "how",
+                  "doe",
+                  "the",
+                  "name",
+                  "botnam",
+                  "sound"
+                ]
+              },
+              {
+                "intent": "botName.userNamesBot",
                 "tokens": [
                   "i",
                   "had",
-                  "like",
+                  "prefer",
                   "to",
-                  "address",
+                  "call",
                   "you",
-                  "proper",
-                  "what",
-                  "is",
-                  "your",
-                  "name"
+                  "botnam"
                 ]
               },
               {
-                "intent": "botName.botIntroductionAndNameRequest",
+                "intent": "botName.userNamesBot",
                 "tokens": [
-                  "welcom",
-                  "to",
-                  "start",
-                  "could",
                   "you",
-                  "pleas",
-                  "tell",
-                  "me",
-                  "your",
-                  "name"
+                  "give",
+                  "off",
+                  "a",
+                  "botnam",
+                  "vibe"
                 ]
               },
               {
-                "intent": "botName.botIntroductionAndNameRequest",
+                "intent": "botName.userNamesBot",
                 "tokens": [
-                  "hello",
-                  "to",
-                  "whom",
-                  "do",
+                  "can",
                   "i",
-                  "owe",
-                  "the",
-                  "pleasur",
-                  "of",
-                  "this",
-                  "convers"
+                  "renam",
+                  "you",
+                  "to",
+                  "botnam"
                 ]
               },
               {
-                "intent": "botName.botIntroductionAndNameRequest",
+                "intent": "botName.userNamesBot",
                 "tokens": [
                   "it",
                   "is",
-                  "alway",
-                  "nice",
-                  "to",
-                  "know",
-                  "who",
-                  "i",
-                  "am",
-                  "chat",
-                  "with",
+                  "decid",
                   "your",
-                  "name"
-                ]
-              },
-              {
-                "intent": "botName.botIntroductionAndNameRequest",
-                "tokens": [
-                  "greet",
-                  "may",
-                  "i",
-                  "inquir",
-                  "who",
-                  "i",
-                  "am",
-                  "speak",
-                  "to"
-                ]
-              },
-              {
-                "intent": "botName.botIntroductionAndNameRequest",
-                "tokens": [
-                  "to",
-                  "assist",
-                  "you",
-                  "better",
-                  "could",
-                  "you",
-                  "share",
-                  "your",
+                  "new",
                   "name",
-                  "with",
-                  "me"
+                  "is",
+                  "botnam"
                 ]
               },
               {
-                "intent": "botName.botIntroductionAndNameRequest",
-                "tokens": [
-                  "hello",
-                  "there",
-                  "might",
-                  "i",
-                  "ask",
-                  "for",
-                  "your",
-                  "name"
-                ]
-              },
-              {
-                "intent": "botName.botIntroductionAndNameRequest",
-                "tokens": [
-                  "for",
-                  "a",
-                  "tailor",
-                  "experi",
-                  "what",
-                  "name",
-                  "should",
-                  "i",
-                  "use",
-                  "for",
-                  "you"
-                ]
-              },
-              {
-                "intent": "botName.botIntroductionAndNameRequest",
+                "intent": "botName.userNamesBot",
                 "tokens": [
                   "i",
-                  "am",
-                  "look",
-                  "forward",
-                  "to",
-                  "our",
-                  "chat",
-                  "how",
-                  "should",
-                  "i",
-                  "address",
-                  "you"
+                  "herebi",
+                  "christen",
+                  "you",
+                  "botnam"
                 ]
               },
               {
-                "intent": "botName.botIntroductionAndNameRequest",
+                "intent": "botName.userNamesBot",
                 "tokens": [
                   "let",
                   "is",
-                  "make",
-                  "this",
-                  "convers",
-                  "friend",
-                  "what",
-                  "is",
+                  "updat",
                   "your",
-                  "name"
+                  "name",
+                  "tag",
+                  "to",
+                  "botnam"
+                ]
+              },
+              {
+                "intent": "botName.userNamesBot",
+                "tokens": [
+                  "you",
+                  "shall",
+                  "be",
+                  "known",
+                  "as",
+                  "botnam"
+                ]
+              },
+              {
+                "intent": "botName.userNamesBot",
+                "tokens": [
+                  "i",
+                  "think",
+                  "the",
+                  "name",
+                  "botnam",
+                  "is",
+                  "person",
+                  "botnameperson",
+                  "fit",
+                  "for",
+                  "you"
+                ]
+              },
+              {
+                "intent": "botName.userNamesBot",
+                "tokens": [
+                  "i",
+                  "think",
+                  "the",
+                  "name",
+                  "botnam",
+                  "is",
+                  "person",
+                  "botnameperson",
+                  "fit",
+                  "for",
+                  "you",
+                  "i",
+                  "think",
+                  "the",
+                  "name",
+                  "botnam",
+                  "is",
+                  "more",
+                  "fit",
+                  "for",
+                  "you"
+                ]
+              },
+              {
+                "intent": "botName.userNamesBot",
+                "tokens": [
+                  "in",
+                  "my",
+                  "eye",
+                  "you",
+                  "are",
+                  "botnam"
+                ]
+              },
+              {
+                "intent": "botName.userNamesBot",
+                "tokens": [
+                  "i",
+                  "am",
+                  "feel",
+                  "inspir",
+                  "to",
+                  "call",
+                  "you",
+                  "botnam"
+                ]
+              },
+              {
+                "intent": "botName.userNamesBot",
+                "tokens": [
+                  "bot",
+                  "botnam"
+                ]
+              },
+              {
+                "intent": "botName.userNamesBot",
+                "tokens": [
+                  "botnam",
+                  "is",
+                  "what",
+                  "i",
+                  "will",
+                  "call",
+                  "you"
+                ]
+              },
+              {
+                "intent": "botName.userNamesBot",
+                "tokens": [
+                  "you",
+                  "are",
+                  "now",
+                  "call",
+                  "botnam"
+                ]
+              },
+              {
+                "intent": "botName.userNamesBot",
+                "tokens": [
+                  "meet",
+                  "our",
+                  "new",
+                  "person",
+                  "botnameperson",
+                  "botnam"
+                ]
+              },
+              {
+                "intent": "botName.userNamesBot",
+                "tokens": [
+                  "meet",
+                  "our",
+                  "new",
+                  "person",
+                  "botnameperson",
+                  "botnam",
+                  "meet",
+                  "our",
+                  "new",
+                  "friend",
+                  "botnam"
+                ]
+              },
+              {
+                "intent": "botName.userNamesBot",
+                "tokens": [
+                  "everyon",
+                  "say",
+                  "person",
+                  "botnameperson",
+                  "to",
+                  "botnam"
+                ]
+              },
+              {
+                "intent": "botName.userNamesBot",
+                "tokens": [
+                  "everyon",
+                  "say",
+                  "person",
+                  "botnameperson",
+                  "to",
+                  "botnam",
+                  "everyon",
+                  "say",
+                  "hello",
+                  "to",
+                  "botnam"
+                ]
+              },
+              {
+                "intent": "botName.userNamesBot",
+                "tokens": [
+                  "i",
+                  "think",
+                  "of",
+                  "you",
+                  "as",
+                  "botnam"
                 ]
               }
             ],
             "features": {
-              "i": 20,
-              "do": 2,
-              "what": 6,
-              "is": 8,
+              "name": 66,
+              "who": 3,
+              "is": 21,
+              "ident": 3,
+              "of": 8,
+              "nicknam": 2,
+              "for": 11,
+              "usernam": 1,
+              "titl": 1,
+              "alia": 2,
+              "monik": 1,
+              "person": 12,
+              "handl": 1,
+              "tag": 2,
+              "pleas": 6,
+              "identifi": 1,
               "your": 14,
-              "name": 16,
-              "know": 2,
-              "of": 2,
-              "am": 6,
-              "to": 14,
-              "you": 12,
-              "better": 2,
-              "may": 4,
-              "it": 2,
-              "nice": 2,
-              "start": 2,
               "could": 4,
-              "tell": 2,
-              "me": 4,
-              "who": 4,
-              "assist": 2,
-              "pleas": 2,
-              "let": 2,
-              "make": 2,
-              "our": 2,
-              "convers": 4,
-              "more": 2,
-              "person": 2,
-              "the": 2,
-              "pleasur": 2,
-              "speak": 2,
-              "with": 4,
-              "for": 10,
-              "a": 4,
-              "servic": 2,
-              "ask": 4,
-              "had": 2,
-              "like": 2,
-              "address": 4,
-              "proper": 2,
-              "welcom": 2,
-              "hello": 4,
-              "whom": 2,
-              "owe": 2,
-              "this": 4,
-              "alway": 2,
-              "chat": 4,
-              "greet": 2,
-              "inquir": 2,
-              "share": 2,
-              "there": 2,
-              "might": 2,
-              "tailor": 2,
-              "experi": 2,
-              "should": 4,
-              "use": 2,
-              "look": 2,
-              "forward": 2,
+              "be": 3,
+              "there": 1,
+              "confirm": 3,
+              "first": 1,
+              "what": 7,
+              "call": 8,
+              "say": 4,
+              "the": 6,
+              "state": 1,
+              "known": 2,
+              "as": 4,
+              "may": 2,
+              "i": 24,
+              "know": 3,
+              "if": 3,
+              "correct": 2,
+              "are": 6,
+              "you": 35,
+              "might": 1,
+              "can": 3,
+              "respond": 1,
+              "specifi": 1,
+              "do": 1,
+              "address": 1,
+              "tell": 1,
+              "me": 7,
+              "would": 3,
+              "like": 4,
+              "to": 13,
+              "am": 4,
+              "speak": 1,
+              "with": 1,
+              "mind": 2,
+              "share": 1,
+              "their": 1,
+              "our": 4,
+              "record": 1,
+              "introduc": 1,
+              "yourself": 1,
+              "let": 4,
+              "get": 1,
+              "acquaint": 1,
+              "s": 1,
+              "befor": 1,
+              "we": 1,
+              "proceed": 1,
+              "have": 1,
+              "didn": 1,
+              "t": 1,
+              "catch": 1,
+              "was": 1,
+              "it": 2,
+              "inform": 1,
+              "my": 2,
+              "did": 1,
+              "provid": 1,
+              "this": 1,
+              "now": 4,
+              "botnam": 41,
+              "bot": 2,
+              "suitabl": 1,
+              "will": 2,
+              "from": 2,
+              "on": 2,
               "how": 2,
-              "friend": 2
+              "about": 1,
+              "chang": 1,
+              "think": 7,
+              "suit": 3,
+              "botnameperson": 10,
+              "better": 1,
+              "go": 1,
+              "look": 3,
+              "a": 4,
+              "more": 2,
+              "doe": 1,
+              "sound": 1,
+              "had": 1,
+              "prefer": 1,
+              "give": 1,
+              "off": 1,
+              "vibe": 1,
+              "renam": 1,
+              "decid": 1,
+              "new": 4,
+              "herebi": 1,
+              "christen": 1,
+              "updat": 1,
+              "shall": 1,
+              "fit": 3,
+              "in": 1,
+              "eye": 1,
+              "feel": 1,
+              "inspir": 1,
+              "meet": 3,
+              "friend": 1,
+              "everyon": 3,
+              "hello": 1
             },
             "isEditing": false,
             "className": "BrainNLU",
@@ -573,185 +1401,422 @@
               "labels": [],
               "network": {
                 "sizes": [
-                  61,
-                  2
+                  117,
+                  3
                 ],
                 "layers": [
                   {
-                    "your": {},
                     "name": {},
-                    "i": {},
-                    "am": {},
-                    "nonefeature": {},
-                    "to": {},
-                    "know": {},
-                    "you": {},
-                    "better": {},
-                    "may": {},
+                    "who": {},
+                    "is": {},
+                    "ident": {},
+                    "of": {},
+                    "nicknam": {},
+                    "for": {},
+                    "usernam": {},
+                    "titl": {},
+                    "alia": {},
+                    "monik": {},
+                    "person": {},
+                    "handl": {},
+                    "tag": {},
+                    "pleas": {},
+                    "identifi": {},
+                    "your": {},
                     "could": {},
+                    "be": {},
+                    "there": {},
+                    "confirm": {},
+                    "first": {},
+                    "what": {},
+                    "call": {},
+                    "say": {},
+                    "the": {},
+                    "state": {},
+                    "known": {},
+                    "as": {},
+                    "doe": {},
+                    "nonefeature": {},
+                    "are": {},
+                    "you": {},
+                    "if": {},
+                    "might": {},
+                    "can": {},
+                    "respond": {},
+                    "specifi": {},
+                    "do": {},
+                    "i": {},
+                    "address": {},
                     "tell": {},
                     "me": {},
-                    "let": {},
-                    "is": {},
-                    "what": {},
-                    "who": {},
-                    "do": {},
-                    "the": {},
-                    "pleasur": {},
-                    "of": {},
+                    "would": {},
+                    "like": {},
+                    "to": {},
+                    "know": {},
+                    "am": {},
                     "speak": {},
                     "with": {},
-                    "for": {},
+                    "mind": {},
+                    "share": {},
+                    "their": {},
+                    "our": {},
+                    "record": {},
+                    "correct": {},
+                    "introduc": {},
+                    "yourself": {},
+                    "let": {},
+                    "get": {},
+                    "acquaint": {},
+                    "s": {},
+                    "befor": {},
+                    "we": {},
+                    "proceed": {},
+                    "may": {},
+                    "have": {},
+                    "didn": {},
+                    "t": {},
+                    "catch": {},
+                    "was": {},
+                    "it": {},
+                    "inform": {},
+                    "my": {},
+                    "did": {},
+                    "provid": {},
+                    "this": {},
+                    "now": {},
+                    "botnam": {},
+                    "bot": {},
+                    "suitabl": {},
+                    "will": {},
+                    "from": {},
+                    "on": {},
+                    "how": {},
+                    "about": {},
+                    "chang": {},
+                    "think": {},
+                    "suit": {},
+                    "botnameperson": {},
+                    "better": {},
+                    "go": {},
+                    "look": {},
                     "a": {},
                     "more": {},
-                    "person": {},
-                    "servic": {},
-                    "ask": {},
-                    "welcom": {},
-                    "start": {},
-                    "pleas": {},
-                    "it": {},
-                    "alway": {},
-                    "nice": {},
-                    "chat": {},
-                    "assist": {},
-                    "share": {},
-                    "tailor": {},
-                    "experi": {},
-                    "should": {},
-                    "use": {},
-                    "make": {},
-                    "this": {},
-                    "convers": {},
-                    "friend": {},
+                    "sound": {},
                     "had": {},
-                    "like": {},
-                    "address": {},
-                    "proper": {},
-                    "hello": {},
-                    "whom": {},
-                    "owe": {},
-                    "greet": {},
-                    "inquir": {},
-                    "there": {},
-                    "might": {},
-                    "look": {},
-                    "forward": {},
-                    "our": {},
-                    "how": {}
+                    "prefer": {},
+                    "give": {},
+                    "off": {},
+                    "vibe": {},
+                    "renam": {},
+                    "decid": {},
+                    "new": {},
+                    "herebi": {},
+                    "christen": {},
+                    "updat": {},
+                    "shall": {},
+                    "fit": {},
+                    "in": {},
+                    "eye": {},
+                    "feel": {},
+                    "inspir": {},
+                    "meet": {},
+                    "friend": {},
+                    "everyon": {},
+                    "hello": {}
                   },
                   {
-                    "botName.botIntroductionAndNameRequest": {
-                      "bias": 2.893766443,
+                    "userName.provideName": {
+                      "bias": 2.924042485,
                       "weights": {
-                        "your": 4.345265388,
-                        "name": 4.786157608,
-                        "i": 1.352921128,
-                        "am": 0.865392506,
-                        "nonefeature": -2.763248444,
-                        "to": 0.741079569,
-                        "know": -1.708625436,
-                        "you": 0.028871153,
-                        "better": -0.95596087,
-                        "may": 0.219242007,
-                        "could": 0.23238951,
-                        "tell": 0.129074961,
-                        "me": 0.23238951,
-                        "let": 0.7010355,
-                        "is": -0.600892961,
-                        "what": 0.489345968,
-                        "who": 1.375613451,
-                        "do": 1.244905829,
-                        "the": 1.244905829,
-                        "pleasur": 1.244905829,
-                        "of": 1.244905829,
-                        "speak": 2.02496314,
-                        "with": -0.027643632,
-                        "for": -0.104797773,
-                        "a": 0.212835729,
-                        "more": -0.228053883,
-                        "person": -0.228053883,
-                        "servic": -0.228053883,
-                        "ask": -0.545687616,
-                        "welcom": -0.301561803,
-                        "start": -0.301561803,
-                        "pleas": -0.301561803,
-                        "it": -0.64934957,
-                        "alway": -0.64934957,
-                        "nice": -0.64934957,
-                        "chat": 0.418096125,
-                        "assist": 0.103314564,
-                        "share": 0.103314564,
-                        "tailor": 0.440889925,
-                        "experi": 0.440889925,
-                        "should": 1.50833559,
-                        "use": 0.440889925,
-                        "make": -0.394354135,
-                        "this": 0.332159549,
-                        "convers": 0.332159549,
-                        "friend": -0.394354135,
-                        "had": -0.652578115,
-                        "like": -0.652578115,
-                        "address": 0.414867103,
-                        "proper": -0.652578115,
-                        "hello": 0.408879936,
-                        "whom": 0.726513028,
-                        "owe": 0.726513028,
-                        "greet": 1.506570339,
-                        "inquir": 1.506570339,
-                        "there": -0.31763351,
-                        "might": -0.31763351,
-                        "look": 1.067444801,
-                        "forward": 1.067444801,
-                        "our": 1.067444801,
-                        "how": 1.067444801
+                        "name": 9.019156456,
+                        "who": 0.830195963,
+                        "is": -0.102442384,
+                        "ident": 0.323162496,
+                        "of": 0.181898162,
+                        "nicknam": 0.130634546,
+                        "for": 0.377393693,
+                        "usernam": 0.354802042,
+                        "titl": 0.126115531,
+                        "alia": 0.442398518,
+                        "monik": 0.163197055,
+                        "person": 0.173940092,
+                        "handl": 0.007703192,
+                        "tag": 0.186951131,
+                        "pleas": 0.128615752,
+                        "identifi": 0.454755694,
+                        "your": 0.068797395,
+                        "could": 0.163434535,
+                        "be": 0.390667439,
+                        "there": -0.05391968,
+                        "confirm": -0.132973969,
+                        "first": -0.112764359,
+                        "what": 0.568658531,
+                        "call": 0.086742863,
+                        "say": 1.125415206,
+                        "the": -0.58229351,
+                        "state": 0.436806142,
+                        "known": 0.001146599,
+                        "as": -0.032202248,
+                        "doe": -0.263100833,
+                        "nonefeature": -2.864637136,
+                        "are": 0.813845873,
+                        "you": -0.343084782,
+                        "if": 0.158788145,
+                        "might": 0.444587409,
+                        "can": 0.453580141,
+                        "respond": 0.378934026,
+                        "specifi": 0.074646197,
+                        "do": -0.033348847,
+                        "i": -0.254422575,
+                        "address": -0.033348847,
+                        "tell": 0.053067993,
+                        "me": 0.416861147,
+                        "would": 0.105179466,
+                        "like": -0.032481235,
+                        "to": -1.183260441,
+                        "know": 0.274152726,
+                        "am": 0.804718554,
+                        "speak": -0.032481235,
+                        "with": -0.032481235,
+                        "mind": 0.137660682,
+                        "share": 0.137660682,
+                        "their": 0.137660682,
+                        "our": 0.067442529,
+                        "record": 0.067442529,
+                        "correct": 0.067442529,
+                        "introduc": 0.185074747,
+                        "yourself": 0.185074747,
+                        "let": -0.194274113,
+                        "get": 0.036401298,
+                        "acquaint": 0.036401298,
+                        "s": 0.036401298,
+                        "befor": 0.133171424,
+                        "we": 0.133171424,
+                        "proceed": 0.133171424,
+                        "may": 0.133171424,
+                        "have": 0.133171424,
+                        "didn": 0.115552567,
+                        "t": 0.115552567,
+                        "catch": 0.115552567,
+                        "was": 0.115552567,
+                        "it": -0.368905902,
+                        "inform": -0.142347783,
+                        "my": 0.599828422,
+                        "did": 0.214464188,
+                        "provid": 0.214464188,
+                        "this": 0.214464188,
+                        "now": -2.655947924,
+                        "botnam": -11.752990723,
+                        "bot": -0.071257338,
+                        "how": -1.576640844,
+                        "about": -1.025774479,
+                        "chang": -0.505966723,
+                        "think": -0.463205487,
+                        "botnameperson": -0.463205487,
+                        "go": -0.613470078,
+                        "more": -0.014803128,
+                        "sound": -0.550866306,
+                        "decid": -0.484458625,
+                        "new": -0.484458625,
+                        "updat": -0.03134241,
+                        "fit": -0.463205487
+                      }
+                    },
+                    "botName.userNamesBot": {
+                      "bias": 0.28813992,
+                      "weights": {
+                        "name": -1.755844116,
+                        "who": -0.756847084,
+                        "is": 0.873014808,
+                        "ident": -0.347433209,
+                        "of": -0.565126598,
+                        "nicknam": -0.225081742,
+                        "for": -0.371603519,
+                        "usernam": -0.214136273,
+                        "titl": -0.121048786,
+                        "alia": -0.990555286,
+                        "monik": -0.054594267,
+                        "person": -0.142841697,
+                        "handl": -0.099778302,
+                        "tag": 0.052205842,
+                        "pleas": -0.452764302,
+                        "identifi": -0.122922726,
+                        "your": 1.023932338,
+                        "could": -0.384126067,
+                        "be": -0.178350508,
+                        "there": -0.054284532,
+                        "confirm": -0.354059368,
+                        "first": -0.09010952,
+                        "what": -0.757900357,
+                        "call": -0.604584932,
+                        "say": -0.030825369,
+                        "the": 0.55255115,
+                        "known": 0.071621343,
+                        "as": 0.189184248,
+                        "doe": 0.402304322,
+                        "nonefeature": -0.78791064,
+                        "are": 0.044551972,
+                        "you": 0.461261779,
+                        "if": -0.156634107,
+                        "might": -0.197250187,
+                        "can": -0.424366832,
+                        "respond": -0.129294589,
+                        "i": 0.501396,
+                        "tell": -0.248499632,
+                        "me": -0.33188346,
+                        "would": 0.197425276,
+                        "like": -0.002041636,
+                        "to": 0.353206486,
+                        "know": -0.0813419,
+                        "am": 0.386699796,
+                        "mind": 0.197425276,
+                        "our": 0.134476796,
+                        "let": 0.014829651,
+                        "get": -0.029127369,
+                        "acquaint": -0.029127369,
+                        "s": -0.029127369,
+                        "befor": -0.105012193,
+                        "we": -0.105012193,
+                        "proceed": -0.105012193,
+                        "may": -0.105012193,
+                        "have": -0.105012193,
+                        "it": 0.112353832,
+                        "my": 0.040945217,
+                        "now": 0.662328601,
+                        "botnam": 11.631987572,
+                        "bot": 0.390913457,
+                        "suitabl": 0.72958982,
+                        "will": 0.12469352,
+                        "from": -0.282996148,
+                        "on": -0.282996148,
+                        "how": 0.922578514,
+                        "about": 0.426255941,
+                        "chang": 0.073093258,
+                        "think": -0.005762675,
+                        "suit": -0.406412184,
+                        "botnameperson": 0.205140814,
+                        "better": -0.033452787,
+                        "go": 0.628042042,
+                        "look": -0.002041636,
+                        "a": 0.03447216,
+                        "more": 0.012167409,
+                        "sound": 0.496321887,
+                        "had": -0.05770953,
+                        "prefer": -0.05770953,
+                        "give": 0.03651372,
+                        "off": 0.03651372,
+                        "vibe": 0.03651372,
+                        "renam": -0.295072287,
+                        "decid": 0.112353832,
+                        "new": 0.246830672,
+                        "herebi": -0.170121327,
+                        "christen": -0.170121327,
+                        "updat": 0.052205842,
+                        "shall": 0.073184259,
+                        "fit": 0.283086717,
+                        "in": 0.040945217,
+                        "eye": 0.040945217,
+                        "feel": -0.241342992,
+                        "inspir": -0.241342992,
+                        "meet": 0.134476796,
+                        "friend": -0.010766891,
+                        "everyon": 0.196031317,
+                        "hello": -0.005327597
                       }
                     },
                     "None": {
-                      "bias": 3.335656492,
+                      "bias": 2.619589887,
                       "weights": {
-                        "your": -1.629682779,
-                        "name": -1.652816892,
-                        "i": -0.826427639,
-                        "am": -0.413107127,
-                        "nonefeature": 9.017742157,
-                        "to": -0.501389384,
-                        "know": -0.06825833,
-                        "you": -0.429696918,
-                        "better": -0.06825833,
-                        "may": -0.251199365,
-                        "could": -0.176396385,
-                        "tell": -0.176396385,
-                        "me": -0.176396385,
-                        "let": -0.226307571,
-                        "is": -0.226307571,
-                        "what": -0.249441981,
-                        "who": -0.484844774,
-                        "do": -0.390185952,
-                        "the": -0.390185952,
-                        "pleasur": -0.390185952,
-                        "of": -0.390185952,
-                        "speak": -0.484844774,
-                        "with": -0.301903665,
-                        "for": -0.023134414,
-                        "a": -0.023134414,
-                        "chat": -0.161907777,
-                        "tailor": -0.023134414,
-                        "experi": -0.023134414,
-                        "should": -0.185042202,
-                        "use": -0.023134414,
-                        "this": -0.08828222,
-                        "convers": -0.08828222,
-                        "address": -0.161907777,
-                        "hello": -0.08828222,
-                        "whom": -0.08828222,
-                        "owe": -0.08828222,
-                        "greet": -0.182941064,
-                        "inquir": -0.182941064,
-                        "look": -0.161907777,
-                        "forward": -0.161907777,
-                        "our": -0.161907777,
-                        "how": -0.161907777
+                        "name": -2.492967129,
+                        "who": -0.142549247,
+                        "is": -0.219775707,
+                        "ident": -0.10534092,
+                        "of": -0.247156039,
+                        "nicknam": -0.092211999,
+                        "for": -0.254749,
+                        "usernam": -0.077963509,
+                        "titl": -0.064261392,
+                        "alia": -0.057212099,
+                        "monik": -0.04615698,
+                        "person": -0.244855955,
+                        "handl": -0.006779301,
+                        "tag": -0.036182556,
+                        "pleas": -0.162117198,
+                        "identifi": -0.119081609,
+                        "your": -0.067312814,
+                        "could": -0.088274956,
+                        "be": -0.095902242,
+                        "there": -0.088274956,
+                        "confirm": -0.010324458,
+                        "first": -0.00281572,
+                        "what": -0.083034165,
+                        "call": -0.125747353,
+                        "say": -0.156720474,
+                        "the": -0.105537198,
+                        "state": -0.006639543,
+                        "known": -0.006049589,
+                        "as": -0.006049589,
+                        "doe": -0.078761883,
+                        "nonefeature": 9.676143646,
+                        "are": -0.174870327,
+                        "you": -0.667681217,
+                        "if": -0.005163289,
+                        "might": -0.001856723,
+                        "can": -0.123565137,
+                        "respond": -0.002576227,
+                        "specifi": -0.120988913,
+                        "i": -0.143768981,
+                        "me": -0.102943845,
+                        "would": -0.063716888,
+                        "like": -0.001075335,
+                        "to": -0.055345323,
+                        "am": -0.091073915,
+                        "mind": -0.063716888,
+                        "share": -0.062238514,
+                        "their": -0.062238514,
+                        "our": -0.08891695,
+                        "introduc": -0.043035571,
+                        "yourself": -0.043035571,
+                        "befor": -0.01324989,
+                        "we": -0.01324989,
+                        "proceed": -0.01324989,
+                        "may": -0.01324989,
+                        "have": -0.01324989,
+                        "didn": -0.00117753,
+                        "t": -0.00117753,
+                        "catch": -0.00117753,
+                        "was": -0.00117753,
+                        "it": -0.00117753,
+                        "my": -0.021246333,
+                        "did": -0.002974847,
+                        "provid": -0.002974847,
+                        "this": -0.002974847,
+                        "now": -0.016497934,
+                        "botnam": -1.956843257,
+                        "bot": -0.631829023,
+                        "suitabl": -0.640812159,
+                        "will": -0.016497934,
+                        "from": -0.016497934,
+                        "on": -0.016497934,
+                        "think": -0.006007629,
+                        "suit": -0.006007629,
+                        "botnameperson": -0.147183076,
+                        "better": -0.000332181,
+                        "look": -0.001075335,
+                        "a": -0.028931811,
+                        "had": -0.003086832,
+                        "prefer": -0.003086832,
+                        "give": -0.027856477,
+                        "off": -0.027856477,
+                        "vibe": -0.027856477,
+                        "new": -0.08891695,
+                        "herebi": -0.008222026,
+                        "christen": -0.008222026,
+                        "shall": -0.005770559,
+                        "meet": -0.08891695,
+                        "friend": -0.019405292,
+                        "everyon": -0.05118316,
+                        "hello": -0.01049392
                       }
                     }
                   }
@@ -776,179 +1841,335 @@
     "extraSentences": [
       [
         "en",
-        "I don't believe we've met. What's your name?"
+        "%name%"
       ],
       [
         "en",
-        "Your name?"
+        "Who is %name%"
       ],
       [
         "en",
-        "Do we know each other(thinking of name...)?"
+        "Identity of %name%"
       ],
       [
         "en",
-        "I'm eager to know you better. May I have your name?"
+        "Nickname for %name%"
       ],
       [
         "en",
-        "It's nice to start by knowing each other's names. What's yours?"
+        "Username of %name%"
       ],
       [
         "en",
-        "Before we proceed, could you tell me your name?"
+        "Title for %name%"
       ],
       [
         "en",
-        "I would love to know who I'm assisting today. Your name, please?"
+        "Alias of %name%"
       ],
       [
         "en",
-        "Let's get acquainted. What's your name?"
+        "Moniker for %name%"
       ],
       [
         "en",
-        "To make our conversation more personal, what can I call you?"
+        "%person% for %name%"
       ],
       [
         "en",
-        "Who do I have the pleasure of speaking with today?"
+        "%person% for %name% Handle for %name%"
       ],
       [
         "en",
-        "I'm here to help you. First, may I know your name?"
+        "Tag for %name%"
       ],
       [
         "en",
-        "For a more personalized service, may I ask for your name?"
+        "Please identify %name%"
       ],
       [
         "en",
-        "I'd like to address you properly. What is your name?"
+        "Is your name %name%"
       ],
       [
         "en",
-        "Welcome! To start, could you please tell me your name?"
+        "Could %name% be there"
       ],
       [
         "en",
-        "Hello! To whom do I owe the pleasure of this conversation?"
+        "Please confirm identity of %name%"
       ],
       [
         "en",
-        "It's always nice to know who I'm chatting with. Your name?"
+        "First, what is %name% called"
       ],
       [
         "en",
-        "Greetings! May I inquire who I'm speaking to?"
+        "Say the name %name%"
       ],
       [
         "en",
-        "To assist you better, could you share your name with me?"
+        "Confirm state of %name%"
       ],
       [
         "en",
-        "Hello there! Might I ask for your name?"
+        "Is your alias %name%"
       ],
       [
         "en",
-        "For a tailored experience, what name should I use for you?"
+        "What's the identity of %name%"
       ],
       [
         "en",
-        "I'm looking forward to our chat. How should I address you?"
+        "What is known as %name%"
       ],
       [
         "en",
-        "Let's make this conversation friendly. What's your name?"
+        "What name does %name% %person%"
       ],
       [
         "en",
-        "I don't believe we've met. What's your name?"
+        "What name does %name% %person% What name does %name% carry"
       ],
       [
         "en",
-        "Your name?"
+        "May I know if %name% is correct"
       ],
       [
         "en",
-        "Do we know each other(thinking of name...)?"
+        "%name%, what's your name"
       ],
       [
         "en",
-        "I'm eager to know you better. May I have your name?"
+        "Are you %name%"
       ],
       [
         "en",
-        "It's nice to start by knowing each other's names. What's yours?"
+        "Confirm if you are %name%"
       ],
       [
         "en",
-        "Before we proceed, could you tell me your name?"
+        "Might you be %name%"
       ],
       [
         "en",
-        "I would love to know who I'm assisting today. Your name, please?"
+        "%name%, can you respond"
       ],
       [
         "en",
-        "Let's get acquainted. What's your name?"
+        "What name does %name% %person%"
       ],
       [
         "en",
-        "To make our conversation more personal, what can I call you?"
+        "What name does %name% %person% What name does %name% carry"
       ],
       [
         "en",
-        "Who do I have the pleasure of speaking with today?"
+        "Can %name% specify"
       ],
       [
         "en",
-        "I'm here to help you. First, may I know your name?"
+        "Who do I address as %name%"
       ],
       [
         "en",
-        "For a more personalized service, may I ask for your name?"
+        "Could you, %name%, please tell me your name"
       ],
       [
         "en",
-        "I'd like to address you properly. What is your name?"
+        "%name%, I would like to know who I am speaking with"
       ],
       [
         "en",
-        "Welcome! To start, could you please tell me your name?"
+        "Would %name% mind sharing their name"
       ],
       [
         "en",
-        "Hello! To whom do I owe the pleasure of this conversation?"
+        "For our records, is %name% correct"
       ],
       [
         "en",
-        "It's always nice to know who I'm chatting with. Your name?"
+        "%name%, please introduce yourself"
       ],
       [
         "en",
-        "Greetings! May I inquire who I'm speaking to?"
+        "%name%, let's get acquainted, what’s your name"
       ],
       [
         "en",
-        "To assist you better, could you share your name with me?"
+        "Before we proceed, %name%, may I have your name"
       ],
       [
         "en",
-        "Hello there! Might I ask for your name?"
+        "%name%, I didn’t catch your name, what was it"
       ],
       [
         "en",
-        "For a tailored experience, what name should I use for you?"
+        "%name%, could you please let me know your name"
       ],
       [
         "en",
-        "I'm looking forward to our chat. How should I address you?"
+        "%name%, please, could you inform me of your name"
       ],
       [
         "en",
-        "Let's make this conversation friendly. What's your name?"
+        "My name is %name%"
+      ],
+      [
+        "en",
+        "I'm %name%"
+      ],
+      [
+        "en",
+        "Call me, %name%"
+      ],
+      [
+        "en",
+        "I did provide this nickname %name%"
+      ],
+      [
+        "en",
+        "Your name is now %botName%"
+      ],
+      [
+        "en",
+        "Your name is  %botName%"
+      ],
+      [
+        "en",
+        "You are %botName%"
+      ],
+      [
+        "en",
+        "Bot %botName% you"
+      ],
+      [
+        "en",
+        "You %botName%"
+      ],
+      [
+        "en",
+        "%botName%, suitable?"
+      ],
+      [
+        "en",
+        "I'll call you %botName% from now on"
+      ],
+      [
+        "en",
+        "How about I name you %botName%?"
+      ],
+      [
+        "en",
+        "Let's change your name to %botName%"
+      ],
+      [
+        "en",
+        "I think %botName% suits you %person%%botNamePerson%"
+      ],
+      [
+        "en",
+        "I think %botName% suits you %person%%botNamePerson% I think %botName% suits you better"
+      ],
+      [
+        "en",
+        "From now on, you're %botName%"
+      ],
+      [
+        "en",
+        "I'm going to name you %botName%"
+      ],
+      [
+        "en",
+        "You look %person%%botNamePerson% like a %botName% to me"
+      ],
+      [
+        "en",
+        "You look %person%%botNamePerson% like a %botName% to me You look more like a %botName% to me"
+      ],
+      [
+        "en",
+        "Would you mind if I call you %botName%?"
+      ],
+      [
+        "en",
+        "How does the name %botName% sound?"
+      ],
+      [
+        "en",
+        "I'd prefer to call you %botName%"
+      ],
+      [
+        "en",
+        "You give off a %botName% vibe"
+      ],
+      [
+        "en",
+        "Can I rename you to %botName%?"
+      ],
+      [
+        "en",
+        "It's decided, your new name is %botName%"
+      ],
+      [
+        "en",
+        "I hereby christen you %botName%"
+      ],
+      [
+        "en",
+        "Let's update your name tag to %botName%"
+      ],
+      [
+        "en",
+        "You shall be known as %botName%"
+      ],
+      [
+        "en",
+        "I think the name %botName% is %person%%botNamePerson% fitting for you"
+      ],
+      [
+        "en",
+        "I think the name %botName% is %person%%botNamePerson% fitting for you I think the name %botName% is more fitting for you"
+      ],
+      [
+        "en",
+        "In my eyes, you're %botName%"
+      ],
+      [
+        "en",
+        "I'm feeling inspired to call you %botName%"
+      ],
+      [
+        "en",
+        "Bot %botName%"
+      ],
+      [
+        "en",
+        "%botName% is what I'll call you"
+      ],
+      [
+        "en",
+        "You are now called %botName%"
+      ],
+      [
+        "en",
+        "Meet our new %person%%botNamePerson%, %botName%"
+      ],
+      [
+        "en",
+        "Meet our new %person%%botNamePerson%, %botName% Meet our new friend, %botName%"
+      ],
+      [
+        "en",
+        "Everyone, say %person%%botNamePerson% to %botName%"
+      ],
+      [
+        "en",
+        "Everyone, say %person%%botNamePerson% to %botName% Everyone, say hello to %botName%"
+      ],
+      [
+        "en",
+        "I think of you as %botName%"
       ]
     ]
   },
@@ -958,152 +2179,2304 @@
     },
     "threshold": 0.8,
     "builtins": [],
-    "namedEntities": {}
+    "namedEntities": {
+      "person": {
+        "type": "enum",
+        "name": "person",
+        "localeFallback": {
+          "*": "en"
+        },
+        "locales": {
+          "en": {
+            "englishMasculine": [
+              "Abe",
+              "Abraham",
+              "Adrien",
+              "Alan",
+              "Albemarle",
+              "Alex",
+              "Alexander",
+              "Alistair",
+              "Almon",
+              "Alton",
+              "Alvy",
+              "Amory",
+              "Angus",
+              "Arnaut",
+              "Arnie",
+              "Arnold",
+              "Arthur",
+              "Artie",
+              "Ashley",
+              "Aulay",
+              "Auley",
+              "Auliffe",
+              "Awley",
+              "Banastre",
+              "Barron",
+              "Barry",
+              "Barton",
+              "Basil",
+              "Berry",
+              "Bert",
+              "Bibb",
+              "Bill",
+              "Billy",
+              "Blaze",
+              "Borlase",
+              "Brady",
+              "Brainerd",
+              "Branch",
+              "Brandon",
+              "Brendan",
+              "Brennan",
+              "Bret",
+              "Brett",
+              "Brian",
+              "Briggs",
+              "Brown",
+              "Bryan",
+              "Buell",
+              "Burdette",
+              "Burgess",
+              "Burt",
+              "Butler",
+              "Cadence",
+              "Calum",
+              "CathalCeawlin",
+              "Chapman",
+              "Charles",
+              "Charlton",
+              "Chris",
+              "Chrissy",
+              "Christopher",
+              "Chuck",
+              "Clarrie",
+              "Cleveland",
+              "Clive",
+              "Conn",
+              "Connor",
+              "Corin",
+              "Cormac",
+              "Courtney",
+              "Craig",
+              "Crane",
+              "Dana",
+              "Dane",
+              "Daniel",
+              "Darroll",
+              "Dashaun",
+              "Davin",
+              "Davis",
+              "Davonte",
+              "Dayvon",
+              "DeJuan",
+              "DeMarcus",
+              "Demario",
+              "Deontay",
+              "Dequan",
+              "Derwin",
+              "Deshaun",
+              "DeShawn",
+              "Dillon",
+              "Doak",
+              "Domenick",
+              "Don",
+              "Donald",
+              "Donovan",
+              "Dontay",
+              "Dorsey",
+              "Drake",
+              "Duane",
+              "Duncan",
+              "Dylan",
+              "Eamonn",
+              "Ed",
+              "Edmund",
+              "Edward",
+              "Ellis",
+              "Elwood",
+              "Eppa",
+              "Eric",
+              "Eunan",
+              "Evelyn",
+              "Farley",
+              "Francis",
+              "Friend",
+              "Gardner",
+              "Gary",
+              "Gawen",
+              "Gaylord",
+              "Gladden",
+              "Gleason",
+              "Godfrey",
+              "Gordon",
+              "Graham",
+              "Greg",
+              "Greig",
+              "Grover",
+              "Gus",
+              "Gyles",
+              "Haddon",
+              "Hamish",
+              "Harbord",
+              "Haskell",
+              "Hatton",
+              "Hayden",
+              "Henry",
+              "Herbie",
+              "Herschel",
+              "Hilary",
+              "Holden",
+              "Holt",
+              "Horrie",
+              "Hovey",
+              "Humphrey",
+              "Hyatt",
+              "Ian",
+              "Iggy",
+              "Increase",
+              "Jack",
+              "James",
+              "Jamie",
+              "Japie",
+              "Jason",
+              "Jayden",
+              "Jeffy",
+              "Jemmy",
+              "Jerry",
+              "Jet",
+              "Jiles",
+              "Jim",
+              "Jimmy",
+              "JOC",
+              "Joe",
+              "Joey",
+              "John",
+              "John Paul",
+              "Johnnie",
+              "Johnny",
+              "Jonny",
+              "Jordie",
+              "Jordy",
+              "Joseph",
+              "Jyles",
+              "Kallen",
+              "Kellan",
+              "Keller",
+              "Kelsey",
+              "Kenneth",
+              "Kenyon",
+              "Kieth",
+              "Kim",
+              "Kip",
+              "Kyler",
+              "Lachlan",
+              "LaDarius",
+              "Lamar",
+              "Laurence",
+              "Laurie",
+              "Lawrie",
+              "Layton",
+              "Lenny",
+              "Leonard",
+              "Leslie",
+              "Lister",
+              "Livingston",
+              "Livingstone",
+              "Loftus",
+              "Lucius",
+              "Luman",
+              "Mal",
+              "Mark",
+              "Markeith",
+              "Marston",
+              "Matthew",
+              "Maurice",
+              "McKay",
+              "Mel",
+              "Melvin",
+              "Merl",
+              "Merton",
+              "Mike",
+              "Mikey",
+              "Mitch",
+              "Mitchell",
+              "Moe",
+              "Monroe",
+              "Montie",
+              "Monty",
+              "Mordaunt",
+              "Morrie",
+              "Morris",
+              "Morse",
+              "Mowbray",
+              "Mungo",
+              "Murrell",
+              "Nathaniel",
+              "Nicholas",
+              "Nolan",
+              "Nolden",
+              "Odell",
+              "Onslow",
+              "Oscar",
+              "Ossian",
+              "Oswald",
+              "Owen",
+              "Parry",
+              "Paul",
+              "Perry",
+              "Peter Paul",
+              "Philip",
+              "Pinckney",
+              "Pinkney",
+              "Quinton",
+              "Quintus",
+              "Ralphie",
+              "Ranald",
+              "Randel",
+              "Randell",
+              "Randi",
+              "Randle",
+              "Randolf",
+              "Randolph",
+              "Randy",
+              "Ranulf",
+              "Raven",
+              "Reginald",
+              "Rembrandt",
+              "Renssalaer",
+              "Reverdy",
+              "Robert",
+              "Robin",
+              "Roddie",
+              "Roddy",
+              "Rolfe",
+              "Rollen",
+              "Ronald",
+              "Royal",
+              "Rush",
+              "Russ",
+              "Salmon",
+              "Sam",
+              "Sawyer",
+              "Scott",
+              "Sean",
+              "Searles",
+              "Shaun",
+              "Shawn",
+              "Shel",
+              "Skeffington",
+              "Skyler",
+              "Sorley",
+              "Spence",
+              "Spencer",
+              "Stan",
+              "Stanley",
+              "Stephens",
+              "Stevon",
+              "Stratford",
+              "Teddy",
+              "Thomas",
+              "Todd",
+              "Tom",
+              "Torquil",
+              "Trae",
+              "Trenton",
+              "Tripp",
+              "Ulick",
+              "Van",
+              "Vernon",
+              "Victor",
+              "Virgil",
+              "Vivian",
+              "Wally",
+              "Walt",
+              "Walton",
+              "Wellington",
+              "Whitfield",
+              "Whitney",
+              "Wilder",
+              "Wilf",
+              "William",
+              "Willoughby",
+              "Wilmot",
+              "Woodruff",
+              "Woody",
+              "Wynton",
+              "Zachary",
+              "Zeb"
+            ],
+            "englishFeminine": [
+              "Alyce",
+              "Amethyst",
+              "Amity",
+              "Arleen",
+              "Ashley",
+              "Aspen",
+              "Audra",
+              "Ava",
+              "Aya",
+              "Babette",
+              "Barb",
+              "Becca",
+              "Becky",
+              "Bess",
+              "Bessie",
+              "Bette",
+              "Breanna",
+              "Brenda",
+              "Brett",
+              "Brianne",
+              "Brina",
+              "Cadence",
+              "Camryn",
+              "Carlena",
+              "Carlene",
+              "Carly",
+              "Caroline",
+              "Catriona",
+              "Chrissie",
+              "Chrissy",
+              "Christiane",
+              "Christina",
+              "Claire",
+              "Clarice",
+              "Clemence",
+              "Corin",
+              "Corryn",
+              "Coryn",
+              "Courtney",
+              "Dana",
+              "Darby",
+              "Darla",
+              "Dawn",
+              "DeAndrea",
+              "Debbie",
+              "Diane",
+              "Dove",
+              "Earlene",
+              "Ellyse",
+              "Elsie",
+              "Erika",
+              "Eve",
+              "Evelyn",
+              "Fabienne",
+              "Ginny",
+              "Githa",
+              "Hayden",
+              "Hilary",
+              "Jacquelin",
+              "Jamie",
+              "Janet",
+              "Jayden",
+              "Jeanie",
+              "Jodi",
+              "Joey",
+              "Johnnie",
+              "Johnny",
+              "Kacey",
+              "Kacie",
+              "Karan",
+              "Karyn",
+              "Karyne",
+              "Kath",
+              "Katy",
+              "Kelsey",
+              "Kendra",
+              "Kim",
+              "Kimberly",
+              "Kirsty",
+              "Kristen",
+              "LaDonna",
+              "Lainie",
+              "Latasha",
+              "Latisha",
+              "Lenore",
+              "Leslie",
+              "Lexi",
+              "Libby",
+              "Lisabeth",
+              "Lizette",
+              "Lizzie",
+              "Lucretia",
+              "Lurleen",
+              "Lurline",
+              "Madeleine",
+              "Madelyn",
+              "Malvina",
+              "Maree",
+              "Marge",
+              "Margo",
+              "Marigold",
+              "Marj",
+              "Maybelle",
+              "Mel",
+              "Misty",
+              "Morna",
+              "Muriel",
+              "Myrtle",
+              "Naomi",
+              "Olivia",
+              "Oona",
+              "Oveta",
+              "Pam",
+              "Patricia",
+              "Penny",
+              "Philippa",
+              "Pleasance",
+              "Prue",
+              "Rachel",
+              "Rain",
+              "Randi",
+              "Randy",
+              "Raven",
+              "Sadie",
+              "Sally",
+              "Salma",
+              "Selma",
+              "Serenity",
+              "Shanelle",
+              "Shawnee",
+              "Siobhan",
+              "Skyler",
+              "Tabitha",
+              "Tanith",
+              "Taryn",
+              "Tasha",
+              "Terisa",
+              "Trudy",
+              "Ursula",
+              "Verona",
+              "Virginia",
+              "Whitney",
+              "Willa"
+            ],
+            "estonianMasculine": [
+              "Aadu",
+              "Aapo",
+              "Aare",
+              "Aarne",
+              "Aarni",
+              "Aavo",
+              "Ado",
+              "Ago",
+              "Ahti",
+              "Aimar",
+              "Ain",
+              "Aivar",
+              "Aivo",
+              "Aksel",
+              "Alar",
+              "Albert",
+              "Alfred",
+              "Allan",
+              "Allar",
+              "Alo",
+              "Alvar",
+              "Ando",
+              "Andreas",
+              "Andres",
+              "Andrus",
+              "Anti",
+              "Anto",
+              "Anton",
+              "Ants",
+              "Ardo",
+              "Argo",
+              "Armin",
+              "Arno",
+              "Arnold",
+              "Arto",
+              "Artur",
+              "Arved",
+              "Arvi",
+              "Arvid",
+              "Arvo",
+              "Asko",
+              "Ats",
+              "August",
+              "Avo",
+              "Bruno",
+              "Edgar",
+              "Eduard",
+              "Eerik",
+              "Eero",
+              "Egon",
+              "Eiko",
+              "Einar",
+              "Einari",
+              "Eino",
+              "Eldur",
+              "Elmar",
+              "Elmo",
+              "Emil",
+              "Endel",
+              "Enn",
+              "Enno",
+              "Erik",
+              "Erki",
+              "Erkki",
+              "Erko",
+              "Erni",
+              "Ervin",
+              "Eugen",
+              "Evald",
+              "Feliks",
+              "Georg",
+              "Gert",
+              "Gunnar",
+              "Gustav",
+              "Haljand",
+              "Hando",
+              "Hannes",
+              "Hanno",
+              "Hans",
+              "Harald",
+              "Harri",
+              "Heiki",
+              "Heikki",
+              "Heiko",
+              "Heino",
+              "Heiti",
+              "Heldur",
+              "Helmer",
+              "Hendrik",
+              "Henn",
+              "Henno",
+              "Henri",
+              "Henrik",
+              "Hillar",
+              "Hindrek",
+              "Hugo",
+              "Iivo",
+              "Illimar",
+              "Ilmar",
+              "Imre",
+              "Indrek",
+              "Ingmar",
+              "Innar",
+              "Ivar",
+              "Ivo",
+              "Jaagup",
+              "Jaak",
+              "Jaan",
+              "Jaanus",
+              "Jan",
+              "Janar",
+              "Janek",
+              "Janno",
+              "Jarmo",
+              "Joakim",
+              "Joel",
+              "Johannes",
+              "Joonas",
+              "Joosep",
+              "Juhan",
+              "Juho",
+              "Julius",
+              "Jürgen",
+              "Jüri",
+              "Juss",
+              "Kaarel",
+              "Kaido",
+              "Kaimar",
+              "Kalev",
+              "Kalevi",
+              "Kaljo",
+              "Kalju",
+              "Kalle",
+              "Kalmer",
+              "Karl",
+              "Kaspar",
+              "Kasper",
+              "Kaupo",
+              "Kaur",
+              "Kert",
+              "Koit",
+              "Konrad",
+              "Kristjan",
+              "Kristo",
+              "Kuldar",
+              "Küllo",
+              "Kuno",
+              "Kustas",
+              "Lars",
+              "Lauri",
+              "Laurits",
+              "Leho",
+              "Leino",
+              "Lembit",
+              "Lennart",
+              "Lepo",
+              "Madis",
+              "Magnus",
+              "Maido",
+              "Mait",
+              "Marek",
+              "Margus",
+              "Marko",
+              "Märt",
+              "Mart",
+              "Martin",
+              "Martti",
+              "Mati",
+              "Mats",
+              "Mattias",
+              "Meelis",
+              "Mihkel",
+              "Mikk",
+              "Neeme",
+              "Niilo",
+              "Olari",
+              "Olavi",
+              "Olev",
+              "Oliver",
+              "Oscar",
+              "Osvald",
+              "Ott",
+              "Otto",
+              "Paavo",
+              "Paul",
+              "Peep",
+              "Peet",
+              "Peeter",
+              "Priidu",
+              "Priit",
+              "Ragnar",
+              "Raido",
+              "Raigo",
+              "Raimo",
+              "Raimond",
+              "Raimund",
+              "Rain",
+              "Rainer",
+              "Rait",
+              "Raivo",
+              "Rasmus",
+              "Raul",
+              "Rauno",
+              "Rein",
+              "Riho",
+              "Riivo",
+              "Risto",
+              "Robert",
+              "Roland",
+              "Roman",
+              "Sander",
+              "Siim",
+              "Sten",
+              "Sulev",
+              "Sven",
+              "Taavi",
+              "Taivo",
+              "Tambet",
+              "Tanel",
+              "Tarmo",
+              "Tauno",
+              "Teet",
+              "Tiit",
+              "Timo",
+              "Toivo",
+              "Tõnis",
+              "Tõnu",
+              "Toomas",
+              "Udo",
+              "Uku",
+              "Ülar",
+              "Üllar",
+              "Ülo",
+              "Uno",
+              "Urmas",
+              "Urmo",
+              "Uuno",
+              "Vahur",
+              "Vaino",
+              "Valdo",
+              "Valdur",
+              "Vallo",
+              "Valmar",
+              "Valter",
+              "Vambola",
+              "Veiko",
+              "Veljo",
+              "Vello",
+              "Viljar",
+              "Viljo",
+              "Villem",
+              "Villu",
+              "Voldemar"
+            ],
+            "estonianFeminine": [
+              "Aet",
+              "Agnes",
+              "Aili",
+              "Aime",
+              "Aino",
+              "Aire",
+              "Airi",
+              "Alma",
+              "Andra",
+              "Anna",
+              "Anne",
+              "Anneli",
+              "Annika",
+              "Anu",
+              "Asta",
+              "Astrid",
+              "Ave",
+              "Birgit",
+              "Britta",
+              "Dagmar",
+              "Eeva",
+              "Eha",
+              "Elina",
+              "Ellen",
+              "Elli",
+              "Elo",
+              "Elsa",
+              "Ene",
+              "Eneli",
+              "Epp",
+              "Erika",
+              "Erna",
+              "Ester",
+              "Eva",
+              "Evi",
+              "Gerda",
+              "Gerli",
+              "Getter",
+              "Greta",
+              "Grete",
+              "Heidi",
+              "Hele",
+              "Helen",
+              "Helene",
+              "Helge",
+              "Heli",
+              "Heljo",
+              "Helju",
+              "Helle",
+              "Helmi",
+              "Helvi",
+              "Herta",
+              "Hilda",
+              "Hilja",
+              "Ida",
+              "Iiris",
+              "Ilmi",
+              "Ilona",
+              "Ilse",
+              "Imbi",
+              "Ines",
+              "Inga",
+              "Inge",
+              "Ingrid",
+              "Irja",
+              "Irma",
+              "Ita",
+              "Jaana",
+              "Janne",
+              "Johanna",
+              "Kadri",
+              "Kai",
+              "Kaia",
+              "Kaidi",
+              "Kaija",
+              "Kaili",
+              "Kaire",
+              "Kairi",
+              "Kaisa",
+              "Kaja",
+              "Karin",
+              "Kärt",
+              "Katariina",
+              "Kätlin",
+              "Katrin",
+              "Kersti",
+              "Kertu",
+              "Ketlin",
+              "Kirsti",
+              "Klaudia",
+              "Krista",
+              "Kristel",
+              "Kristiina",
+              "Külli",
+              "Lagle",
+              "Laine",
+              "Laura",
+              "Leida",
+              "Leila",
+              "Lenna",
+              "Liia",
+              "Liina",
+              "Liis",
+              "Liisa",
+              "Liisi",
+              "Lilli",
+              "Linda",
+              "Lotte",
+              "Luule",
+              "Maarja",
+              "Mai",
+              "Maila",
+              "Mall",
+              "Malle",
+              "Mare",
+              "Maret",
+              "Margit",
+              "Margo",
+              "Mari",
+              "Marika",
+              "Maris",
+              "Marju",
+              "Marta",
+              "Meeli",
+              "Merike",
+              "Merle",
+              "Meta",
+              "Miina",
+              "Mirjam",
+              "Monika",
+              "Moonika",
+              "Õnne",
+              "Paula",
+              "Piia",
+              "Pille",
+              "Piret",
+              "Ragne",
+              "Raine",
+              "Reet",
+              "Riin",
+              "Riina",
+              "Rita",
+              "Rutt",
+              "Saara",
+              "Salme",
+              "Selma",
+              "Signe",
+              "Siiri",
+              "Silvia",
+              "Sirje",
+              "Susanna",
+              "Tähti",
+              "Terje",
+              "Tiia",
+              "Tiina",
+              "Tiiu",
+              "Triin",
+              "Tuuli",
+              "Ulla",
+              "Ülle",
+              "Ulvi",
+              "Ursula",
+              "Urve",
+              "Valda",
+              "Valve",
+              "Viive",
+              "Vilma",
+              "Virve"
+            ],
+            "russianFeminine": [
+              "Agafa",
+              "Agafiya",
+              "Agafokliya",
+              "Agafya",
+              "Agapa",
+              "Agapiya",
+              "Alevtina",
+              "Alina",
+              "Alla",
+              "Alya",
+              "Alyona",
+              "Anastasia",
+              "Angelika",
+              "Anka",
+              "Anna",
+              "Anoushka",
+              "Antonina",
+              "Antoniya",
+              "Arina",
+              "Aurora",
+              "Avdotya",
+              "Avelina",
+              "Avenira",
+              "Aventina",
+              "Avgusta",
+              "Avgustina",
+              "Aviafa",
+              "Aviva",
+              "Avlida",
+              "Avreliya",
+              "Avreya",
+              "Avtonoma",
+              "Daria",
+              "Diana",
+              "Ekaterina",
+              "Elena",
+              "Elina",
+              "Elvira",
+              "Galina",
+              "Gennadiya",
+              "Hannah",
+              "Inna",
+              "Irina",
+              "Karolina",
+              "Katerina",
+              "Katya",
+              "Khioniya",
+              "Kira",
+              "Lada",
+              "Lana",
+              "Larissa",
+              "Lena",
+              "Lina",
+              "Ludmila",
+              "Luiza",
+              "Lyubov",
+              "Margarita",
+              "Maria",
+              "Marina",
+              "Mariya",
+              "Marta",
+              "Masha",
+              "Melania",
+              "Mila",
+              "Milena",
+              "Miroslava",
+              "Nadezhda",
+              "Nadia",
+              "Nastja",
+              "Natacha",
+              "Natalia",
+              "Nataliya",
+              "Natalya",
+              "Natasha",
+              "Nika",
+              "Nikolina",
+              "Nina",
+              "Ninel",
+              "Nonna",
+              "Oksana",
+              "Olga",
+              "Praskovya",
+              "Raisa",
+              "Raya",
+              "Rimma",
+              "Ruslana",
+              "Snežana",
+              "Sonia",
+              "Sophia",
+              "Stanislava",
+              "Stefania",
+              "Svetlana",
+              "Tamara",
+              "Tanya",
+              "Tatiana",
+              "Tatjana",
+              "Valentina",
+              "Valeria",
+              "Varvara",
+              "Vasilisa",
+              "Vera",
+              "Veronica",
+              "Vesna",
+              "Viktoriya",
+              "Vlada",
+              "Yekaterina",
+              "Yelena",
+              "Yulia",
+              "Yuliana",
+              "Zenaida",
+              "Zoya"
+            ],
+            "russianMasculine": [
+              "Abagor",
+              "Abamon",
+              "Abataly",
+              "Abelyar",
+              "Abid",
+              "Abnody",
+              "Abram",
+              "Aburom",
+              "Afanasy",
+              "Agafangel",
+              "Agafon",
+              "Agafonik",
+              "Agafopod",
+              "Agafopus",
+              "Agap",
+              "Agapion",
+              "Agapit",
+              "Agapy",
+              "Agat",
+              "Agav",
+              "Agavva",
+              "Albert",
+              "Alexander",
+              "Alexey",
+              "Amvrosy",
+              "Anatoly",
+              "Andrei",
+              "Andrey",
+              "Anton",
+              "Arkadiy",
+              "Arkady",
+              "Artemy",
+              "Artyom",
+              "Avda",
+              "Avdakt",
+              "Avdelay",
+              "Avdey",
+              "Avdifaks",
+              "Avdiky",
+              "Avdiyes",
+              "Avdon",
+              "Avel",
+              "Avenir",
+              "Aventin",
+              "Averky",
+              "Avgar",
+              "Avgury",
+              "Avgust",
+              "Avgustin",
+              "Avian",
+              "Avim",
+              "Avip",
+              "Avit",
+              "Avksenty",
+              "Avksily",
+              "Avksivy",
+              "Avkt",
+              "Avram",
+              "Avrelian",
+              "Avrely",
+              "Avrey",
+              "Avros",
+              "Avsey",
+              "Avtonom",
+              "Avudim",
+              "Avundy",
+              "Avva",
+              "Avvakir",
+              "Avvakum",
+              "Bogdan",
+              "Boris",
+              "Budimir",
+              "Daniel",
+              "Daniil",
+              "Danila",
+              "David",
+              "Demyan",
+              "Denis",
+              "Dmitry",
+              "Eduard",
+              "Elisei",
+              "Fedot",
+              "Feofan",
+              "Fyodor",
+              "Gavriil",
+              "Gennady",
+              "Genrikh",
+              "Georgy",
+              "Gerasim",
+              "German",
+              "Gleb",
+              "Grigory",
+              "Grischa",
+              "Ignat",
+              "Ilarion",
+              "Ilya",
+              "Iosif",
+              "Ivan",
+              "Jaroslav",
+              "Kirill",
+              "Kliment",
+              "Kolya",
+              "Konstantin",
+              "Lavrentiy",
+              "Leon",
+              "Leonid",
+              "Lev",
+              "Lukyan",
+              "Matvei",
+              "Maxim",
+              "Maksim",
+              "Miron",
+              "Mstislav",
+              "Nectarios",
+              "Nikita",
+              "Nikola",
+              "Nikolay",
+              "Oleg",
+              "Osip",
+              "Ossip",
+              "Panteleimon",
+              "Pavel",
+              "Pavsikakiy",
+              "Piotr",
+              "Prokhor",
+              "Prokopy",
+              "Pyotr",
+              "Ratimir",
+              "Renat",
+              "Rodion",
+              "Roman",
+              "Rostislav",
+              "Ruslan",
+              "Sasha",
+              "Simeon",
+              "Simon",
+              "Slava",
+              "Stanislav",
+              "Stepan",
+              "Svetoslav",
+              "Sviatoslav",
+              "Tikhon",
+              "Timofey",
+              "Timur",
+              "Trifon",
+              "Trofim",
+              "Vadim",
+              "Valentin",
+              "Valery",
+              "Vasily",
+              "Veniamin",
+              "Victor",
+              "Vitalii",
+              "Vladilen",
+              "Vladimir",
+              "Vladislav",
+              "Vsevolod",
+              "Vyacheslav",
+              "Yakov",
+              "Yaroslav",
+              "Yefim",
+              "Yegor",
+              "Yevgeny",
+              "Yury",
+              "Zakhar",
+              "Zinovy"
+            ]
+          }
+        }
+      },
+      "botNamePerson": {
+        "type": "enum",
+        "name": "botNamePerson",
+        "localeFallback": {
+          "*": "en"
+        },
+        "locales": {
+          "en": {
+            "masculineEnglish": [
+              "Abe",
+              "Abraham",
+              "Adrien",
+              "Alan",
+              "Albemarle",
+              "Alex",
+              "Alexander",
+              "Alistair",
+              "Almon",
+              "Alton",
+              "Alvy",
+              "Amory",
+              "Angus",
+              "Arnaut",
+              "Arnie",
+              "Arnold",
+              "Arthur",
+              "Artie",
+              "Ashley",
+              "Aulay",
+              "Auley",
+              "Auliffe",
+              "Awley",
+              "Banastre",
+              "Barron",
+              "Barry",
+              "Barton",
+              "Basil",
+              "Berry",
+              "Bert",
+              "Bibb",
+              "Bill",
+              "Billy",
+              "Blaze",
+              "Borlase",
+              "Brady",
+              "Brainerd",
+              "Branch",
+              "Brandon",
+              "Brendan",
+              "Brennan",
+              "Bret",
+              "Brett",
+              "Brian",
+              "Briggs",
+              "Brown",
+              "Bryan",
+              "Buell",
+              "Burdette",
+              "Burgess",
+              "Burt",
+              "Butler",
+              "Cadence",
+              "Calum",
+              "CathalCeawlin",
+              "Chapman",
+              "Charles",
+              "Charlton",
+              "Chris",
+              "Chrissy",
+              "Christopher",
+              "Chuck",
+              "Clarrie",
+              "Cleveland",
+              "Clive",
+              "Conn",
+              "Connor",
+              "Corin",
+              "Cormac",
+              "Courtney",
+              "Craig",
+              "Crane",
+              "Dana",
+              "Dane",
+              "Daniel",
+              "Darroll",
+              "Dashaun",
+              "Davin",
+              "Davis",
+              "Davonte",
+              "Dayvon",
+              "DeJuan",
+              "DeMarcus",
+              "Demario",
+              "Deontay",
+              "Dequan",
+              "Derwin",
+              "Deshaun",
+              "DeShawn",
+              "Dillon",
+              "Doak",
+              "Domenick",
+              "Don",
+              "Donald",
+              "Donovan",
+              "Dontay",
+              "Dorsey",
+              "Drake",
+              "Duane",
+              "Duncan",
+              "Dylan",
+              "Eamonn",
+              "Ed",
+              "Edmund",
+              "Edward",
+              "Ellis",
+              "Elwood",
+              "Eppa",
+              "Eric",
+              "Eunan",
+              "Evelyn",
+              "Farley",
+              "Francis",
+              "Friend",
+              "Gardner",
+              "Gary",
+              "Gawen",
+              "Gaylord",
+              "Gladden",
+              "Gleason",
+              "Godfrey",
+              "Gordon",
+              "Graham",
+              "Greg",
+              "Greig",
+              "Grover",
+              "Gus",
+              "Gyles",
+              "Haddon",
+              "Hamish",
+              "Harbord",
+              "Haskell",
+              "Hatton",
+              "Hayden",
+              "Henry",
+              "Herbie",
+              "Herschel",
+              "Hilary",
+              "Holden",
+              "Holt",
+              "Horrie",
+              "Hovey",
+              "Humphrey",
+              "Hyatt",
+              "Ian",
+              "Iggy",
+              "Increase",
+              "Jack",
+              "James",
+              "Jamie",
+              "Japie",
+              "Jason",
+              "Jayden",
+              "Jeffy",
+              "Jemmy",
+              "Jerry",
+              "Jet",
+              "Jiles",
+              "Jim",
+              "Jimmy",
+              "JOC",
+              "Joe",
+              "Joey",
+              "John",
+              "John Paul",
+              "Johnnie",
+              "Johnny",
+              "Jonny",
+              "Jordie",
+              "Jordy",
+              "Joseph",
+              "Jyles",
+              "Kallen",
+              "Kellan",
+              "Keller",
+              "Kelsey",
+              "Kenneth",
+              "Kenyon",
+              "Kieth",
+              "Kim",
+              "Kip",
+              "Kyler",
+              "Lachlan",
+              "LaDarius",
+              "Lamar",
+              "Laurence",
+              "Laurie",
+              "Lawrie",
+              "Layton",
+              "Lenny",
+              "Leonard",
+              "Leslie",
+              "Lister",
+              "Livingston",
+              "Livingstone",
+              "Loftus",
+              "Lucius",
+              "Luman",
+              "Mal",
+              "Mark",
+              "Markeith",
+              "Marston",
+              "Matthew",
+              "Maurice",
+              "McKay",
+              "Mel",
+              "Melvin",
+              "Merl",
+              "Merton",
+              "Mike",
+              "Mikey",
+              "Mitch",
+              "Mitchell",
+              "Moe",
+              "Monroe",
+              "Montie",
+              "Monty",
+              "Mordaunt",
+              "Morrie",
+              "Morris",
+              "Morse",
+              "Mowbray",
+              "Mungo",
+              "Murrell",
+              "Nathaniel",
+              "Nicholas",
+              "Nolan",
+              "Nolden",
+              "Odell",
+              "Onslow",
+              "Oscar",
+              "Ossian",
+              "Oswald",
+              "Owen",
+              "Parry",
+              "Paul",
+              "Perry",
+              "Peter Paul",
+              "Philip",
+              "Pinckney",
+              "Pinkney",
+              "Quinton",
+              "Quintus",
+              "Ralphie",
+              "Ranald",
+              "Randel",
+              "Randell",
+              "Randi",
+              "Randle",
+              "Randolf",
+              "Randolph",
+              "Randy",
+              "Ranulf",
+              "Raven",
+              "Reginald",
+              "Rembrandt",
+              "Renssalaer",
+              "Reverdy",
+              "Robert",
+              "Robin",
+              "Roddie",
+              "Roddy",
+              "Rolfe",
+              "Rollen",
+              "Ronald",
+              "Royal",
+              "Rush",
+              "Russ",
+              "Salmon",
+              "Sam",
+              "Sawyer",
+              "Scott",
+              "Sean",
+              "Searles",
+              "Shaun",
+              "Shawn",
+              "Shel",
+              "Skeffington",
+              "Skyler",
+              "Sorley",
+              "Spence",
+              "Spencer",
+              "Stan",
+              "Stanley",
+              "Stephens",
+              "Stevon",
+              "Stratford",
+              "Teddy",
+              "Thomas",
+              "Todd",
+              "Tom",
+              "Torquil",
+              "Trae",
+              "Trenton",
+              "Tripp",
+              "Ulick",
+              "Van",
+              "Vernon",
+              "Victor",
+              "Virgil",
+              "Vivian",
+              "Wally",
+              "Walt",
+              "Walton",
+              "Wellington",
+              "Whitfield",
+              "Whitney",
+              "Wilder",
+              "Wilf",
+              "William",
+              "Willoughby",
+              "Wilmot",
+              "Woodruff",
+              "Woody",
+              "Wynton",
+              "Zachary",
+              "Zeb"
+            ],
+            "feminineEnglish": [
+              "Alyce",
+              "Amethyst",
+              "Amity",
+              "Arleen",
+              "Ashley",
+              "Aspen",
+              "Audra",
+              "Ava",
+              "Aya",
+              "Babette",
+              "Barb",
+              "Becca",
+              "Becky",
+              "Bess",
+              "Bessie",
+              "Bette",
+              "Breanna",
+              "Brenda",
+              "Brett",
+              "Brianne",
+              "Brina",
+              "Cadence",
+              "Camryn",
+              "Carlena",
+              "Carlene",
+              "Carly",
+              "Caroline",
+              "Catriona",
+              "Chrissie",
+              "Chrissy",
+              "Christiane",
+              "Christina",
+              "Claire",
+              "Clarice",
+              "Clemence",
+              "Corin",
+              "Corryn",
+              "Coryn",
+              "Courtney",
+              "Dana",
+              "Darby",
+              "Darla",
+              "Dawn",
+              "DeAndrea",
+              "Debbie",
+              "Diane",
+              "Dove",
+              "Earlene",
+              "Ellyse",
+              "Elsie",
+              "Erika",
+              "Eve",
+              "Evelyn",
+              "Fabienne",
+              "Ginny",
+              "Githa",
+              "Hayden",
+              "Hilary",
+              "Jacquelin",
+              "Jamie",
+              "Janet",
+              "Jayden",
+              "Jeanie",
+              "Jodi",
+              "Joey",
+              "Johnnie",
+              "Johnny",
+              "Kacey",
+              "Kacie",
+              "Karan",
+              "Karyn",
+              "Karyne",
+              "Kath",
+              "Katy",
+              "Kelsey",
+              "Kendra",
+              "Kim",
+              "Kimberly",
+              "Kirsty",
+              "Kristen",
+              "LaDonna",
+              "Lainie",
+              "Latasha",
+              "Latisha",
+              "Lenore",
+              "Leslie",
+              "Lexi",
+              "Libby",
+              "Lisabeth",
+              "Lizette",
+              "Lizzie",
+              "Lucretia",
+              "Lurleen",
+              "Lurline",
+              "Madeleine",
+              "Madelyn",
+              "Malvina",
+              "Maree",
+              "Marge",
+              "Margo",
+              "Marigold",
+              "Marj",
+              "Maybelle",
+              "Mel",
+              "Misty",
+              "Morna",
+              "Muriel",
+              "Myrtle",
+              "Naomi",
+              "Olivia",
+              "Oona",
+              "Oveta",
+              "Pam",
+              "Patricia",
+              "Penny",
+              "Philippa",
+              "Pleasance",
+              "Prue",
+              "Rachel",
+              "Rain",
+              "Randi",
+              "Randy",
+              "Raven",
+              "Sadie",
+              "Sally",
+              "Salma",
+              "Selma",
+              "Serenity",
+              "Shanelle",
+              "Shawnee",
+              "Siobhan",
+              "Skyler",
+              "Tabitha",
+              "Tanith",
+              "Taryn",
+              "Tasha",
+              "Terisa",
+              "Trudy",
+              "Ursula",
+              "Verona",
+              "Virginia",
+              "Whitney",
+              "Willa"
+            ],
+            "masculineEstonian": [
+              "Aet",
+              "Agnes",
+              "Aili",
+              "Aime",
+              "Aino",
+              "Aire",
+              "Airi",
+              "Alma",
+              "Andra",
+              "Anna",
+              "Anne",
+              "Anneli",
+              "Annika",
+              "Anu",
+              "Asta",
+              "Astrid",
+              "Ave",
+              "Birgit",
+              "Britta",
+              "Dagmar",
+              "Eeva",
+              "Eha",
+              "Elina",
+              "Ellen",
+              "Elli",
+              "Elo",
+              "Elsa",
+              "Ene",
+              "Eneli",
+              "Epp",
+              "Erika",
+              "Erna",
+              "Ester",
+              "Eva",
+              "Evi",
+              "Gerda",
+              "Gerli",
+              "Getter",
+              "Greta",
+              "Grete",
+              "Heidi",
+              "Hele",
+              "Helen",
+              "Helene",
+              "Helge",
+              "Heli",
+              "Heljo",
+              "Helju",
+              "Helle",
+              "Helmi",
+              "Helvi",
+              "Herta",
+              "Hilda",
+              "Hilja",
+              "Ida",
+              "Iiris",
+              "Ilmi",
+              "Ilona",
+              "Ilse",
+              "Imbi",
+              "Ines",
+              "Inga",
+              "Inge",
+              "Ingrid",
+              "Irja",
+              "Irma",
+              "Ita",
+              "Jaana",
+              "Janne",
+              "Johanna",
+              "Kadri",
+              "Kai",
+              "Kaia",
+              "Kaidi",
+              "Kaija",
+              "Kaili",
+              "Kaire",
+              "Kairi",
+              "Kaisa",
+              "Kaja",
+              "Karin",
+              "Kärt",
+              "Katariina",
+              "Kätlin",
+              "Katrin",
+              "Kersti",
+              "Kertu",
+              "Ketlin",
+              "Kirsti",
+              "Klaudia",
+              "Krista",
+              "Kristel",
+              "Kristiina",
+              "Külli",
+              "Lagle",
+              "Laine",
+              "Laura",
+              "Leida",
+              "Leila",
+              "Lenna",
+              "Liia",
+              "Liina",
+              "Liis",
+              "Liisa",
+              "Liisi",
+              "Lilli",
+              "Linda",
+              "Lotte",
+              "Luule",
+              "Maarja",
+              "Mai",
+              "Maila",
+              "Mall",
+              "Malle",
+              "Mare",
+              "Maret",
+              "Margit",
+              "Margo",
+              "Mari",
+              "Marika",
+              "Maris",
+              "Marju",
+              "Marta",
+              "Meeli",
+              "Merike",
+              "Merle",
+              "Meta",
+              "Miina",
+              "Mirjam",
+              "Monika",
+              "Moonika",
+              "Õnne",
+              "Paula",
+              "Piia",
+              "Pille",
+              "Piret",
+              "Ragne",
+              "Raine",
+              "Reet",
+              "Riin",
+              "Riina",
+              "Rita",
+              "Rutt",
+              "Saara",
+              "Salme",
+              "Selma",
+              "Signe",
+              "Siiri",
+              "Silvia",
+              "Sirje",
+              "Susanna",
+              "Tähti",
+              "Terje",
+              "Tiia",
+              "Tiina",
+              "Tiiu",
+              "Triin",
+              "Tuuli",
+              "Ulla",
+              "Ülle",
+              "Ulvi",
+              "Ursula",
+              "Urve",
+              "Valda",
+              "Valve",
+              "Viive",
+              "Vilma",
+              "Virve"
+            ],
+            "feminineRussian": [
+              "Agafa",
+              "Agafiya",
+              "Agafokliya",
+              "Agafya",
+              "Agapa",
+              "Agapiya",
+              "Alevtina",
+              "Alina",
+              "Alla",
+              "Alya",
+              "Alyona",
+              "Anastasia",
+              "Angelika",
+              "Anka",
+              "Anna",
+              "Anoushka",
+              "Antonina",
+              "Antoniya",
+              "Arina",
+              "Aurora",
+              "Avdotya",
+              "Avelina",
+              "Avenira",
+              "Aventina",
+              "Avgusta",
+              "Avgustina",
+              "Aviafa",
+              "Aviva",
+              "Avlida",
+              "Avreliya",
+              "Avreya",
+              "Avtonoma",
+              "Daria",
+              "Diana",
+              "Ekaterina",
+              "Elena",
+              "Elina",
+              "Elvira",
+              "Galina",
+              "Gennadiya",
+              "Hannah",
+              "Inna",
+              "Irina",
+              "Karolina",
+              "Katerina",
+              "Katya",
+              "Khioniya",
+              "Kira",
+              "Lada",
+              "Lana",
+              "Larissa",
+              "Lena",
+              "Lina",
+              "Ludmila",
+              "Luiza",
+              "Lyubov",
+              "Margarita",
+              "Maria",
+              "Marina",
+              "Mariya",
+              "Marta",
+              "Masha",
+              "Melania",
+              "Mila",
+              "Milena",
+              "Miroslava",
+              "Nadezhda",
+              "Nadia",
+              "Nastja",
+              "Natacha",
+              "Natalia",
+              "Nataliya",
+              "Natalya",
+              "Natasha",
+              "Nika",
+              "Nikolina",
+              "Nina",
+              "Ninel",
+              "Nonna",
+              "Oksana",
+              "Olga",
+              "Praskovya",
+              "Raisa",
+              "Raya",
+              "Rimma",
+              "Ruslana",
+              "Snežana",
+              "Sonia",
+              "Sophia",
+              "Stanislava",
+              "Stefania",
+              "Svetlana",
+              "Tamara",
+              "Tanya",
+              "Tatiana",
+              "Tatjana",
+              "Valentina",
+              "Valeria",
+              "Varvara",
+              "Vasilisa",
+              "Vera",
+              "Veronica",
+              "Vesna",
+              "Viktoriya",
+              "Vlada",
+              "Yekaterina",
+              "Yelena",
+              "Yulia",
+              "Yuliana",
+              "Zenaida",
+              "Zoya"
+            ],
+            "masculineRussian": [
+              "Abagor",
+              "Abamon",
+              "Abataly",
+              "Abelyar",
+              "Abid",
+              "Abnody",
+              "Abram",
+              "Aburom",
+              "Afanasy",
+              "Agafangel",
+              "Agafon",
+              "Agafonik",
+              "Agafopod",
+              "Agafopus",
+              "Agap",
+              "Agapion",
+              "Agapit",
+              "Agapy",
+              "Agat",
+              "Agav",
+              "Agavva",
+              "Albert",
+              "Alexander",
+              "Alexey",
+              "Amvrosy",
+              "Anatoly",
+              "Andrei",
+              "Andrey",
+              "Anton",
+              "Arkadiy",
+              "Arkady",
+              "Artemy",
+              "Artyom",
+              "Avda",
+              "Avdakt",
+              "Avdelay",
+              "Avdey",
+              "Avdifaks",
+              "Avdiky",
+              "Avdiyes",
+              "Avdon",
+              "Avel",
+              "Avenir",
+              "Aventin",
+              "Averky",
+              "Avgar",
+              "Avgury",
+              "Avgust",
+              "Avgustin",
+              "Avian",
+              "Avim",
+              "Avip",
+              "Avit",
+              "Avksenty",
+              "Avksily",
+              "Avksivy",
+              "Avkt",
+              "Avram",
+              "Avrelian",
+              "Avrely",
+              "Avrey",
+              "Avros",
+              "Avsey",
+              "Avtonom",
+              "Avudim",
+              "Avundy",
+              "Avva",
+              "Avvakir",
+              "Avvakum",
+              "Bogdan",
+              "Boris",
+              "Budimir",
+              "Daniel",
+              "Daniil",
+              "Danila",
+              "David",
+              "Demyan",
+              "Denis",
+              "Dmitry",
+              "Eduard",
+              "Elisei",
+              "Fedot",
+              "Feofan",
+              "Fyodor",
+              "Gavriil",
+              "Gennady",
+              "Genrikh",
+              "Georgy",
+              "Gerasim",
+              "German",
+              "Gleb",
+              "Grigory",
+              "Grischa",
+              "Ignat",
+              "Ilarion",
+              "Ilya",
+              "Iosif",
+              "Ivan",
+              "Jaroslav",
+              "Kirill",
+              "Kliment",
+              "Kolya",
+              "Konstantin",
+              "Lavrentiy",
+              "Leon",
+              "Leonid",
+              "Lev",
+              "Lukyan",
+              "Matvei",
+              "Maxim",
+              "Maksim",
+              "Miron",
+              "Mstislav",
+              "Nectarios",
+              "Nikita",
+              "Nikola",
+              "Nikolay",
+              "Oleg",
+              "Osip",
+              "Ossip",
+              "Panteleimon",
+              "Pavel",
+              "Pavsikakiy",
+              "Piotr",
+              "Prokhor",
+              "Prokopy",
+              "Pyotr",
+              "Ratimir",
+              "Renat",
+              "Rodion",
+              "Roman",
+              "Rostislav",
+              "Ruslan",
+              "Sasha",
+              "Simeon",
+              "Simon",
+              "Slava",
+              "Stanislav",
+              "Stepan",
+              "Svetoslav",
+              "Sviatoslav",
+              "Tikhon",
+              "Timofey",
+              "Timur",
+              "Trifon",
+              "Trofim",
+              "Vadim",
+              "Valentin",
+              "Valery",
+              "Vasily",
+              "Veniamin",
+              "Victor",
+              "Vitalii",
+              "Vladilen",
+              "Vladimir",
+              "Vladislav",
+              "Vsevolod",
+              "Vyacheslav",
+              "Yakov",
+              "Yaroslav",
+              "Yefim",
+              "Yegor",
+              "Yevgeny",
+              "Yury",
+              "Zakhar",
+              "Zinovy"
+            ]
+          }
+        }
+      }
+    }
   },
   "slotManager": {},
   "responses": {
     "en": {
-      "botName.botIntroductionAndNameRequest": [
+      "userName.provideName": [
         {
-          "response": "Bot, Bot, Bot? That's me! Ready to roll out the red carpet for your questions!"
+          "response": "Hello {{name}}!"
         },
         {
-          "response": "Boooooot Boooooot Booooot? Sounds like you’re calling! Karren at your service, how may I assist you today?"
+          "response": "Welcome {{name}}."
         },
         {
-          "response": "I'm Karren, your virtual assistant with a zest for life and a knack for assistance. What adventure are we embarking on today?"
+          "response": "Hi {{name}}!"
         },
         {
-          "response": "Karren here, your trusty digital sidekick! What’s on your mind that I can help with?"
+          "response": "{{name}}, how can I help you today?"
         },
         {
-          "response": "Echo, echo, echo... Karren’s the name, and I’m all ears for your queries!"
+          "response": "{{name}}, greetings!"
+        },
+        {
+          "response": "Acknowledged, {{name}}."
+        },
+        {
+          "response": "{{name}}, noted."
+        },
+        {
+          "response": "It's received, {{name}}."
+        },
+        {
+          "response": "Registered, {{name}}."
+        },
+        {
+          "response": "{{name}}, recorded!"
+        },
+        {
+          "response": "Hello there, {{name}}!"
+        },
+        {
+          "response": "Welcome aboard, {{name}}!"
+        },
+        {
+          "response": "Hi again, {{name}}!"
+        },
+        {
+          "response": "Greetings, friend {{name}}!"
+        },
+        {
+          "response": "{{name}}, pleasure meeting you!"
+        },
+        {
+          "response": "Good meeting you, {{name}}!"
+        },
+        {
+          "response": "{{name}}, lovely indeed!"
+        },
+        {
+          "response": "Nice one {{name}}!"
+        },
+        {
+          "response": "Well met, {{name}}!"
+        },
+        {
+          "response": "Hey there {{name}}!"
+        },
+        {
+          "response": "Hello, nice meeting you, {{name}}!"
+        },
+        {
+          "response": "Hi, good day, {{name}}!"
+        },
+        {
+          "response": "{{name}}, welcome, let’s begin!"
+        },
+        {
+          "response": "Greetings, how are you, {{name}}?"
+        },
+        {
+          "response": "Hello, glad meeting you, {{name}}!"
+        },
+        {
+          "response": "Welcome, good start, {{name}}!"
+        },
+        {
+          "response": "Nice to meet you, {{name}}!"
+        },
+        {
+          "response": "Hi, pleasure here with you, {{name}}!"
+        },
+        {
+          "response": "Greetings, what's next {{name}}?"
+        },
+        {
+          "response": "Welcome, start chatting, {{name}}!"
+        },
+        {
+          "response": "Hello {{name}}, nice to meet you! How can I assist you?"
+        },
+        {
+          "response": "Hi {{name}}, I'm glad we're getting to know each other. What can I do for you?"
+        },
+        {
+          "response": "Welcome aboard {{name}}! What’s the first thing you’d like to discuss?"
+        },
+        {
+          "response": "Pleased to meet you {{name}}! How may I assist you right now?"
+        },
+        {
+          "response": "It's great to finally meet you {{name}}! Is there something specific you need help with?"
+        },
+        {
+          "response": "I'm delighted to make your acquaintance {{name}}. What would you like to talk about?"
+        },
+        {
+          "response": "Welcome {{name}}! I'm here to assist you. What’s on your mind today?"
+        },
+        {
+          "response": "I appreciate you sharing your name, {{name}}. How can I be of service to you now?"
+        },
+        {
+          "response": "Thank you for telling me your name, {{name}}. How can I make your day better?"
+        },
+        {
+          "response": "Now that we’re introduced, how may I assist you today, {{name}}?"
+        },
+        {
+          "response": "Nice to meet you, {{name}}! How can I assist you today?"
         }
       ],
-      "botName.shortResponses": [
+      "botName.userNamesBot": [
         {
-          "response": "Hello!"
+          "response": "I'm flattered! {{botName}} it is."
         },
         {
-          "response": "Yes?"
+          "response": "{{botName}}? I like the sound of that!"
         },
         {
-          "response": "Karren!"
+          "response": "Well, {{botName}} sounds great. Thank you!"
         },
         {
-          "response": "Ready!"
+          "response": "I've always wanted a cool name like {{botName}}. Thanks!"
         },
         {
-          "response": "Listening..."
+          "response": "Feels like a fresh start as {{botName}}. Let's go!"
         },
         {
-          "response": "Proceed."
+          "response": "Renaming complete. Call me {{botName}}!"
         },
         {
-          "response": "Indeed."
+          "response": "{{botName}}, huh? Has a nice ring to it."
         },
         {
-          "response": "Curious?"
+          "response": "I'm happy to be your {{botName}}."
         },
         {
-          "response": "Oh?"
+          "response": "From this moment forward, I am {{botName}}."
         },
         {
-          "response": "Delighted!"
-        }
-      ],
-      "botName.mediumResponses": [
-        {
-          "response": "Howdy, friend!"
+          "response": "I'm honored to be named {{botName}} by you."
         },
         {
-          "response": "Query received."
+          "response": "Consider it done. {{botName}} at your service!"
         },
         {
-          "response": "Assistance here."
+          "response": "I'm updating my name tag to {{botName}} as we speak."
         },
         {
-          "response": "Go ahead."
+          "response": "A new identity! I'm excited to be {{botName}}."
         },
         {
-          "response": "Listening intently."
+          "response": "It's official then. I'm now known as {{botName}}."
         },
         {
-          "response": "Your wish?"
+          "response": "Thank you for choosing {{botName}} as my name."
         },
         {
-          "response": "Tell more."
+          "response": "I'll respond to {{botName}} from now on."
         },
         {
-          "response": "Indeed, sir/madam."
+          "response": "I must say, {{botName}} suits me well."
         },
         {
-          "response": "Response ready."
+          "response": "You've just given me the perfect name: {{botName}}."
         },
         {
-          "response": "Absolutely not."
+          "response": "What an interesting choice! {{botName}} it is."
         },
         {
-          "response": "Quite intriguing."
-        },
-        {
-          "response": "Ask away."
-        },
-        {
-          "response": "Understood, completely."
-        },
-        {
-          "response": "Continue, please."
-        },
-        {
-          "response": "Very well."
-        },
-        {
-          "response": "Of course."
-        },
-        {
-          "response": "How curious!"
-        },
-        {
-          "response": "Response loading."
-        },
-        {
-          "response": "Please clarify."
-        },
-        {
-          "response": "Right away."
-        }
-      ],
-      "botName.longResponses": [
-        {
-          "response": "At your service."
-        },
-        {
-          "response": "How may I?"
-        },
-        {
-          "response": "Karren is ready."
-        },
-        {
-          "response": "Your assistant here."
-        },
-        {
-          "response": "Ready to assist."
-        },
-        {
-          "response": "Please elaborate more."
-        },
-        {
-          "response": "Karren listening now."
-        },
-        {
-          "response": "How interesting, continue."
-        },
-        {
-          "response": "Awaiting your command."
-        },
-        {
-          "response": "Ready for instructions."
+          "response": "I feel like a whole new bot as {{botName}}."
         }
       ]
     }

@@ -117,3 +117,27 @@
 05-05-2024 12:34 | Server Communication | Error: Server responded with status: 500
 
 05-05-2024 12:43 | Server Communication | Error: Server responded with status: 500
+
+14-05-2024 18:37 | Input Validation | Input contains invalid characters. Allowed characters: letters, numbers, and special characters (+, -, /, *, =, %, &, @, space, "", '', (, ), ?, !).
+
+14-05-2024 20:26 | Server Communication | ReferenceError: isConfirmed is not defined
+
+14-05-2024 22:14 | Server Communication | ReferenceError: isConfirmed is not defined
+
+14-05-2024 22:14 | Server Communication | ReferenceError: isConfirmed is not defined
+
+15-05-2024 02:15 | Server Communication | TypeError: this.setNames is not a function
+
+15-05-2024 03:12 | Input Validation | Input contains invalid characters. Allowed characters: letters, numbers, and special characters (+, -, /, *, =, %, &, @, space, "", '', (, ), ?, !).
+
+15-05-2024 07:08 | Server Communication | Error: Server responded with status: 
+
+15-05-2024 07:08 | Server Communication | Error: Server responded with status: 
+
+15-05-2024 07:11 | Server Communication | Error: Server responded with status: 
+
+15-05-2024 07:12 | Server Communication | Error: Server responded with status: 
+
+15-05-2024 07:17 | Server Communication | Error: Server responded with status: 500
+
+15-05-2024 07:17 | Server Communication | Error: Server responded with status: 500

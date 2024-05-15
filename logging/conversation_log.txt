@@ -3310,3 +3310,1063 @@ bot | Hello!
 09-05-2024 17:04 | Maksim: Maksim
 
 09-05-2024 17:04 | Bot: Hello Maksim, how can I help you today?
+
+12-05-2024 12:01 | Maksim: Maksim
+
+12-05-2024 12:01 | Bot: Hello Maksim, how can I help you today?
+
+13-05-2024 11:45 | Maksim: Maksim
+
+13-05-2024 11:45 | Bot: Hello Maksim, how can I help you today?
+
+13-05-2024 11:45 | Maksim: Chat Start
+
+13-05-2024 11:45 | Bot: Greetings! How may I be of service?
+
+13-05-2024 11:50 | Chat Start: Maksim
+
+13-05-2024 11:50 | Bot: I'm not sure how to respond to that.
+
+13-05-2024 11:50 | Guest: Maksim
+
+13-05-2024 11:50 | Bot: Hello Maksim, how can I help you today?
+
+13-05-2024 11:55 | Maksim: Maksim
+
+13-05-2024 11:55 | Bot: I'm not sure how to respond to that.
+
+13-05-2024 11:55 | Guest: Start Chat
+
+13-05-2024 11:55 | Bot: At your service! How can I assist?
+
+13-05-2024 11:55 | Guest: My name is Maksim
+
+13-05-2024 11:55 | Bot: Karren here, your trusty digital sidekick! What’s on your mind that I can help with?
+
+13-05-2024 11:57 | Guest: Maksim
+
+13-05-2024 11:57 | Bot: I'm not sure how to respond to that.
+
+13-05-2024 12:03 | Guest: Maksim
+
+13-05-2024 12:03 | Bot: I'm not sure how to respond to that.
+
+13-05-2024 12:03 | Guest: Start chat
+
+13-05-2024 12:03 | Bot: Good to meet you! What can I do for you?
+
+13-05-2024 12:04 | Guest: My name is Maksim
+
+13-05-2024 12:04 | Bot: Boooooot Boooooot Booooot? Sounds like you’re calling! Karren at your service, how may I assist you today?
+
+13-05-2024 12:04 | Guest: Who is Maksim
+
+13-05-2024 12:04 | Bot: Hi, how are?
+
+13-05-2024 12:05 | Guest: Identity of Maksim
+
+13-05-2024 12:05 | Bot: I'm not sure how to respond to that.
+
+13-05-2024 12:14 | Guest: Maksim
+
+13-05-2024 12:14 | Bot: Hello Maksim, how can I help you today?
+
+13-05-2024 12:14 | Maksim: Your name is Tatjana
+
+13-05-2024 12:14 | Bot: Boooooot Boooooot Booooot? Sounds like you’re calling! Karren at your service, how may I assist you today?
+
+13-05-2024 12:15 | Your name is Tatjana: Maksim
+
+13-05-2024 12:15 | Bot: Hello Maksim, how can I help you today?
+
+13-05-2024 12:15 | Maksim: Your name is Tatjana
+
+13-05-2024 12:15 | Bot: Boooooot Boooooot Booooot? Sounds like you’re calling! Karren at your service, how may I assist you today?
+
+13-05-2024 12:37 | Your name is Tatjana: Maksim
+
+13-05-2024 12:37 | Bot: Hello Maksim, how can I help you today?
+
+13-05-2024 12:37 | Maksim: Your name is Tatjana
+
+13-05-2024 12:37 | Bot: Bot, Bot, Bot? That's me! Ready to roll out the red carpet for your questions!
+
+13-05-2024 14:48 | Your name is Tatjana: Maksim
+
+13-05-2024 14:48 | Bot: Hello Maksim, how can I help you today?
+
+13-05-2024 14:49 | Maksim: You are Tatjana
+
+13-05-2024 14:49 | Bot: I'm all ears. What do you need to know?
+
+13-05-2024 17:43 | You are Tatjana: Maksim
+
+13-05-2024 17:43 | Bot: Hello Maksim, how can I help you today?
+
+13-05-2024 17:44 | Maksim: Bot Tatjana you
+
+13-05-2024 17:44 | Bot: Hi! How can I assist you today?
+
+13-05-2024 17:47 | Bot Tatjana you: Maksim
+
+13-05-2024 17:47 | Bot: Hello Maksim, how can I help you today?
+
+13-05-2024 17:48 | Maksim: Bot Tatjana you
+
+13-05-2024 17:48 | Bot: Thanks, I'm now known as Tatjana. How can I assist you further?
+
+13-05-2024 17:54 | Maksim: Maksim
+
+13-05-2024 17:54 | Bot: Hello Maksim, how can I help you today?
+
+13-05-2024 17:54 | User: Bot Tatjana you
+
+13-05-2024 17:54 | Bot: Thanks, I'm now known as Tatjana. How can I assist you further?
+
+13-05-2024 18:01 | Maksim: Maksim
+
+13-05-2024 18:01 | Tatjana: Hello Maksim, how can I help you today?
+
+13-05-2024 18:01 | Maksim: Bot Tatjana you
+
+13-05-2024 18:01 | Bot: Thanks, I'm now known as Tatjana. How can I assist you further?
+
+13-05-2024 18:33 | Maksim: Maksim
+
+13-05-2024 18:33 | Tatjana: Hello Maksim, how can I help you today?
+
+13-05-2024 18:33 | Maksim: Bot Tatjana you
+
+13-05-2024 18:33 | Tatjana: Thanks, I'm now known as Tatjana. How can I assist you further?
+
+13-05-2024 19:03 | Maksim: Maksim
+
+13-05-2024 19:03 | Tatjana: Hello Maksim, how can I help you today?
+
+13-05-2024 19:05 | Maksim: Maksim
+
+13-05-2024 19:05 | Tatjana: Hello Maksim, how can I help you today?
+
+13-05-2024 19:06 | Maksim: Bot Tatjana you
+
+13-05-2024 19:06 | Tatjana: Thanks, I'm now known as Tatjana. How can I assist you further?
+
+13-05-2024 21:19 | Maksim: Maksim
+
+13-05-2024 21:19 | Tatjana: Hello Maksim, how can I help you today?
+
+13-05-2024 21:19 | Maksim: Bot Tatjana you
+
+13-05-2024 21:19 | Tatjana: Thanks, I'm now known as Tatjana. How can I assist you further?
+
+13-05-2024 21:58 | Maksim: Maksim
+
+13-05-2024 21:58 | Tatjana: Hello Maksim, how can I help you today?
+
+13-05-2024 21:59 | Maksim: Maksim
+
+13-05-2024 21:59 | Tatjana: Hello Maksim, how can I help you today?
+
+13-05-2024 22:00 | Maksim: Bot Tatjana you
+
+13-05-2024 22:00 | Tatjana: Thanks, I'm now known as Tatjana. How can I assist you further?
+
+13-05-2024 22:34 | Maksim: Maksim
+
+13-05-2024 22:34 | Tatjana: Hello Maksim, how can I help you today?
+
+13-05-2024 22:35 | Maksim: Bot Tatjana you
+
+13-05-2024 22:35 | Tatjana: Thanks, I'm now known as Tatjana. How can I assist you further?
+
+14-05-2024 10:55 | Maksim: Maksim
+
+14-05-2024 10:55 | Tatjana: Hello Maksim, how can I help you today?
+
+14-05-2024 10:58 | Maksim: Tatjana
+
+14-05-2024 10:58 | Tatjana: Hello Tatjana, how can I help you today?
+
+14-05-2024 10:58 | Maksim: Bot Tatjana you
+
+14-05-2024 10:58 | Tatjana: Thanks, I'm now known as Tatjana. How can I assist you further?
+
+14-05-2024 10:59 | Maksim: My name is Maksim
+
+14-05-2024 10:59 | Tatjana: Hello Maksim, how can I help you today?
+
+14-05-2024 11:00 | Maksim: My name is Maksim
+
+14-05-2024 11:00 | Tatjana: Hello Maksim, how can I help you today?
+
+14-05-2024 11:01 | Maksim: My name is Maksim
+
+14-05-2024 11:01 | Tatjana: Hello Maksim, how can I help you today?
+
+14-05-2024 11:05 | Maksim: Bot Tatjana you
+
+14-05-2024 11:05 | Tatjana: Thanks, I'm now known as Tatjana. How can I assist you further?
+
+14-05-2024 11:34 | Maksim: My name is Maksim
+
+14-05-2024 11:34 | Tatjana: I'm Karren, your virtual assistant with a zest for life and a knack for assistance. What adventure are we embarking on today?
+
+14-05-2024 11:35 | Maksim: Maksim
+
+14-05-2024 11:35 | Tatjana: Sorry, I didn't understand that.
+
+14-05-2024 11:36 | Maksim: Maksim
+
+14-05-2024 11:36 | Tatjana: Sorry, I didn't understand that.
+
+14-05-2024 11:45 | Maksim: My name is Maksim
+
+14-05-2024 11:45 | Tatjana: Hello Maksim, how can I help you today?
+
+14-05-2024 11:45 | Maksim: Bot Tatjana you
+
+14-05-2024 11:45 | Tatjana: Greetings! Ready to help you out.
+
+14-05-2024 11:54 | Maksim: My name is Maksim
+
+14-05-2024 11:54 | Tatjana: Name already set. To change it, please use the reset command.
+
+14-05-2024 11:54 | Maksim: My name is Tatjana
+
+14-05-2024 11:54 | Tatjana: Name already set. To change it, please use the reset command.
+
+14-05-2024 11:54 | Maksim: Bot Tatjana you
+
+14-05-2024 11:54 | Tatjana: Name already set. To change it, please use the reset command.
+
+14-05-2024 13:53 | User: My name is Maksim
+
+14-05-2024 13:53 | Bot: Name already set. To change it, please use the reset command.
+
+14-05-2024 13:59 | User: Bot Tatjana you
+
+14-05-2024 13:59 | Bot: Name already set. To change it, please use the reset command.
+
+14-05-2024 14:01 | User: My name is Maksim
+
+14-05-2024 14:01 | Bot: Name already set. To change it, please use the reset command.
+
+14-05-2024 14:06 | User: My name is Maksim
+
+14-05-2024 14:06 | Bot: Name already set. To change it, please use the reset command.
+
+14-05-2024 14:06 | User: My name is Maksim
+
+14-05-2024 14:06 | Bot: Name already set. To change it, please use the reset command.
+
+14-05-2024 14:07 | User: My name is Maksim
+
+14-05-2024 14:07 | Bot: There was an error processing your message.
+
+14-05-2024 14:10 | User: My name is Maksim
+
+14-05-2024 14:10 | Bot: Name already set. To change it, please use the reset command.
+
+14-05-2024 14:16 | User: Bot Tatjana you
+
+14-05-2024 14:16 | Bot: There was an error processing your message.
+
+14-05-2024 15:10 | User: My name is Maksim
+
+14-05-2024 15:10 | Bot: Name already set. To change it, please use the reset command.
+
+14-05-2024 15:15 | User: Bot Tatjana you
+
+14-05-2024 15:15 | Bot: Name already set. To change it, please use the reset command.
+
+14-05-2024 15:16 | User: My name is Maksim
+
+14-05-2024 15:16 | Bot: Name already set. To change it, please use the reset command.
+
+14-05-2024 15:24 | User: My name is Maksim
+
+14-05-2024 15:24 | Bot: Name already set. To change it, please use the reset command.
+
+14-05-2024 15:24 | User: My name is Maksim
+
+14-05-2024 15:24 | Bot: Name already set. To change it, please use the reset command.
+
+14-05-2024 15:26 | User: My name is Maksim
+
+14-05-2024 15:26 | Bot: There was an error processing your message.
+
+14-05-2024 15:30 | User: My name is Maksim
+
+14-05-2024 15:30 | Bot: Name already set. To change it, please use the reset command.
+
+14-05-2024 15:30 | User: Bot Tatjana you
+
+14-05-2024 15:30 | Bot: Name already set. To change it, please use the reset command.
+
+14-05-2024 15:45 | User: My name is maksim
+
+14-05-2024 15:45 | Bot: Name already set. To change it, please use the reset command.
+
+14-05-2024 16:10 | User: My name is Maksim
+
+14-05-2024 16:10 | Bot: Name already set. To change it, please use the reset command.
+
+14-05-2024 16:11 | User: Bot Tatjana you
+
+14-05-2024 16:11 | Bot: Name already set. To change it, please use the reset command.
+
+14-05-2024 16:13 | User: My name is Tatjana
+
+14-05-2024 16:13 | Bot: Name already set. To change it, please use the reset command.
+
+14-05-2024 16:14 | User: My name is Adolf
+
+14-05-2024 16:14 | Bot: Name already set. To change it, please use the reset command.
+
+14-05-2024 16:18 | User: My name is Maksim
+
+14-05-2024 16:18 | Bot: User name set to: Maksim
+
+14-05-2024 16:18 | User: Bot Tatjana you
+
+14-05-2024 16:18 | Bot: Bot name set to: Tatjana
+
+14-05-2024 16:19 | User: My name is Maksim
+
+14-05-2024 16:19 | Bot: Name already set. To change it, please use the reset command.
+
+14-05-2024 16:19 | User: Bot Tatjana you
+
+14-05-2024 16:19 | Bot: Bot name already set. To change it, please use the reset command.
+
+14-05-2024 16:24 | User: Maksim
+
+14-05-2024 16:24 | Bot: User name set to: Maksim
+
+14-05-2024 16:49 | User: Hello
+
+14-05-2024 16:49 | Bot: Name already set. To change it, please use the reset command.
+
+14-05-2024 16:54 | User: Bot Tatjana you
+
+14-05-2024 16:54 | Bot: Bot name set to: Tatjana
+
+14-05-2024 17:35 | User: My name is Maksim
+
+14-05-2024 17:35 | Bot: User name set to: Maksim
+
+14-05-2024 17:35 | User: My name is Maksim
+
+14-05-2024 17:35 | Bot: User name set to: Maksim
+
+14-05-2024 17:36 | User: My name is Maksim
+
+14-05-2024 17:36 | Bot: User name set to: Maksim
+
+14-05-2024 17:49 | User: My name is Maksim
+
+14-05-2024 17:49 | Bot: Bot, Bot, Bot? That's me! Ready to roll out the red carpet for your questions!
+
+14-05-2024 18:18 | Maksim: Bot Tatjana you
+
+14-05-2024 18:18 | Bot: Listening... What do you need?
+
+14-05-2024 18:25 | Bot Tatjana you: My name is Maksim
+
+14-05-2024 18:25 | Bot: Echo, echo, echo... Karren’s the name, and I’m all ears for your queries!
+
+14-05-2024 18:25 | Maksim: Bot Tatjana you
+
+14-05-2024 18:25 | Bot: Greetings! Ready to help you out.
+
+14-05-2024 18:29 | Bot Tatjana you: My name is Maksim
+
+14-05-2024 18:29 | Bot: Boooooot Boooooot Booooot? Sounds like you’re calling! Karren at your service, how may I assist you today?
+
+14-05-2024 18:29 | Maksim: Bot Tatjana you
+
+14-05-2024 18:29 | Bot: Hey there! How can I help?
+
+14-05-2024 18:37 | Bot Tatjana you: My name is Maksim
+
+14-05-2024 18:37 | Bot: Karren here, your trusty digital sidekick! What’s on your mind that I can help with?
+
+14-05-2024 18:38 | Maksim: My name is Maksim
+
+14-05-2024 18:38 | Bot: Boooooot Boooooot Booooot? Sounds like you’re calling! Karren at your service, how may I assist you today?
+
+14-05-2024 18:39 | Maksim: Bot Tatjana you
+
+14-05-2024 18:39 | Bot: Ready to chat! What's your question?
+
+14-05-2024 18:39 | Bot Tatjana you: Hello
+
+14-05-2024 18:39 | Bot: Howdy, partner!
+
+14-05-2024 18:53 | Hello: My name is Maksim
+
+14-05-2024 18:53 | Bot: Karren here, your trusty digital sidekick! What’s on your mind that I can help with?
+
+14-05-2024 18:55 | Guest: My name is Maksim
+
+14-05-2024 18:55 | Bot: Bot, Bot, Bot? That's me! Ready to roll out the red carpet for your questions!
+
+14-05-2024 18:58 | Guest: My name is Maksim
+
+14-05-2024 18:58 | Bot: I'm Karren, your virtual assistant with a zest for life and a knack for assistance. What adventure are we embarking on today?
+
+14-05-2024 19:05 | Guest: My name is Maksim
+
+14-05-2024 19:05 | Bot: Bot, Bot, Bot? That's me! Ready to roll out the red carpet for your questions!
+
+14-05-2024 19:11 | Maksim: My name is maksim
+
+14-05-2024 19:11 | Bot: There was an error processing your message.
+
+14-05-2024 19:13 | Maksim: My name is Maksim
+
+14-05-2024 19:13 | Bot: Boooooot Boooooot Booooot? Sounds like you’re calling! Karren at your service, how may I assist you today?
+
+14-05-2024 19:14 | Maksim: Bot Tatjana you
+
+14-05-2024 19:14 | Bot: Yes, I'm here. How can I help you?
+
+14-05-2024 19:18 | Maksim: My name is Maksim
+
+14-05-2024 19:18 | Bot: Karren here, your trusty digital sidekick! What’s on your mind that I can help with?
+
+14-05-2024 19:19 | Maksim: My name is Maksim
+
+14-05-2024 19:19 | Bot: Karren here, your trusty digital sidekick! What’s on your mind that I can help with?
+
+14-05-2024 19:21 | Maksim: My name is Maksim
+
+14-05-2024 19:21 | Bot: Karren here, your trusty digital sidekick! What’s on your mind that I can help with?
+
+14-05-2024 19:35 | Maksim: My name is Maksim
+
+14-05-2024 19:35 | Bot: Bot, Bot, Bot? That's me! Ready to roll out the red carpet for your questions!
+
+14-05-2024 19:35 | Maksim: Bot Tatjana you
+
+14-05-2024 19:35 | Bot: Good to meet you! What can I do for you?
+
+14-05-2024 19:36 | Bot Tatjana you: My name is Maksim
+
+14-05-2024 19:36 | Bot: Bot, Bot, Bot? That's me! Ready to roll out the red carpet for your questions!
+
+14-05-2024 19:39 | Maksim: My name is Maksim
+
+14-05-2024 19:39 | Bot: Maksim, greetings!
+
+14-05-2024 19:45 | Maksim: Bot Tatjana you
+
+14-05-2024 19:45 | Bot: Welcome! How can I assist you today?
+
+14-05-2024 20:04 | Tatjana: My name is Maksim
+
+14-05-2024 20:04 | Bot: Hi, pleasure here with you, Maksim!
+
+14-05-2024 20:08 | Maksim: Maksim
+
+14-05-2024 20:08 | Bot: Ni hao!
+
+14-05-2024 20:09 | Maksim: My name is Maksim
+
+14-05-2024 20:09 | Bot: Nice one Maksim!
+
+14-05-2024 20:15 | Maksim: My name is Maksim
+
+14-05-2024 20:15 | Bot: Greetings, how are you, Maksim?
+
+14-05-2024 20:18 | Maksim: My name is Maksim
+
+14-05-2024 20:18 | Bot: I appreciate you sharing your name, Maksim. How can I be of service to you now?
+
+14-05-2024 20:25 | Maksim: My name is Maksim
+
+14-05-2024 20:25 | Bot: Welcome aboard Maksim! What’s the first thing you’d like to discuss?
+
+14-05-2024 20:26 | Maksim: My name is Maksim
+
+14-05-2024 20:26 | Bot: Hello, nice meeting you, Maksim!
+
+14-05-2024 22:14 | Maksim: My name is maksim
+
+14-05-2024 22:14 | Bot: Hello, nice meeting you, Maksim!
+
+14-05-2024 22:14 | Maksim: My name is Maksim
+
+14-05-2024 22:14 | Bot: Welcome Maksim.
+
+14-05-2024 22:15 | Maksim: My name is Maksim
+
+14-05-2024 22:15 | Bot: Hello, nice meeting you, Maksim!
+
+15-05-2024 01:37 | Maksim: My name is Maksim
+
+15-05-2024 01:37 | Bot: Maksim, noted.
+
+15-05-2024 01:40 | Maksim: Your name is now Tatjana
+
+15-05-2024 01:40 | Bot: Welcome aboard, Tatjana!
+
+15-05-2024 01:40 | Tatjana: My name is Adolf
+
+15-05-2024 01:40 | Bot: Hello, nice meeting you, Adolf!
+
+15-05-2024 01:41 | Adolf: My name is Maksim
+
+15-05-2024 01:41 | Bot: Welcome Maksim! I'm here to assist you. What’s on your mind today?
+
+15-05-2024 01:46 | Maksim: My name is Maksim
+
+15-05-2024 01:46 | Bot: Welcome, start chatting, Maksim!
+
+15-05-2024 01:46 | Maksim: Bot Tatjana you
+
+15-05-2024 01:46 | Bot: Greetings! How may I be of service?
+
+15-05-2024 01:54 | Tatjana: My name is Maksim
+
+15-05-2024 01:54 | Bot: Now that we’re introduced, how may I assist you today, Maksim?
+
+15-05-2024 01:54 | Maksim: Bot Tatjana you
+
+15-05-2024 01:54 | Bot: Hi! How can I assist you today?
+
+15-05-2024 01:55 | Tatjana: Hello
+
+15-05-2024 01:55 | Bot: Hallo!
+
+15-05-2024 02:02 | Vello: My name is Maksim
+
+15-05-2024 02:02 | Bot: Greetings, what's next Maksim?
+
+15-05-2024 02:03 | Maksim: My name is Maksim
+
+15-05-2024 02:03 | Bot: It's received, Maksim.
+
+15-05-2024 02:04 | Maksim: Bot Tatjana you
+
+15-05-2024 02:04 | Bot: Listening... What do you need?
+
+15-05-2024 02:06 | Tatjana: My name is Maksim
+
+15-05-2024 02:06 | Bot: Listening... What do you need, Maksim?
+
+15-05-2024 02:06 | Maksim: Bot Tatjana you
+
+15-05-2024 02:06 | Bot: Listening... What do you need, Tatjana?
+
+15-05-2024 02:09 | Tatjana: My name is Maksim
+
+15-05-2024 02:09 | Bot: Nice to meet you, Maksim. How can I help?
+
+15-05-2024 02:09 | Maksim: Bot Tatjana you
+
+15-05-2024 02:09 | Bot: Alright, you can call me Tatjana now. What do you need?
+
+15-05-2024 02:15 | Bot Tatjana you: My name is Maksim
+
+15-05-2024 02:15 | Bot: Nice to meet you, Maksim. How can I help?
+
+15-05-2024 02:18 | Bot Tatjana you: My name is Maksim
+
+15-05-2024 02:18 | Bot: Nice to meet you, Maksim. How can I help?
+
+15-05-2024 02:18 | Maksim: Bot Tatjana you
+
+15-05-2024 02:18 | Bot: Alright, you can call me Tatjana now. What do you need?
+
+15-05-2024 02:20 | Bot Tatjana you: My name is Maksim
+
+15-05-2024 02:20 | Bot: Nice to meet you, Maksim. How can I help?
+
+15-05-2024 02:20 | Bot Tatjana you: Bot Tatjana you
+
+15-05-2024 02:20 | Bot: Alright, you can call me Tatjana now. What do you need?
+
+15-05-2024 02:29 | Bot Tatjana you: My name is Maksim
+
+15-05-2024 02:29 | Bot: Nice to meet you, Maksim. How can I help?
+
+15-05-2024 02:29 | Bot Tatjana you: Bot Tatjana you
+
+15-05-2024 02:29 | Bot: Alright, you can call me Tatjana now. What do you need?
+
+15-05-2024 02:36 | Bot Tatjana you: My name is Maksim
+
+15-05-2024 02:36 | Bot: Nice to meet you, Maksim. How can I help?
+
+15-05-2024 02:36 | Bot Tatjana you: Hello
+
+15-05-2024 02:36 | Bot: Nice to meet you, Hello. How can I help?
+
+15-05-2024 02:37 | Bot Tatjana you: Bot Tatjana you
+
+15-05-2024 02:37 | Bot: Alright, you can call me Tatjana now. What do you need?
+
+15-05-2024 02:42 | Bot Tatjana you: My name is Maksim
+
+15-05-2024 02:42 | Bot: Hello Maksim, nice to meet you! How can I assist you?
+
+15-05-2024 02:42 | Bot Tatjana you: Bot Tatjana you
+
+15-05-2024 02:42 | Bot: Here to help! What's your query?
+
+15-05-2024 02:44 | Bot Tatjana you: My name is Maksim
+
+15-05-2024 02:44 | Bot: Welcome, start chatting, Maksim!
+
+15-05-2024 02:44 | Bot Tatjana you: Bot Tatjana you
+
+15-05-2024 02:44 | Bot: Listening... What do you need?
+
+15-05-2024 02:48 | Bot Tatjana you: My name is Maksim
+
+15-05-2024 02:48 | Bot: Welcome aboard, Maksim!
+
+15-05-2024 02:48 | Bot Tatjana you: Bot Tatjana you
+
+15-05-2024 02:48 | Bot: Listening... What do you need?
+
+15-05-2024 02:53 | Bot Tatjana you: My name is Maksim
+
+15-05-2024 02:53 | Bot: Greetings, how are you, Maksim?
+
+15-05-2024 02:58 | Bot Tatjana you: My name is Maksim
+
+15-05-2024 02:58 | Bot: Maksim, welcome, let’s begin!
+
+15-05-2024 03:06 | Bot Tatjana you: My name is Maksim
+
+15-05-2024 03:06 | Bot: Hi Maksim, I'm glad we're getting to know each other. What can I do for you?
+
+15-05-2024 03:06 | Bot Tatjana you: Bot Tatjana you
+
+15-05-2024 03:06 | Bot: I'm all ears. What do you need to know?
+
+15-05-2024 03:12 | Bot Tatjana you: My name is Maksim
+
+15-05-2024 03:12 | Bot: Maksim, welcome, let’s begin!
+
+15-05-2024 03:15 | Bot Tatjana you: My name is Maksim
+
+15-05-2024 03:15 | Bot: Good meeting you, Maksim!
+
+15-05-2024 03:22 | Bot Tatjana you: My name is Maksim
+
+15-05-2024 03:22 | Bot: Hello Maksim!
+
+15-05-2024 03:24 | Bot Tatjana you: My name is Maksim
+
+15-05-2024 03:24 | Bot: Well met, Maksim!
+
+15-05-2024 03:25 | Bot Tatjana you: Bot Tatjana you
+
+15-05-2024 03:25 | Bot: Good to meet you! What can I do for you?
+
+15-05-2024 03:29 | Bot Tatjana you: My name is Maksim
+
+15-05-2024 03:29 | Bot: Nice one Maksim!
+
+15-05-2024 03:29 | Bot Tatjana you: Bot Tatjana you
+
+15-05-2024 03:29 | Bot: Welcome! What brings you here?
+
+15-05-2024 03:36 | Bot Tatjana you: My name is Maksim
+
+15-05-2024 03:36 | Bot: Well met, Maksim!
+
+15-05-2024 03:37 | Bot Tatjana you: Can i rename you to Tatjana
+
+15-05-2024 03:37 | Bot: Here to help! What's your query?
+
+15-05-2024 03:40 | Bot Tatjana you: My name is Maksim
+
+15-05-2024 03:40 | Bot: Maksim, recorded!
+
+15-05-2024 03:41 | Bot Tatjana you: Bot Tatjana you
+
+15-05-2024 03:41 | Bot: Good to meet you! What can I do for you?
+
+15-05-2024 03:45 | Bot Tatjana you: My name is Maksim
+
+15-05-2024 03:45 | Bot: Pleased to meet you Maksim! How may I assist you right now?
+
+15-05-2024 03:47 | Bot Tatjana you: My name is Maksim
+
+15-05-2024 03:47 | Bot: Hi, good day, Maksim!
+
+15-05-2024 03:52 | Bot Tatjana you: My name is Maksim
+
+15-05-2024 03:52 | Bot: Hello there, Maksim!
+
+15-05-2024 03:52 | Bot Tatjana you: Bot Tatjana you
+
+15-05-2024 03:52 | Bot: Hello! Let's solve some problems, shall we?
+
+15-05-2024 03:53 | Bot Tatjana you: My name is Maksim
+
+15-05-2024 03:53 | Bot: Hello, glad meeting you, Maksim!
+
+15-05-2024 03:55 | Bot Tatjana you: Bot Tatjana you
+
+15-05-2024 03:55 | Bot: Ready to chat! What's your question?
+
+15-05-2024 03:56 | Bot Tatjana you: My name is Maksim
+
+15-05-2024 03:56 | Bot: Welcome Maksim.
+
+15-05-2024 03:57 | Maksim: Bot Tatjana you
+
+15-05-2024 03:57 | Bot: Welcome! How can I assist you today?
+
+15-05-2024 04:07 | Maksim: My name is Maksim
+
+15-05-2024 04:07 | Bot: Thank you for telling me your name, Maksim. How can I make your day better?
+
+15-05-2024 04:07 | Maksim: Bot Tatjana you
+
+15-05-2024 04:07 | Bot: Listening... What do you need?
+
+15-05-2024 04:08 | Maksim: Start
+
+15-05-2024 04:08 | Bot: Hey there! How can I help?
+
+15-05-2024 04:19 | Maksim: My name is Maksim
+
+15-05-2024 04:19 | Bot: Nice to meet you, Maksim! How can I assist you today?
+
+15-05-2024 04:19 | Maksim: Bot Tatjana you
+
+15-05-2024 04:19 | Bot: Yes, I'm here. How can I help you?
+
+15-05-2024 04:21 | Maksim: Hello
+
+15-05-2024 04:21 | Bot: Stay blessed!
+
+15-05-2024 04:38 | Maksim: My name is Maksim
+
+15-05-2024 04:38 | Bot: Well met, Maksim!
+
+15-05-2024 04:38 | Maksim: Bot Tatjana you
+
+15-05-2024 04:38 | Bot: Yes, ready to chat. What's up?
+
+15-05-2024 04:45 | Maksim: My name is Maksim
+
+15-05-2024 04:45 | Bot: It's received, Maksim.
+
+15-05-2024 04:45 | Maksim: Bot Tatjana you
+
+15-05-2024 04:45 | Bot: Now that we’re introduced, how may I assist you today, Tatjana?
+
+15-05-2024 04:59 | Maksim: My name is Maksim
+
+15-05-2024 04:59 | Bot: Welcome, good start, Maksim!
+
+15-05-2024 04:59 | Maksim: Bot Tatjana you
+
+15-05-2024 04:59 | Bot: Acknowledged, Tatjana.
+
+15-05-2024 05:04 | Maksim: My name is Maksim
+
+15-05-2024 05:04 | Bot: Hi Maksim, I'm glad we're getting to know each other. What can I do for you?
+
+15-05-2024 05:04 | Maksim: Bot Tatjana you
+
+15-05-2024 05:04 | Bot: Welcome Tatjana.
+
+15-05-2024 05:09 | Maksim: My name is Maksim
+
+15-05-2024 05:09 | Bot: It's great to finally meet you Maksim! Is there something specific you need help with?
+
+15-05-2024 05:10 | Maksim: Bot Tatjana you
+
+15-05-2024 05:10 | Bot: Tatjana, recorded!
+
+15-05-2024 05:10 | Maksim: Hello
+
+15-05-2024 05:10 | Bot: Nice to meet you, Vello! How can I assist you today?
+
+15-05-2024 05:19 | Maksim: My name is Maksim
+
+15-05-2024 05:19 | Bot: Hi Maksim, I'm glad we're getting to know each other. What can I do for you?
+
+15-05-2024 05:19 | Maksim: Bot Tatjana you
+
+15-05-2024 05:19 | Bot: Welcome, good start, Tatjana!
+
+15-05-2024 05:21 | Maksim: My name is Maksim
+
+15-05-2024 05:21 | Bot: Hello there, Maksim!
+
+15-05-2024 05:21 | Maksim: Bot Tatjana you
+
+15-05-2024 05:21 | Bot: Welcome, start chatting, Tatjana!
+
+15-05-2024 05:55 | Maksim: My name is Maksim
+
+15-05-2024 05:55 | Bot: Welcome Maksim.
+
+15-05-2024 05:55 | Maksim: My name is Tatjana
+
+15-05-2024 05:55 | Bot: Hello Tatjana, nice to meet you! How can I assist you?
+
+15-05-2024 06:25 | Maksim: My name is Maksim
+
+15-05-2024 06:25 | Bot: Acknowledged, Maksim.
+
+15-05-2024 06:25 | Maksim: Hello
+
+15-05-2024 06:25 | Bot: Hello, nice meeting you, Vello!
+
+15-05-2024 06:27 | Maksim: My name is Maksim
+
+15-05-2024 06:27 | Bot: Well met, Maksim!
+
+15-05-2024 06:28 | Maksim: I'm feeling inspired to call you Tatjana
+
+15-05-2024 06:28 | Bot: Greetings, how are you, Tatjana?
+
+15-05-2024 06:39 | Maksim: My name is Maksim
+
+15-05-2024 06:39 | Bot: Hi again, Maksim!
+
+15-05-2024 06:40 | Maksim: Bot Tatjana you
+
+15-05-2024 06:40 | Bot: Now that we’re introduced, how may I assist you today, Tatjana?
+
+15-05-2024 06:43 | Maksim: My name is Maksim
+
+15-05-2024 06:43 | Bot: Maksim, greetings!
+
+15-05-2024 06:44 | Maksim: Bot Tatjana you
+
+15-05-2024 06:44 | Bot: Well met, Tatjana!
+
+15-05-2024 06:50 | Maksim: My name is Maksim
+
+15-05-2024 06:50 | Bot: I appreciate you sharing your name, Maksim. How can I be of service to you now?
+
+15-05-2024 06:50 | Maksim: Bot Tatjana you
+
+15-05-2024 06:50 | Bot: It's great to finally meet you Tatjana! Is there something specific you need help with?
+
+15-05-2024 06:54 | Maksim: My name is Maksim
+
+15-05-2024 06:54 | Bot: Registered, Maksim.
+
+15-05-2024 06:56 | Maksim: My name is Maksim
+
+15-05-2024 06:56 | Bot: Nice to meet you, Maksim! How can I assist you today?
+
+15-05-2024 07:00 | Maksim: My name is Maksim
+
+15-05-2024 07:00 | Bot: Maksim, how can I help you today?
+
+15-05-2024 07:31 | Maksim: My name is Maksim
+
+15-05-2024 07:31 | Bot: Hi, good day, Maksim!
+
+15-05-2024 07:35 | Maksim: My name is Maksim
+
+15-05-2024 07:35 | Bot: Maksim, how can I help you today?
+
+15-05-2024 07:36 | Maksim: My name is Maksim
+
+15-05-2024 07:36 | Bot: There was an error processing your message.
+
+15-05-2024 07:39 | Maksim: My name is Maksim
+
+15-05-2024 07:39 | Bot: Hello, nice meeting you, Maksim!
+
+15-05-2024 07:41 | Maksim: My name is Maksim
+
+15-05-2024 07:41 | Bot: Welcome aboard Maksim! What’s the first thing you’d like to discuss?
+
+15-05-2024 07:41 | Maksim: My name is Tatjana
+
+15-05-2024 07:41 | Bot: Hey there {{name}}!
+
+15-05-2024 07:43 | Maksim: Bot Tatjana you
+
+15-05-2024 07:43 | Bot: Greetings, friend {{name}}!
+
+15-05-2024 07:54 | Maksim: My name is maksim
+
+15-05-2024 07:54 | Bot: Maksim, noted.
+
+15-05-2024 07:54 | Maksim: Bot Tatjana you
+
+15-05-2024 07:54 | Bot: Hey there {{name}}!
+
+15-05-2024 08:26 | Maksim: My name is Maksim
+
+15-05-2024 08:26 | Bot: Hello, glad meeting you, Maksim!
+
+15-05-2024 08:27 | Maksim: Bot Tatjana you
+
+15-05-2024 08:27 | Bot: Welcome Maksim! I'm here to assist you. What’s on your mind today?
+
+15-05-2024 08:32 | Maksim: Your name is now Tatjana
+
+15-05-2024 08:32 | Bot: Hi Tatjana, I'm glad we're getting to know each other. What can I do for you?
+
+15-05-2024 08:39 | Tatjana: My name is Maksim
+
+15-05-2024 08:39 | Bot: There was an error processing your message.
+
+15-05-2024 08:40 | Tatjana: My name is Maksim
+
+15-05-2024 08:40 | Bot: Hi, pleasure here with you, Maksim!
+
+15-05-2024 08:41 | Maksim: Bot Tatjana you
+
+15-05-2024 08:41 | Bot: Hi, good day, Guest!
+
+15-05-2024 08:42 | Maksim: My name is Maksim
+
+15-05-2024 08:42 | Bot: Hey there Maksim!
+
+15-05-2024 08:43 | Maksim: Bot Tatjana you
+
+15-05-2024 08:43 | Bot: Good meeting you, Tatjana!
+
+15-05-2024 08:44 | Maksim: My name is maksim
+
+15-05-2024 08:44 | Bot: Now that we’re introduced, how may I assist you today, Maksim?
+
+15-05-2024 08:44 | Maksim: Bot Tatjana you
+
+15-05-2024 08:44 | Bot: Hello, glad meeting you, Tatjana!
+
+15-05-2024 08:45 | Maksim: Bot Tatjana you
+
+15-05-2024 08:45 | Bot: Nice to meet you, Tatjana! How can I assist you today?
+
+15-05-2024 08:48 | Maksim: My name is Maksim
+
+15-05-2024 08:48 | Bot: Well met, Maksim!
+
+15-05-2024 08:48 | Maksim: Bot Tatjana you
+
+15-05-2024 08:48 | Bot: Now that we’re introduced, how may I assist you today, {{name}}?
+
+15-05-2024 08:49 | Maksim: My name is Maksim
+
+15-05-2024 08:49 | Bot: Maksim, noted.
+
+15-05-2024 08:49 | Maksim: Bot Tatjana you
+
+15-05-2024 08:49 | Bot: Hi, good day, Tatjana!
+
+15-05-2024 08:53 | Maksim: My name is Maksim
+
+15-05-2024 08:53 | Bot: Thank you for telling me your name, Maksim. How can I make your day better?
+
+15-05-2024 08:54 | Maksim: Bot Tatjana you
+
+15-05-2024 08:54 | Bot: Tatjana, how can I help you today?
+
+15-05-2024 09:01 | Maksim: My name is Maksim
+
+15-05-2024 09:01 | Bot: Nice to meet you, Maksim!
+
+15-05-2024 09:01 | Maksim: Bot Tatjana you
+
+15-05-2024 09:01 | Bot: Good meeting you, Tatjana!
+
+15-05-2024 09:06 | Maksim: My name is Maksim
+
+15-05-2024 09:06 | Bot: Greetings, friend Maksim!
+
+15-05-2024 09:06 | Maksim: My name is Maksim
+
+15-05-2024 09:06 | Maksim: Nice to meet you, Maksim!
+
+15-05-2024 09:06 | Maksim: Bot Tatjana you
+
+15-05-2024 09:06 | Bot: Tatjana, how can I help you today?
+
+15-05-2024 09:15 | Maksim: My name is Maksim
+
+15-05-2024 09:15 | Bot: Welcome Maksim.
+
+15-05-2024 09:16 | Maksim: Bot Tatjana you
+
+15-05-2024 09:16 | Maksim: Acknowledged, Tatjana.
+
+15-05-2024 09:28 | Maksim: My name is Maksim
+
+15-05-2024 09:28 | Tatjana: Welcome aboard, Maksim!
+
+15-05-2024 09:29 | Maksim: Bot Tatjana you
+
+15-05-2024 09:29 | Tatjana: Tatjana, greetings!
+
+15-05-2024 09:30 | Maksim: My name is Maksim
+
+15-05-2024 09:30 | Tatjana: Now that we’re introduced, how may I assist you today, Maksim?
+
+15-05-2024 09:33 | Maksim: Bot Tatjana you
+
+15-05-2024 09:33 | Tatjana: Tatjana, welcome, let’s begin!
+
+15-05-2024 09:42 | Maksim: My name is maksim
+
+15-05-2024 09:42 | Tatjana: Maksim, greetings!
+
+15-05-2024 09:43 | Maksim: Bot Tatjana you
+
+15-05-2024 09:43 | Tatjana: Welcome Tatjana.
+
+15-05-2024 09:48 | Maksim: My name is Maksim
+
+15-05-2024 09:48 | Tatjana: There was an error processing your message.
+
+15-05-2024 09:50 | Maksim: Maksim
+
+15-05-2024 09:50 | Tatjana: There was an error processing your message.
+
+15-05-2024 09:53 | Maksim: Maksim
+
+15-05-2024 09:53 | Tatjana: Maksim, pleasure meeting you!
+
+15-05-2024 09:53 | Maksim: Maksim
+
+15-05-2024 09:53 | Tatjana: How can I assist you?
+
+15-05-2024 09:54 | Maksim: My name is Maksim
+
+15-05-2024 09:54 | Tatjana: How can I assist you?
+
+15-05-2024 09:56 | Maksim: Maksim
+
+15-05-2024 09:56 | Tatjana: I'm delighted to make your acquaintance Maksim. What would you like to talk about?
+
+15-05-2024 10:00 | Maksim: Maksim
+
+15-05-2024 10:00 | Tatjana: It's great to finally meet you Maksim! Is there something specific you need help with?
+
+15-05-2024 10:01 | Maksim: Bot Tatjana you
+
+15-05-2024 10:01 | Tatjana: Welcome Tatjana.
+
+15-05-2024 10:06 | Maksim: Maksim
+
+15-05-2024 10:06 | Tatjana: Maksim, welcome, let’s begin!
+
+15-05-2024 10:06 | Maksim: Bot Tatjana you
+
+15-05-2024 10:06 | Tatjana: Hello Tatjana!
+
+15-05-2024 10:14 | Maksim: Maksim
+
+15-05-2024 10:14 | Tatjana: Hello Maksim, how can I help you today?
+
+15-05-2024 10:14 | Maksim: Bot Tatjana you
+
+15-05-2024 10:14 | Tatjana: Hello Tatjana, how can I help you today?
