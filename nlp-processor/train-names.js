@@ -436,4 +436,6 @@ async function trainNames(manager){
 
 
 module.exports =  trainNames;
+//For future
+//module.exports = namesByGenderAndLanguage;
 

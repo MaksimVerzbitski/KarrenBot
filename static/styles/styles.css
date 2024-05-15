@@ -6,30 +6,48 @@ body, html {
     justify-content: center;
     align-items: center;
     padding: 0;
-    background: #eaeaea;
+    background: #f0f0f0;
 }
 
-button, button:hover {
-    padding: 0.625rem 0.9375rem;
-    border: none;
-    border-radius: 2px;
-    cursor: pointer;
-    text-align: center;
-    font-size: 1rem;
-}
-
+/* Uniform styles for all buttons */
 button {
-    background-color: #007bff;
-    color: white;
+    flex-grow: 1;
+    margin: 5px; 
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #333; /* Dark gray background for buttons */
+    color: #fff; /* White text for all buttons */
+    border: 1px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; 
+    height: 50px; 
 }
 
+/* Hover effects for all buttons */
 button:hover {
-    background-color: #0056b3;
+    background-color: #555;
 }
 
 /* Chat container and rating section */
 #chat-container, #rate-me {
     box-sizing: border-box;
+    background-color: #f5f5f5;
+    border: 2px solid #000; 
+    color: #fff;
+}
+
+.rate-button {
+    padding: 10px 15px;
+    font-size: 1rem; 
+    margin: 5px; 
+    width: auto; 
+    min-width: 50px; 
+}
+
+
+.rate-button:hover {
+    background-color: #0056b3;
 }
 
 
@@ -57,7 +75,7 @@ button:hover {
     border: 2px solid #706b6b;
     border-radius: 3px;
     overflow: hidden;
-    /* transition: all 0.3s ease-in-out; Smooth transition for resizing */
+   
 }
 
 /* Chat header */
@@ -73,6 +91,8 @@ button:hover {
 
 #chat-header {
     cursor: grab;
+    background-color: #333; /* Dark gray for header */
+    color: #fff; /* Ensures text in header is white */
 }
 
 #chat-header:active {
@@ -98,6 +118,7 @@ button:hover {
 
 #chat-title {
     font-weight: bold;
+    font-size: 18px;
 }
 
 .window-control, .window-control:last-child {
@@ -130,57 +151,86 @@ button:hover {
 
 /* Clear Chat confirmation styles */
 #clear-chat-confirmation {
-    text-align: center; /* Center the confirmation text */
-     /*font-size: 1.25rem;  Slightly larger font size for better visibility */
-    font-weight: bold; /* Make the font weight bold */
-    margin-bottom: 1rem; /* Add some space below the text */
-    color: #333; /* Darker color for better contrast */
+    text-align: center; 
+  
+    font-weight: bold; 
+    margin-bottom: 1rem; 
+    color: #333; 
 }
 
 /* Buttons container */
 #clear-chat-buttons {
     display: flex;
-    justify-content: space-around; /* Space around the buttons */
-    align-items: center; /* Center buttons vertically */
+    justify-content: center; 
+    align-items: center; 
+    padding: 10px; 
 }
 
-/* Individual buttons */
+/* Style adjustments for buttons  */
 #confirmClear,
 #startNewSession {
-    margin: 0 10px; /* Space between the buttons */
-    padding: 0.5rem 1rem; /* Adjust padding for better touch targets */
-    font-size: 1rem; /* Ensure text is not too small */
+    flex-grow: 1;
+    margin: 0 10px; 
+    padding: 10px 20px; 
+    font-size: 1rem; 
+    border: none;
+    color: white; 
+    background-color: #007bff;
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+
+#confirmClear:hover,
+#startNewSession:hover {
+    background-color: #0056b3; 
+}
+
+#cancelButton {
+    background-color: red; 
+    color: white;
+}
+
+#cancelButton:hover {
+    background-color: darkred; 
 }
 
 /* Chat log */
 #chat-log {
     flex-grow: 1;
-    overflow-y: auto; /* Allows for scrolling */
+    overflow-y: auto; 
     padding: 0.3125rem;
-    min-height: 150px; /* Minimum height */
-    max-height: calc(55vh - 29.128440366972477vh); /* Adjust this calculation as needed */
+    min-height: 150px; 
+    max-height: calc(55vh - 29.128440366972477vh); 
     border: 2px solid #ffa500;
     margin: 0.3125rem;
-    flex-direction: column-reverse; /* Keeps newest messages at the bottom */
+    flex-direction: column-reverse; 
+    transition: background-color 0.3s ease;
+}
+
+
+.chat-log-transparent {
+    opacity: 0.5; /* Semi-transparent */
+    background-color: rgba(255, 255, 255, 0.5); /* Light white background */
 }
 
 /* Chat log message styles */
 .user-message {
-    border: 1px solid #ffa500; /* Keep the orange border */
-    color: black; /* Default text color */
+    border: 1px solid #ffa500;
+    color: #333;
     padding: 0.5rem;
+    border: 1px solid #000;
     margin-bottom: 0.5rem;
     border-radius: 0.3rem;
     text-align: right;
     float: right;
     clear: both;
     max-width: 80%;
-    background-color: #fffaf0; /* Light orange background */
+    background-color: #ccc;
 }
 
 .bot-message {
-    border: 1px solid rebeccapurple; /* Purple border */
-    color: white; /* White text color for contrast */
+    border: 1px solid #000;
+    color: #333; 
     padding: 0.5rem;
     margin-bottom: 0.5rem;
     border-radius: 0.3rem;
@@ -188,24 +238,23 @@ button:hover {
     float: left;
     clear: both;
     max-width: 80%;
-    background-color: rebeccapurple; /* Purple background */
+    background-color: #ccc;
 }
-
 
 .sender-name {
     font-weight: bold;
-    color: #007bff; /* Choose a color that fits your design */
-    margin-right: 0.5rem; /* Spacing between the name and the message */
-    display: inline-block; /* To apply margin correctly */
+    color: #007bff; 
+    margin-right: 0.5rem;
+    display: inline-block; 
 }
 
-/* You can also target the sender name within bot and user messages separately */
+
 .bot-message .sender-name {
-    color: #df7315; /* Example color for bot names */
+    color: #df7315; 
 }
 
 .user-message .sender-name {
-    color: rgb(153, 19, 198); /* Example color for user names */
+    color: rgb(153, 19, 198); 
 }
 
 /* Chat input and related elements */
@@ -311,9 +360,9 @@ button:hover {
 /* Clear Chat confirmation styles */
 #clear-chat-confirmation {
     text-align: center;
-    font-size: 1.25rem; /* Larger font for readability */
+    font-size: 1.25rem; 
     font-weight: bold;
-    margin: 0.5rem 0; /* Reduced margin */
+    margin: 0.5rem 0; 
     color: #333;
 }
 
@@ -328,9 +377,9 @@ button:hover {
 /* Individual buttons */
 #confirmClear,
 #startNewSession {
-    flex: 1; /* Allow buttons to grow */
-    min-width: 120px; /* Minimum button width */
-     /* padding: 10px; Comfortable touch target */
+    flex: 1; 
+    min-width: 120px;
+   
     font-size: 1rem;
     text-align: center;
 }
@@ -341,27 +390,26 @@ button:hover {
         margin: 0 auto; 
         padding: 0; 
         position: static;
-        /* position: fixed; */
         padding-bottom:1rem;
     }
 
     #clear-chat-confirmation {
-        font-size: 1rem; /* Slightly smaller font size */
+        font-size: 1rem; 
     }
 
     #clear-chat-buttons {
-        gap: 5px; /* Smaller gap between buttons */
+        gap: 5px; 
     }
 
     #confirmClear,
     #startNewSession {
-         /* padding: 8px; Smaller padding */
-        min-width: 100px; /* Smaller minimum width */
+        
+        min-width: 100px; 
     }
 
-    /* Adjust the chat log size */
+    
     #chat-log {
-        padding: 8px; /* Smaller padding */
+        padding: 8px; 
         overflow-y: auto;
     }
 
@@ -505,28 +553,33 @@ button:hover {
     #rate-me {
         justify-content: center;
         align-items: center;
-        flex-wrap: nowrap; /* Prevent wrapping of child elements */
+        flex-wrap: nowrap; 
     }
 
     #rate-me span {
-        margin-right: 0.5rem; /* Add some margin to the right of the 'Rate me' text */
+        margin-right: 0.5rem; 
     }
 
     .rate-button {
-        padding: 0.3rem 0.6rem; /* Decrease padding to fit buttons */
-        margin: 0; /* Remove any default margins */
-        flex: 0 1 auto; /* Allow buttons to shrink */
+        padding: 0.3rem 0.6rem;
+        margin: 0; 
+        flex: 0 1 auto;
+        background-color: #333; 
+    }
+
+    .rate-button:hover {
+        background-color: #555; /* Lighter gray on hover for consistency */
     }
 
     .clear-chat-confirmation {
-        font-size: 0.9rem; /* Reduce font size further for very small screens */
+        font-size: 0.9rem; 
     }
 
-    /* Adjust button size and spacing for very small screens */
+   
     #confirmClear,
     #startNewSession {
-        padding: 0.5rem; /* Reduce padding */
-        margin-bottom: 0.25rem; /* Reduce space between buttons */
+        padding: 0.5rem;
+        margin-bottom: 0.25rem; 
     }
 }
 
@@ -588,7 +641,6 @@ button:hover {
 
 @media (max-width: 1024px) {
     #chat-container {
-        /* Ensure the container is fully visible and doesn't overflow the viewport */
         left: auto;
         right: auto;
         top: auto;

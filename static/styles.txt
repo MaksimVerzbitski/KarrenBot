@@ -1,0 +1,76 @@
+
+/* General Styles */
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f0f0f0; /* Light gray background */
+}
+
+/* Chat Window Styles */
+#chat-container {
+    background-color: #f5f5f5; /* Lighter gray for the chat container */
+    border: 2px solid #000; /* Black border as shown in the image */
+    color: #fff; /* White text color for all text within the chat container */
+}
+
+/* Header and Controls */
+#chat-header {
+    background-color: #333; /* Dark gray for header */
+    color: #fff; /* Ensures text in header is white */
+}
+
+.window-control img {
+    filter: brightness(0) invert(1); /* Make icons white */
+}
+
+/* Button Styling */
+button {
+    background-color: #333; /* Dark gray background for buttons */
+    color: #fff; /* White text for all buttons */
+    border: 1px solid #000; /* Black border for buttons */
+}
+
+button:hover {
+    background-color: #555; /* Lighter gray on hover */
+}
+
+/* Rate buttons specific style */
+.rate-button {
+    background-color: #333; /* Matching the other buttons */
+}
+
+.rate-button:hover {
+    background-color: #555; /* Lighter gray on hover for consistency */
+}
+
+/* Input Field and Send Button */
+#chat-input, #chat-text-input {
+    background-color: #fff; /* White background for input field */
+    color: #333; /* Dark gray text */
+    border: 1px solid #000; /* Black border for input field */
+}
+
+#send-button {
+    background-color: #0056b3; /* Blue background for send button */
+    color: #fff; /* White text for send button */
+}
+
+#send-button:hover {
+    background-color: #004494; /* Darker blue on hover */
+}
+
+/* Chat Log Area */
+#chat-log {
+    background-color: #fff; /* White background for chat log */
+    border-color: #ffa500; /* Orange border, if you want black, change to #000 */
+}
+
+/* User and Bot Messages */
+.user-message, .bot-message {
+    background-color: #ccc; /* Light gray for message backgrounds */
+    color: #333; /* Dark gray text for readability */
+    border: 1px solid #000; /* Black border for messages */
+}

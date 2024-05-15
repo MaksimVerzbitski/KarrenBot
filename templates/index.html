@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta content="IE=edge" http-equiv="X-UA-Compatible" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <link rel="stylesheet" href="/static/styles.css">
+    <link rel="stylesheet" href="/static/styles/styles.css">
     <script src="/static/script.js" defer></script> <!-- Removed defer from this line -->
     
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.3/dist/cdn.min.js"></script>
@@ -16,12 +16,12 @@
             
         <!-- Chat Header -->
         <header id="chat-header">
-            <span id="more-options">&#8942;</span> <!-- Triple dot icon -->
-            <span id="chat-title">Chat Window</span>
+            <span id="more-options"><img src="./static/images/conversation.png" alt="Conversation"></span> <!-- Triple dot icon -->
+            <span id="chat-title">Conversation window</span>
             <div id="window-controls">
-                <span class="window-control" @click="minimizeChat()">[-]</span>
-                <span class="window-control" @click="maximizeChat()">[0]</span>
-                <span class="window-control" @click="closeChat()">[X]</span>
+                <span class="window-control" @click="minimizeChat()"><img src="./static/images/minimize.png" alt="Minimize"></span>
+                <span class="window-control" @click="maximizeChat()"><img src="./static/images/maximize.png" alt="Maximize"></span>
+                <span class="window-control" @click="closeChat()"><img src="./static/images/close.png" alt="Close"></span>
             </div>
         </header>
 
@@ -43,8 +43,8 @@
         <section id="chat-input">
             <div id="input-container">
                 <input id="chat-text-input" type="text" x-model="userInput" @keyup.enter="sendMessage" placeholder="Type here and press enter...">
-                <button id="add-smile" @click="addSmile()">&#x1F642;</button>
-                <label for="file-upload" class="custom-file-upload">&#x1F4E4;</label>
+                <button id="add-smile" @click="addSmile()"><img src="./static/images/smile.gif" alt="Smile"></button>
+                <label for="file-upload" class="custom-file-upload"><img src="./static/images/file.png" alt="File"></label>
                 <input id="file-upload" type="file" @change="chatbot.sendFile($event)" style="display: none;"/>
             </div>
             <button id="send-button" @click="sendMessage">Send</button>

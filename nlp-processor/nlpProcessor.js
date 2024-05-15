@@ -27,49 +27,6 @@ loadModel();
 
 
 
-/* function handleNameResponse(chatbot, response, res) {
-  let answer = response.answer || "I'm not sure how to respond to that.";
-  const nameEntity = response.entities.find(entity => entity.entity === 'person');
-  const botNameEntity = response.entities.find(entity => entity.entity === 'botNamePerson');
-  
-  const botNameIntent = response.classifications.find(classification => classification.label === 'botName.userNamesBot');
-  
-  
-  // Determine the name to use based on entity detection
-  const nameToUse = nameEntity ? nameEntity.sourceText : null;
-
-  if (nameToUse && !chatbot.userNameAlreadySet) {
-    chatbot.setUserName(nameToUse);
-    chatbot.userNameAlreadySet = true; // Prevents changing the name again
-    answer = response.answer ? response.answer.replace('{{name}}', nameToUse) : `Hello ${nameToUse}, how can I help you today?`;
-  } else {
-    answer = response.answer ? response.answer.replace('{{name}}', chatbot.userName || 'Guest') : "How can I assist you?";
-  }
-
-  if (botNameEntity && botNameIntent.value < 0.15) { // Adjust threshold as necessary
-      // Set bot name in Chatbot instance only if the intent score is high enough
-      chatbot.setBotName(botNameEntity.sourceText);
-      console.log(`Bot name set to: ${botNameEntity.sourceText}`);
-
-      // Modify the response answer if a name is included
-      if (response.answer) {
-          answer = response.answer.replace('{{name}}', botNameEntity.sourceText);
-      } else {
-          answer = `Hello ${botNameEntity.sourceText}, how can I help you today?`;
-      }
-  } else if (response.answer) {
-    // answer = response.answer.replace('{{name}}', 'Guest'); 
-    chatbot.setBotName(botNameEntity.sourceText);
-    answer = response.answer.replace('{{name}}', botNameEntity.sourceText);
-  }
-
-  // Return the modified response
-  res.json({
-    answer: answer,
-    userName: chatbot.userName,
-    botName: chatbot.botName  
-  });
-} */
 
 
 function handleNameResponse(chatbot, response, res) {
@@ -104,6 +61,40 @@ function handleNameResponse(chatbot, response, res) {
 }
 
 
+
+function handleNameResponse(chatbot, response, res) {
+  let answer = response.answer || "I'm not sure how to respond to that.";
+  const nameEntity = response.entities.find(entity => entity.entity === 'person');
+  const botNameEntity = response.entities.find(entity => entity.entity === 'botNamePerson');
+  const botNameIntent = response.classifications.find(classification => classification.label === 'botName.userNamesBot');
+
+  // Determine the user name to use based on entity detection
+  if (nameEntity && !chatbot.userNameAlreadySet) {
+      chatbot.setUserName(nameEntity.sourceText);
+      chatbot.userNameAlreadySet = true; // Prevents changing the user name again
+      answer = `Hello ${nameEntity.sourceText}, how can I help you today?`;
+  }
+
+  // Determine the bot name to use based on entity and intent score
+  if (botNameEntity && botNameIntent && botNameIntent.value > 0.15) {
+      chatbot.setBotName(botNameEntity.sourceText);
+      console.log(`Bot name set to: ${botNameEntity.sourceText}`);
+      answer = `Hello ${botNameEntity.sourceText}, how can I help you today?`;
+  }
+
+  // Use existing names if no new names are provided
+  answer = answer.replace('{{name}}', chatbot.userName || 'Guest');
+
+  // Return the modified response
+  res.json({
+      answer: answer,
+      userName: chatbot.userName,
+      botName: chatbot.botName
+  });
+}
+
+
+
 app.post('/updateBotName', (req, res) => {
   const { newBotName } = req.body;  // Extract new name from request
   chatbot.setBotName(newBotName);  // Update the bot name in the server-side instance
@@ -112,27 +103,25 @@ app.post('/updateBotName', (req, res) => {
 
 
 
-function extractName(inputText) {
-  // RegEx various ways a name 
-  const patterns = [
-    /(?:my name is|I am known as|you can call me|I go by|it's|I'm|people call me|my friends call me|I prefer to be called|just call me) ([\w\s\-']+)/i,
-    /(?:^|\s)([\w\s\-']+)(?:,?\s+is my name|,?\s+here|,?\s+everyone knows me as|,?\s+the name's|,?\s+please address me as|,?\s+i identify as)/i,
-    /in case you're wondering, I'm ([\w\s\-']+)/i,
-    /for your information, I'm ([\w\s\-']+)/i,
-    /to make things easy, you can call me ([\w\s\-']+)/i,
-    /let's keep it simple, I'm ([\w\s\-']+)/i,
-    /^\s*([\w\s\-']+)/i // "[userName]"
-  ];
-
-  // Check each pattern to find a match
-  for (let pattern of patterns) {
-    const match = inputText.match(pattern);
-    if (match) {
-      return match[1].trim(); // Return the first captured group, trimmed of any extra whitespace
-    }
+function handleUnknownNameDetails(chatbot, detail, res) {
+  if (detail === "Masculine" || detail === "Feminine") {
+      chatbot.nameGender = detail;
+      res.json({answer: "English, Russian, or Estonian?"});
+  } else if (["English", "Russian", "Estonian"].includes(detail)) {
+      chatbot.nameOrigin = detail;
+      // Save the new name for training
+      saveNameForTraining(chatbot.unknownName, chatbot.nameGender, chatbot.nameOrigin);
+      res.json({answer: `${chatbot.unknownName} saved as a ${chatbot.nameGender}, ${detail} name. How can I assist you further?`});
+  } else {
+      // Handle other languages
+      saveNameForTraining(chatbot.unknownName, chatbot.nameGender, "Other");
+      res.json({answer: "Thank you for your input. I have saved this name for future learning. How can I assist you further?"});
   }
+}
 
-  return null; // Return null 
+function saveNameForTraining(name, gender, origin) {
+  // Logic to save the name to your database or a training set
+  console.log(`Saving name: ${name}, Gender: ${gender}, Origin: ${origin}`);
 }
 
 app.post('/nlp-process-message', async (req, res) => {
@@ -150,19 +139,3 @@ app.post('/nlp-process-message', async (req, res) => {
 app.listen(port, () => console.log(`Server running on http://localhost:${port}`));
 
 
-// not usedd
-/* function loadTrainingData() {
-  if (fs.existsSync(trainingDataPath)) {
-      return JSON.parse(fs.readFileSync(trainingDataPath, 'utf8'));
-  } else {
-      // Ensure minimum categories exist
-      return {
-          "russianMasculine": [],
-          "russianFeminine": [],
-          "englishMasculine": [],
-          "englishFeminine": [],
-          "estonianMasculine": [],
-          "estonianFeminine": []
-      };
-  }
-} */

@@ -1,4 +1,5 @@
 from flask import Flask, jsonify, request , session, render_template
+#from flask_session import Session
 from flask_cors import CORS
 from datetime import datetime
 import json
@@ -16,6 +17,9 @@ app = Flask(__name__, static_folder='static', template_folder='templates')
 CORS(app)
  
 app.secret_key = os.getenv('SECRET_KEY')
+app.config["SESSION_TYPE"] = "filesystem"
+
+#Session(app)
 
 app_started = True
 
@@ -212,6 +216,23 @@ def set_names():
     else:
         return jsonify({"status": "No changes detected"})
 
+
+@app.route('/clearChatSession', methods=['POST'])
+def clear_chat_session():
+    # Reset user and bot names to defaults
+    session['userName'] = 'User'
+    session['botName'] = 'Bot'
+    # Optionally clear other session variables if needed
+    return jsonify({"status": "Chat session cleared"})
+
+@app.route('/startNewSession', methods=['POST'])
+def start_new_session():
+    # Reset session data
+    session.clear()
+    session['userName'] = 'User'
+    session['botName'] = 'Bot'
+    log_to_file('session', 'New session started')
+    return jsonify({"status": "New session started"})
 
 if __name__ == '__main__':
     app.run(debug=True)

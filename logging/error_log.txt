@@ -141,3 +141,5 @@
 15-05-2024 07:17 | Server Communication | Error: Server responded with status: 500
 
 15-05-2024 07:17 | Server Communication | Error: Server responded with status: 500
+
+15-05-2024 14:39 | Input Validation | Input contains invalid characters. Allowed characters: letters, numbers, and special characters (+, -, /, *, =, %, &, @, space, "", '', (, ), ?, !).
