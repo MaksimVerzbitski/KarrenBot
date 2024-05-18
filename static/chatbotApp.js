@@ -5,9 +5,6 @@ function chatbotApp() {
     let lastY = null;
     let isClearingChat = false; // track  in clearing mode
 
-    let userIsActive = false;
-    let lastUserActivityTime = Date.now();
-
     const chatContainer = document.getElementById('chat-container');
     const clearChatButton = document.getElementById('clear-chat'); 
 
@@ -31,7 +28,7 @@ function chatbotApp() {
         let startX, startY, initialX, initialY;
     
         handle.addEventListener('mousedown', function(e) {
-            if (isMinimized || isMaximized) return;
+            if (isMinimized || isMaximized) return; // Prevent dragging if minimized or maximized
     
             startX = e.clientX;
             startY = e.clientY;
@@ -70,18 +67,19 @@ function chatbotApp() {
         });
     }
 
-    
-
-
     function minimizeChat() {
         if (!isMinimized) {
             chatContainer.classList.add('minimized');
+            chatContainer.classList.remove('maximized');
             chatContainer.style.inset = 'auto 0px 0px auto';
             isMinimized = true;
+            isMaximized = false;
         } else {
             chatContainer.classList.remove('minimized');
             chatContainer.style.removeProperty('inset');
-            if (lastX !== null && lastY !== null) {
+            if (isMaximized) {
+                maximizeChat(); // Restore to maximized state
+            } else if (lastX !== null && lastY !== null) {
                 // Restore % responsiveness 
                 chatContainer.style.left = `${lastX}%`;
                 chatContainer.style.top = `${lastY}%`;
@@ -92,14 +90,15 @@ function chatbotApp() {
         }
     }
 
-    
     function maximizeChat() {
         if (!isMaximized) {
             chatContainer.classList.add('maximized');
-            // store the current position before maximizing
+            chatContainer.classList.remove('minimized');
+            // Store the current position before maximizing
             lastX = chatContainer.style.left;
             lastY = chatContainer.style.top;
             isMaximized = true;
+            isMinimized = false;
         } else {
             chatContainer.classList.remove('maximized');
             // Restore last position before maximized
@@ -143,8 +142,6 @@ function chatbotApp() {
             isClearingChat = false;
         }
     }
-    
-
 
     function confirmClearChat() {
         console.log("confirmClearChat function called");
@@ -160,7 +157,6 @@ function chatbotApp() {
         clearChatButton.style.background = '';
         isClearingChat = false; // Reset the state
     }
-
 
     return {
         chatbot: new Chatbot(),
@@ -202,7 +198,5 @@ function chatbotApp() {
         closeChat: closeChat,
         clearChat: clearChat,
         confirmClearChat: confirmClearChat,
-    
-        
     };
 };

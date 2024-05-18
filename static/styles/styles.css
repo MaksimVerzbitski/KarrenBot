@@ -32,71 +32,69 @@ button:hover {
 /* Chat container and rating section */
 #chat-container, #rate-me {
     box-sizing: border-box;
-    background-color: #f5f5f5;
+    background-color: #7a7979;
     border: 2px solid #000; 
     color: #fff;
 }
 
 .rate-button {
-    padding: 10px 15px;
-    font-size: 1rem; 
+    padding: 5px 10px; /* Reduced padding for smaller buttons */
+    font-size: 0.875rem; /* Smaller font size */
     margin: 5px; 
     width: auto; 
     min-width: 50px; 
 }
 
-
 .rate-button:hover {
     background-color: #0056b3;
 }
 
+#rate-me span {
+    font-size: 0.875rem; /* Smaller font size for text */
+}
 
 /* Div Wrapper Styles */
-
-
-#div-wrapper{
-    width:100%;
+#div-wrapper {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* position: relative; */
 }
- 
+
+/* Chat container */
 #chat-container {
     position: absolute; /* or fixed */
     max-width: 45vh;
-    /* Changed from .rem to vh*/
     min-height: 55vh;
     width: 80%;
     max-height: 90vh;
     display: flex;
     flex-direction: column;
     background: #fff;
-    border: 2px solid #706b6b;
+    border: 2px solid #616161;
     border-radius: 3px;
     overflow: hidden;
-   
 }
 
 /* Chat header */
 #chat-header, #chat-header:active, .no-drag #chat-header {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between; /* Ensure space between elements */
     position: relative;
     padding: 0.625rem 1rem;
-    background: #f5f5f5;
-    border-bottom: 1px solid #ccc;
+    background: #686868;
+    border-top: 1px solid #636363;
+    color: #fff; /* Ensures text in header is white */
 }
 
 #chat-header {
     cursor: grab;
-    background-color: #333; /* Dark gray for header */
-    color: #fff; /* Ensures text in header is white */
 }
 
 #chat-header:active {
     cursor: grabbing;
+    background-color: #4a4a4a; /* Noticeably gray when dragging */
 }
 
 .no-drag #chat-header {
@@ -104,21 +102,30 @@ button:hover {
 }
 
 #more-options, #window-controls {
-    position: absolute;
+    display: flex; /* Use flexbox to align controls */
+    align-items: center;
     padding: 0.3125rem 0;
 }
 
 #more-options {
-    left: 5px;
+    margin-right: auto; /* Aligns to the left */
 }
 
 #window-controls {
-    right: 5px;
+    margin-left: auto; /* Aligns to the right */
+    display: flex; /* Ensure the controls are aligned */
+    gap: 5px; /* Add some space between controls */
 }
 
 #chat-title {
     font-weight: bold;
     font-size: 18px;
+    text-align: center; /* Center the title text */
+    flex-grow: 1; /* Allow the title to grow */
+    white-space: nowrap; /* Prevent the title from wrapping */
+    overflow: hidden; /* Ensure it doesn't overflow */
+    text-overflow: ellipsis; /* Add ellipsis if it overflows */
+    padding: 0 1rem; /* Add padding to ensure space between controls */
 }
 
 .window-control, .window-control:last-child {
@@ -148,11 +155,9 @@ button:hover {
     padding: 0.625rem;
 }
 
-
 /* Clear Chat confirmation styles */
 #clear-chat-confirmation {
     text-align: center; 
-  
     font-weight: bold; 
     margin-bottom: 1rem; 
     color: #333; 
@@ -207,7 +212,6 @@ button:hover {
     transition: background-color 0.3s ease;
 }
 
-
 .chat-log-transparent {
     opacity: 0.5; /* Semi-transparent */
     background-color: rgba(255, 255, 255, 0.5); /* Light white background */
@@ -247,7 +251,6 @@ button:hover {
     margin-right: 0.5rem;
     display: inline-block; 
 }
-
 
 .bot-message .sender-name {
     color: #df7315; 
@@ -317,7 +320,7 @@ button:hover {
     margin: 5px;
     padding: 0.625rem 0;
     background: #f5f5f5;
-    border-top: 1px solid #ccc;
+    border-top: 2px solid #000000;
     text-align: center;
     display: flex;
     flex-wrap: wrap;
@@ -353,35 +356,35 @@ button:hover {
     left: 0;
     width: 100vw;
     height: 100vh;
+    margin: 0;
+    border: 2px solid #000;
+    border-radius: 0;
+    box-shadow: none;
+    z-index: 9999;
     transform: none !important;
-}
-
-
-/* Clear Chat confirmation styles */
-#clear-chat-confirmation {
-    text-align: center;
-    font-size: 1.25rem; 
-    font-weight: bold;
-    margin: 0.5rem 0; 
-    color: #333;
-}
-
-/* Buttons container */
-#clear-chat-buttons {
     display: flex;
-    justify-content: center; /* Center buttons */
-    flex-wrap: wrap; /* Allow buttons to wrap on small screens */
-    gap: 10px; /* Space between buttons */
+    flex-direction: column;
+    max-width: none; /* Ensure it covers the entire viewport */
+    max-height: none; /* Ensure it covers the entire viewport */
 }
 
-/* Individual buttons */
-#confirmClear,
-#startNewSession {
-    flex: 1; 
-    min-width: 120px;
-   
-    font-size: 1rem;
-    text-align: center;
+#chat-container.maximized #chat-log {
+    flex-grow: 1; /* Ensure chat log takes up available space */
+    max-height: none; /* Ensure chat log takes up full height */
+}
+
+#chat-container.minimized {
+    min-height: 0; 
+}
+
+@media (max-width: 1024px) {
+    #chat-container {
+        left: auto;
+        right: auto;
+        top: auto;
+        bottom: auto;
+        transform: none;
+    }
 }
 
 @media (max-width: 21.25rem) {
@@ -390,7 +393,7 @@ button:hover {
         margin: 0 auto; 
         padding: 0; 
         position: static;
-        padding-bottom:1rem;
+        padding-bottom: 1rem;
     }
 
     #clear-chat-confirmation {
@@ -403,10 +406,8 @@ button:hover {
 
     #confirmClear,
     #startNewSession {
-        
         min-width: 100px; 
     }
-
     
     #chat-log {
         padding: 8px; 
@@ -415,7 +416,6 @@ button:hover {
 
     #chat-header, #chat-controls, #chat-input, #rate-me {
         flex-direction: column;
-        
         align-items: center;
     }
 
@@ -438,7 +438,7 @@ button:hover {
         grid-row: 2; 
         position: static;
         width: 100%;
-        border-bottom:1px solid #050505;
+        border-bottom: 1px solid #050505;
     }
 
     #chat-title {
@@ -469,14 +469,12 @@ button:hover {
         order: 2;
         justify-content: center;
         margin: 0 0.3125rem;
-        
     }
 
     #chat-text-input {
         order: 2;
         flex-grow: 1;
         border: 1px solid #050505;
-        
     }
 
     #add-smile {
@@ -491,7 +489,6 @@ button:hover {
         order: 4;
         width: 100%;
         margin-top: 0.625rem;
-        
     }
 
     #chat-controls {
@@ -542,14 +539,13 @@ button:hover {
 
     #chat-container.minimized #chat-title,
     #chat-container.minimized .window-control {
-        
         font-size: smaller; 
         margin: 0; 
     }
 }
 
- /* This is equivalent to 286px */
- @media (max-width: 17.875rem) {
+/* This is equivalent to 286px */
+@media (max-width: 17.875rem) {
     #rate-me {
         justify-content: center;
         align-items: center;
@@ -575,7 +571,6 @@ button:hover {
         font-size: 0.9rem; 
     }
 
-   
     #confirmClear,
     #startNewSession {
         padding: 0.5rem;
@@ -619,20 +614,33 @@ button:hover {
     #startNewSession {
         font-size: 0.9rem; /* Even smaller font size */
     }
+
+    #rate-button {
+        height: 25px;
+    }
 }
 
 #chat-container.maximized {
     width: 100%;
     height: 100%;
-    max-width: 800px; 
-    max-height: 900px; 
     position: fixed;
     top: 0;
     left: 0;
     margin: 0;
-    border: none;
+    border: 2px solid #000;
     border-radius: 0;
     box-shadow: none;
+    z-index: 9999;
+    transform: none !important;
+    display: flex;
+    flex-direction: column;
+    max-width: none; /* Ensure it covers the entire viewport */
+    max-height: none; /* Ensure it covers the entire viewport */
+}
+
+#chat-container.maximized #chat-log {
+    flex-grow: 1; /* Ensure chat log takes up available space */
+    max-height: none; /* Ensure chat log takes up full height */
 }
 
 #chat-container.minimized {
