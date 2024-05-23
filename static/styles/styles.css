@@ -15,8 +15,8 @@ button {
     margin: 5px; 
     padding: 10px 20px;
     font-size: 1rem;
-    background-color: #333; /* Dark gray background for buttons */
-    color: #fff; /* White text for all buttons */
+    background-color: #333; 
+    color: #fff; 
     border: 1px solid #000;
     border-radius: 5px;
     cursor: pointer;
@@ -26,6 +26,71 @@ button {
 /* Hover effects for all buttons */
 button:hover {
     background-color: #555;
+}
+
+/* Minimized circle */
+#minimized-circle {
+    display: none; /* Initially hidden */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px; /* Slightly increased width */
+    height: 60px; /* Slightly increased height */
+    border-radius: 50%;
+    background-color: #1E90FF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    animation: vibrate 0.3s infinite; /* Increased vibration duration for more visible effect */
+    z-index: 1000;
+    display: flex; /* Flexbox for centering text */
+    justify-content: center; /* Center text horizontally */
+    align-items: center; /* Center text vertically */
+    color: white; /* Text color */
+    font-size: 12px; /* Adjusted text size */
+    font-weight: bold; /* Text weight */
+    text-align: center; /* Center text alignment */
+    padding: 5px; /* Padding to ensure text fits well */
+    box-sizing: border-box; /* Include padding in the element's size */
+}
+
+/* Enhanced vibration effect */
+@keyframes vibrate {
+    0% { transform: translate(0); }
+    10% { transform: translate(-3px, 3px); }
+    20% { transform: translate(-3px, -3px); }
+    30% { transform: translate(3px, 3px); }
+    40% { transform: translate(3px, -3px); }
+    50% { transform: translate(-3px, 3px); }
+    60% { transform: translate(-3px, -3px); }
+    70% { transform: translate(3px, 3px); }
+    80% { transform: translate(3px, -3px); }
+    90% { transform: translate(-3px, 3px); }
+    100% { transform: translate(0); }
+}
+
+/* Closed class to hide chat container */
+.closed {
+    display: none;
+}
+
+
+/* styles.css */
+.button-orange {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button-orange:hover {
+    background-color: #e69500;
 }
 
 /* Div Wrapper Styles */
@@ -77,7 +142,6 @@ button:hover {
 }
 
 #more-options, #window-controls {
-    
     align-items: center;
     padding: 0.3125rem 0;
 }
@@ -90,17 +154,16 @@ button:hover {
 #window-controls {
     position: absolute; 
     right: 0.1rem; 
-    
-    
 }
 
 #chat-title {
+    flex-grow: 1;
     font-weight: bold;
     font-size: 18px;
     text-align: center; 
     white-space: nowrap; 
     overflow: hidden; 
-    text-overflow: ellipsis; 
+    text-overflow: ellipsis;
 }
 
 .window-control, .window-control:last-child {
@@ -155,7 +218,7 @@ button:hover {
     font-size: 1rem; 
     border: none;
     color: white; 
-    background-color: #007bff;
+    background-color: #333;
     border-radius: 5px; 
     cursor: pointer; 
 }
@@ -291,14 +354,14 @@ button:hover {
 }
 
 #send-button {
-    background-color: #007bff;
+    background-color: #db521c;
     color: white;
     border: none;
-    border-radius: 2px;
+    border-radius: 3px;
     padding: 0.625rem;
     max-width: 6.25rem;
     justify-content: center;
-    height: 100%; /* Ensure it takes full height of parent */
+    /*height: 100%; Ensure it takes full height of parent */
     display: flex;
     align-items: center;
 }
@@ -312,15 +375,12 @@ button:hover {
     width: auto;
     margin: 5px;
     padding: 0.625rem 0;
-    background: #f5f5f5;
+    background: #838383;
     border-top: 2px solid #000000;
     text-align: center;
-    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 5px;
-
 }
 
 /* Chat container and rating section */
@@ -331,14 +391,14 @@ button:hover {
 }
 
 .rate-button {
-    padding: 0.5rem 1rem; /* Adjust padding for better button size */
-    font-size: 1rem; /* Increase font size for better readability */    
-    color: #fff; /* White text for buttons */
-    border: 2px solid #000; /* Add border for consistency */
-    border-radius: 5px; /* Slightly rounded corners */
+    padding: 0.5rem 1rem; 
+    font-size: 1rem;   
+    color: #fff; 
+    border: 2px solid #000; 
+    border-radius: 5px; 
     cursor: pointer;
     transition: background-color 0.3s;
-    min-width: 40px; /* Ensure minimum width */
+    min-width: 40px; 
     text-align: center;
 }
 
@@ -347,9 +407,10 @@ button:hover {
 }
 
 #rate-me span {
-    font-size: 1rem; /* Increase font size for better readability */
-    color: #333; /* Change color for better visibility */
-    margin-right: 10px; /* Add space between label and buttons */
+    font-size: 18px;
+    font-weight: bold; 
+    color: #ffffff; 
+    margin-left: 10px; 
 }
 
 /* Functionality related styles */
@@ -427,7 +488,6 @@ button:hover {
         margin: 0 auto; 
         padding: 0; 
         position: static;
-        padding-bottom: 1rem;
     }
 
     #clear-chat-confirmation {
@@ -478,7 +538,7 @@ button:hover {
     #chat-title {
         grid-row: 3; 
         position: static;
-        width: 100%;
+        
         order: 0; 
         padding: 0.625rem 0;
     }
@@ -642,6 +702,7 @@ button:hover {
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+        padding: 0 0.635rem
     }
 
     #clear-chat-confirmation,
@@ -693,7 +754,7 @@ button:hover {
 }
 
 /* Additional Media Query for Responsive Chat Input */
-@media (max-width: 768px) {
+@media (max-width: 500px) {
     #chat-input {
         flex-direction: column;
         padding: 0.625rem;
@@ -723,7 +784,12 @@ button:hover {
     }
 
     #rate-me {
-        flex-direction: column; /* Ensure buttons are in a column layout */
+        flex-direction: row; /* Change to row to fit more buttons in a row */
+        flex-wrap: wrap; /* Allow buttons to wrap to the next line */
     }
 
+    .rate-button {
+        margin: 0.3125rem; /* Add margin for better spacing */
+    }
 }
+

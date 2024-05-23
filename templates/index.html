@@ -5,8 +5,7 @@
     <meta content="IE=edge" http-equiv="X-UA-Compatible" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <link rel="stylesheet" href="/static/styles/styles.css">
-    <script src="/static/script.js" defer></script> <!-- Removed defer from this line -->
-    
+    <script src="/static/script.js" defer></script> 
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.3/dist/cdn.min.js"></script>
 </head>
 <body>
@@ -62,8 +61,8 @@
     </main>
 
 </div>
-
-
+<!-- Minimized Circle -->
+<div id="minimized-circle" @click="restoreChat()">Click Me</div>
 <!-- Externalized Scripts -->
 <script src="/static/chatbotApp.js"></script>
 <script src="/static/rateChatbot.js"></script>

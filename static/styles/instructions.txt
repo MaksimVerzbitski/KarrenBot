@@ -1,19 +1,48 @@
+Explanation:
+Objective:
+
+You want a "close" button that, when clicked, hides the chat window and displays a small, vibrating circle instead.
+Clicking this circle should restore the chat window to its original size and state.
+Steps to Implement:
+
+CSS for Visual Effects:
+Create styles that hide the chat window and transform it into a small circle.
+Add animation to this circle to make it vibrate.
+JavaScript for State Management:
+Implement a function to switch the chat window to the closed state (hide the chat content, show the circle).
+Implement another function to restore the chat window from the closed state (hide the circle, show the chat content).
+Detailed Process:
+
+Close Button Functionality:
+The close button, when clicked, should:
+Add a specific CSS class to the chat container to change its shape and size to a small circle.
+Apply a vibration animation to make the circle attract attention.
+Restore Functionality:
+The small circle (which is the chat container in its minimized state) should:
+Be clickable.
+When clicked, it should remove the CSS class that made it a small circle and restore its original styles and size.
+User Interaction:
+
+When the user clicks the "close" button, the chat window will shrink down to a small, vibrating circle.
+Clicking this circle will revert the chat window back to its normal state.
+This setup ensures that your chat window can transition smoothly between its full size and a minimized, attention-grabbing circle.
+
+
+
 function chatbotApp() {
     let isMinimized = false;
     let isMaximized = false;
+    let isClosed = false;
     let lastX = null;
     let lastY = null;
-    let isClosed = false;
-    let isClearingChat = false; // track in clearing mode
+    let isClearingChat = false;
 
     const chatContainer = document.getElementById('chat-container');
     const clearChatButton = document.getElementById('clear-chat'); 
-    const minimizedCircle = document.getElementById('minimized-circle');
 
     function centerChatContainer() {
-        if (isMinimized || isClosed) return; // Do not center if minimized.
+        if (isMinimized || isClosed) return;
     
-        // Remove properties for fixed positioning.
         chatContainer.style.removeProperty('right');
         chatContainer.style.removeProperty('bottom');
         chatContainer.style.removeProperty('transform');
@@ -24,18 +53,13 @@ function chatbotApp() {
     }
 
     window.addEventListener('resize', centerChatContainer);
-    // Ensure only the chat container is visible on page load
-    window.addEventListener('load', () => {
-        chatContainer.style.display = 'flex';
-        minimizedCircle.style.display = 'none';
-    });
 
     function makeDraggable() {
         const handle = document.getElementById('chat-header');
         let startX, startY, initialX, initialY;
     
         handle.addEventListener('mousedown', function(e) {
-            if (isMinimized || isMaximized) return; // Prevent dragging if minimized or maximized
+            if (isMinimized || isMaximized) return;
     
             startX = e.clientX;
             startY = e.clientY;
@@ -47,19 +71,15 @@ function chatbotApp() {
                 const deltaX = e.clientX - startX;
                 const deltaY = e.clientY - startY;
             
-                // Constrain left and top positions within the viewport
                 let newLeft = initialX + deltaX;
                 let newTop = initialY + deltaY;
             
-                // Ensure new left and top to keep the chat container in viewport
                 newLeft = Math.max(0, Math.min(newLeft, window.innerWidth - chatContainer.offsetWidth));
                 newTop = Math.max(0, Math.min(newTop, window.innerHeight - chatContainer.offsetHeight));
             
-                // Convert new left and top to % for responsiveness
                 lastX = (newLeft / window.innerWidth) * 100;
                 lastY = (newTop / window.innerHeight) * 100;
             
-                // Apply new position 
                 chatContainer.style.left = `${lastX}%`;
                 chatContainer.style.top = `${lastY}%`;
             }
@@ -85,9 +105,8 @@ function chatbotApp() {
             chatContainer.classList.remove('minimized');
             chatContainer.style.removeProperty('inset');
             if (isMaximized) {
-                maximizeChat(); // Restore to maximized state
+                maximizeChat();
             } else if (lastX !== null && lastY !== null) {
-                // Restore % responsiveness 
                 chatContainer.style.left = `${lastX}%`;
                 chatContainer.style.top = `${lastY}%`;
             } else {
@@ -101,43 +120,31 @@ function chatbotApp() {
         if (!isMaximized) {
             chatContainer.classList.add('maximized');
             chatContainer.classList.remove('minimized');
-            // Store the current position before maximizing
             lastX = chatContainer.style.left;
             lastY = chatContainer.style.top;
             isMaximized = true;
             isMinimized = false;
         } else {
             chatContainer.classList.remove('maximized');
-            // Restore last position before maximized
             chatContainer.style.left = lastX;
             chatContainer.style.top = lastY;
             isMaximized = false;
         }
     }
+
     function closeChat() {
         console.log("closeChat function called");
-        if (chatContainer && minimizedCircle) {
-            chatContainer.style.display = 'none'; // Hide the chat container
-            minimizedCircle.style.display = 'flex'; // Show the minimized circle
-            isClosed = true; // Set the isClosed flag to true
-            console.log("Classes on chatContainer: ", chatContainer.classList);
-            console.log("Minimized circle display style: ", minimizedCircle.style.display);
-        } else {
-            console.error("Element references not found");
+        if (!isClosed) {
+            chatContainer.classList.add('closed');
+            chatContainer.classList.remove('minimized');
+            isClosed = true;
         }
     }
 
     function restoreChat() {
         console.log("restoreChat function called");
-        if (chatContainer && minimizedCircle) {
-            chatContainer.style.display = 'flex'; // Show the chat container
-            minimizedCircle.style.display = 'none'; // Hide the minimized circle
-            isClosed = false; // Set the isClosed flag to false
-            console.log("Classes on chatContainer: ", chatContainer.classList);
-            console.log("Minimized circle display style: ", minimizedCircle.style.display);
-        } else {
-            console.error("Element references not found");
-        }
+        chatContainer.classList.remove('closed');
+        isClosed = false;
     }
 
     function clearChat() {
@@ -145,7 +152,6 @@ function chatbotApp() {
         const chatLog = document.getElementById('chat-log');
 
         if (!isClearingChat) {
-            // Change "Cancel" mode
             console.log("Setting 'Clear Chat' button to 'Cancel' and changing its color to red");
             clearChatButton.classList.add('button-orange');
             clearChatButton.textContent = 'Cancel';
@@ -163,7 +169,6 @@ function chatbotApp() {
 
             document.getElementById('confirmClear').addEventListener('click', this.confirmClearChat.bind(this));
         } else {
-            // Reset to "Clear Chat" mode
             console.log("Cancel action selected, restoring the initial state of the chat log and 'Clear Chat' button");
             chatLog.innerHTML = '';
             clearChatButton.textContent = 'Clear Chat';
@@ -177,15 +182,13 @@ function chatbotApp() {
         console.log("confirmClearChat function called");
         document.getElementById('chat-log').innerHTML = '';
         console.log("Cleared chat content");
-        // global chatbot object
         this.chatbot.conversationHistory = [];
         console.log("Conversation history cleared");
 
-        // Reset clear to original state
         console.log("Resetting 'Clear Chat' button to its original state");
         clearChatButton.textContent = 'Clear Chat';
         clearChatButton.style.background = '';
-        isClearingChat = false; // Reset the state
+        isClearingChat = false;
     }
 
     return {
@@ -194,28 +197,26 @@ function chatbotApp() {
             centerChatContainer();
             window.addEventListener('resize', function() {
                 if (isMinimized) {
-                    // Keep minimized chat at the bottom right
                     chatContainer.style.inset = 'auto 0px 0px auto';
                 } else if (isMaximized) {
                     // No need to reposition if maximized
                 } else if (lastX !== null && lastY !== null) {
-                    // window stays within the viewport %
                     const leftInPx = (window.innerWidth * lastX) / 100;
                     const topInPx = (window.innerHeight * lastY) / 100;
             
-                    // Apply current viewport size
                     const constrainedLeft = Math.min(leftInPx, window.innerWidth - chatContainer.offsetWidth);
                     const constrainedTop = Math.min(leftInPx, window.innerHeight - chatContainer.offsetHeight);
             
                     chatContainer.style.left = `${(constrainedLeft / window.innerWidth) * 100}%`;
                     chatContainer.style.top = `${(constrainedTop / window.innerHeight) * 100}%`;
                 } else {
-                    // Center container if it has not been dragged
                     centerChatContainer();
                 }
             });
             makeDraggable();
-            minimizedCircle.addEventListener('click', restoreChat); //circle calls restoreChat
+            chatContainer.addEventListener('click', function() {
+                if (isClosed) restoreChat();
+            });
         },
         userInput: '',
         sendMessage() {
@@ -232,3 +233,4 @@ function chatbotApp() {
         restoreChat: restoreChat
     };
 }
+
