@@ -216,6 +216,12 @@ function chatbotApp() {
             });
             makeDraggable();
             minimizedCircle.addEventListener('click', restoreChat); //circle calls restoreChat
+            document.querySelectorAll('.rate-button').forEach(button => {
+                button.addEventListener('click', (event) => {
+                    const rating = event.target.textContent;
+                    this.chatbot.sendMessage(`Rate me ${rating}`, 'User');
+                });
+            });
         },
         userInput: '',
         sendMessage() {

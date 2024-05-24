@@ -1,3 +1,47 @@
+async function defineIntents(manager) {
+  const rateMePhrases = {
+    'rateMe1': ['Rate me 1', 'I rate 1', 'My rating is 1', '1 star', 'One star'],
+    'rateMe2': ['Rate me 2', 'I rate 2', 'My rating is 2', '2 stars', 'Two stars'],
+    'rateMe3': ['Rate me 3', 'I rate 3', 'My rating is 3', '3 stars', 'Three stars'],
+    'rateMe4': ['Rate me 4', 'I rate 4', 'My rating is 4', '4 stars', 'Four stars'],
+    'rateMe5': ['Rate me 5', 'I rate 5', 'My rating is 5', '5 stars', 'Five stars']
+};
+
+const rateMeResponses = {
+    'rateMe1': [
+        '1: Terrible', '1: Awful', '1: Horrible', '1: Disappointing', '1: Dreadful'
+    ],
+    'rateMe2': [
+        '2: Bad', '2: Poor', '2: Unsatisfactory', '2: Subpar', '2: Mediocre'
+    ],
+    'rateMe3': [
+        '3: Average', '3: Okay', '3: Fair', '3: Neutral', '3: So-so'
+    ],
+    'rateMe4': [
+        '4: Good', '4: Nice', '4: Satisfactory', '4: Decent', '4: Pleasant'
+    ],
+    'rateMe5': [
+        '5: Excellent', '5: Outstanding', '5: Superb', '5: Fantastic', '5: Perfect'
+    ]
+};
+
+// Add rateMe phrases to the manager
+Object.keys(rateMePhrases).forEach(intent => {
+    rateMePhrases[intent].forEach(phrase => {
+        manager.addDocument('en', phrase, intent);
+    });
+});
+
+// Add rateMe responses to the manager
+Object.keys(rateMeResponses).forEach(intent => {
+    rateMeResponses[intent].forEach(response => {
+        manager.addAnswer('en', intent, response);
+    });
+});
+}
+
+module.exports = defineIntents;
+
 /* async function defineIntents(manager) {
    // chat initiation
    const chatInitiatorPhrases = [
@@ -257,144 +301,7 @@ module.exports = { defineIntents }
    */
 
 
-async function defineIntents(manager) {
-    // Define chat initiation phrases and responses
-    const chatInitiatorPhrases = [
-        "Let's chat", "Lets talk", "chat start", "I'm here", "chat bot", "chatbot start chat?",
-        "Lets begin", "Let's start", "I need help", "Can we talk?", "I have a question",
-        "Are you there?", "Let's get going", "I'm ready", "Okay, let's begin", "You there?",
-        "Let's converse", "I'm here to chat", "Ready when you are", "Let's kick this off",
-        "Time to chat", "I'm all ears"
-    ];
 
-    chatInitiatorPhrases.forEach(phrase => {
-        manager.addDocument('en', phrase, 'chat_initiator');
-    });
-
-    const chatInitiatorResponses = [
-        "Hi! How can I assist you today?", "Hello! Who do I have the pleasure of chatting with?",
-        "Greetings! How may I be of service?", "Welcome! What brings you here?", "Hey there! How can I help?",
-        "Good to meet you! What can I do for you?", "I'm here to help. What's on your mind?",
-        "Ready to chat! What's your question?", "At your service! How can I assist?",
-        "Yes, I'm here. How can I help you?", "Listening... What do you need?", "Hello! Let's solve some problems, shall we?",
-        "Greetings! Ready to help you out.", "How can I make your day better?", "I'm all ears. What do you need to know?",
-        "Welcome! How can I assist you today?", "Here to help! What's your query?", "Yes, ready to chat. What's up?",
-        "Hello! What can I do for you today?", "Hi there! Ready to assist. What's the matter?"
-    ];
-
-    chatInitiatorResponses.forEach(response => {
-        manager.addAnswer('en', 'chat_initiator', response);
-    });
-
-    // Define 'helpYou' intent phrases and responses
-    const helpYouPhrases = [
-        "Can I assist you with something?", "How may I be of service today?", "What can I help you with at this moment?",
-        "Is there anything specific you need help with?", "How can I make your day better?", "What assistance do you require?",
-        "Do you need support with anything?", "How can I be of help today?", "What's on your mind that I can help with?",
-        "Are you looking for help with something?"
-    ];
-
-    helpYouPhrases.forEach(phrase => {
-        manager.addDocument('en', phrase, 'helpYou');
-    });
-
-    const helpYouResponses = [
-        "I'm here to help. What do you need?", "Tell me how I can assist you.", "I'm all ears. How can I support you today?",
-        "Your wish is my command. How can I assist?", "Let me know what you need help with.",
-        "I'm here to make things easier. What do you need?", "Feel free to ask for assistance.",
-        "I'm ready to help. What's your query?", "How can I serve you today?", "I'm at your service. What do you require?"
-    ];
-
-    helpYouResponses.forEach(response => {
-        manager.addAnswer('en', 'helpYou', response);
-    });
-
-    // Define 'agree' intent responses
-    const agreeResponses = [
-        "Yes!", "Sure!", "Okay!", "Certainly!", "Definitely!", "Of course.", "Sure thing.",
-        "Absolutely.", "No problem.", "Certainly yes.", "Sure, I can.", "Yes, of course.",
-        "Definitely, why not?", "Absolutely, go ahead.", "Certainly, please do."
-    ];
-
-    agreeResponses.forEach(response => {
-        manager.addAnswer('en', 'agree', response);
-    });
-
-    // Define 'greetings' intent phrases and responses
-    const greetingsExamples = [
-        'hello', 'hi', 'greetings', 'salutations', 'howdy', 'yo', 'hey there', 'welcome', 'hiya', 'what\'s up',
-        'good to see you', 'pleased to meet you', 'how are things', 'how\'s life', 'how\'s your day', 'nice to see you',
-        'glad to see you', 'how have you been', 'what\'s new', 'it\'s been a while'
-    ];
-
-    greetingsExamples.forEach(example => {
-        manager.addDocument('en', example, 'greetings');
-    });
-
-    const greetingsResponses = [
-        "Hello!", "Hi!", "Hey!", "Welcome!", "Greetings!", "Howdy!", "Cheers!", "Yo!", "Salutations!", "Hiya!",
-        "Ahoy!", "Hola!", "Namaste!", "Aloha!", "Bonjour!", "Hallo!", "Ciao!", "Shalom!", "Salaam!", "Ni hao!",
-        "Hello there!", "Good day!", "Hi, friend!", "Hey there!", "Welcome back!", "Greetings, traveler!", "Morning sunshine!", "Evening, friend!",
-        "Welcome aboard!", "Hiya, buddy!", "Peace out!", "Stay blessed!", "Well met!", "Good seeing!", "Hey, beautiful!", "Yo, amigo!",
-        "Lovely day!", "Howdy, partner!", "Cheers, mate!", "Evening, star!",
-        "How are you?", "Nice to meet!", "Good to see!", "Welcome to town!", "How's it going?", "Lovely to meet!", "Hi, how are?",
-        "Welcome home, friend!", "Good morning, sunshine!", "Have a good one!"
-    ];
-
-    greetingsResponses.forEach(response => {
-        manager.addAnswer('en', 'greetings', response);
-    });
-
-    const morningResponses = [
-      // 1-Word Responses
-      'Morning!', 'Sunshine!', 'Dawn!', 'Daybreak!', 'Awake!', 'Fresh!', 'Bright!', 'Early!', 'Sunrise!', 'Uplift!',
-    
-      // 2-Word Responses
-      'Good morning!', 'Bright day!', 'Sunny start!', 'Fresh morning!', 'Morning glory!', 'Rise up!', 'New dawn!', 'Day\'s start!',
-      'Peaceful morning!', 'Lovely dawn!',
-    
-      // 3-Word Responses
-      'Rise and shine!', 'Beautiful morning awaits!', 'Wake up, sunshine!', 'New day, new start!', 'Morning has broken!',
-      'Fresh start today!', 'Embrace the day!', 'First light gleams!', 'Dawn of hope!', 'Bright day ahead!'
-    ];
-    
-    morningResponses.forEach(response => manager.addAnswer('en', 'greetings.morning', response));
-    
-    
-    
-    const eveningResponses = [
-      // 1-Word Responses
-      'Evening!', 'Sunset!', 'Twilight!', 'Dusk!', 'Nightfall!', 'Moonlight!', 'Starlight!', 'Nighttime!', 'Quiet!', 'Peaceful!',
-    
-      // 2-Word Responses
-      'Good evening!', 'Calm night!', 'Starry sky!', 'Peaceful dusk!', 'Silent evening!', 'Soft twilight!', 'Moonlit night!',
-      'Quiet hours!', 'Serene night!', 'Evening glow!',
-    
-      // 3-Word Responses
-      'Enjoy your evening!', 'Have a good night!', 'Stars shine bright!', 'Restful night ahead!', 'Evening peace descends!',
-      'Twilight whispers softly!', 'Moon greets kindly!', 'Dusk settles in!', 'Serenity fills night!', 'Night\'s calm embrace!'
-    ];
-    
-    eveningResponses.forEach(response => manager.addAnswer('en', 'greetings.evening', response));
-    
-    
-    
-    const byeResponses = [
-      // 1-Word Responses
-      'Bye!', 'Farewell!', 'Adios!', 'Ciao!', 'Later!', 'Peace!', 'Goodbye!', 'Sayonara!', 'Au revoir!', 'Departing!',
-    
-      // 2-Word Responses
-      'See ya!', 'Take care!', 'Safe travels!', 'Until next!', 'Good journey!', 'Bye now!', 'Fare thee!', 'Parting wish!',
-      'Stay safe!', 'Godspeed!',
-    
-      // 3-Word Responses
-      'Bye for now!', 'Take care, friend!', 'Safe journey ahead!', 'Until we meet!', 'Wishing you well!', 'See you soon!',
-      'Farewell for now!', 'Goodbye, my friend!', 'Until next time!', 'See you again!'
-    ];
-    byeResponses.forEach(response => manager.addAnswer('en', 'greetings.bye', response));
-}
-
-module.exports = defineIntents;
 
 // Add each category of responses to the manager with specific intents
 /* async function setupBotResponses(manager) {
@@ -478,3 +385,138 @@ module.exports = defineIntents;
         manager.addAnswer('en', 'botName.botIntroductionAndNameRequest', response);
     });
 } */
+
+// Define chat initiation phrases and responses
+/* const chatInitiatorPhrases = [
+  "Let's chat", "Lets talk", "chat start", "I'm here", "chat bot", "chatbot start chat?",
+  "Lets begin", "Let's start", "I need help", "Can we talk?", "I have a question",
+  "Are you there?", "Let's get going", "I'm ready", "Okay, let's begin", "You there?",
+  "Let's converse", "I'm here to chat", "Ready when you are", "Let's kick this off",
+  "Time to chat", "I'm all ears"
+];
+
+chatInitiatorPhrases.forEach(phrase => {
+  manager.addDocument('en', phrase, 'chat_initiator');
+});
+
+const chatInitiatorResponses = [
+  "Hi! How can I assist you today?", "Hello! Who do I have the pleasure of chatting with?",
+  "Greetings! How may I be of service?", "Welcome! What brings you here?", "Hey there! How can I help?",
+  "Good to meet you! What can I do for you?", "I'm here to help. What's on your mind?",
+  "Ready to chat! What's your question?", "At your service! How can I assist?",
+  "Yes, I'm here. How can I help you?", "Listening... What do you need?", "Hello! Let's solve some problems, shall we?",
+  "Greetings! Ready to help you out.", "How can I make your day better?", "I'm all ears. What do you need to know?",
+  "Welcome! How can I assist you today?", "Here to help! What's your query?", "Yes, ready to chat. What's up?",
+  "Hello! What can I do for you today?", "Hi there! Ready to assist. What's the matter?"
+];
+
+chatInitiatorResponses.forEach(response => {
+  manager.addAnswer('en', 'chat_initiator', response);
+});
+
+// Define 'helpYou' intent phrases and responses
+const helpYouPhrases = [
+  "Can I assist you with something?", "How may I be of service today?", "What can I help you with at this moment?",
+  "Is there anything specific you need help with?", "How can I make your day better?", "What assistance do you require?",
+  "Do you need support with anything?", "How can I be of help today?", "What's on your mind that I can help with?",
+  "Are you looking for help with something?"
+];
+
+helpYouPhrases.forEach(phrase => {
+  manager.addDocument('en', phrase, 'helpYou');
+});
+
+const helpYouResponses = [
+  "I'm here to help. What do you need?", "Tell me how I can assist you.", "I'm all ears. How can I support you today?",
+  "Your wish is my command. How can I assist?", "Let me know what you need help with.",
+  "I'm here to make things easier. What do you need?", "Feel free to ask for assistance.",
+  "I'm ready to help. What's your query?", "How can I serve you today?", "I'm at your service. What do you require?"
+];
+
+helpYouResponses.forEach(response => {
+  manager.addAnswer('en', 'helpYou', response);
+});
+
+// Define 'agree' intent responses
+const agreeResponses = [
+  "Yes!", "Sure!", "Okay!", "Certainly!", "Definitely!", "Of course.", "Sure thing.",
+  "Absolutely.", "No problem.", "Certainly yes.", "Sure, I can.", "Yes, of course.",
+  "Definitely, why not?", "Absolutely, go ahead.", "Certainly, please do."
+];
+
+agreeResponses.forEach(response => {
+  manager.addAnswer('en', 'agree', response);
+});
+
+// Define 'greetings' intent phrases and responses
+const greetingsExamples = [
+  'hello', 'hi', 'greetings', 'salutations', 'howdy', 'yo', 'hey there', 'welcome', 'hiya', 'what\'s up',
+  'good to see you', 'pleased to meet you', 'how are things', 'how\'s life', 'how\'s your day', 'nice to see you',
+  'glad to see you', 'how have you been', 'what\'s new', 'it\'s been a while'
+];
+
+greetingsExamples.forEach(example => {
+  manager.addDocument('en', example, 'greetings');
+});
+
+const greetingsResponses = [
+  "Hello!", "Hi!", "Hey!", "Welcome!", "Greetings!", "Howdy!", "Cheers!", "Yo!", "Salutations!", "Hiya!",
+  "Ahoy!", "Hola!", "Namaste!", "Aloha!", "Bonjour!", "Hallo!", "Ciao!", "Shalom!", "Salaam!", "Ni hao!",
+  "Hello there!", "Good day!", "Hi, friend!", "Hey there!", "Welcome back!", "Greetings, traveler!", "Morning sunshine!", "Evening, friend!",
+  "Welcome aboard!", "Hiya, buddy!", "Peace out!", "Stay blessed!", "Well met!", "Good seeing!", "Hey, beautiful!", "Yo, amigo!",
+  "Lovely day!", "Howdy, partner!", "Cheers, mate!", "Evening, star!",
+  "How are you?", "Nice to meet!", "Good to see!", "Welcome to town!", "How's it going?", "Lovely to meet!", "Hi, how are?",
+  "Welcome home, friend!", "Good morning, sunshine!", "Have a good one!"
+];
+
+greetingsResponses.forEach(response => {
+  manager.addAnswer('en', 'greetings', response);
+});
+
+const morningResponses = [
+// 1-Word Responses
+'Morning!', 'Sunshine!', 'Dawn!', 'Daybreak!', 'Awake!', 'Fresh!', 'Bright!', 'Early!', 'Sunrise!', 'Uplift!',
+
+// 2-Word Responses
+'Good morning!', 'Bright day!', 'Sunny start!', 'Fresh morning!', 'Morning glory!', 'Rise up!', 'New dawn!', 'Day\'s start!',
+'Peaceful morning!', 'Lovely dawn!',
+
+// 3-Word Responses
+'Rise and shine!', 'Beautiful morning awaits!', 'Wake up, sunshine!', 'New day, new start!', 'Morning has broken!',
+'Fresh start today!', 'Embrace the day!', 'First light gleams!', 'Dawn of hope!', 'Bright day ahead!'
+];
+
+morningResponses.forEach(response => manager.addAnswer('en', 'greetings.morning', response));
+
+
+
+const eveningResponses = [
+// 1-Word Responses
+'Evening!', 'Sunset!', 'Twilight!', 'Dusk!', 'Nightfall!', 'Moonlight!', 'Starlight!', 'Nighttime!', 'Quiet!', 'Peaceful!',
+
+// 2-Word Responses
+'Good evening!', 'Calm night!', 'Starry sky!', 'Peaceful dusk!', 'Silent evening!', 'Soft twilight!', 'Moonlit night!',
+'Quiet hours!', 'Serene night!', 'Evening glow!',
+
+// 3-Word Responses
+'Enjoy your evening!', 'Have a good night!', 'Stars shine bright!', 'Restful night ahead!', 'Evening peace descends!',
+'Twilight whispers softly!', 'Moon greets kindly!', 'Dusk settles in!', 'Serenity fills night!', 'Night\'s calm embrace!'
+];
+
+eveningResponses.forEach(response => manager.addAnswer('en', 'greetings.evening', response));
+
+
+
+const byeResponses = [
+// 1-Word Responses
+'Bye!', 'Farewell!', 'Adios!', 'Ciao!', 'Later!', 'Peace!', 'Goodbye!', 'Sayonara!', 'Au revoir!', 'Departing!',
+
+// 2-Word Responses
+'See ya!', 'Take care!', 'Safe travels!', 'Until next!', 'Good journey!', 'Bye now!', 'Fare thee!', 'Parting wish!',
+'Stay safe!', 'Godspeed!',
+
+// 3-Word Responses
+'Bye for now!', 'Take care, friend!', 'Safe journey ahead!', 'Until we meet!', 'Wishing you well!', 'See you soon!',
+'Farewell for now!', 'Goodbye, my friend!', 'Until next time!', 'See you again!'
+];
+byeResponses.forEach(response => manager.addAnswer('en', 'greetings.bye', response)); */

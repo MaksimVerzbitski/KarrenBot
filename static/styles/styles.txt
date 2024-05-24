@@ -1,3 +1,49 @@
+/* Minimized circle */
+#minimized-circle {
+    display: none; /* Initially hidden */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px; /* Slightly increased width */
+    height: 60px; /* Slightly increased height */
+    border-radius: 50%;
+    background-color: #7a7a7a;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    animation: vibrate 0.3s infinite; /* Increased vibration duration for more visible effect */
+    z-index: 1000;
+    display: flex; /* Flexbox for centering text */
+    justify-content: center; /* Center text horizontally */
+    align-items: center; /* Center text vertically */
+    color: rgb(255, 254, 254); /* Text color */
+    font-size: 12px; /* Adjusted text size */
+    font-weight: bold; /* Text weight */
+    text-align: center; /* Center text alignment */
+    padding: 5px; /* Padding to ensure text fits well */
+    box-sizing: border-box; /* Include padding in the element's size */
+}
+
+/* Enhanced vibration effect */
+@keyframes vibrate {
+    0% { transform: translate(0); }
+    
+    20% { transform: translate(-3px, -3px); }
+    
+    40% { transform: translate(3px, -3px); }
+    
+    60% { transform: translate(-3px, -3px); }
+    
+    80% { transform: translate(3px, -3px); }
+    
+    100% { transform: translate(0); }
+}
+
+/* Closed class to hide chat container */
+.closed {
+    display: none;
+}
+
+
 /* Base styles */
 body, html {
     height: 100%;

@@ -28,51 +28,258 @@ button:hover {
     background-color: #555;
 }
 
+
+
+
 /* Minimized circle */
 #minimized-circle {
     display: none; /* Initially hidden */
     position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 60px; /* Slightly increased width */
-    height: 60px; /* Slightly increased height */
+    bottom: 30px;
+    right: 30px;
+    width: 60px; /* Circle width */
+    height: 60px; /* Circle height */
     border-radius: 50%;
-    background-color: #1E90FF;
+    background-color: #7a7a7a;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     cursor: pointer;
-    animation: vibrate 0.3s infinite; /* Increased vibration duration for more visible effect */
     z-index: 1000;
     display: flex; /* Flexbox for centering text */
     justify-content: center; /* Center text horizontally */
     align-items: center; /* Center text vertically */
-    color: white; /* Text color */
-    font-size: 12px; /* Adjusted text size */
+    color: #fff; /* Text color */
+    font-size: 14px; /* Text size */
     font-weight: bold; /* Text weight */
     text-align: center; /* Center text alignment */
     padding: 5px; /* Padding to ensure text fits well */
     box-sizing: border-box; /* Include padding in the element's size */
+    animation: vibrate 4s infinite; /* Vibration animation */
 }
 
-/* Enhanced vibration effect */
+#minimized-circle::before,
+#minimized-circle::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid rgb(0, 0, 0);
+    animation: vibrate 1s infinite;
+}
+
+#minimized-circle::before,
+#minimized-circle::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid rgb(235, 62, 9);
+    animation: mysteryLightFlicker 3s infinite;
+}
+
+#minimized-circle::before {
+    width: 80px;
+    height: 80px;
+}
+
+#minimized-circle::after {
+    width: 100px;
+    height: 100px;
+    
+}
+
+/* Morse code vibration effect */
 @keyframes vibrate {
-    0% { transform: translate(0); }
-    10% { transform: translate(-3px, 3px); }
-    20% { transform: translate(-3px, -3px); }
-    30% { transform: translate(3px, 3px); }
-    40% { transform: translate(3px, -3px); }
-    50% { transform: translate(-3px, 3px); }
-    60% { transform: translate(-3px, -3px); }
-    70% { transform: translate(3px, 3px); }
-    80% { transform: translate(3px, -3px); }
-    90% { transform: translate(-3px, 3px); }
-    100% { transform: translate(0); }
+    0%, 100% { transform: translate(0); }
+    10%, 20%, 30% { transform: translate(-5px, 5px); } /* Dot */
+    40%, 50%, 60% { transform: translate(5px, -5px); } /* Dash */
+    70%, 80%, 90% { transform: translate(-5px, 5px); } /* Dot */
 }
 
+@keyframes vibrate-morse {
+    0%, 100% { transform: translate(0); }
+    10%, 20%, 30% { transform: translate(-5px, 5px); } /* Dot */
+    40%, 50%, 60% { transform: translate(5px, -5px); } /* Dash */
+    70%, 80%, 90% { transform: translate(-5px, 5px); } /* Dot */
+}
+
+@keyframes mysteryLightFlicker  {
+    0%, 1.38889% {
+        background-color: #0006;
+    }
+
+    1.38889%, 2.77778% {
+        background-color: #0006;
+    }
+
+    2.77778%, 6.94444% {
+        background-color: #0006;
+    }
+
+    6.94444%, 9.72222% {
+        background-color: #fff0;
+    }
+
+    9.72222%, 13.8889% {
+        background-color: #0006;
+    }
+
+    13.8889%, 15.2778% {
+        background-color: #0006;
+    }
+
+    15.2778%, 16.6667% {
+        background-color: #0006;
+    }
+
+    16.6667%, 18.0556% {
+        background-color: #0006;
+    }
+
+    18.0556%, 19.4444% {
+        background-color: #0006;
+    }
+
+    19.4444%, 22.2222% {
+        background-color: #fff0;
+    }
+    22.2222%, 23.6111% {
+        background-color: #0006;
+    }
+
+    23.6111%, 25% {
+        background-color: #0006;
+    }
+
+    25%, 29.1667% {
+        background-color: #0006;
+    }
+
+    29.1667%, 31.9444% {
+        background-color: #fff0;
+    }
+
+    31.9444%, 33.3333% {
+        background-color: #0006;
+    }
+
+    33.3333%, 34.7222% {
+        background-color: #0006;
+    }
+
+    34.7222%, 38.8889% {
+        background-color: #0006;
+    }
+
+    38.8889%, 40.2778% {
+        background-color: #0006;
+    }
+
+    40.2778%, 44.4444% {
+        background-color: #0006;
+    }
+
+    44.4444%, 45.8333% {
+        background-color: #0006;
+    }
+
+    45.8333%, 47.2222% {
+        background-color: #0006;
+    }
+
+    47.2222%, 50% {
+        background-color: #fff0;
+    }
+
+    50%, 54.1667% {
+        background-color: #0006;
+    }
+
+    54.1667%, 56.9444% {
+        background-color: #fff0;
+    }
+
+    56.9444%, 58.3333% {
+        background-color: #0006;
+    }
+
+    58.3333%, 59.7222% {
+        background-color: #0006;
+    }
+
+    59.7222%, 63.8889% {
+        background-color: #0006;
+    }
+
+    63.8889%, 65.2778% {
+        background-color: #0006;
+    }
+
+    65.2778%, 66.6667% {
+        background-color: #0006;
+    }
+
+    66.6667%, 68.0556% {
+        background-color: #0006;
+    }
+
+    68.0556%, 69.4444% {
+        background-color: #0006;
+    }
+
+    69.4444%, 70.8333% {
+        background-color: #0006;
+    }
+
+    70.8333%, 72.2222% {
+        background-color: #0006;
+    }
+
+    72.2222%, 75% {
+        background-color: #fff0;
+    }
+
+    75%, 76.3889% {
+        background-color: #0006;
+    }
+
+    76.3889%, 79.1667% {
+        background-color: #fff0;
+    }
+
+    79.1667%, 83.3333% {
+        background-color: #0006;
+    }
+
+    83.3333%, 84.7222% {
+        background-color: #0006;
+    }
+
+    84.7222%, 86.1111% {
+        background-color: #0006;
+    }
+
+    86.1111%, 88.8889% {
+        background-color: #fff0;
+    }
+
+    88.8889%, 90.2778% {
+        background-color: #0006;
+    }
+
+    90.2778%, 91.6667% {
+        background-color: #0006;
+    }
+
+    91.6667%, 95.8333% {
+        background-color: #0006;
+    }
+
+    95.8333%, 98.6111% {
+        background-color: #fff0;
+    }
+}
 /* Closed class to hide chat container */
 .closed {
     display: none;
 }
-
 
 /* styles.css */
 .button-orange {

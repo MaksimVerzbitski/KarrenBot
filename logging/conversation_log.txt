@@ -4510,3 +4510,151 @@ bot | Hello!
 15-05-2024 17:19 | Maksim: My name is Maksim
 
 15-05-2024 17:19 | Tatjana: Hello Maksim, how can I help you today?
+
+24-05-2024 09:14 | Maksim: Rate me 5
+
+24-05-2024 09:14 | Tatjana: 4: Decent
+
+24-05-2024 09:14 | Maksim: My name is Maksim
+
+24-05-2024 09:14 | Tatjana: Hello Maksim, how can I help you today?
+
+24-05-2024 09:14 | Maksim: Bot Tatjana you
+
+24-05-2024 09:14 | Tatjana: Hello Tatjana, how can I help you today?
+
+24-05-2024 09:14 | Maksim: Rate me 5
+
+24-05-2024 09:14 | Tatjana: 3: Neutral
+
+24-05-2024 09:15 | Maksim: Rate me 5
+
+24-05-2024 09:15 | Tatjana: 4: Pleasant
+
+24-05-2024 09:15 | Maksim: Rate me 5
+
+24-05-2024 09:15 | Tatjana: 1: Disappointing
+
+24-05-2024 09:15 | Maksim: Rate me 5
+
+24-05-2024 09:15 | Tatjana: 1: Horrible
+
+24-05-2024 09:15 | Maksim: Rate me 5
+
+24-05-2024 09:15 | Tatjana: 4: Good
+
+24-05-2024 09:15 | Maksim: Rate me 5
+
+24-05-2024 09:15 | Tatjana: 5: Superb
+
+24-05-2024 09:27 | Maksim: Rate me 5
+
+24-05-2024 09:27 | Tatjana: There was an error processing your message.
+
+24-05-2024 10:12 | Maksim: Rate me 5
+
+24-05-2024 10:12 | Tatjana: I'm not sure how to respond to that.
+
+24-05-2024 10:13 | Maksim: Rate me 5
+
+24-05-2024 10:13 | Tatjana: 5: Superb
+
+24-05-2024 10:13 | Maksim: Rate me 4
+
+24-05-2024 10:13 | Tatjana: 5: Perfect
+
+24-05-2024 10:14 | Maksim: Rate me 3
+
+24-05-2024 10:14 | Tatjana: 5: Fantastic
+
+24-05-2024 10:14 | Maksim: Rate me 2
+
+24-05-2024 10:14 | Tatjana: 1: Disappointing
+
+24-05-2024 10:14 | Maksim: Rate me 1
+
+24-05-2024 10:14 | Tatjana: 4: Pleasant
+
+24-05-2024 10:14 | Maksim: Rate me 5
+
+24-05-2024 10:14 | Tatjana: 1: Disappointing
+
+24-05-2024 10:14 | Maksim: Rate me 5
+
+24-05-2024 10:14 | Tatjana: 4: Pleasant
+
+24-05-2024 10:14 | Maksim: Rate me 5
+
+24-05-2024 10:14 | Tatjana: 3: Neutral
+
+24-05-2024 10:14 | Maksim: Rate me 5
+
+24-05-2024 10:14 | Tatjana: 5: Excellent
+
+24-05-2024 10:14 | Maksim: Rate me 4
+
+24-05-2024 10:14 | Tatjana: 2: Poor
+
+24-05-2024 10:14 | Maksim: Rate me 3
+
+24-05-2024 10:14 | Tatjana: 5: Superb
+
+24-05-2024 10:14 | Maksim: Rate me 2
+
+24-05-2024 10:14 | Tatjana: 3: So-so
+
+24-05-2024 10:14 | Maksim: Rate me 1
+
+24-05-2024 10:14 | Tatjana: 1: Awful
+
+24-05-2024 10:14 | Maksim: Rate me 5
+
+24-05-2024 10:14 | Tatjana: 2: Unsatisfactory
+
+24-05-2024 10:34 | Maksim: Rate me 5
+
+24-05-2024 10:34 | Tatjana: 4: Good
+
+24-05-2024 10:46 | Maksim: Rate me 5
+
+24-05-2024 10:46 | Tatjana: 3: Okay
+
+24-05-2024 10:51 | Maksim: Rate me 5
+
+24-05-2024 10:51 | Tatjana: 5: Perfect
+
+24-05-2024 10:51 | Maksim: Rate me 5
+
+24-05-2024 10:51 | Tatjana: 5: Superb
+
+24-05-2024 10:51 | Maksim: Rate me 5
+
+24-05-2024 10:51 | Tatjana: 5: Perfect
+
+24-05-2024 10:51 | Maksim: Rate me 4
+
+24-05-2024 10:51 | Tatjana: 4: Nice
+
+24-05-2024 10:51 | Maksim: Rate me 3
+
+24-05-2024 10:51 | Tatjana: 3: Okay
+
+24-05-2024 11:13 | Maksim: My name is Maksim
+
+24-05-2024 11:13 | Tatjana: Hello Maksim, how can I help you today?
+
+24-05-2024 11:13 | Maksim: Bot Tatjana you
+
+24-05-2024 11:13 | Tatjana: Hello Tatjana, how can I help you today?
+
+24-05-2024 11:49 | Maksim: Rate me 5
+
+24-05-2024 11:49 | Tatjana: There was an error processing your message.
+
+24-05-2024 12:21 | Maksim: Rate me 5
+
+24-05-2024 12:21 | Tatjana: 5: Superb
+
+24-05-2024 12:21 | Maksim: Rate me 5
+
+24-05-2024 12:21 | Tatjana: 5: Fantastic
