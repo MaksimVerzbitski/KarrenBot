@@ -172,7 +172,7 @@ def send_message():
 
 
 def my_nlp_function(message):
-    conn = http.client.HTTPConnection('127.0.0.1', 3000)
+    conn = http.client.HTTPConnection('127.0.0.1', 3000)  # Node.js server running on port 3000
     try:
         payload = json.dumps({'message': message})
         headers = {'Content-Type': 'application/json'}

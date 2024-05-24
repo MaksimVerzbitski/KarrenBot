@@ -150,19 +150,35 @@ function handleNameResponse(chatbot, response, res) {
 
 
 function handleRatingResponse(response, res) {
+  console.log('Received response:', JSON.stringify(response, null, 2)); // Log the incoming response
+
   const intent = response.intent;
   const ratingResponses = {
-    'rateMe1': ['Rate me 1', 'I rate 1', 'My rating is 1', '1 star', 'One star'],
-    'rateMe2': ['Rate me 2', 'I rate 2', 'My rating is 2', '2 stars', 'Two stars'],
-    'rateMe3': ['Rate me 3', 'I rate 3', 'My rating is 3', '3 stars', 'Three stars'],
-    'rateMe4': ['Rate me 4', 'I rate 4', 'My rating is 4', '4 stars', 'Four stars'],
-    'rateMe5': ['Rate me 5', 'I rate 5', 'My rating is 5', '5 stars', 'Five stars']
+    'rateMe1': ['1: Terrible', '1: Awful', '1: Horrible', '1: Disappointing', '1: Dreadful'],
+    'rateMe2': ['2: Bad', '2: Poor', '2: Unsatisfactory', '2: Subpar', '2: Mediocre'],
+    'rateMe3': ['3: Average', '3: Okay', '3: Fair', '3: Neutral', '3: So-so'],
+    'rateMe4': ['4: Good', '4: Nice', '4: Satisfactory', '4: Decent', '4: Pleasant'],
+    'rateMe5': ['5: Excellent', '5: Outstanding', '5: Superb', '5: Fantastic', '5: Perfect']
   };
 
-  const answer = ratingResponses[intent] || response.answer;
+  if (!intent || !ratingResponses[intent]) {
+    console.error('Invalid intent:', intent);
+    res.json({
+      answer: 'I am not sure how to respond to that.',
+      userName: chatbot.userName,
+      botName: chatbot.botName
+    });
+    return;
+  }
+
+  // Select a random response for the given intent
+  const responses = ratingResponses[intent];
+  const randomResponse = responses[Math.floor(Math.random() * responses.length)];
+
+  console.log('Selected random response:', randomResponse); // Log the selected response
 
   res.json({
-    answer: answer,
+    answer: randomResponse,
     userName: chatbot.userName,
     botName: chatbot.botName  
   });
@@ -219,5 +235,73 @@ function saveNameForTraining(name, gender, origin) {
 
 
 app.listen(port, () => console.log(`Server running on http://localhost:${port}`));
+
+
+/* function handleRatingResponse(response, req, res) {
+  const intent = response.intent;
+  const ratingResponses = {
+    'rateMe1': '1: Terrible',
+    'rateMe2': '2: Bad',
+    'rateMe3': '3: Average',
+    'rateMe4': '4: Good',
+    'rateMe5': '5: Excellent'
+  };
+
+  const answer = ratingResponses[intent] || response.answer;
+
+  // Save rating in session
+  req.session.ratings = req.session.ratings || [];
+  req.session.ratings.push({ rating: intent, response: answer });
+
+  // Save chat log in session
+  req.session.chatLog = req.session.chatLog || [];
+  req.session.chatLog.push({ user: req.body.message, bot: answer });
+
+  res.json({
+    answer: answer,
+    userName: req.session.userName,
+    botName: req.session.botName  
+  });
+} 
+
+function handleNameResponse(chatbot, response, req, res) {
+  let answer = response.answer || "I'm not sure how to respond to that.";
+  const nameEntity = response.entities.find(entity => entity.entity === 'person');
+  const botNameEntity = response.entities.find(entity => entity.entity === 'botNamePerson');
+  const botNameIntent = response.classifications.find(classification => classification.label === 'botName.userNamesBot');
+
+  // Determine the user name to use based on entity detection
+  if (nameEntity && !req.session.userNameAlreadySet) {
+      chatbot.setUserName(nameEntity.sourceText);
+      req.session.userName = nameEntity.sourceText; // Save userName in session
+      req.session.userNameAlreadySet = true; // Prevents changing the user name again
+      answer = `Hello ${nameEntity.sourceText}, how can I help you today?`;
+  }
+
+  // Determine the bot name to use based on entity and intent score
+  if (botNameEntity && botNameIntent && botNameIntent.value > 0.15) {
+      chatbot.setBotName(botNameEntity.sourceText);
+      req.session.botName = botNameEntity.sourceText; // Save botName in session
+      console.log(`Bot name set to: ${botNameEntity.sourceText}`);
+      answer = `Hello ${botNameEntity.sourceText}, how can I help you today?`;
+  }
+
+  // Use existing names if no new names are provided
+  answer = answer.replace('{{name}}', req.session.userName || 'Guest');
+
+  // Save chat log in session
+  req.session.chatLog = req.session.chatLog || [];
+  req.session.chatLog.push({ user: req.body.message, bot: answer });
+
+  // Return the modified response
+  res.json({
+      answer: answer,
+      userName: req.session.userName,
+      botName: req.session.botName
+  });
+} */
+
+
+
 
 

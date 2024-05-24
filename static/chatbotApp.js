@@ -219,6 +219,7 @@ function chatbotApp() {
             document.querySelectorAll('.rate-button').forEach(button => {
                 button.addEventListener('click', (event) => {
                     const rating = event.target.textContent;
+                    // Here is the issue
                     this.chatbot.sendMessage(`Rate me ${rating}`, 'User');
                 });
             });

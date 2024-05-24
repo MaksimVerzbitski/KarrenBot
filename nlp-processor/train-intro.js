@@ -5,39 +5,29 @@ async function defineIntents(manager) {
     'rateMe3': ['Rate me 3', 'I rate 3', 'My rating is 3', '3 stars', 'Three stars'],
     'rateMe4': ['Rate me 4', 'I rate 4', 'My rating is 4', '4 stars', 'Four stars'],
     'rateMe5': ['Rate me 5', 'I rate 5', 'My rating is 5', '5 stars', 'Five stars']
-};
+  };
 
-const rateMeResponses = {
-    'rateMe1': [
-        '1: Terrible', '1: Awful', '1: Horrible', '1: Disappointing', '1: Dreadful'
-    ],
-    'rateMe2': [
-        '2: Bad', '2: Poor', '2: Unsatisfactory', '2: Subpar', '2: Mediocre'
-    ],
-    'rateMe3': [
-        '3: Average', '3: Okay', '3: Fair', '3: Neutral', '3: So-so'
-    ],
-    'rateMe4': [
-        '4: Good', '4: Nice', '4: Satisfactory', '4: Decent', '4: Pleasant'
-    ],
-    'rateMe5': [
-        '5: Excellent', '5: Outstanding', '5: Superb', '5: Fantastic', '5: Perfect'
-    ]
-};
+  const rateMeResponses = {
+    'rateMe1': ['1: Terrible', '1: Awful', '1: Horrible', '1: Disappointing', '1: Dreadful'],
+    'rateMe2': ['2: Bad', '2: Poor', '2: Unsatisfactory', '2: Subpar', '2: Mediocre'],
+    'rateMe3': ['3: Average', '3: Okay', '3: Fair', '3: Neutral', '3: So-so'],
+    'rateMe4': ['4: Good', '4: Nice', '4: Satisfactory', '4: Decent', '4: Pleasant'],
+    'rateMe5': ['5: Excellent', '5: Outstanding', '5: Superb', '5: Fantastic', '5: Perfect']
+  };
 
-// Add rateMe phrases to the manager
-Object.keys(rateMePhrases).forEach(intent => {
-    rateMePhrases[intent].forEach(phrase => {
-        manager.addDocument('en', phrase, intent);
-    });
-});
+    // Add rateMe phrases to the manager
+    Object.keys(rateMePhrases).forEach(intent => {
+      rateMePhrases[intent].forEach(phrase => {
+          manager.addDocument('en', phrase, intent);
+      });
+  });
 
-// Add rateMe responses to the manager
-Object.keys(rateMeResponses).forEach(intent => {
-    rateMeResponses[intent].forEach(response => {
-        manager.addAnswer('en', intent, response);
-    });
-});
+  // Add rateMe responses to the manager
+  Object.keys(rateMeResponses).forEach(intent => {
+      rateMeResponses[intent].forEach(response => {
+          manager.addAnswer('en', intent, response);
+      });
+  });
 }
 
 module.exports = defineIntents;
