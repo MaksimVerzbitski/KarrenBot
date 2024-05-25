@@ -14,7 +14,6 @@ const ServerChatbot = require('./ServerChatbot');
 
 const chatbot = new ServerChatbot();
 
-
 /* dotenv.config();
 
 console.log('SECRET_KEY:', process.env.SECRET_KEY);
@@ -49,46 +48,6 @@ async function loadModel() {
 loadModel();
 
 
-
-
-
-/* function handleNameResponse(chatbot, response, req, res) {
-  let answer = response.answer || "I'm not sure how to respond to that.";
-  const nameEntity = response.entities.find(entity => entity.entity === 'person');
-  const botNameEntity = response.entities.find(entity => entity.entity === 'botNamePerson');
-  const botNameIntent = response.classifications.find(classification => classification.label === 'botName.userNamesBot');
-
-  // Determine the user name to use based on entity detection
-  if (nameEntity && !req.session.userNameAlreadySet) {
-      chatbot.setUserName(nameEntity.sourceText);
-      req.session.userName = nameEntity.sourceText; // Save userName in session
-      req.session.userNameAlreadySet = true; // Prevents changing the user name again
-      answer = `Hello ${nameEntity.sourceText}, how can I help you today?`;
-  }
-
-  // Determine the bot name to use based on entity and intent score
-  if (botNameEntity && botNameIntent && botNameIntent.value > 0.15) {
-      chatbot.setBotName(botNameEntity.sourceText);
-      req.session.botName = botNameEntity.sourceText; // Save botName in session
-      console.log(`Bot name set to: ${botNameEntity.sourceText}`);
-      answer = `Hello ${botNameEntity.sourceText}, how can I help you today?`;
-  }
-
-  // Use existing names if no new names are provided
-  answer = answer.replace('{{name}}', req.session.userName || 'Guest');
-
-  // Save chat log in session
-  req.session.chatLog = req.session.chatLog || [];
-  req.session.chatLog.push({ user: req.body.message, bot: answer });
-
-  // Return the modified response
-  res.json({
-      answer: answer,
-      userName: req.session.userName,
-      botName: req.session.botName
-  });
-} */
-
 function handleNameResponse(chatbot, response, res) {
   let answer = response.answer || "I'm not sure how to respond to that.";
   const nameEntity = response.entities.find(entity => entity.entity === 'person');
@@ -99,14 +58,18 @@ function handleNameResponse(chatbot, response, res) {
   if (nameEntity && !chatbot.userNameAlreadySet) {
       chatbot.setUserName(nameEntity.sourceText);
       chatbot.userNameAlreadySet = true; // Prevents changing the user name again
-      answer = `Hello ${nameEntity.sourceText}, how can I help you today?`;
+      if (response.answer) {
+          answer = response.answer.replace('{{name}}', nameEntity.sourceText);
+      } else {
+          answer = answer.replace('{{name}}', nameEntity.sourceText);
+      }
   }
 
   // Determine the bot name to use based on entity and intent score
   if (botNameEntity && botNameIntent && botNameIntent.value > 0.15) {
       chatbot.setBotName(botNameEntity.sourceText);
       console.log(`Bot name set to: ${botNameEntity.sourceText}`);
-      answer = `Hello ${botNameEntity.sourceText}, how can I help you today?`;
+      answer = answer.replace('{{botName}}', botNameEntity.sourceText);
   }
 
   // Use existing names if no new names are provided
@@ -119,35 +82,6 @@ function handleNameResponse(chatbot, response, res) {
       botName: chatbot.botName
   });
 }
-
-
-/* function handleRatingResponse(response, req, res) {
-  const intent = response.intent;
-  const ratingResponses = {
-    'rateMe1': '1: Terrible',
-    'rateMe2': '2: Bad',
-    'rateMe3': '3: Average',
-    'rateMe4': '4: Good',
-    'rateMe5': '5: Excellent'
-  };
-
-  const answer = ratingResponses[intent] || response.answer;
-
-  // Save rating in session
-  req.session.ratings = req.session.ratings || [];
-  req.session.ratings.push({ rating: intent, response: answer });
-
-  // Save chat log in session
-  req.session.chatLog = req.session.chatLog || [];
-  req.session.chatLog.push({ user: req.body.message, bot: answer });
-
-  res.json({
-    answer: answer,
-    userName: req.session.userName,
-    botName: req.session.botName  
-  });
-} */
-
 
 function handleRatingResponse(response, res) {
   console.log('Received response:', JSON.stringify(response, null, 2)); // Log the incoming response
@@ -237,71 +171,36 @@ function saveNameForTraining(name, gender, origin) {
 app.listen(port, () => console.log(`Server running on http://localhost:${port}`));
 
 
-/* function handleRatingResponse(response, req, res) {
-  const intent = response.intent;
-  const ratingResponses = {
-    'rateMe1': '1: Terrible',
-    'rateMe2': '2: Bad',
-    'rateMe3': '3: Average',
-    'rateMe4': '4: Good',
-    'rateMe5': '5: Excellent'
-  };
 
-  const answer = ratingResponses[intent] || response.answer;
 
-  // Save rating in session
-  req.session.ratings = req.session.ratings || [];
-  req.session.ratings.push({ rating: intent, response: answer });
 
-  // Save chat log in session
-  req.session.chatLog = req.session.chatLog || [];
-  req.session.chatLog.push({ user: req.body.message, bot: answer });
-
-  res.json({
-    answer: answer,
-    userName: req.session.userName,
-    botName: req.session.botName  
-  });
-} 
-
-function handleNameResponse(chatbot, response, req, res) {
+/* function handleNameResponse(chatbot, response, res) {
   let answer = response.answer || "I'm not sure how to respond to that.";
   const nameEntity = response.entities.find(entity => entity.entity === 'person');
   const botNameEntity = response.entities.find(entity => entity.entity === 'botNamePerson');
   const botNameIntent = response.classifications.find(classification => classification.label === 'botName.userNamesBot');
 
   // Determine the user name to use based on entity detection
-  if (nameEntity && !req.session.userNameAlreadySet) {
+  if (nameEntity && !chatbot.userNameAlreadySet) {
       chatbot.setUserName(nameEntity.sourceText);
-      req.session.userName = nameEntity.sourceText; // Save userName in session
-      req.session.userNameAlreadySet = true; // Prevents changing the user name again
+      chatbot.userNameAlreadySet = true; // Prevents changing the user name again
       answer = `Hello ${nameEntity.sourceText}, how can I help you today?`;
   }
 
   // Determine the bot name to use based on entity and intent score
   if (botNameEntity && botNameIntent && botNameIntent.value > 0.15) {
       chatbot.setBotName(botNameEntity.sourceText);
-      req.session.botName = botNameEntity.sourceText; // Save botName in session
       console.log(`Bot name set to: ${botNameEntity.sourceText}`);
-      answer = `Hello ${botNameEntity.sourceText}, how can I help you today?`;
+      answer = `Proud to hear my new name  ${botNameEntity.sourceText}, nice to me you ${nameEntity.sourceText}?`;
   }
 
   // Use existing names if no new names are provided
-  answer = answer.replace('{{name}}', req.session.userName || 'Guest');
-
-  // Save chat log in session
-  req.session.chatLog = req.session.chatLog || [];
-  req.session.chatLog.push({ user: req.body.message, bot: answer });
+  answer = answer.replace('{{name}}', chatbot.userName || 'Guest');
 
   // Return the modified response
   res.json({
       answer: answer,
-      userName: req.session.userName,
-      botName: req.session.botName
+      userName: chatbot.userName,
+      botName: chatbot.botName
   });
 } */
-
-
-
-
-

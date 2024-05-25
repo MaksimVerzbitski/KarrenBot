@@ -28,9 +28,6 @@ button:hover {
     background-color: #555;
 }
 
-
-
-
 /* Minimized circle */
 #minimized-circle {
     display: none; /* Initially hidden */
@@ -283,7 +280,7 @@ button:hover {
 
 /* styles.css */
 .button-orange {
-    background-color: orange;
+    background-color: #db521c;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -467,14 +464,13 @@ button:hover {
     border: 1px solid #ffa500;
     color: #333;
     padding: 0.5rem;
-    border: 1px solid #000;
     margin-bottom: 0.5rem;
     border-radius: 0.3rem;
     text-align: right;
     float: right;
     clear: both;
     max-width: 80%;
-    background-color: #ccc;
+    background-color: #e6ffe6; /* Light green background for user messages */
 }
 
 .bot-message {
@@ -487,7 +483,7 @@ button:hover {
     float: left;
     clear: both;
     max-width: 80%;
-    background-color: #ccc;
+    background-color: #ffe6e6; /* Light red background for bot messages */
 }
 
 .sender-name {
@@ -503,6 +499,11 @@ button:hover {
 
 .user-message .sender-name {
     color: rgb(153, 19, 198); 
+}
+
+.thinking {
+    font-style: italic;
+    color: #aaa;
 }
 
 /* Chat input and related elements */
@@ -803,10 +804,9 @@ button:hover {
     }
 
     #clear-chat {
-        padding: 0.625rem 0.9375rem; 
-        background-color: #007bff; 
+        background-color: #050505; 
         color: white; 
-        border-radius: 2px; 
+        border-radius: 3px; 
         cursor: pointer; 
         margin: 0.625rem 0;
         display: inline-block; 
@@ -999,4 +999,3 @@ button:hover {
         margin: 0.3125rem; /* Add margin for better spacing */
     }
 }
-

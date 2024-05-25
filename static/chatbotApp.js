@@ -4,11 +4,24 @@ function chatbotApp() {
     let lastX = null;
     let lastY = null;
     let isClosed = false;
-    let isClearingChat = false; // track in clearing mode
+
+    // Trackers for clear, message sent, rating press - click
+    let isClearingChat = false; 
+    let isSendingMessage = false; 
+    let isRating = false; 
+
+    // Unused for now
+    let userIsActive = false;
+    let lastUserActivityTime = Date.now();
 
     const chatContainer = document.getElementById('chat-container');
     const clearChatButton = document.getElementById('clear-chat'); 
     const minimizedCircle = document.getElementById('minimized-circle');
+
+    // trackers for buttons clear, message sent, rating press - click
+    const chatInput = document.getElementById('chat-text-input');
+    const sendButton = document.getElementById('send-button');
+    const rateButtons = document.querySelectorAll('.rate-button');
 
     function centerChatContainer() {
         if (isMinimized || isClosed) return; // Do not center if minimized.
@@ -188,6 +201,24 @@ function chatbotApp() {
         isClearingChat = false; // Reset the state
     }
 
+    // thinking animation for bot
+
+    function showThinking() {
+        const thinkingElement = document.createElement('div');
+        thinkingElement.className = 'bot-message thinking';
+        thinkingElement.innerHTML = '<span class="sender-name">Bot is thinking...</span>';
+        chatLog.appendChild(thinkingElement);
+        chatLog.scrollTop = chatLog.scrollHeight; // Scroll to bottom
+        return thinkingElement;
+    }
+
+    function removeThinking(thinkingElement) {
+        if (thinkingElement) {
+            chatLog.removeChild(thinkingElement);
+        }
+    }
+    
+
     return {
         chatbot: new Chatbot(),
         initChatbot() {
@@ -218,19 +249,43 @@ function chatbotApp() {
             minimizedCircle.addEventListener('click', restoreChat); //circle calls restoreChat
             document.querySelectorAll('.rate-button').forEach(button => {
                 button.addEventListener('click', (event) => {
+                    if (isRating) return;  // Prevent sending multiple ratings at once
+                    isRating = true;  // Disable rating buttons
+                    document.querySelectorAll('.rate-button').forEach(button => button.disabled = true);
+            
                     const rating = event.target.textContent;
-                    // Here is the issue
+            
+                    // Send the rating to the server
                     this.chatbot.sendMessage(`Rate me ${rating}`, 'User');
+            
+                    setTimeout(() => {
+                        // Re-enable rating buttons after 2 seconds
+                        document.querySelectorAll('.rate-button').forEach(button => button.disabled = false);
+                        isRating = false;
+                    }, 2000);
                 });
-            });
+            }); 
         },
         userInput: '',
         sendMessage() {
             if (this.userInput.trim() !== '') {
+                if (isSendingMessage) return;  // Prevent sending multiple messages at once
+                isSendingMessage = true;  // Disable sending
+                chatInput.disabled = true;
+                sendButton.disabled = true;
                 this.chatbot.sendMessage(this.userInput.trim(), 'User');
                 this.userInput = '';
+
+                // Re-enable input and send button after 2 seconds
+                setTimeout(() => {
+                    chatInput.disabled = false;
+                    sendButton.disabled = false;
+                    isSendingMessage = false;
+                }, 2000);
             }
         },
+
+        
         minimizeChat: minimizeChat,
         maximizeChat: maximizeChat,
         closeChat: closeChat,
