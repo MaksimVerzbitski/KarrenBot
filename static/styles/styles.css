@@ -280,7 +280,7 @@ button:hover {
 
 /* styles.css */
 .button-orange {
-    background-color: #db521c;
+    background-color: orange;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -392,9 +392,17 @@ button:hover {
 }
 
 #clear-chat {
-    cursor: pointer;
-    display: inline-block;
-    padding: 0.625rem;
+    background-color: #050505; 
+    color: white; 
+    border-radius: 3px; 
+    cursor: pointer; 
+    margin: 0.625rem 0;
+    display: inline-block; 
+    align-items: center;
+}
+
+#clear-chat:hover {
+    background-color: #555; /* Same hover effect as other buttons */
 }
 
 /* Clear Chat confirmation styles */
@@ -804,7 +812,8 @@ button:hover {
     }
 
     #clear-chat {
-        background-color: #050505; 
+        
+        background-color: #070707; 
         color: white; 
         border-radius: 3px; 
         cursor: pointer; 

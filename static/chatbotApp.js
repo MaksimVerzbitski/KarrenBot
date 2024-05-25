@@ -255,8 +255,20 @@ function chatbotApp() {
             
                     const rating = event.target.textContent;
             
-                    // Send the rating to the server
-                    this.chatbot.sendMessage(`Rate me ${rating}`, 'User');
+                    const rateMePhrases = {
+                        '1': ['Rate me 1', 'I rate 1', 'My rating is 1', '1 star', 'One star'],
+                        '2': ['Rate me 2', 'I rate 2', 'My rating is 2', '2 stars', 'Two stars'],
+                        '3': ['Rate me 3', 'I rate 3', 'My rating is 3', '3 stars', 'Three stars'],
+                        '4': ['Rate me 4', 'I rate 4', 'My rating is 4', '4 stars', 'Four stars'],
+                        '5': ['Rate me 5', 'I rate 5', 'My rating is 5', '5 stars', 'Five stars']
+                    };
+            
+                    // Select a random phrase from the corresponding rating array
+                    const phrases = rateMePhrases[rating];
+                    const randomPhrase = phrases[Math.floor(Math.random() * phrases.length)];
+            
+                    // Send the random rating phrase to the server
+                    this.chatbot.sendMessage(randomPhrase, 'User');
             
                     setTimeout(() => {
                         // Re-enable rating buttons after 2 seconds
@@ -264,7 +276,7 @@ function chatbotApp() {
                         isRating = false;
                     }, 2000);
                 });
-            }); 
+            });
         },
         userInput: '',
         sendMessage() {
