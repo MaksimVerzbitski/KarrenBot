@@ -1,511 +1,3 @@
-/* Base styles */
-body, html {
-    height: 100%;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    background: #f0f0f0;
-}
-
-/* Uniform styles for all buttons */
-button {
-    flex-grow: 1;
-    margin: 5px; 
-    padding: 10px 20px;
-    font-size: 1rem;
-    background-color: #333; 
-    color: #fff; 
-    border: 1px solid #000;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s; 
-}
-
-/* Hover effects for all buttons */
-button:hover {
-    background-color: #555;
-}
-
-/* Minimized circle */
-#minimized-circle {
-    display: none; /* Initially hidden */
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    width: 60px; /* Circle width */
-    height: 60px; /* Circle height */
-    border-radius: 50%;
-    background-color: #7a7a7a;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-    z-index: 1000;
-    display: flex; /* Flexbox for centering text */
-    justify-content: center; /* Center text horizontally */
-    align-items: center; /* Center text vertically */
-    color: #fff; /* Text color */
-    font-size: 14px; /* Text size */
-    font-weight: bold; /* Text weight */
-    text-align: center; /* Center text alignment */
-    padding: 5px; /* Padding to ensure text fits well */
-    box-sizing: border-box; /* Include padding in the element's size */
-    animation: vibrate 4s infinite; /* Vibration animation */
-}
-
-#minimized-circle::before,
-#minimized-circle::after {
-    content: "";
-    position: absolute;
-    border-radius: 50%;
-    border: 2px solid rgb(0, 0, 0);
-    animation: vibrate 1s infinite;
-}
-
-#minimized-circle::before,
-#minimized-circle::after {
-    content: "";
-    position: absolute;
-    border-radius: 50%;
-    border: 3px solid rgb(235, 62, 9);
-    animation: mysteryLightFlicker 3s infinite;
-}
-
-#minimized-circle::before {
-    width: 80px;
-    height: 80px;
-}
-
-#minimized-circle::after {
-    width: 100px;
-    height: 100px;
-    
-}
-
-/* Morse code vibration effect */
-@keyframes vibrate {
-    0%, 100% { transform: translate(0); }
-    10%, 20%, 30% { transform: translate(-5px, 5px); } /* Dot */
-    40%, 50%, 60% { transform: translate(5px, -5px); } /* Dash */
-    70%, 80%, 90% { transform: translate(-5px, 5px); } /* Dot */
-}
-
-@keyframes vibrate-morse {
-    0%, 100% { transform: translate(0); }
-    10%, 20%, 30% { transform: translate(-5px, 5px); } /* Dot */
-    40%, 50%, 60% { transform: translate(5px, -5px); } /* Dash */
-    70%, 80%, 90% { transform: translate(-5px, 5px); } /* Dot */
-}
-
-@keyframes mysteryLightFlicker  {
-    0%, 1.38889% {
-        background-color: #0006;
-    }
-
-    1.38889%, 2.77778% {
-        background-color: #0006;
-    }
-
-    2.77778%, 6.94444% {
-        background-color: #0006;
-    }
-
-    6.94444%, 9.72222% {
-        background-color: #fff0;
-    }
-
-    9.72222%, 13.8889% {
-        background-color: #0006;
-    }
-
-    13.8889%, 15.2778% {
-        background-color: #0006;
-    }
-
-    15.2778%, 16.6667% {
-        background-color: #0006;
-    }
-
-    16.6667%, 18.0556% {
-        background-color: #0006;
-    }
-
-    18.0556%, 19.4444% {
-        background-color: #0006;
-    }
-
-    19.4444%, 22.2222% {
-        background-color: #fff0;
-    }
-    22.2222%, 23.6111% {
-        background-color: #0006;
-    }
-
-    23.6111%, 25% {
-        background-color: #0006;
-    }
-
-    25%, 29.1667% {
-        background-color: #0006;
-    }
-
-    29.1667%, 31.9444% {
-        background-color: #fff0;
-    }
-
-    31.9444%, 33.3333% {
-        background-color: #0006;
-    }
-
-    33.3333%, 34.7222% {
-        background-color: #0006;
-    }
-
-    34.7222%, 38.8889% {
-        background-color: #0006;
-    }
-
-    38.8889%, 40.2778% {
-        background-color: #0006;
-    }
-
-    40.2778%, 44.4444% {
-        background-color: #0006;
-    }
-
-    44.4444%, 45.8333% {
-        background-color: #0006;
-    }
-
-    45.8333%, 47.2222% {
-        background-color: #0006;
-    }
-
-    47.2222%, 50% {
-        background-color: #fff0;
-    }
-
-    50%, 54.1667% {
-        background-color: #0006;
-    }
-
-    54.1667%, 56.9444% {
-        background-color: #fff0;
-    }
-
-    56.9444%, 58.3333% {
-        background-color: #0006;
-    }
-
-    58.3333%, 59.7222% {
-        background-color: #0006;
-    }
-
-    59.7222%, 63.8889% {
-        background-color: #0006;
-    }
-
-    63.8889%, 65.2778% {
-        background-color: #0006;
-    }
-
-    65.2778%, 66.6667% {
-        background-color: #0006;
-    }
-
-    66.6667%, 68.0556% {
-        background-color: #0006;
-    }
-
-    68.0556%, 69.4444% {
-        background-color: #0006;
-    }
-
-    69.4444%, 70.8333% {
-        background-color: #0006;
-    }
-
-    70.8333%, 72.2222% {
-        background-color: #0006;
-    }
-
-    72.2222%, 75% {
-        background-color: #fff0;
-    }
-
-    75%, 76.3889% {
-        background-color: #0006;
-    }
-
-    76.3889%, 79.1667% {
-        background-color: #fff0;
-    }
-
-    79.1667%, 83.3333% {
-        background-color: #0006;
-    }
-
-    83.3333%, 84.7222% {
-        background-color: #0006;
-    }
-
-    84.7222%, 86.1111% {
-        background-color: #0006;
-    }
-
-    86.1111%, 88.8889% {
-        background-color: #fff0;
-    }
-
-    88.8889%, 90.2778% {
-        background-color: #0006;
-    }
-
-    90.2778%, 91.6667% {
-        background-color: #0006;
-    }
-
-    91.6667%, 95.8333% {
-        background-color: #0006;
-    }
-
-    95.8333%, 98.6111% {
-        background-color: #fff0;
-    }
-}
-/* Closed class to hide chat container */
-.closed {
-    display: none;
-}
-
-/* styles.css */
-.button-orange {
-    background-color: #db521c;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.button-orange:hover {
-    background-color: #e69500;
-}
-
-/* Div Wrapper Styles */
-#div-wrapper {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Chat container */
-#chat-container {
-    position: absolute; /* or fixed */
-    max-width: 45vh;
-    min-height: 55vh;
-    width: 80%;
-    max-height: 90vh;
-    display: flex;
-    flex-direction: column;
-    background: #cecdcd;
-    border: 2px solid #616161;
-    border-radius: 3px;
-    overflow: hidden;
-}
-
-/* Chat header */
-#chat-header, #chat-header:active, .no-drag #chat-header {
-    display: flex;
-    align-items: center;
-    justify-content: center; /* Center all items horizontally */
-    position: relative;
-    padding: 0.625rem 0.3rem; /* Increased padding for top and bottom */
-    background: #686868;
-    border-top: 1px solid #636363;
-    color: #fff; 
-}
-
-#chat-header {
-    cursor: grab;
-}
-
-#chat-header:active {
-    cursor: grabbing;
-    background-color: #4a4a4a; 
-}
-
-.no-drag #chat-header {
-    cursor: pointer;
-}
-
-#more-options, #window-controls {
-    align-items: center;
-    padding: 0.3125rem 0;
-}
-
-#more-options {
-    position: absolute; 
-    left: 0.3rem; 
-}
-
-#window-controls {
-    position: absolute; 
-    right: 0.1rem; 
-}
-
-#chat-title {
-    flex-grow: 1;
-    font-weight: bold;
-    font-size: 18px;
-    text-align: center; 
-    white-space: nowrap; 
-    overflow: hidden; 
-    text-overflow: ellipsis;
-}
-
-.window-control, .window-control:last-child {
-    cursor: pointer;
-    border: none;
-    background: transparent;
-}
-
-.window-control {
-    margin-right: 5px;
-}
-
-.window-control:last-child {
-    margin-right: 0;
-}
-
-/* Chat controls */
-#chat-controls, #clear-chat {
-    text-align: center;
-    padding: 0.625rem;
-    border-bottom: 1px solid #ccc;
-}
-
-#clear-chat {
-    cursor: pointer;
-    display: inline-block;
-    padding: 0.625rem;
-}
-
-/* Clear Chat confirmation styles */
-#clear-chat-confirmation {
-    text-align: center; 
-    font-weight: bold; 
-    margin-bottom: 1rem; 
-    color: #333; 
-}
-
-/* Buttons container */
-#clear-chat-buttons {
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    padding: 10px; 
-}
-
-/* Style adjustments for buttons  */
-#confirmClear,
-#startNewSession {
-    flex-grow: 1;
-    margin: 0 10px; 
-    padding: 10px 20px; 
-    font-size: 1rem; 
-    border: none;
-    color: white; 
-    background-color: #333;
-    border-radius: 5px; 
-    cursor: pointer; 
-}
-
-#confirmClear:hover,
-#startNewSession:hover {
-    background-color: #0056b3; 
-}
-
-#cancelButton {
-    background-color: red; 
-    color: white;
-}
-
-#cancelButton:hover {
-    background-color: darkred; 
-}
-
-/* Chat log */
-#chat-log {
-    flex-grow: 1;
-    overflow-y: auto; 
-    padding: 0.3125rem;
-    min-height: 150px; 
-    max-height: calc(55vh - 29.128440366972477vh); 
-    border: 2px solid #ffa500;
-    margin: 0.3125rem;
-    flex-direction: column-reverse; 
-    transition: background-color 0.3s ease;
-}
-
-.chat-log-transparent {
-    opacity: 0.5; /* Semi-transparent */
-    background-color: rgba(255, 255, 255, 0.5); /* Light white background */
-}
-
-/* Chat log message styles */
-.user-message {
-    border: 1px solid #ffa500;
-    color: #333;
-    padding: 0.5rem;
-    margin-bottom: 0.5rem;
-    border-radius: 0.3rem;
-    text-align: right;
-    float: right;
-    clear: both;
-    max-width: 80%;
-    background-color: #e6ffe6; /* Light green background for user messages */
-}
-
-.bot-message {
-    border: 1px solid #000;
-    color: #333; 
-    padding: 0.5rem;
-    margin-bottom: 0.5rem;
-    border-radius: 0.3rem;
-    text-align: left;
-    float: left;
-    clear: both;
-    max-width: 80%;
-    background-color: #ffe6e6; /* Light red background for bot messages */
-}
-
-.sender-name {
-    font-weight: bold;
-    color: #007bff; 
-    margin-right: 0.5rem;
-    display: inline-block; 
-}
-
-.bot-message .sender-name {
-    color: #df7315; 
-}
-
-.user-message .sender-name {
-    color: rgb(153, 19, 198); 
-}
-
-.thinking {
-    font-style: italic;
-    color: #aaa;
-}
-
 /* Chat input and related elements */
 #chat-input, #input-container, #chat-text-input, #add-smile, .custom-file-upload, #send-button, #send-button:hover {
     display: flex;
@@ -513,28 +5,32 @@ button:hover {
 }
 
 #chat-input {
-    padding: 0.3125rem;
-    border-top: 1px solid #ccc;
-    padding-top: 0.625rem;
-    background: #fff; /* Set background to white */
-    border: 2px solid #000; /* Add border similar to rate-me */
-    background-color: #f5f5f5; /* Set outer background to gray */
-    margin: 0 5px;
+    padding: 0.325rem 0.325rem;
+    border-top: 3px solid #000;
+    background: #656565; 
+    background-color: #cecdcd; /* Set outer background to gray */
+    height: 3rem; /* Set the height to match the send button */
+    display: flex; /* Ensure flex container behavior */
+    align-items: center; /* Center items vertically */
 }
 
 #input-container {
     flex-grow: 1;
-    border: 2px solid #000;
-    border-radius: 2px;
-    margin-right: 0.3125rem;
+    border-top: 2px solid #000;
+    border-left: 2px solid #000;
+    border-bottom: 2px solid #000;
+    border-radius: 5px 0 0 5px;
     background: #fff; /* Set background to white */
-    height: 100%; /* Ensure it takes full height of parent */
+    height: 2.75rem; /* Ensure it takes full height of parent */
     display: flex;
     align-items: center;
+    transition: background-color 0.3s, border-color 0.3s; /* Smooth transition for hover effects */
 }
 
-#input-container:focus-within {
-    border: 3px solid #004A9F;
+#input-container:focus-within,
+#input-container:hover {
+    background-color: #e69500; /* Highlight color on hover or focus */
+    border-color: #e69500; /* Change border color on hover or focus */
 }
 
 #chat-text-input {
@@ -545,8 +41,22 @@ button:hover {
     outline: none;
     margin: 0;
     background: #fff; /* Set background to white */
+    color: #000; /* Set text color to black */
     height: 100%; /* Ensure it takes full height of parent */
     box-sizing: border-box; /* Include padding and border in element's total width and height */
+    cursor: text; /* Set cursor to text */
+}
+
+#chat-text-input::placeholder {
+    color: #888; /* Set placeholder color to a visible gray */
+}
+
+#chat-text-input:focus {
+    background: #f0f0f0; /* Change background to a light gray when focused */
+    color: #000; /* Ensure text color is black */
+    border: none; /* Remove border */
+    outline: none; /* Remove outline */
+    box-shadow: inset 0 0 0 2px #051b35; /* Add an inset shadow for focus indication */
 }
 
 #add-smile, .custom-file-upload {
@@ -556,446 +66,47 @@ button:hover {
     margin: 0 5px;
     cursor: pointer;
     font-size: 1.5rem; /* Increase font size for better appearance */
-    /* height: 100%; Ensure it takes full height of parent */
     display: flex;
     align-items: center;
 }
 
 #send-button {
-    background-color: #db521c;
+    background-color: rgb(255, 94, 0); 
     color: white;
-    border: none;
-    border-radius: 3px;
+    border-top: 2px solid #000; 
+    border-right: 2px solid #000; 
+    border-bottom: 2px solid #000; 
+    border-radius: 0 5px 5px 0; 
     padding: 0.625rem;
     max-width: 6.25rem;
     justify-content: center;
-    /*height: 100%; Ensure it takes full height of parent */
     display: flex;
     align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    height: 3rem; 
+    font-weight: bold;
+    font-size: 16px;
 }
 
 #send-button:hover {
-    background-color: #0056b3;
+    background-color: #e69500; 
 }
 
-/* Rate me section */
-#rate-me {
-    width: auto;
-    margin: 5px;
-    padding: 0.625rem 0;
-    background: #838383;
-    border-top: 2px solid #000000;
-    text-align: center;
-    flex-wrap: wrap;
-    justify-content: center;
+/* Close Chat Button */
+#clear-chat {
+    background-color: #000; 
+    color: white; 
+    border-radius: 3px; 
+    cursor: pointer; 
+    margin: 0.625rem 0;
+    display: inline-block; 
     align-items: center;
-}
-
-/* Chat container and rating section */
-#chat-container, #rate-me {
-    border: 2px solid #000; 
-    color: #8a3333;
-    font-size: 18px;
-}
-
-.rate-button {
-    padding: 0.5rem 1rem; 
-    font-size: 1rem;   
-    color: #fff; 
-    border: 2px solid #000; 
-    border-radius: 5px; 
-    cursor: pointer;
     transition: background-color 0.3s;
-    min-width: 40px; 
-    text-align: center;
 }
 
-.rate-button:hover {
-    background-color: #0056b3;
-}
-
-#rate-me span {
-    font-size: 18px;
-    font-weight: bold; 
-    color: #ffffff; 
-    margin-left: 10px; 
-}
-
-/* Functionality related styles */
-#chat-container.dragging, #chat-container.minimized, #chat-container.maximized {
-    position: fixed;
-}
-
-#chat-container.dragging {
-    left: unset;
-    top: unset;
-}
-
-#chat-container.minimized {
-    width: 21.45rem;
-    height: 2.4375rem;
-    right: 0;
-    bottom: 0;
-    left: auto; 
-    top: auto; 
-    position: fixed;
-    border-radius: 3px 3px 0 3px;
-} 
-
-#chat-container.maximized {
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    margin: 0;
-    border: 2px solid #000;
-    border-radius: 0;
-    box-shadow: none;
-    z-index: 9999;
-    transform: none !important;
-    display: flex;
-    flex-direction: column;
-    max-width: none; 
-    max-height: none; 
-}
-
-#chat-container.maximized #chat-log {
-    flex-grow: 1; 
-    max-height: none;
-}
-
-#chat-container.minimized {
-    min-height: 0; 
-}
-
-/* Adjustments for minimized state */
-#chat-container.minimized #chat-title {
-    max-width: 150px; 
-    overflow: hidden; 
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-
-#chat-container.minimized .window-control {
-    font-size: 0.8rem; 
-}
-
-@media (max-width: 1024px) {
-    #chat-container {
-        left: auto;
-        right: auto;
-        top: auto;
-        bottom: auto;
-        transform: none;
-    }
-}
-
-@media (max-width: 21.25rem) {
-    #chat-container {
-        width: 80%;
-        margin: 0 auto; 
-        padding: 0; 
-        position: static;
-    }
-
-    #clear-chat-confirmation {
-        font-size: 1rem; 
-    }
-
-    #clear-chat-buttons {
-        gap: 5px; 
-    }
-
-    #confirmClear,
-    #startNewSession {
-        min-width: 100px; 
-    }
-    
-    #chat-log {
-        padding: 8px; 
-        overflow-y: auto;
-    }
-
-    #chat-header, #chat-controls, #chat-input, #rate-me {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #chat-header {
-        display: grid;
-        grid-template-rows: auto auto auto; 
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-
-    #window-controls {
-        grid-row: 1; 
-        position: static; 
-        border-bottom: 1px solid #050505;
-        width: 100%; 
-    }
-
-    #more-options {
-        grid-row: 2; 
-        position: static;
-        width: 100%;
-        border-bottom: 1px solid #050505;
-    }
-
-    #chat-title {
-        grid-row: 3; 
-        position: static;
-        
-        order: 0; 
-        padding: 0.625rem 0;
-    }
-
-    #chat-controls {
-        justify-content: center;
-    }
-
-    #chat-log {
-        min-height: 6.25rem; 
-        margin: 0.3125rem; 
-    }
-
-    #chat-input {
-        flex-direction: column;
-        margin: 0.3125rem;
-    }
-
-    #input-container {
-        width: 100%;
-        flex-direction: row;
-        order: 2;
-        justify-content: center;
-        margin: 0 0.3125rem;
-    }
-
-    #chat-text-input {
-        order: 2;
-        flex-grow: 1;
-        border: 1px solid #050505;
-    }
-
-    #add-smile {
-        order: 1;
-    }
-
-    .custom-file-upload {
-        order: 3;
-    }
-
-    #send-button {
-        order: 4;
-        width: 100%;
-        margin-top: 0.625rem;
-    }
-
-    #chat-controls {
-        text-align: center;
-    }
-
-    #rate-me {
-        order: 5;
-        flex-wrap: wrap;
-        padding: 0.625rem 0;
-    }
-
-    #clear-chat {
-        background-color: #050505; 
-        color: white; 
-        border-radius: 3px; 
-        cursor: pointer; 
-        margin: 0.625rem 0;
-        display: inline-block; 
-        align-items: center;
-    }
-
-    #chat-container.minimized {
-        width: 100%; 
-        height: 2.4375rem; 
-        right: 0;     
-        bottom: 0; 
-    }
-
-    #chat-container.minimized #chat-header {
-        padding: 0 0.625rem; 
-    }
-
-    #chat-container.minimized #chat-log,
-    #chat-container.minimized #chat-input,
-    #chat-container.minimized #chat-controls,
-    #chat-container.minimized #rate-me {
-        display: none;
-    }
-
-    #chat-container.minimized #more-options,
-    #chat-container.minimized #window-controls {
-        position: static; 
-        padding: 0; 
-        margin: 0 0.3125rem; 
-    }
-
-    #chat-container.minimized #chat-title,
-    #chat-container.minimized .window-control {
-        font-size: smaller; 
-        margin: 0; 
-        border-radius: 1px;
-    }
-}
-
-/* This is equivalent to 286px */
-@media (max-width: 17.875rem) {
-    #rate-me {
-        justify-content: center;
-        align-items: center;
-        flex-wrap: nowrap; 
-    }
-
-    #rate-me span {
-        margin-right: 0.5rem; 
-    }
-
-    .rate-button {
-        padding: 0.3rem 0.6rem;
-        margin: 0; 
-        flex: 0 1 auto;
-        background-color: #333; 
-    }
-
-    .rate-button:hover {
-        background-color: #555; /* Lighter gray on hover for consistency */
-    }
-
-    .clear-chat-confirmation {
-        font-size: 0.9rem; 
-    }
-
-    #confirmClear,
-    #startNewSession {
-        padding: 0.5rem;
-        margin-bottom: 0.25rem; 
-    }
-}
-
-@media (max-width: 9.6875rem) { 
-    #input-container {
-        flex-direction: column;
-        padding: 0.3125rem 0.1rem;
-        border: 2px solid #050505; 
-    }
-
-    #chat-text-input,
-    #add-smile,
-    .custom-file-upload {
-        width: 100%;
-        margin-bottom: 0.3125rem; 
-    }
-
-    #add-smile,
-    .custom-file-upload {
-        order: -1;
-        width: auto;
-    }
-
-    #chat-header {
-        padding: 0.3125rem 0; 
-    }
-
-    #chat-title {
-        font-size: bold;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        padding: 0 0.635rem
-    }
-
-    #clear-chat-confirmation,
-    #confirmClear,
-    #startNewSession {
-        font-size: 0.9rem; /* Even smaller font size */
-    }
-
-    #rate-button {
-        height: 25px;
-    }
-}
-
-#chat-container.maximized {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    margin: 0;
-    border: 2px solid #000;
-    border-radius: 0;
-    box-shadow: none;
-    z-index: 9999;
-    transform: none !important;
-    display: flex;
-    flex-direction: column;
-    max-width: none; /* Ensure it covers the entire viewport */
-    max-height: none; /* Ensure it covers the entire viewport */
-}
-
-#chat-container.maximized #chat-log {
-    flex-grow: 1; /* Ensure chat log takes up available space */
-    max-height: none; /* Ensure chat log takes up full height */
-}
-
-#chat-container.minimized {
-    min-height: 0; 
-}
-
-@media (max-width: 1024px) {
-    #chat-container {
-        left: auto;
-        right: auto;
-        top: auto;
-        bottom: auto;
-        transform: none;
-    }
-}
-
-/* Additional Media Query for Responsive Chat Input */
-@media (max-width: 500px) {
-    #chat-input {
-        flex-direction: column;
-        padding: 0.625rem;
-        height: auto;
-    }
-
-    #input-container {
-        width: 100%;
-        margin-bottom: 0.625rem;
-    }
-
-    #chat-text-input {
-        margin: 0;
-    }
-
-    #add-smile, .custom-file-upload {
-        font-size: 1.25rem;
-        height: auto;
-        margin: 0 5px;
-    }
-
-    #send-button {
-        width: 100%;
-        margin-top: 0.625rem;
-        padding: 0.625rem;
-        font-size: 1rem;
-    }
-
-    #rate-me {
-        flex-direction: row; /* Change to row to fit more buttons in a row */
-        flex-wrap: wrap; /* Allow buttons to wrap to the next line */
-    }
-
-    .rate-button {
-        margin: 0.3125rem; /* Add margin for better spacing */
-    }
+#clear-chat:hover {
+    background-color: #333; /* Set hover effect for Close Chat button */
+    color: white;
+    border-color: #e69500;
 }

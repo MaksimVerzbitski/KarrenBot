@@ -1,9 +1,47 @@
+/* document.addEventListener('DOMContentLoaded', (event) => {
+    const smileys = document.querySelectorAll('.smiley');
+    const chatInput = document.getElementById('chat-text-input');
+    const smileysContainer = document.getElementById('smileys-container');
+    const addSmileButton = document.getElementById('add-smile');
+
+    addSmileButton.addEventListener('click', () => {
+        if (smileysContainer.style.display === 'none' || smileysContainer.style.display === '') {
+            smileysContainer.style.display = 'flex';
+        } else {
+            smileysContainer.style.display = 'none';
+        }
+    });
+
+    smileys.forEach(smiley => {
+        smiley.addEventListener('click', () => {
+            chatInput.value += smiley.textContent;
+            chatInput.focus(); // Bring focus back to the input field
+        });
+    });
+}); */
+
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    const smileys = document.querySelectorAll('.smiley');
+    const chatInput = document.getElementById('chat-text-input');
+    const smileysContainer = document.getElementById('smileys-container');
+
+    smileys.forEach(smiley => {
+        smiley.addEventListener('click', () => {
+            chatInput.value += smiley.textContent;
+            chatInput.focus(); // Bring focus back to the input field
+        });
+    });
+});
+
 function chatbotApp() {
     let isMinimized = false;
     let isMaximized = false;
     let lastX = null;
     let lastY = null;
     let isClosed = false;
+
+    let originalChatLog = '';
 
     // Trackers for clear, message sent, rating press - click
     let isClearingChat = false; 
@@ -22,6 +60,8 @@ function chatbotApp() {
     const chatInput = document.getElementById('chat-text-input');
     const sendButton = document.getElementById('send-button');
     const rateButtons = document.querySelectorAll('.rate-button');
+
+    const smileysContainer = document.getElementById('smileys-container');
 
     function centerChatContainer() {
         if (isMinimized || isClosed) return; // Do not center if minimized.
@@ -158,11 +198,13 @@ function chatbotApp() {
         const chatLog = document.getElementById('chat-log');
 
         if (!isClearingChat) {
+            // Store the current chat log content
+            originalChatLog = chatLog.innerHTML;
+
             // Change "Cancel" mode
             console.log("Setting 'Clear Chat' button to 'Cancel' and changing its color to red");
             clearChatButton.classList.add('button-orange');
             clearChatButton.textContent = 'Cancel';
-            clearChatButton.style.background = 'red';
             isClearingChat = true;
 
             console.log("Adding confirmation options to chatLog");
@@ -170,15 +212,15 @@ function chatbotApp() {
             <div id="clear-chat-confirmation">Are you sure you want to clear the chat?</div>
             <div id="clear-chat-buttons">
                 <button id="confirmClear" class="button-orange">Yes, Clear Chat</button>
-                <button id="startNewSession" class="button-orange" onclick="location.reload();">Start New Session</button>
+                <button id="startNewSession" class="button-orange" onclick="startNewSession()">Start New Session</button>
             </div>
             `;
 
-            document.getElementById('confirmClear').addEventListener('click', this.confirmClearChat.bind(this));
+            document.getElementById('confirmClear').addEventListener('click', confirmClearChat.bind(this));
         } else {
-            // Reset to "Clear Chat" mode
+            // Reset to "Clear Chat" mode and restore original chat log content
             console.log("Cancel action selected, restoring the initial state of the chat log and 'Clear Chat' button");
-            chatLog.innerHTML = '';
+            chatLog.innerHTML = originalChatLog;
             clearChatButton.textContent = 'Clear Chat';
             clearChatButton.classList.remove('button-orange');
             clearChatButton.style.background = '';
@@ -201,22 +243,21 @@ function chatbotApp() {
         isClearingChat = false; // Reset the state
     }
 
-    // thinking animation for bot
-
-    function showThinking() {
-        const thinkingElement = document.createElement('div');
-        thinkingElement.className = 'bot-message thinking';
-        thinkingElement.innerHTML = '<span class="sender-name">Bot is thinking...</span>';
-        chatLog.appendChild(thinkingElement);
-        chatLog.scrollTop = chatLog.scrollHeight; // Scroll to bottom
-        return thinkingElement;
-    }
-
-    function removeThinking(thinkingElement) {
-        if (thinkingElement) {
-            chatLog.removeChild(thinkingElement);
+    function addSmile() {
+        const smileysContainer = document.getElementById('smileys-container');
+        if (smileysContainer.style.display === 'none' || smileysContainer.style.display === '') {
+            smileysContainer.style.display = 'flex';
+        } else {
+            smileysContainer.style.display = 'none';
         }
     }
+    
+    window.startNewSession = function() {
+        location.reload();
+    }
+
+
+    
     
 
     return {
@@ -278,6 +319,7 @@ function chatbotApp() {
                 });
             });
         },
+        addSmile: addSmile,
         userInput: '',
         sendMessage() {
             if (this.userInput.trim() !== '') {
@@ -306,3 +348,4 @@ function chatbotApp() {
         restoreChat: restoreChat
     };
 }
+
