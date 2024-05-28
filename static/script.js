@@ -6,7 +6,7 @@ class Chatbot {
 
         this.botName = localStorage.getItem('botName') || 'Bot'; 
         this.userName = localStorage.getItem('userName') || 'User'; 
-        this.updateChatUI(); // Update UI on initialization to reflect stored names
+        this.updateChatUI(); // Update UI on stored names
     }
 
     setNames(botName, userName) {
@@ -22,7 +22,7 @@ class Chatbot {
             updated = true;
         }
         if (updated) {
-            this.updateChatUI();  // Ensure the UI is updated only if there was a change
+            this.updateChatUI();  //  UI is updated only if there was a change
         }
     }
 
@@ -37,45 +37,45 @@ class Chatbot {
             console.log('Names updated on server:', data);
         })
         .catch(error => {
-            console.error('Failed to update names on server:', error);
+            this.logErrorToServer('Name Update', error.toString());
         });
     }
 
     isValidInput(input) {
-        if (!input.trim()) {
-            this.logInvalidInput('Please enter a message.');
-            return { isValid: false, message: 'Please enter a message.' };
-        }
-    
-        // Updated regex to include ?, !
-        const allowedTextRegex = /^[a-zA-Z0-9\+\-\/\*=%&@\s"'\(\)?!]+$/;
+        const allowedTextRegex = /^[a-zA-Z0-9\+\-\/\*=%&@\s"'\(\)?!😊😂😍😢😡👍🙏🎉❤️💔]+$/;
         if (!allowedTextRegex.test(input)) {
-            this.logInvalidInput('Input contains invalid characters. Allowed characters: letters, numbers, and special characters (+, -, /, *, =, %, &, @, space, "", \'\', (, ), ?, !).');
-            return { isValid: false, message: 'Input contains invalid characters. Allowed characters: letters, numbers, and special characters (+, -, /, *, =, %, &, @, space, "", \'\', (, ), ?, !).' };
+            const message = 'Input contains invalid characters. Allowed characters: letters, numbers, and special characters (+, -, /, *, =, %, &, @, space, "", \'\', (, ), ?, !), and smileys (😊, 😂, 😍, 😢, 😡, 👍, 🙏, 🎉, ❤️, 💔).';
+            this.logInvalidInput(message, input);
+            return { isValid: false, message };
         }
-    
+
         return { isValid: true, message: '' };
     }
 
-    logInvalidInput(message) {
-        this.addToConversationHistory(this.botName, message);
+    logInvalidInput(message, input) {
+        const errorMessage = `NB! ${this.userName} => ${message} | Input: "${input}"`;
+        this.addToConversationHistory(errorMessage, this.botName);
         this.updateChatUI();
     }
 
-    // update with different logic for name
+
+   
+
     sendMessage(userInput, sender) {
         console.log(`Sending message: ${userInput}`);
-    
-        const validationResponse = this.isValidInput(userInput);
-        if (!validationResponse.isValid) {
-            this.logErrorToServer('Input Validation', validationResponse.message);
+
+        // Add user's message to the conversation history first
+        this.addToConversationHistory(userInput, sender);
+
+        // Validate the input and log an error if invalid
+        if (!this.isValidInput(userInput)) {
+            this.logInvalidInput(userInput);
             return;
         }
-        
-        this.addToConversationHistory(userInput, sender);
+
+        // If valid, send to server
         this.sendToServer(userInput);
     }
-
 
 
     sendToServer(message) {
@@ -102,10 +102,9 @@ class Chatbot {
     }
     
 
-    
     handleServerResponse(data) {
         console.log('Server response data:', data);
-    
+
         // Update the names only if necessary
         if (data.userName && this.userName !== data.userName) {
             this.userName = data.userName;
@@ -115,10 +114,10 @@ class Chatbot {
             this.botName = data.botName;
             console.log(`Bot name updated to: ${this.botName}`);
         }
-    
+
         // Update UI after setting names
         this.updateChatUI();
-    
+
         // Process the rest of the response
         const thinkingDelay = Math.floor(Math.random() * 2000 + 1000);
         setTimeout(() => {
@@ -129,6 +128,26 @@ class Chatbot {
     }
     
     
+    /* logErrorToServer(where, errorMsg) {
+        const timestamp = new Date().toISOString();
+        const payload = {
+            timestamp,
+            where,
+            error: errorMsg,
+            botName: this.botName,
+            userName: this.userName
+        };
+        console.error(`[${timestamp}] Error in ${where}: ${errorMsg}`);
+
+        fetch('/logError', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload)
+        }).catch(error => {
+            console.error('Failed to log error to server:', error);
+        });
+    } */
+
     logErrorToServer(where, errorMsg) {
         console.error('Error from ' + where + ':', errorMsg); // Log to console for immediate feedback
         fetch('/logError', {
@@ -176,7 +195,7 @@ class Chatbot {
         
     }
 
-    //Conversation History with correct name
+    // Conversation History with correct name
     addToConversationHistory(message, sender) {
         const lastMessage = this.conversationHistory.slice(-1)[0];
         if (lastMessage && lastMessage.message === message && lastMessage.sender === sender) {
@@ -201,7 +220,6 @@ class Chatbot {
         return false; // 
     }
 
-    // make sure  correct name into logging
     logConversationHistory(message, sender) {
         if (message === '...') {
             console.log("Skipping logging for thinking indicator.");
@@ -255,13 +273,10 @@ class Chatbot {
         .then(response => response.json())
         .then(data => {
             if (data.success) {
-                // Assume the bot's name can appear multiple times and needs to be updated everywhere
                 const nameElements = document.querySelectorAll('.sender-name.bot');
                 nameElements.forEach(element => {
-                    element.textContent = data.botName; // Update all elements with the new name
+                    element.textContent = data.botName; 
                 });
-    
-                // Optionally, update the global botName if stored and used elsewhere in your application
                 this.botName = data.botName;
             } else {
                 console.error('Failed to update bot name');

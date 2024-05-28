@@ -143,3 +143,45 @@
 15-05-2024 07:17 | Server Communication | Error: Server responded with status: 500
 
 15-05-2024 14:39 | Input Validation | Input contains invalid characters. Allowed characters: letters, numbers, and special characters (+, -, /, *, =, %, &, @, space, "", '', (, ), ?, !).
+
+28-05-2024 07:03 | Input Validation | Input contains invalid characters. Allowed characters: letters, numbers, and special characters (+, -, /, *, =, %, &, @, space, "", '', (, ), ?, !).
+
+28-05-2024 07:06 | Server Communication | Error: Server responded with status: 
+
+28-05-2024 10:12 | Input Validation | Input Validation Error: Input contains invalid characters. Allowed characters: letters, numbers, special characters (+, -, /, *, =, %, &, @, space, "", '', (, ), ?, !), and smileys (😊, 😂, 😍, 😢, 😡, 👍, 🙏, 🎉, ❤️, 💔). | Input: "undefined"
+
+28-05-2024 10:12 | Input Validation | Input contains invalid characters. Allowed characters: letters, numbers, special characters (+, -, /, *, =, %, &, @, space, "", '', (, ), ?, !), and smileys (😊, 😂, 😍, 😢, 😡, 👍, 🙏, 🎉, ❤️, 💔).
+
+28-05-2024 11:03 | Input Validation | Input Validation Error: Input contains invalid characters. Allowed characters: letters, numbers, and special characters (+, -, /, *, =, %, &, @, space, "", '', (, ), ?, !), and smileys (😊, 😂, 😍, 😢, 😡, 👍, 🙏, 🎉, ❤️, 💔). | Input: "!"_+(&^"
+
+28-05-2024 11:03 | Input Validation | Input contains invalid characters. Allowed characters: letters, numbers, and special characters (+, -, /, *, =, %, &, @, space, "", '', (, ), ?, !), and smileys (😊, 😂, 😍, 😢, 😡, 👍, 🙏, 🎉, ❤️, 💔).
+
+28-05-2024 11:09 | Input Validation | Input Validation Error: Input contains invalid characters. Allowed characters: letters, numbers, and special characters (+, -, /, *, =, %, &, @, space, "", '', (, ), ?, !), and smileys (😊, 😂, 😍, 😢, 😡, 👍, 🙏, 🎉, ❤️, 💔). | Input: "!"£$%%^"
+
+28-05-2024 11:09 | Input Validation | Input contains invalid characters. Allowed characters: letters, numbers, and special characters (+, -, /, *, =, %, &, @, space, "", '', (, ), ?, !), and smileys (😊, 😂, 😍, 😢, 😡, 👍, 🙏, 🎉, ❤️, 💔).
+
+28-05-2024 11:14 | Input Validation | Input Validation Error: Input contains invalid characters. Allowed characters: letters, numbers, and special characters (+, -, /, *, =, %, &, @, space, "", '', (, ), ?, !), and smileys (😊, 😂, 😍, 😢, 😡, 👍, 🙏, 🎉, ❤️, 💔). | Input: "!"£$$%^"
+
+28-05-2024 11:14 | Input Validation | Input Validation Error: Input contains invalid characters. Allowed characters: letters, numbers, and special characters (+, -, /, *, =, %, &, @, space, "", '', (, ), ?, !), and smileys (😊, 😂, 😍, 😢, 😡, 👍, 🙏, 🎉, ❤️, 💔). | Input: "!"£$$%^"
+
+28-05-2024 11:19 | Input Validation | Input Validation Error: Input contains invalid characters. Allowed characters: letters, numbers, and special characters (+, -, /, *, =, %, &, @, space, "", '', (, ), ?, !), and smileys (😊, 😂, 😍, 😢, 😡, 👍, 🙏, 🎉, ❤️, 💔). | Input: "!"£$%^"
+
+28-05-2024 11:19 | Input Validation | Input Validation Error: Input contains invalid characters. Allowed characters: letters, numbers, and special characters (+, -, /, *, =, %, &, @, space, "", '', (, ), ?, !), and smileys (😊, 😂, 😍, 😢, 😡, 👍, 🙏, 🎉, ❤️, 💔). | Input: "!"£$%^"
+
+28-05-2024 11:19 | Input Validation | Input Validation Error: Input contains invalid characters. Allowed characters: letters, numbers, and special characters (+, -, /, *, =, %, &, @, space, "", '', (, ), ?, !), and smileys (😊, 😂, 😍, 😢, 😡, 👍, 🙏, 🎉, ❤️, 💔). | Input: "12344356578!!"!£"%$"
+
+28-05-2024 11:19 | Input Validation | Input Validation Error: Input contains invalid characters. Allowed characters: letters, numbers, and special characters (+, -, /, *, =, %, &, @, space, "", '', (, ), ?, !), and smileys (😊, 😂, 😍, 😢, 😡, 👍, 🙏, 🎉, ❤️, 💔). | Input: "12344356578!!"!£"%$"
+
+28-05-2024 12:22 | Input Validation | Input Validation Error: Input contains invalid characters. Allowed characters: letters, numbers, and special characters (+, -, /, *, =, %, &, @, space, "", '', (, ), ?, !), and smileys (😊, 😂, 😍, 😢, 😡, 👍, 🙏, 🎉, ❤️, 💔). | Input: ""£$%^&*("
+
+28-05-2024 12:22 | Input Validation | Input Validation Error: Input contains invalid characters. Allowed characters: letters, numbers, and special characters (+, -, /, *, =, %, &, @, space, "", '', (, ), ?, !), and smileys (😊, 😂, 😍, 😢, 😡, 👍, 🙏, 🎉, ❤️, 💔). | Input: ""£$%^&*("
+
+28-05-2024 12:28 | Input Validation | Input Validation Error: Input contains invalid characters. Allowed characters: letters, numbers, and special characters (+, -, /, *, =, %, &, @, space, "", '', (, ), ?, !), and smileys (😊, 😂, 😍, 😢, 😡, 👍, 🙏, 🎉, ❤️, 💔). | Input: "!"£$"
+
+28-05-2024 13:02 | Input Validation | Input Validation Error: Input contains invalid characters. Allowed characters: letters, numbers, and special characters (+, -, /, *, =, %, &, @, space, "", '', (, ), ?, !), and smileys (😊, 😂, 😍, 😢, 😡, 👍, 🙏, 🎉, ❤️, 💔). | Input: "!"£$%^|"
+
+28-05-2024 13:14 | Input Validation | Input Validation Error: Input contains invalid characters. Allowed characters: letters, numbers, and special characters (+, -, /, *, =, %, &, @, space, "", '', (, ), ?, !), and smileys (😊, 😂, 😍, 😢, 😡, 👍, 🙏, 🎉, ❤️, 💔). | Input: "!"£$%"
+
+28-05-2024 14:52 | Input Validation | Input Validation Error: Input contains invalid characters. Allowed characters: letters, numbers, and special characters (+, -, /, *, =, %, &, @, space, "", '', (, ), ?, !), and smileys (😊, 😂, 😍, 😢, 😡, 👍, 🙏, 🎉, ❤️, 💔). | Input: "!"£$%^"
+
+28-05-2024 15:00 | Input Validation | Input Validation Error: Input contains invalid characters. Allowed characters: letters, numbers, and special characters (+, -, /, *, =, %, &, @, space, "", '', (, ), ?, !), and smileys (😊, 😂, 😍, 😢, 😡, 👍, 🙏, 🎉, ❤️, 💔). | Input: "!"£$%^"

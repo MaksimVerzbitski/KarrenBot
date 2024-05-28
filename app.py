@@ -42,7 +42,7 @@ def log_to_file(log_type, message):
     formatted_time = current_time.strftime("%d-%m-%Y %H:%M")
 
     if log_file:
-        with open(log_file, 'a+') as file:
+        with open(log_file, 'a+', encoding='utf-8') as file:
             file.seek(0)  # start of the file
             first_character = file.read(1)  # first character
 
@@ -78,7 +78,7 @@ def log_new_session(reload=False):
 
 def is_new_day(log_file, current_time):
     try:
-        with open(log_file, 'r') as file:
+        with open(log_file, 'r', encoding='utf-8') as file:
             lines = file.readlines()
             if lines:
                 last_line = lines[-1]

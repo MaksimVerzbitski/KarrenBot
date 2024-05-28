@@ -1,39 +1,3 @@
-/* document.addEventListener('DOMContentLoaded', (event) => {
-    const smileys = document.querySelectorAll('.smiley');
-    const chatInput = document.getElementById('chat-text-input');
-    const smileysContainer = document.getElementById('smileys-container');
-    const addSmileButton = document.getElementById('add-smile');
-
-    addSmileButton.addEventListener('click', () => {
-        if (smileysContainer.style.display === 'none' || smileysContainer.style.display === '') {
-            smileysContainer.style.display = 'flex';
-        } else {
-            smileysContainer.style.display = 'none';
-        }
-    });
-
-    smileys.forEach(smiley => {
-        smiley.addEventListener('click', () => {
-            chatInput.value += smiley.textContent;
-            chatInput.focus(); // Bring focus back to the input field
-        });
-    });
-}); */
-
-
-document.addEventListener('DOMContentLoaded', (event) => {
-    const smileys = document.querySelectorAll('.smiley');
-    const chatInput = document.getElementById('chat-text-input');
-    const smileysContainer = document.getElementById('smileys-container');
-
-    smileys.forEach(smiley => {
-        smiley.addEventListener('click', () => {
-            chatInput.value += smiley.textContent;
-            chatInput.focus(); // Bring focus back to the input field
-        });
-    });
-});
-
 function chatbotApp() {
     let isMinimized = false;
     let isMaximized = false;
@@ -62,6 +26,8 @@ function chatbotApp() {
     const rateButtons = document.querySelectorAll('.rate-button');
 
     const smileysContainer = document.getElementById('smileys-container');
+     // Consolidated smileys declaration
+    const smileys = ['😊', '😂', '😍', '😢', '😡', '👍', '🙏', '🎉', '❤️', '💔'];
 
     function centerChatContainer() {
         if (isMinimized || isClosed) return; // Do not center if minimized.
@@ -159,6 +125,9 @@ function chatbotApp() {
             lastY = chatContainer.style.top;
             isMaximized = true;
             isMinimized = false;
+            // Ensure the chat window is within the viewport
+            chatContainer.style.left = '0';
+            chatContainer.style.top = '0';
         } else {
             chatContainer.classList.remove('maximized');
             // Restore last position before maximized
@@ -167,6 +136,8 @@ function chatbotApp() {
             isMaximized = false;
         }
     }
+
+
     function closeChat() {
         console.log("closeChat function called");
         if (chatContainer && minimizedCircle) {
@@ -244,21 +215,12 @@ function chatbotApp() {
     }
 
     function addSmile() {
-        const smileysContainer = document.getElementById('smileys-container');
-        if (smileysContainer.style.display === 'none' || smileysContainer.style.display === '') {
-            smileysContainer.style.display = 'flex';
-        } else {
-            smileysContainer.style.display = 'none';
-        }
+        smileysContainer.style.display = smileysContainer.style.display === 'flex' ? 'none' : 'flex';
     }
     
     window.startNewSession = function() {
         location.reload();
     }
-
-
-    
-    
 
     return {
         chatbot: new Chatbot(),
@@ -318,9 +280,21 @@ function chatbotApp() {
                     }, 2000);
                 });
             });
+            smileysContainer.querySelectorAll('.smiley').forEach(smiley => {
+                smiley.addEventListener('click', () => {
+                    const smileyText = smiley.textContent;
+                    chatInput.value += smileyText;
+                    chatInput.focus();
+                    this.sendSmiley(smileyText);
+                });
+            }); 
         },
         addSmile: addSmile,
         userInput: '',
+        sendSmiley(smiley) {
+            this.chatbot.sendMessage(smiley, 'User');
+            chatInput.value = '';
+        },
         sendMessage() {
             if (this.userInput.trim() !== '') {
                 if (isSendingMessage) return;  // Prevent sending multiple messages at once
@@ -348,4 +322,3 @@ function chatbotApp() {
         restoreChat: restoreChat
     };
 }
-

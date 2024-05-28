@@ -124,6 +124,30 @@ app.post('/updateBotName', (req, res) => {
   res.json({ success: true, botName: chatbot.botName });  // Send  confirmation and new name
 });
 
+function handleSmileyResponse(response, res) {
+  const smileyResponses = {
+    '😊': ['I see you\'re happy!', 'That\'s a nice smile!', 'Glad to see you smile!', 'Keep smiling!'],
+    '😂': ['That must be really funny!', 'Glad to see you laughing!', 'Haha, that’s hilarious!', 'Laughter is the best medicine!'],
+    '😍': ['Looks like you love it!', 'Aww, that’s sweet!', 'Love is in the air!', 'Heart eyes!'],
+    '😢': ['Oh no, why the tears?', 'That’s sad to hear.', 'Here for you.', 'Sending you a virtual hug!'],
+    '😡': ['Uh oh, what made you angry?', 'Take a deep breath.', 'Let’s calm down.', 'I’m here to listen.'],
+    '👍': ['Thumbs up!', 'Great job!', 'That’s the spirit!', 'Keep it up!'],
+    '🙏': ['Thank you!', 'Much appreciated!', 'You’re welcome!', 'Namaste.'],
+    '🎉': ['Party time!', 'That’s worth celebrating!', 'Congratulations!', 'Let’s celebrate!'],
+    '❤️': ['Sending love!', 'That’s lovely!', 'Heartfelt!', 'Love is all around!'],
+    '💔': ['Heartbroken?', 'I’m here for you.', 'That’s tough.', 'Sending love your way.']
+  };
+
+  const smiley = response.utterance.trim();
+  const possibleResponses = smileyResponses[smiley];
+  const randomResponse = possibleResponses[Math.floor(Math.random() * possibleResponses.length)];
+
+  res.json({
+    answer: randomResponse,
+    userName: chatbot.userName,
+    botName: chatbot.botName
+  });
+}
 
 
 app.post('/nlp-process-message', async (req, res) => {
@@ -132,8 +156,11 @@ app.post('/nlp-process-message', async (req, res) => {
     const response = await manager.process('en', message);
     console.log("NLP Full Response:", JSON.stringify(response, null, 2));
     
-    // Check if  intent is rateMe 
-    if (response.intent === 'rateMe') {
+    // Check if the message is a smiley
+    const smileyPattern = /[😊😂😍😢😡👍🙏🎉❤️💔]/;
+    if (smileyPattern.test(message)) {
+      handleSmileyResponse(response, res);
+    } else if (response.intent === 'rateMe') {
       handleRatingResponse(response, res);
     } else {
       handleNameResponse(chatbot, response, res);
@@ -144,28 +171,7 @@ app.post('/nlp-process-message', async (req, res) => {
   }
 });
 
-// Not used -> for NOW
-function handleUnknownNameDetails(chatbot, detail, res) {
-  if (detail === "Masculine" || detail === "Feminine") {
-      chatbot.nameGender = detail;
-      res.json({answer: "English, Russian, or Estonian?"});
-  } else if (["English", "Russian", "Estonian"].includes(detail)) {
-      chatbot.nameOrigin = detail;
-      // Save the new name for training
-      saveNameForTraining(chatbot.unknownName, chatbot.nameGender, chatbot.nameOrigin);
-      res.json({answer: `${chatbot.unknownName} saved as a ${chatbot.nameGender}, ${detail} name. How can I assist you further?`});
-  } else {
-      // Handle other languages
-      saveNameForTraining(chatbot.unknownName, chatbot.nameGender, "Other");
-      res.json({answer: "Thank you for your input. I have saved this name for future learning. How can I assist you further?"});
-  }
-}
 
-// Not used -> for NOW
-function saveNameForTraining(name, gender, origin) {
-  // Logic to save the name to  database or a training set
-  console.log(`Saving name: ${name}, Gender: ${gender}, Origin: ${origin}`);
-}
 
 
 app.listen(port, () => console.log(`Server running on http://localhost:${port}`));
@@ -203,4 +209,36 @@ app.listen(port, () => console.log(`Server running on http://localhost:${port}`)
       userName: chatbot.userName,
       botName: chatbot.botName
   });
-} */
+} 
+
+// Not used -> for NOW
+function handleUnknownNameDetails(chatbot, detail, res) {
+  if (detail === "Masculine" || detail === "Feminine") {
+      chatbot.nameGender = detail;
+      res.json({answer: "English, Russian, or Estonian?"});
+  } else if (["English", "Russian", "Estonian"].includes(detail)) {
+      chatbot.nameOrigin = detail;
+      // Save the new name for training
+      saveNameForTraining(chatbot.unknownName, chatbot.nameGender, chatbot.nameOrigin);
+      res.json({answer: `${chatbot.unknownName} saved as a ${chatbot.nameGender}, ${detail} name. How can I assist you further?`});
+  } else {
+      // Handle other languages
+      saveNameForTraining(chatbot.unknownName, chatbot.nameGender, "Other");
+      res.json({answer: "Thank you for your input. I have saved this name for future learning. How can I assist you further?"});
+  }
+}
+
+// Not used -> for NOW
+function saveNameForTraining(name, gender, origin) {
+  // Logic to save the name to  database or a training set
+  console.log(`Saving name: ${name}, Gender: ${gender}, Origin: ${origin}`);
+}
+
+
+
+
+
+
+
+
+*/

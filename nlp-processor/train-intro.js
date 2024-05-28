@@ -28,6 +28,47 @@ async function defineIntents(manager) {
           manager.addAnswer('en', intent, response);
       });
   });
+
+
+
+  const smileyPhrases = {
+    '😊': ['😊'],
+    '😂': ['😂'],
+    '😍': ['😍'],
+    '😢': ['😢'],
+    '😡': ['😡'],
+    '👍': ['👍'],
+    '🙏': ['🙏'],
+    '🎉': ['🎉'],
+    '❤️': ['❤️'],
+    '💔': ['💔']
+  };
+
+  const smileyResponses = {
+    '😊': ['I see you\'re happy!', 'That\'s a nice smile!', 'Glad to see you smile!', 'Keep smiling!'],
+    '😂': ['That must be really funny!', 'Glad to see you laughing!', 'Haha, that’s hilarious!', 'Laughter is the best medicine!'],
+    '😍': ['Looks like you love it!', 'Aww, that’s sweet!', 'Love is in the air!', 'Heart eyes!'],
+    '😢': ['Oh no, why the tears?', 'That’s sad to hear.', 'Here for you.', 'Sending you a virtual hug!'],
+    '😡': ['Uh oh, what made you angry?', 'Take a deep breath.', 'Let’s calm down.', 'I’m here to listen.'],
+    '👍': ['Thumbs up!', 'Great job!', 'That’s the spirit!', 'Keep it up!'],
+    '🙏': ['Thank you!', 'Much appreciated!', 'You’re welcome!', 'Namaste.'],
+    '🎉': ['Party time!', 'That’s worth celebrating!', 'Congratulations!', 'Let’s celebrate!'],
+    '❤️': ['Sending love!', 'That’s lovely!', 'Heartfelt!', 'Love is all around!'],
+    '💔': ['Heartbroken?', 'I’m here for you.', 'That’s tough.', 'Sending love your way.']
+  };
+
+  Object.keys(smileyPhrases).forEach(intent => {
+    smileyPhrases[intent].forEach(phrase => {
+      manager.addDocument('en', phrase, intent);
+    });
+  });
+
+  Object.keys(smileyResponses).forEach(intent => {
+    smileyResponses[intent].forEach(response => {
+      manager.addAnswer('en', intent, response);
+    });
+  });
+
 }
 
 module.exports = defineIntents;
