@@ -5771,3 +5771,213 @@ bot | Hello!
 29-05-2024 15:53 | User: 😊
 
 29-05-2024 15:53 | Bot: Glad to see you smile!
+
+29-05-2024 16:33 | User: 5 stars
+
+29-05-2024 16:33 | Bot: 5: Excellent
+
+29-05-2024 16:33 | User: 💔
+
+29-05-2024 16:33 | Bot: Heartbroken?
+
+29-05-2024 16:33 | User: My name is Adol1
+
+29-05-2024 16:33 | Bot: I appreciate you sharing your name, Guest. How can I be of service to you now?
+
+29-05-2024 17:22 | User: I rate 5
+
+29-05-2024 17:22 | Bot: 5: Outstanding
+
+29-05-2024 17:22 | User: Rate me 4
+
+29-05-2024 17:22 | Bot: 4: Nice
+
+29-05-2024 17:22 | User: 😊
+
+29-05-2024 17:22 | Bot: I see you're happy!
+
+29-05-2024 17:22 | User: My name is Maksim
+
+29-05-2024 17:22 | Bot: Maksim, welcome, let’s begin!
+
+29-05-2024 17:22 | User: Bot Galina you
+
+29-05-2024 17:22 | Bot: I'm updating my name tag to Galina as we speak.
+
+29-05-2024 17:24 | User: Hello
+
+29-05-2024 17:24 | Bot: Well met!
+
+29-05-2024 17:24 | User: Bye
+
+29-05-2024 17:24 | Bot: I am not sure how to respond to that.
+
+29-05-2024 17:32 | User: Bye
+
+29-05-2024 17:32 | Bot: Adios!
+
+29-05-2024 17:32 | User: Hello
+
+29-05-2024 17:32 | Bot: Good day!
+
+29-05-2024 17:32 | User: Hello
+
+29-05-2024 17:32 | Bot: Hello!
+
+29-05-2024 17:32 | User: Hello
+
+29-05-2024 17:32 | Bot: Lovely to meet!
+
+29-05-2024 17:32 | User: Hello
+
+29-05-2024 17:32 | Bot: Cheers, mate!
+
+29-05-2024 17:33 | User: Lets talk
+
+29-05-2024 17:33 | Bot: How can I make your day better?
+
+29-05-2024 17:35 | User: !"£$%
+
+29-05-2024 17:35 | Bot: I am not sure how to respond to that.
+
+29-05-2024 17:39 | User: Yes
+
+29-05-2024 17:39 | Bot: I am not sure how to respond to that.
+
+29-05-2024 17:41 | User: yes
+
+29-05-2024 17:41 | Bot: Yes!
+
+29-05-2024 17:42 | User: My name is Kaspar
+
+29-05-2024 17:42 | Bot: Greetings, how are you, Kaspar?
+
+29-05-2024 17:43 | User: Bot Toivo you
+
+29-05-2024 17:43 | Bot: Hi there! Ready to assist. What's the matter?
+
+29-05-2024 17:43 | User: Bot Toivo you
+
+29-05-2024 17:43 | Bot: Hello! What can I do for you today?
+
+29-05-2024 17:45 | User: Your name is now Toivo
+
+29-05-2024 17:45 | Bot: Kaspar, pleasure meeting you!
+
+29-05-2024 17:47 | User: My rating is 5
+
+29-05-2024 17:47 | Bot: 5: Superb
+
+29-05-2024 17:53 | User: Bot Toivo you
+
+29-05-2024 17:53 | Bot: At your service! How can I assist?
+
+29-05-2024 17:54 | User: Bot Toivo you
+
+29-05-2024 17:54 | Bot: Hi! How can I assist you today?
+
+29-05-2024 17:55 | User: Your name is Toivo
+
+29-05-2024 17:55 | Bot: Hello Toivo, nice to meet you! How can I assist you?
+
+29-05-2024 17:56 | User: My name is Maksim
+
+29-05-2024 17:56 | Bot: Greetings, friend {{name}}!
+
+29-05-2024 17:57 | User: My name is Maksim
+
+29-05-2024 17:57 | Bot: {{name}}, welcome, let’s begin!
+
+29-05-2024 18:01 | User: My name is Maksim
+
+29-05-2024 18:01 | Bot: Welcome Maksim! I'm here to assist you. What’s on your mind today?
+
+29-05-2024 18:01 | User: Bot Toivo you
+
+29-05-2024 18:01 | Bot: I'm all ears. What do you need to know?
+
+29-05-2024 18:08 | User: My name is Maksim
+
+29-05-2024 18:08 | Bot: Registered, Maksim.
+
+29-05-2024 18:10 | User: My name is Maksim
+
+29-05-2024 18:10 | Bot: Hello, glad meeting you, Maksim!
+
+29-05-2024 18:10 | Bot | {'conversationHistory': [{'sender': 'User', 'message': 'My name is Maksim', 'timestamp': '2024-05-29T15:10:39.850Z'}], 'messages': [], 'botName': 'Bot', 'userName': 'Maksim'}
+
+29-05-2024 18:11 | User: Bot Tatjana you
+
+29-05-2024 18:11 | Bot: Good to meet you! What can I do for you?
+
+29-05-2024 18:13 | User: My name is Maksim
+
+29-05-2024 18:13 | Bot: Welcome, start chatting, Maksim!
+
+29-05-2024 18:18 | User: My name is Maksim
+
+29-05-2024 18:18 | Bot: Registered, Maksim.
+
+29-05-2024 18:19 | User: Maksim
+
+29-05-2024 18:19 | Bot: Greetings!
+
+29-05-2024 18:21 | User: Maksim
+
+29-05-2024 18:21 | Bot: Morning sunshine!
+
+29-05-2024 20:19 | Maksim: Maksim
+
+29-05-2024 20:19 | Tatjana: Welcome to town!
+
+29-05-2024 20:19 | Guest: My name is Maksim
+
+29-05-2024 20:19 | Bot: Greetings, friend Maksim!
+
+29-05-2024 20:19 | Maksim: Bot Tatjana you
+
+29-05-2024 20:19 | Bot: I am now Tatjana. How can I assist you?
+
+29-05-2024 20:19 | Maksim: Rate me 1
+
+29-05-2024 20:19 | Tatjana: 1: Disappointing
+
+29-05-2024 20:19 | Maksim: My rating is 2
+
+29-05-2024 20:19 | Tatjana: 2: Bad
+
+29-05-2024 20:19 | Maksim: 2 stars
+
+29-05-2024 20:19 | Tatjana: 2: Unsatisfactory
+
+29-05-2024 20:19 | Maksim: My rating is 3
+
+29-05-2024 20:19 | Tatjana: 3: Average
+
+29-05-2024 20:19 | Maksim: 4 stars
+
+29-05-2024 20:19 | Tatjana: 4: Satisfactory
+
+29-05-2024 20:19 | Maksim: 5 stars
+
+29-05-2024 20:19 | Tatjana: 5: Fantastic
+
+29-05-2024 20:19 | Maksim: 😊
+
+29-05-2024 20:19 | Tatjana: Glad to see you smile!
+
+29-05-2024 20:19 | Maksim: 😊
+
+29-05-2024 20:19 | Tatjana: I see you're happy!
+
+29-05-2024 20:22 | Maksim: My name is Maksim
+
+29-05-2024 20:22 | Tatjana: Hey there Maksim!
+
+29-05-2024 20:22 | Maksim: Rate me 1
+
+29-05-2024 20:22 | Tatjana: 1: Horrible
+
+29-05-2024 20:22 | Maksim: Rate me 5
+
+29-05-2024 20:22 | Tatjana: 5: Perfect

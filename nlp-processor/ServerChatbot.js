@@ -36,10 +36,6 @@ class ServerChatbot {
         console.log(`Asking for more details about the name: ${name}`);
         return `I don't recognize the name ${name}. Is it a Russian, Estonian, or English name? Please specify.`;
     }
-
-    askForGender() {
-        return "Is this name typically Male or Female?";
-    }
 }
 
 module.exports = ServerChatbot;

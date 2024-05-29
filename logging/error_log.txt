@@ -185,3 +185,5 @@
 28-05-2024 14:52 | Input Validation | Input Validation Error: Input contains invalid characters. Allowed characters: letters, numbers, and special characters (+, -, /, *, =, %, &, @, space, "", '', (, ), ?, !), and smileys (😊, 😂, 😍, 😢, 😡, 👍, 🙏, 🎉, ❤️, 💔). | Input: "!"£$%^"
 
 28-05-2024 15:00 | Input Validation | Input Validation Error: Input contains invalid characters. Allowed characters: letters, numbers, and special characters (+, -, /, *, =, %, &, @, space, "", '', (, ), ?, !), and smileys (😊, 😂, 😍, 😢, 😡, 👍, 🙏, 🎉, ❤️, 💔). | Input: "!"£$%^"
+
+29-05-2024 18:08 | Server Communication | ReferenceError: logConversation is not defined

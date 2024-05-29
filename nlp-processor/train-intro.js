@@ -69,14 +69,85 @@ async function defineIntents(manager) {
     });
   });
 
-}
 
-module.exports = defineIntents;
+  // Add greeting examples
+  const greetingsExamples = [
+    'hello', 'hi', 'greetings', 'salutations', 'howdy', 'yo', 'hey there', 'welcome', 'hiya', 'what\'s up',
+    'good to see you', 'pleased to meet you', 'how are things', 'how\'s life', 'how\'s your day', 'nice to see you',
+    'glad to see you', 'how have you been', 'what\'s new', 'it\'s been a while'
+  ];
 
-/* async function defineIntents(manager) {
-   // chat initiation
-   const chatInitiatorPhrases = [
+  greetingsExamples.forEach(example => {
+    manager.addDocument('en', example, 'greetings');
+  });
+
+  // Add greeting responses
+  const greetingsResponses = [
+    "Hello!", "Hi!", "Hey!", "Welcome!", "Greetings!", "Howdy!", "Cheers!", "Yo!", "Salutations!", "Hiya!",
+    "Ahoy!", "Hola!", "Namaste!", "Aloha!", "Bonjour!", "Hallo!", "Ciao!", "Shalom!", "Salaam!", "Ni hao!",
+    "Hello there!", "Good day!", "Hi, friend!", "Hey there!", "Welcome back!", "Greetings, traveler!", "Morning sunshine!", "Evening, friend!",
+    "Welcome aboard!", "Hiya, buddy!", "Peace out!", "Stay blessed!", "Well met!", "Good seeing!", "Hey, beautiful!", "Yo, amigo!",
+    "Lovely day!", "Howdy, partner!", "Cheers, mate!", "Evening, star!",
+    "How are you?", "Nice to meet!", "Good to see!", "Welcome to town!", "How's it going?", "Lovely to meet!", "Hi, how are?",
+    "Welcome home, friend!", "Good morning, sunshine!", "Have a good one!"
+  ];
+
+  greetingsResponses.forEach(response => {
+    manager.addAnswer('en', 'greetings', response);
+  });
+
+  // Add morning responses
+  const morningResponses = [
+    'Morning!', 'Sunshine!', 'Dawn!', 'Daybreak!', 'Awake!', 'Fresh!', 'Bright!', 'Early!', 'Sunrise!', 'Uplift!',
+    'Good morning!', 'Bright day!', 'Sunny start!', 'Fresh morning!', 'Morning glory!', 'Rise up!', 'New dawn!', 'Day\'s start!',
+    'Peaceful morning!', 'Lovely dawn!',
+    'Rise and shine!', 'Beautiful morning awaits!', 'Wake up, sunshine!', 'New day, new start!', 'Morning has broken!',
+    'Fresh start today!', 'Embrace the day!', 'First light gleams!', 'Dawn of hope!', 'Bright day ahead!'
+  ];
+
+  morningResponses.forEach(response => manager.addAnswer('en', 'greetings.morning', response));
+
+  // Add evening responses
+  const eveningResponses = [
+    'Evening!', 'Sunset!', 'Twilight!', 'Dusk!', 'Nightfall!', 'Moonlight!', 'Starlight!', 'Nighttime!', 'Quiet!', 'Peaceful!',
+    'Good evening!', 'Calm night!', 'Starry sky!', 'Peaceful dusk!', 'Silent evening!', 'Soft twilight!', 'Moonlit night!',
+    'Quiet hours!', 'Serene night!', 'Evening glow!',
+    'Enjoy your evening!', 'Have a good night!', 'Stars shine bright!', 'Restful night ahead!', 'Evening peace descends!',
+    'Twilight whispers softly!', 'Moon greets kindly!', 'Dusk settles in!', 'Serenity fills night!', 'Night\'s calm embrace!'
+  ];
+
+  eveningResponses.forEach(response => manager.addAnswer('en', 'greetings.evening', response));
+
+  // Add bye examples
+  const byeExamples = [
+    'bye', 'goodbye', 'see you', 'farewell', 'later', 'peace', 'adios', 'ciao', 'sayonara', 'au revoir',
+    'take care', 'see ya', 'safe travels', 'until next', 'good journey', 'bye now', 'fare thee', 'parting wish',
+    'stay safe', 'godspeed'
+  ];
+
+  byeExamples.forEach(example => {
+    manager.addDocument('en', example, 'greetings.bye');
+  });
+
+  // Add bye responses
+  const byeResponses = [
+    'Bye!', 'Farewell!', 'Adios!', 'Ciao!', 'Later!', 'Peace!', 'Goodbye!', 'Sayonara!', 'Au revoir!', 'Departing!',
+    'See ya!', 'Take care!', 'Safe travels!', 'Until next!', 'Good journey!', 'Bye now!', 'Fare thee!', 'Parting wish!',
+    'Stay safe!', 'Godspeed!',
+    'Bye for now!', 'Take care, friend!', 'Safe journey ahead!', 'Until we meet!', 'Wishing you well!', 'See you soon!',
+    'Farewell for now!', 'Goodbye, my friend!', 'Until next time!', 'See you again!'
+  ];
+
+  byeResponses.forEach(response => manager.addAnswer('en', 'greetings.bye', response));
+
+
+  // chat initiation
+  const chatInitiatorPhrases = [
     "Let's chat",
+    "chat",
+    "talk",
+    "dialog",
+    "conversation",
     "Lets talk",
     "chat start",
     "I'm here",
@@ -130,14 +201,89 @@ module.exports = defineIntents;
   ];
 
   // Adding bot responses to the chat_initiator intent
-  botResponses.forEach(response => {
-    manager.addAnswer('en', 'chat_initiator', response);
+  botResponses.forEach(botResponse => {
+    manager.addAnswer('en', 'chat_initiator', botResponse);
   });
+
+
+  // Add documents for "agree" intent
+  const agreeExamples = [
+    'yes', 'sure', 'okay', 'certainly', 'definitely', 'of course', 'sure thing', 
+    'absolutely', 'no problem', 'certainly yes', 'sure, I can', 'yes, of course', 
+    'definitely, why not', 'absolutely, go ahead', 'certainly, please do'
+  ];
+
+  agreeExamples.forEach(example => {
+    manager.addDocument('en', example, 'agree');
+  });
+
+  manager.addAnswer('en', 'agree', 'Yes!');
+  manager.addAnswer('en', 'agree', 'Sure!');
+  manager.addAnswer('en', 'agree', 'Okay!');
+  manager.addAnswer('en', 'agree', 'Certainly!');
+  manager.addAnswer('en', 'agree', 'Definitely!');
+  
+
+  // 2-Word Responses for 'agree'
+  manager.addAnswer('en', 'agree', 'Of course.');
+  manager.addAnswer('en', 'agree', 'Sure thing.');
+  manager.addAnswer('en', 'agree', 'Absolutely.');
+  manager.addAnswer('en', 'agree', 'No problem.');
+  manager.addAnswer('en', 'agree', 'Certainly yes.');
+  
+
+  
+  manager.addAnswer('en', 'agree', 'Sure, I can.');
+  manager.addAnswer('en', 'agree', 'Yes, of course.');
+  manager.addAnswer('en', 'agree', 'Definitely, why not?');
+  manager.addAnswer('en', 'agree', 'Absolutely, go ahead.');
+  manager.addAnswer('en', 'agree', 'Certainly, please do.');
+
+
+
+  // Add documents for "disagree" intent
+  const disagreeExamples = [
+    'no', 'nah', 'nope', 'not really', 'not at all', 'I don’t think so', 'absolutely not', 
+    'definitely not', 'no way', 'I disagree', 'no chance', 'not in a million years', 
+    'not going to happen', 'I don’t agree', 'I cannot agree'
+  ];
+
+  disagreeExamples.forEach(example => {
+    manager.addDocument('en', example, 'disagree');
+  });
+
+  // Add answers for "disagree" intent
+  manager.addAnswer('en', 'disagree', 'No.');
+  manager.addAnswer('en', 'disagree', 'Nope.');
+  manager.addAnswer('en', 'disagree', 'Nah.');
+  manager.addAnswer('en', 'disagree', 'Not really.');
+  manager.addAnswer('en', 'disagree', 'Not at all.');
+
+
+  manager.addAnswer('en', 'disagree', 'Absolutely not.');
+  manager.addAnswer('en', 'disagree', 'Definitely not.');
+  manager.addAnswer('en', 'disagree', 'No way.');
+  manager.addAnswer('en', 'disagree', 'No chance.');
+  manager.addAnswer('en', 'disagree', 'Not happening.');
+  
+  manager.addAnswer('en', 'disagree', 'I don’t think so.');
+  manager.addAnswer('en', 'disagree', 'I cannot agree.');
+  manager.addAnswer('en', 'disagree', 'No, not really.');
+  manager.addAnswer('en', 'disagree', 'Absolutely not happening.');
+  manager.addAnswer('en', 'disagree', 'Definitely not okay.');
+
+}
+
+
+
+module.exports = defineIntents;
+
+
 
   
   
   
-  // ===================================================================================================================================
+/*   // ===================================================================================================================================
   // new intent 
   const helpYouPhrases = [
     "Can I assist you with something?",
@@ -176,161 +322,10 @@ module.exports = defineIntents;
   });
 
   // agree intent
-
-  manager.addAnswer('en', 'agree', 'Yes!');
-  manager.addAnswer('en', 'agree', 'Sure!');
-  manager.addAnswer('en', 'agree', 'Okay!');
-  manager.addAnswer('en', 'agree', 'Certainly!');
-  manager.addAnswer('en', 'agree', 'Definitely!');
-  // Add more 1-word responses as needed...
-
-  // 2-Word Responses for 'askName'
-  manager.addAnswer('en', 'agree', 'Of course.');
-  manager.addAnswer('en', 'agree', 'Sure thing.');
-  manager.addAnswer('en', 'agree', 'Absolutely.');
-  manager.addAnswer('en', 'agree', 'No problem.');
-  manager.addAnswer('en', 'agree', 'Certainly yes.');
-  // Add more 2-word responses as needed...
-
-  // 3-Word Responses for 'agree'
-  manager.addAnswer('en', 'agree', 'Sure, I can.');
-  manager.addAnswer('en', 'agree', 'Yes, of course.');
-  manager.addAnswer('en', 'agree', 'Definitely, why not?');
-  manager.addAnswer('en', 'agree', 'Absolutely, go ahead.');
-  manager.addAnswer('en', 'agree', 'Certainly, please do.');
 }
 
 
-
-const greetingsExamples = [
-  'hello', 'hi', 'greetings', 'salutations', 'howdy', 'yo', 'hey there', 'welcome', 'hiya', 'what\'s up',
-  'good to see you', 'pleased to meet you', 'how are things', 'how\'s life', 'how\'s your day', 'nice to see you',
-  'glad to see you', 'how have you been', 'what\'s new', 'it\'s been a while'
-];
-greetingsExamples.forEach(example => manager.addDocument('en', example, 'greetings'));
-
-// Greetings Morning
-const morningGreetingsExamples = [
-  'good morning', 'morning', 'top of the morning', 'morning glory', 'rise and shine', 'wishing you a good morning',
-  'have a great morning', 'beautiful morning', 'sunshine', 'bright morning', 'fresh morning', 'new day',
-  'start of the day', 'break of dawn', 'early bird', 'sunrise', 'dawn', 'daybreak', 'morning has broken', 'new dawn'
-];
-morningGreetingsExamples.forEach(example => manager.addDocument('en', example, 'greetings.morning'));
-
-// Greetings Evening
-const eveningGreetingsExamples = [
-  'good evening', 'evening', 'good night', 'night', 'have a good evening', 'pleasant evening', 'lovely evening',
-  'enjoy your evening', 'nightfall', 'sunset', 'dusk', 'twilight', 'end of the day', 'close of day', 'night time',
-  'moonlight', 'starry night', 'last light', 'evening star', 'goodnight'
-];
-eveningGreetingsExamples.forEach(example => manager.addDocument('en', example, 'greetings.evening'));
-
-// Greetings Bye
-const byeExamples = [
-  'goodbye', 'bye', 'see you', 'take care', 'farewell', 'bye bye', 'see you later', 'see you soon', 'catch you later',
-  'until next time', 'adios', 'cheerio', 'ciao', 'au revoir', 'sayonara', 'later', 'so long', 'goodnight', 'peace out'
-];
-byeExamples.forEach(example => manager.addDocument('en', example, 'greetings.bye'));
-
-// Add Answers
-// 1-Word Responses
-const oneWordResponses = [
-  'Hello!', 'Hi!', 'Hey!', 'Yo!', 'Welcome!', 'Cheers!', 'Howdy!', 'Hiya!', 'Sup!', 'Yup!',
-  'Sure!', 'Okay!', 'Bye!', 'Ciao!', 'Adios!', 'Peace!', 'Word!', 'Yeah!', 'Holla!', 'Indeed!',
-  'Right!', 'Gotcha!', 'Cool!', 'Wow!', 'Yikes!', 'Oops!', 'Whoa!', 'Huh!', 'Aha!', 'Eh!',
-  'Mhm!', 'Aye!', 'Bingo!', 'Bravo!', 'Eureka!', 'Farewell!', 'Geez!', 'Hurrah!', 'Ouch!', 'Voila!'
-];
-oneWordResponses.forEach(response => manager.addAnswer('en', 'greetings', response));
-
-// 2-Word Responses
-const twoWordResponses = [
-  'Hello there!', 'Good day!', 'Hi, friend!', 'Hey there!', 'What\'s up?', 'Morning glory!', 'Evening sun!',
-  'Hiya, buddy!', 'Well met!', 'Ahoy mate!', 'Peace out!', 'Stay safe!', 'Rock on!', 'Take care!', 'Stay cool!',
-  'Be well!', 'Good luck!', 'Safe travels!', 'Stay gold!', 'Dream big!'
-];
-twoWordResponses.forEach(response => manager.addAnswer('en', 'greetings', response));
-
-// 3-or-More Words Responses
-const threeWordResponses = [
-  'Hello! How are you?', 'Good day to you!', 'Hi there, friend!', 'Greetings, fellow human!', 'Welcome aboard!',
-  'Howdy, partner!', 'Yo! What\'s new?', 'Hiya! Ready to chat?', 'Cheers to you!', 'Hey! How\'s it going?'
-];
-threeWordResponses.forEach(response => manager.addAnswer('en', 'greetings', response));
-
-
-
-const greetingsResponses = [
-  // 1-Word Responses
-  'Hello!', 'Hi!', 'Hey!', 'Welcome!', 'Greetings!', 'Howdy!', 'Cheers!', 'Yo!', 'Salutations!', 'Hiya!',
-  'Ahoy!', 'Hola!', 'Namaste!', 'Aloha!', 'Bonjour!', 'Hallo!', 'Ciao!', 'Shalom!', 'Salaam!', 'Ni hao!',
-
-  // 2-Word Responses
-  'Hello there!', 'Good day!', 'Hi, friend!', 'Hey there!', 'Welcome back!', 'Greetings, traveler!', 'Morning sunshine!', 'Evening, friend!',
-  'Welcome aboard!', 'Hiya, buddy!', 'Peace out!', 'Stay blessed!', 'Well met!', 'Good seeing!', 'Hey, beautiful!', 'Yo, amigo!',
-  'Lovely day!', 'Howdy, partner!', 'Cheers, mate!', 'Evening, star!',
-
-  // 3-Word Responses
-  'How are you?', 'Nice to meet!', 'Good to see!', 'Welcome to town!', 'How\'s it going?', 'Lovely to meet!', 'Hi, how are?',
-  'Welcome home, friend!', 'Good morning, sunshine!', 'Have a good one!'
-];
-
-greetingsResponses.forEach(response => manager.addAnswer('en', 'greetings', response));
-
-
-
-const morningResponses = [
-  // 1-Word Responses
-  'Morning!', 'Sunshine!', 'Dawn!', 'Daybreak!', 'Awake!', 'Fresh!', 'Bright!', 'Early!', 'Sunrise!', 'Uplift!',
-
-  // 2-Word Responses
-  'Good morning!', 'Bright day!', 'Sunny start!', 'Fresh morning!', 'Morning glory!', 'Rise up!', 'New dawn!', 'Day\'s start!',
-  'Peaceful morning!', 'Lovely dawn!',
-
-  // 3-Word Responses
-  'Rise and shine!', 'Beautiful morning awaits!', 'Wake up, sunshine!', 'New day, new start!', 'Morning has broken!',
-  'Fresh start today!', 'Embrace the day!', 'First light gleams!', 'Dawn of hope!', 'Bright day ahead!'
-];
-
-morningResponses.forEach(response => manager.addAnswer('en', 'greetings.morning', response));
-
-
-
-const eveningResponses = [
-  // 1-Word Responses
-  'Evening!', 'Sunset!', 'Twilight!', 'Dusk!', 'Nightfall!', 'Moonlight!', 'Starlight!', 'Nighttime!', 'Quiet!', 'Peaceful!',
-
-  // 2-Word Responses
-  'Good evening!', 'Calm night!', 'Starry sky!', 'Peaceful dusk!', 'Silent evening!', 'Soft twilight!', 'Moonlit night!',
-  'Quiet hours!', 'Serene night!', 'Evening glow!',
-
-  // 3-Word Responses
-  'Enjoy your evening!', 'Have a good night!', 'Stars shine bright!', 'Restful night ahead!', 'Evening peace descends!',
-  'Twilight whispers softly!', 'Moon greets kindly!', 'Dusk settles in!', 'Serenity fills night!', 'Night\'s calm embrace!'
-];
-
-eveningResponses.forEach(response => manager.addAnswer('en', 'greetings.evening', response));
-
-
-
-const byeResponses = [
-  // 1-Word Responses
-  'Bye!', 'Farewell!', 'Adios!', 'Ciao!', 'Later!', 'Peace!', 'Goodbye!', 'Sayonara!', 'Au revoir!', 'Departing!',
-
-  // 2-Word Responses
-  'See ya!', 'Take care!', 'Safe travels!', 'Until next!', 'Good journey!', 'Bye now!', 'Fare thee!', 'Parting wish!',
-  'Stay safe!', 'Godspeed!',
-
-  // 3-Word Responses
-  'Bye for now!', 'Take care, friend!', 'Safe journey ahead!', 'Until we meet!', 'Wishing you well!', 'See you soon!',
-  'Farewell for now!', 'Goodbye, my friend!', 'Until next time!', 'See you again!'
-];
-byeResponses.forEach(response => manager.addAnswer('en', 'greetings.bye', response)); 
-
-
-module.exports = { defineIntents }
-  
-   */
-
+ */
 
 
 
@@ -479,75 +474,4 @@ agreeResponses.forEach(response => {
   manager.addAnswer('en', 'agree', response);
 });
 
-// Define 'greetings' intent phrases and responses
-const greetingsExamples = [
-  'hello', 'hi', 'greetings', 'salutations', 'howdy', 'yo', 'hey there', 'welcome', 'hiya', 'what\'s up',
-  'good to see you', 'pleased to meet you', 'how are things', 'how\'s life', 'how\'s your day', 'nice to see you',
-  'glad to see you', 'how have you been', 'what\'s new', 'it\'s been a while'
-];
-
-greetingsExamples.forEach(example => {
-  manager.addDocument('en', example, 'greetings');
-});
-
-const greetingsResponses = [
-  "Hello!", "Hi!", "Hey!", "Welcome!", "Greetings!", "Howdy!", "Cheers!", "Yo!", "Salutations!", "Hiya!",
-  "Ahoy!", "Hola!", "Namaste!", "Aloha!", "Bonjour!", "Hallo!", "Ciao!", "Shalom!", "Salaam!", "Ni hao!",
-  "Hello there!", "Good day!", "Hi, friend!", "Hey there!", "Welcome back!", "Greetings, traveler!", "Morning sunshine!", "Evening, friend!",
-  "Welcome aboard!", "Hiya, buddy!", "Peace out!", "Stay blessed!", "Well met!", "Good seeing!", "Hey, beautiful!", "Yo, amigo!",
-  "Lovely day!", "Howdy, partner!", "Cheers, mate!", "Evening, star!",
-  "How are you?", "Nice to meet!", "Good to see!", "Welcome to town!", "How's it going?", "Lovely to meet!", "Hi, how are?",
-  "Welcome home, friend!", "Good morning, sunshine!", "Have a good one!"
-];
-
-greetingsResponses.forEach(response => {
-  manager.addAnswer('en', 'greetings', response);
-});
-
-const morningResponses = [
-// 1-Word Responses
-'Morning!', 'Sunshine!', 'Dawn!', 'Daybreak!', 'Awake!', 'Fresh!', 'Bright!', 'Early!', 'Sunrise!', 'Uplift!',
-
-// 2-Word Responses
-'Good morning!', 'Bright day!', 'Sunny start!', 'Fresh morning!', 'Morning glory!', 'Rise up!', 'New dawn!', 'Day\'s start!',
-'Peaceful morning!', 'Lovely dawn!',
-
-// 3-Word Responses
-'Rise and shine!', 'Beautiful morning awaits!', 'Wake up, sunshine!', 'New day, new start!', 'Morning has broken!',
-'Fresh start today!', 'Embrace the day!', 'First light gleams!', 'Dawn of hope!', 'Bright day ahead!'
-];
-
-morningResponses.forEach(response => manager.addAnswer('en', 'greetings.morning', response));
-
-
-
-const eveningResponses = [
-// 1-Word Responses
-'Evening!', 'Sunset!', 'Twilight!', 'Dusk!', 'Nightfall!', 'Moonlight!', 'Starlight!', 'Nighttime!', 'Quiet!', 'Peaceful!',
-
-// 2-Word Responses
-'Good evening!', 'Calm night!', 'Starry sky!', 'Peaceful dusk!', 'Silent evening!', 'Soft twilight!', 'Moonlit night!',
-'Quiet hours!', 'Serene night!', 'Evening glow!',
-
-// 3-Word Responses
-'Enjoy your evening!', 'Have a good night!', 'Stars shine bright!', 'Restful night ahead!', 'Evening peace descends!',
-'Twilight whispers softly!', 'Moon greets kindly!', 'Dusk settles in!', 'Serenity fills night!', 'Night\'s calm embrace!'
-];
-
-eveningResponses.forEach(response => manager.addAnswer('en', 'greetings.evening', response));
-
-
-
-const byeResponses = [
-// 1-Word Responses
-'Bye!', 'Farewell!', 'Adios!', 'Ciao!', 'Later!', 'Peace!', 'Goodbye!', 'Sayonara!', 'Au revoir!', 'Departing!',
-
-// 2-Word Responses
-'See ya!', 'Take care!', 'Safe travels!', 'Until next!', 'Good journey!', 'Bye now!', 'Fare thee!', 'Parting wish!',
-'Stay safe!', 'Godspeed!',
-
-// 3-Word Responses
-'Bye for now!', 'Take care, friend!', 'Safe journey ahead!', 'Until we meet!', 'Wishing you well!', 'See you soon!',
-'Farewell for now!', 'Goodbye, my friend!', 'Until next time!', 'See you again!'
-];
-byeResponses.forEach(response => manager.addAnswer('en', 'greetings.bye', response)); */
+ */

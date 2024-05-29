@@ -1,5 +1,4 @@
 from flask import Flask, jsonify, request , session, render_template
-#from flask_session import Session
 from flask_cors import CORS
 from datetime import datetime
 import json
@@ -128,11 +127,6 @@ def log_error():
 
 @app.route('/logConversation', methods=['POST'])
 def log_conversation():
-    # if conversation has already been logged this session
-    if session.get('logged_this_session', False):
-        return jsonify({"status": "conversation already logged"})
-
-    # Proceed if no log 
     conversation_info = request.json
     if 'sender' in conversation_info and 'message' in conversation_info:
         # Determine the sender's name based on the session or default
@@ -142,8 +136,6 @@ def log_conversation():
         log_to_file('conversation', f"{sender_name} | {conversation_info['message']}")
         print(f"Logging conversation: {sender_name} | {conversation_info['message']}")
 
-        # Set session flag to prevent duplicate logging
-        session['logged_this_session'] = True
         return jsonify({"status": "conversation logged"})
     else:
         # Error if necessary data is missing
@@ -156,6 +148,7 @@ def send_message():
 
     user_name = session.get('userName', 'User')  # Use session value
     bot_name = session.get('botName', 'Bot')  # Use session value
+
     # Call NLP function and get response
     nlp_response = my_nlp_function(user_message)
     print(f"NLP response: {nlp_response}")  # NLP console for debugging
@@ -166,7 +159,14 @@ def send_message():
         log_to_file('conversation', f"{bot_name}: {nlp_response['answer']}")
     else:
         log_to_file('conversation', f"{bot_name}: I'm not sure how to respond to that.")
-    #return a JSON response
+
+    # Update session with current names
+    if nlp_response.get('userName'):
+        session['userName'] = nlp_response['userName']
+    if nlp_response.get('botName'):
+        session['botName'] = nlp_response['botName']
+
+    # Return a JSON response
     return jsonify(nlp_response)
     
 

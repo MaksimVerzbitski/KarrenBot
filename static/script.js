@@ -1,55 +1,28 @@
 class Chatbot {
     constructor() {
         this.conversationHistory = [];
-    
         this.messages = [];
-
+    
         this.botName = localStorage.getItem('botName') || 'Bot'; 
         this.userName = localStorage.getItem('userName') || 'User'; 
-
+    
         console.log('Initial Bot Name:', this.botName);
         console.log('Initial User Name:', this.userName);
         
         this.updateChatUI(); // Update UI on stored names
-    }
-
-    /* setNames(botName, userName) {
-        let updated = false;
-        if (botName && this.botName !== botName) {
-            this.botName = botName;
-            console.log(`Bot name set to: ${this.botName}`);
-            updated = true;
-        }
-        if (userName && this.userName !== userName) {
-            this.userName = userName;
-            console.log(`User name set to: ${this.userName}`);
-            updated = true;
-        }
-        if (updated) {
-            this.updateChatUI();  //  UI is updated only if there was a change
-        }
-    } */
-
-    loadFromJSON(key) {
-        const data = localStorage.getItem(key);
-        return data ? JSON.parse(data) : null;
-    }
-
-    saveToJSON(key, value) {
-        localStorage.setItem(key, JSON.stringify(value));
-    }
-
+      }
+    
     setNames(botName, userName) {
         let updated = false;
         if (botName && this.botName !== botName) {
             this.botName = botName;
-            this.saveToJSON('botName', botName); // Store in local storage
+            localStorage.setItem('botName', botName); // Store in local storage
             console.log(`Bot name set to: ${this.botName}`);
             updated = true;
         }
         if (userName && this.userName !== userName) {
             this.userName = userName;
-            this.saveToJSON('userName', userName); // Store in local storage
+            localStorage.setItem('userName', userName); // Store in local storage
             console.log(`User name set to: ${this.userName}`);
             updated = true;
         }
@@ -96,17 +69,14 @@ class Chatbot {
 
     sendMessage(userInput, sender) {
         console.log(`Sending message: ${userInput}`);
-
-        // Add user's message to the conversation history first
-        this.addToConversationHistory(userInput, sender);
-
-        // Validate the input and log an error if invalid
-        if (!this.isValidInput(userInput)) {
-            this.logInvalidInput(userInput);
+    
+        const validationResponse = this.isValidInput(userInput);
+        if (!validationResponse.isValid) {
+            this.logErrorToServer('Input Validation', validationResponse.message);
             return;
         }
-
-        // If valid, send to server
+        
+        this.addToConversationHistory(userInput, sender);
         this.sendToServer(userInput);
     }
 
@@ -161,26 +131,7 @@ class Chatbot {
     }
     
     
-    /* logErrorToServer(where, errorMsg) {
-        const timestamp = new Date().toISOString();
-        const payload = {
-            timestamp,
-            where,
-            error: errorMsg,
-            botName: this.botName,
-            userName: this.userName
-        };
-        console.error(`[${timestamp}] Error in ${where}: ${errorMsg}`);
-
-        fetch('/logError', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(payload)
-        }).catch(error => {
-            console.error('Failed to log error to server:', error);
-        });
-    } */
-
+    
     logErrorToServer(where, errorMsg) {
         console.error('Error from ' + where + ':', errorMsg); // Log to console for immediate feedback
         fetch('/logError', {

@@ -6,10 +6,10 @@ const path = require('path');
 const fs = require('fs');
 const session = require('express-session');
 
-
+// .env
 const dotenv = require('dotenv');
 
-
+// Import the ServerChatbot class
 const ServerChatbot = require('./ServerChatbot');
 
 const chatbot = new ServerChatbot();
@@ -38,7 +38,7 @@ app.use(bodyParser.json());
 const port = 3000;
 const manager = new NlpManager({ languages: ['en'], ner: { builtins: [] }, threshold: 0.5, forceNER: true });
 const modelPath = path.join(__dirname, 'model.nlp');
-
+const trainingDataPath = path.join(__dirname, 'trainingNames.json');
 
 async function loadModel() {
   await trainnlp(manager);
@@ -48,82 +48,16 @@ async function loadModel() {
 loadModel();
 
 
-/* function handleNameResponse(chatbot, response, res) {
+function handleNameResponse(chatbot, response, res) {
   let answer = response.answer || "I'm not sure how to respond to that.";
   const nameEntity = response.entities.find(entity => entity.entity === 'person');
   const botNameEntity = response.entities.find(entity => entity.entity === 'botNamePerson');
   const botNameIntent = response.classifications.find(classification => classification.label === 'botName.userNamesBot');
 
   function isValidName(name) {
-    const validNameRegex = /^[a-zA-Z\s\-]+$/;
-    return validNameRegex.test(name);
+      const validNameRegex = /^[a-zA-Z\s\-]+$/;
+      return validNameRegex.test(name);
   }
-
-  console.log("Processing name response...");
-  console.log("Response Entities:", JSON.stringify(response.entities, null, 2));
-  console.log("Current userName:", chatbot.userName);
-  console.log("Current botName:", chatbot.botName);
-
-  if (nameEntity && !chatbot.userNameAlreadySet) {
-    if (isValidName(nameEntity.sourceText)) {
-      chatbot.setUserName(nameEntity.sourceText);
-      chatbot.userNameAlreadySet = true;
-      answer = response.answer ? response.answer.replace('{{name}}', nameEntity.sourceText) : answer.replace('{{name}}', nameEntity.sourceText);
-    } else {
-      chatbot.unknownName = nameEntity.sourceText;
-      chatbot.askForNameDetails(nameEntity.sourceText);
-      answer = "Is this name Russian, Estonian, or English? Please specify.";
-      chatbot.waitingForNameDetails = true;
-    }
-  }
-
-  if (botNameEntity && botNameIntent && botNameIntent.value > 0.15) {
-    chatbot.setBotName(botNameEntity.sourceText);
-    console.log(`Bot name set to: ${botNameEntity.sourceText}`);
-    answer = answer.replace('{{botName}}', botNameEntity.sourceText);
-  }
-
-  if (chatbot.waitingForNameDetails) {
-    const languageEntity = response.entities.find(entity => entity.entity === 'language');
-    const genderEntity = response.entities.find(entity => entity.entity === 'gender');
-
-    if (languageEntity) {
-      chatbot.nameOrigin = languageEntity.sourceText;
-      answer = "Is this name typically Male or Female?";
-    }
-
-    if (genderEntity) {
-      chatbot.nameGender = genderEntity.sourceText;
-      saveNameForTraining(chatbot.unknownName, chatbot.nameGender, chatbot.nameOrigin);
-      answer = `${chatbot.unknownName} saved as a ${chatbot.nameGender}, ${chatbot.nameOrigin} name. How can I assist you further?`;
-      chatbot.waitingForNameDetails = false;
-    }
-  } else {
-    answer = answer.replace('{{name}}', chatbot.userName || 'Guest');
-  }
-
-  console.log("Final answer:", answer);
-  console.log("Updated userName:", chatbot.userName);
-  console.log("Updated botName:", chatbot.botName);
-
-  res.json({
-    answer: answer,
-    userName: chatbot.userName,
-    botName: chatbot.botName
-  });
-} */
-
-
-function isValidName(name) {
-  const validNameRegex = /^[a-zA-Z\s\-]+$/;
-  return validNameRegex.test(name);
-}
-
-function handleNameResponse(chatbot, response, res) {
-  let answer = response.answer || "I'm not sure how to respond to that.";
-  const nameEntity = response.entities.find(entity => entity.entity === 'person');
-  const botNameEntity = response.entities.find(entity => entity.entity === 'botNamePerson');
-  const botNameIntent = response.classifications.find(classification => classification.label === 'botName.userNamesBot');
 
   console.log("Processing name response...");
   console.log("Response Entities:", JSON.stringify(response.entities, null, 2));
@@ -145,7 +79,7 @@ function handleNameResponse(chatbot, response, res) {
 
       if (languageEntity) {
           chatbot.nameOrigin = languageEntity.sourceText;
-          answer = chatbot.askForGender();
+          answer = "Is this name typically Male or Female?";
       }
 
       if (genderEntity) {
@@ -172,34 +106,6 @@ function handleNameResponse(chatbot, response, res) {
       botName: chatbot.botName
   });
 }
-
-function saveNameForTraining(name, gender, origin) {
-  const filePath = path.join(__dirname, 'trainingNames.json');
-  let namesData = {};
-
-  if (fs.existsSync(filePath)) {
-      namesData = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
-  }
-
-  if (!namesData[origin]) {
-      namesData[origin] = {};
-  }
-
-  if (!namesData[origin][gender]) {
-      namesData[origin][gender] = [];
-  }
-
-  if (!namesData[origin][gender].includes(name)) {
-      namesData[origin][gender].push(name);
-  }
-
-  fs.writeFileSync(filePath, JSON.stringify(namesData, null, 2), 'utf-8');
-  console.log(`Saved name: ${name}, Gender: ${gender}, Origin: ${origin}`);
-}
-
-
-
-
 
 function handleRatingResponse(response, res) {
   console.log('Received response:', JSON.stringify(response, null, 2)); // Log the incoming response
@@ -236,28 +142,10 @@ function handleRatingResponse(response, res) {
   });
 }
 
-/* app.post('/updateBotName', (req, res) => {
-  const { newBotName } = req.body; 
-  chatbot.setBotName(newBotName); 
-  res.json({ success: true, botName: chatbot.botName });
-}); */
-
-
-app.post('/setNames', (req, res) => {
-  const { botName, userName } = req.body; 
-
-  if (botName) {
-    chatbot.setBotName(botName);
-  }
-  if (userName) {
-    chatbot.setUserName(userName);
-  }
-
-  res.json({ 
-    success: true, 
-    botName: chatbot.botName, 
-    userName: chatbot.userName 
-  });
+app.post('/updateBotName', (req, res) => {
+  const { newBotName } = req.body;  // Extract name  request
+  chatbot.setBotName(newBotName);  // Update the bot name in the server-side instance
+  res.json({ success: true, botName: chatbot.botName });  // Send  confirmation and new name
 });
 
 function handleSmileyResponse(response, res) {
@@ -285,34 +173,8 @@ function handleSmileyResponse(response, res) {
   });
 }
 
-function handleUnknownNameResponse(chatbot, response, res) {
-  const languageEntity = response.entities.find(entity => entity.entity === 'language');
-  const genderEntity = response.entities.find(entity => entity.entity === 'gender');
 
-  let answer = chatbot.askForNameDetails(chatbot.unknownName);
-
-  if (languageEntity) {
-      chatbot.nameOrigin = languageEntity.sourceText;
-      answer = chatbot.askForGender();
-  }
-
-  if (genderEntity) {
-      chatbot.nameGender = genderEntity.sourceText;
-      saveNameForTraining(chatbot.unknownName, chatbot.nameGender, chatbot.nameOrigin);
-      answer = `${chatbot.unknownName} saved as a ${chatbot.nameGender}, ${chatbot.nameOrigin} name. How can I assist you further?`;
-      chatbot.waitingForNameDetails = false;
-  }
-
-  res.json({
-      answer: answer,
-      userName: chatbot.userName,
-      botName: chatbot.botName
-  });
-}
-
-
-
-app.post('/nlp-process-message', async (req, res) => {
+/* app.post('/nlp-process-message', async (req, res) => {
   const { message } = req.body;
   try {
       const response = await manager.process('en', message);
@@ -327,8 +189,6 @@ app.post('/nlp-process-message', async (req, res) => {
           handleRatingResponse(response, res);
       } else if (response.intent === 'botName.userNamesBot') {
           handleNameResponse(chatbot, response, res); // Process bot names
-      } else if (response.intent === 'unknownName.provideDetails') {
-          handleUnknownNameResponse(chatbot, response, res); // Process unknown names
       } else {
           res.json({
               answer: response.answer || 'I am not sure how to respond to that.',
@@ -340,17 +200,55 @@ app.post('/nlp-process-message', async (req, res) => {
       console.error('Error processing message:', error);
       res.status(500).json({ error: 'An error occurred while processing the message.' });
   }
+}); */
+
+
+app.post('/nlp-process-message', async (req, res) => {
+  const { message } = req.body;
+  try {
+    const response = await manager.process('en', message);
+    console.log("NLP Full Response:", JSON.stringify(response, null, 2));
+    
+    const smileyPattern = /[😊😂😍😢😡👍🙏🎉❤️💔]/;
+    if (smileyPattern.test(message)) {
+      handleSmileyResponse(response, res);
+    } else if (response.intent === 'userName.provideName') {
+      handleNameResponse(chatbot, response, res);
+    } else if (response.intent.startsWith('rateMe')) {
+      handleRatingResponse(response, res);
+    } else if (response.intent === 'chat_initiator') {
+      // Handle chat initiator intent and check if it involves setting the bot name
+      const botNameEntity = response.entities.find(entity => entity.entity === 'botNamePerson');
+      if (botNameEntity) {
+        chatbot.setBotName(botNameEntity.sourceText);
+        session.botName = botNameEntity.sourceText;
+        console.log(`Bot name set to: ${botNameEntity.sourceText}`);
+        res.json({
+          answer: `I am now ${botNameEntity.sourceText}. How can I assist you?`,
+          userName: chatbot.userName,
+          botName: chatbot.botName
+        });
+      } else {
+        res.json({
+          answer: response.answer || 'I am not sure how to respond to that.',
+          userName: chatbot.userName,
+          botName: chatbot.botName
+        });
+      }
+    } else if (response.intent === 'botName.userNamesBot') {
+      handleNameResponse(chatbot, response, res); // Process bot names
+    } else {
+      res.json({
+        answer: response.answer || 'I am not sure how to respond to that.',
+        userName: chatbot.userName,
+        botName: chatbot.botName
+      });
+    }
+  } catch (error) {
+    console.error('Error processing message:', error);
+    res.status(500).json({ error: 'An error occurred while processing the message.' });
+  }
 });
 
 
-
 app.listen(port, () => console.log(`Server running on http://localhost:${port}`));
-
-
-
-
-
-
-
-
-
