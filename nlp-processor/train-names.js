@@ -1,4 +1,23 @@
+const fs = require('fs');
+const path = require('path');
+
+
 async function trainNames(manager){
+    const filePath = path.join(__dirname, 'trainingNames.json');
+    if (!fs.existsSync(filePath)) {
+        console.log('No trainingNames.json file found.');
+        return;
+    }
+
+    const namesData = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
+
+    for (const [origin, genders] of Object.entries(namesData)) {
+        for (const [gender, names] of Object.entries(genders)) {
+        const entityType = `${origin}${gender.charAt(0).toUpperCase() + gender.slice(1)}`;
+        manager.addNamedEntityText('person', entityType, ['en'], names);
+        }
+    }
+
     const namesByGenderAndLanguage = {
         'englishMasculine': [
             "Abe", "Abraham", "Adrien", "Alan", "Albemarle", "Alex", "Alexander", "Alistair", "Almon", "Alton",

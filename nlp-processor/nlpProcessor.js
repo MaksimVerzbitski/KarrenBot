@@ -6,10 +6,10 @@ const path = require('path');
 const fs = require('fs');
 const session = require('express-session');
 
-// .env
+
 const dotenv = require('dotenv');
 
-// Import the ServerChatbot class
+
 const ServerChatbot = require('./ServerChatbot');
 
 const chatbot = new ServerChatbot();
@@ -38,7 +38,7 @@ app.use(bodyParser.json());
 const port = 3000;
 const manager = new NlpManager({ languages: ['en'], ner: { builtins: [] }, threshold: 0.5, forceNER: true });
 const modelPath = path.join(__dirname, 'model.nlp');
-const trainingDataPath = path.join(__dirname, 'trainingNames.json');
+
 
 async function loadModel() {
   await trainnlp(manager);
@@ -48,40 +48,158 @@ async function loadModel() {
 loadModel();
 
 
+/* function handleNameResponse(chatbot, response, res) {
+  let answer = response.answer || "I'm not sure how to respond to that.";
+  const nameEntity = response.entities.find(entity => entity.entity === 'person');
+  const botNameEntity = response.entities.find(entity => entity.entity === 'botNamePerson');
+  const botNameIntent = response.classifications.find(classification => classification.label === 'botName.userNamesBot');
+
+  function isValidName(name) {
+    const validNameRegex = /^[a-zA-Z\s\-]+$/;
+    return validNameRegex.test(name);
+  }
+
+  console.log("Processing name response...");
+  console.log("Response Entities:", JSON.stringify(response.entities, null, 2));
+  console.log("Current userName:", chatbot.userName);
+  console.log("Current botName:", chatbot.botName);
+
+  if (nameEntity && !chatbot.userNameAlreadySet) {
+    if (isValidName(nameEntity.sourceText)) {
+      chatbot.setUserName(nameEntity.sourceText);
+      chatbot.userNameAlreadySet = true;
+      answer = response.answer ? response.answer.replace('{{name}}', nameEntity.sourceText) : answer.replace('{{name}}', nameEntity.sourceText);
+    } else {
+      chatbot.unknownName = nameEntity.sourceText;
+      chatbot.askForNameDetails(nameEntity.sourceText);
+      answer = "Is this name Russian, Estonian, or English? Please specify.";
+      chatbot.waitingForNameDetails = true;
+    }
+  }
+
+  if (botNameEntity && botNameIntent && botNameIntent.value > 0.15) {
+    chatbot.setBotName(botNameEntity.sourceText);
+    console.log(`Bot name set to: ${botNameEntity.sourceText}`);
+    answer = answer.replace('{{botName}}', botNameEntity.sourceText);
+  }
+
+  if (chatbot.waitingForNameDetails) {
+    const languageEntity = response.entities.find(entity => entity.entity === 'language');
+    const genderEntity = response.entities.find(entity => entity.entity === 'gender');
+
+    if (languageEntity) {
+      chatbot.nameOrigin = languageEntity.sourceText;
+      answer = "Is this name typically Male or Female?";
+    }
+
+    if (genderEntity) {
+      chatbot.nameGender = genderEntity.sourceText;
+      saveNameForTraining(chatbot.unknownName, chatbot.nameGender, chatbot.nameOrigin);
+      answer = `${chatbot.unknownName} saved as a ${chatbot.nameGender}, ${chatbot.nameOrigin} name. How can I assist you further?`;
+      chatbot.waitingForNameDetails = false;
+    }
+  } else {
+    answer = answer.replace('{{name}}', chatbot.userName || 'Guest');
+  }
+
+  console.log("Final answer:", answer);
+  console.log("Updated userName:", chatbot.userName);
+  console.log("Updated botName:", chatbot.botName);
+
+  res.json({
+    answer: answer,
+    userName: chatbot.userName,
+    botName: chatbot.botName
+  });
+} */
+
+
+function isValidName(name) {
+  const validNameRegex = /^[a-zA-Z\s\-]+$/;
+  return validNameRegex.test(name);
+}
+
 function handleNameResponse(chatbot, response, res) {
   let answer = response.answer || "I'm not sure how to respond to that.";
   const nameEntity = response.entities.find(entity => entity.entity === 'person');
   const botNameEntity = response.entities.find(entity => entity.entity === 'botNamePerson');
   const botNameIntent = response.classifications.find(classification => classification.label === 'botName.userNamesBot');
 
-  // Determine the user name to use based on entity detection
-  if (nameEntity && !chatbot.userNameAlreadySet) {
-      chatbot.setUserName(nameEntity.sourceText);
-      chatbot.userNameAlreadySet = true; // Prevents changing the user name again
-      if (response.answer) {
-          answer = response.answer.replace('{{name}}', nameEntity.sourceText);
-      } else {
-          answer = answer.replace('{{name}}', nameEntity.sourceText);
-      }
-  }
+  console.log("Processing name response...");
+  console.log("Response Entities:", JSON.stringify(response.entities, null, 2));
+  console.log("Current userName:", chatbot.userName);
+  console.log("Current botName:", chatbot.botName);
 
-  // Determine the bot name to use based on entity and intent score
-  if (botNameEntity && botNameIntent && botNameIntent.value > 0.15) {
+  if (nameEntity && !chatbot.userNameAlreadySet) {
+      if (isValidName(nameEntity.sourceText)) {
+          chatbot.setUserName(nameEntity.sourceText);
+          chatbot.userNameAlreadySet = true;
+          answer = response.answer ? response.answer.replace('{{name}}', nameEntity.sourceText) : answer.replace('{{name}}', nameEntity.sourceText);
+      } else {
+          chatbot.unknownName = nameEntity.sourceText;
+          answer = chatbot.askForNameDetails(nameEntity.sourceText);
+      }
+  } else if (chatbot.waitingForNameDetails) {
+      const languageEntity = response.entities.find(entity => entity.entity === 'language');
+      const genderEntity = response.entities.find(entity => entity.entity === 'gender');
+
+      if (languageEntity) {
+          chatbot.nameOrigin = languageEntity.sourceText;
+          answer = chatbot.askForGender();
+      }
+
+      if (genderEntity) {
+          chatbot.nameGender = genderEntity.sourceText;
+          saveNameForTraining(chatbot.unknownName, chatbot.nameGender, chatbot.nameOrigin);
+          answer = `${chatbot.unknownName} saved as a ${chatbot.nameGender}, ${chatbot.nameOrigin} name. How can I assist you further?`;
+          chatbot.waitingForNameDetails = false;
+      }
+  } else if (botNameEntity && botNameIntent && botNameIntent.value > 0.15) {
       chatbot.setBotName(botNameEntity.sourceText);
       console.log(`Bot name set to: ${botNameEntity.sourceText}`);
       answer = answer.replace('{{botName}}', botNameEntity.sourceText);
+  } else {
+      answer = answer.replace('{{name}}', chatbot.userName || 'Guest');
   }
 
-  // Use existing names if no new names are provided
-  answer = answer.replace('{{name}}', chatbot.userName || 'Guest');
+  console.log("Final answer:", answer);
+  console.log("Updated userName:", chatbot.userName);
+  console.log("Updated botName:", chatbot.botName);
 
-  // Return the modified response
   res.json({
       answer: answer,
       userName: chatbot.userName,
       botName: chatbot.botName
   });
 }
+
+function saveNameForTraining(name, gender, origin) {
+  const filePath = path.join(__dirname, 'trainingNames.json');
+  let namesData = {};
+
+  if (fs.existsSync(filePath)) {
+      namesData = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
+  }
+
+  if (!namesData[origin]) {
+      namesData[origin] = {};
+  }
+
+  if (!namesData[origin][gender]) {
+      namesData[origin][gender] = [];
+  }
+
+  if (!namesData[origin][gender].includes(name)) {
+      namesData[origin][gender].push(name);
+  }
+
+  fs.writeFileSync(filePath, JSON.stringify(namesData, null, 2), 'utf-8');
+  console.log(`Saved name: ${name}, Gender: ${gender}, Origin: ${origin}`);
+}
+
+
+
+
 
 function handleRatingResponse(response, res) {
   console.log('Received response:', JSON.stringify(response, null, 2)); // Log the incoming response
@@ -118,10 +236,28 @@ function handleRatingResponse(response, res) {
   });
 }
 
-app.post('/updateBotName', (req, res) => {
-  const { newBotName } = req.body;  // Extract name  request
-  chatbot.setBotName(newBotName);  // Update the bot name in the server-side instance
-  res.json({ success: true, botName: chatbot.botName });  // Send  confirmation and new name
+/* app.post('/updateBotName', (req, res) => {
+  const { newBotName } = req.body; 
+  chatbot.setBotName(newBotName); 
+  res.json({ success: true, botName: chatbot.botName });
+}); */
+
+
+app.post('/setNames', (req, res) => {
+  const { botName, userName } = req.body; 
+
+  if (botName) {
+    chatbot.setBotName(botName);
+  }
+  if (userName) {
+    chatbot.setUserName(userName);
+  }
+
+  res.json({ 
+    success: true, 
+    botName: chatbot.botName, 
+    userName: chatbot.userName 
+  });
 });
 
 function handleSmileyResponse(response, res) {
@@ -149,28 +285,62 @@ function handleSmileyResponse(response, res) {
   });
 }
 
+function handleUnknownNameResponse(chatbot, response, res) {
+  const languageEntity = response.entities.find(entity => entity.entity === 'language');
+  const genderEntity = response.entities.find(entity => entity.entity === 'gender');
+
+  let answer = chatbot.askForNameDetails(chatbot.unknownName);
+
+  if (languageEntity) {
+      chatbot.nameOrigin = languageEntity.sourceText;
+      answer = chatbot.askForGender();
+  }
+
+  if (genderEntity) {
+      chatbot.nameGender = genderEntity.sourceText;
+      saveNameForTraining(chatbot.unknownName, chatbot.nameGender, chatbot.nameOrigin);
+      answer = `${chatbot.unknownName} saved as a ${chatbot.nameGender}, ${chatbot.nameOrigin} name. How can I assist you further?`;
+      chatbot.waitingForNameDetails = false;
+  }
+
+  res.json({
+      answer: answer,
+      userName: chatbot.userName,
+      botName: chatbot.botName
+  });
+}
+
+
 
 app.post('/nlp-process-message', async (req, res) => {
   const { message } = req.body;
   try {
-    const response = await manager.process('en', message);
-    console.log("NLP Full Response:", JSON.stringify(response, null, 2));
-    
-    // Check if the message is a smiley
-    const smileyPattern = /[😊😂😍😢😡👍🙏🎉❤️💔]/;
-    if (smileyPattern.test(message)) {
-      handleSmileyResponse(response, res);
-    } else if (response.intent === 'rateMe') {
-      handleRatingResponse(response, res);
-    } else {
-      handleNameResponse(chatbot, response, res);
-    }
+      const response = await manager.process('en', message);
+      console.log("NLP Full Response:", JSON.stringify(response, null, 2));
+      
+      const smileyPattern = /[😊😂😍😢😡👍🙏🎉❤️💔]/;
+      if (smileyPattern.test(message)) {
+          handleSmileyResponse(response, res);
+      } else if (response.intent === 'userName.provideName') {
+          handleNameResponse(chatbot, response, res);
+      } else if (response.intent.startsWith('rateMe')) {
+          handleRatingResponse(response, res);
+      } else if (response.intent === 'botName.userNamesBot') {
+          handleNameResponse(chatbot, response, res); // Process bot names
+      } else if (response.intent === 'unknownName.provideDetails') {
+          handleUnknownNameResponse(chatbot, response, res); // Process unknown names
+      } else {
+          res.json({
+              answer: response.answer || 'I am not sure how to respond to that.',
+              userName: chatbot.userName,
+              botName: chatbot.botName
+          });
+      }
   } catch (error) {
-    console.error('Error processing message:', error);
-    res.status(500).send('Error processing your message.');
+      console.error('Error processing message:', error);
+      res.status(500).json({ error: 'An error occurred while processing the message.' });
   }
 });
-
 
 
 
@@ -180,65 +350,7 @@ app.listen(port, () => console.log(`Server running on http://localhost:${port}`)
 
 
 
-/* function handleNameResponse(chatbot, response, res) {
-  let answer = response.answer || "I'm not sure how to respond to that.";
-  const nameEntity = response.entities.find(entity => entity.entity === 'person');
-  const botNameEntity = response.entities.find(entity => entity.entity === 'botNamePerson');
-  const botNameIntent = response.classifications.find(classification => classification.label === 'botName.userNamesBot');
-
-  // Determine the user name to use based on entity detection
-  if (nameEntity && !chatbot.userNameAlreadySet) {
-      chatbot.setUserName(nameEntity.sourceText);
-      chatbot.userNameAlreadySet = true; // Prevents changing the user name again
-      answer = `Hello ${nameEntity.sourceText}, how can I help you today?`;
-  }
-
-  // Determine the bot name to use based on entity and intent score
-  if (botNameEntity && botNameIntent && botNameIntent.value > 0.15) {
-      chatbot.setBotName(botNameEntity.sourceText);
-      console.log(`Bot name set to: ${botNameEntity.sourceText}`);
-      answer = `Proud to hear my new name  ${botNameEntity.sourceText}, nice to me you ${nameEntity.sourceText}?`;
-  }
-
-  // Use existing names if no new names are provided
-  answer = answer.replace('{{name}}', chatbot.userName || 'Guest');
-
-  // Return the modified response
-  res.json({
-      answer: answer,
-      userName: chatbot.userName,
-      botName: chatbot.botName
-  });
-} 
-
-// Not used -> for NOW
-function handleUnknownNameDetails(chatbot, detail, res) {
-  if (detail === "Masculine" || detail === "Feminine") {
-      chatbot.nameGender = detail;
-      res.json({answer: "English, Russian, or Estonian?"});
-  } else if (["English", "Russian", "Estonian"].includes(detail)) {
-      chatbot.nameOrigin = detail;
-      // Save the new name for training
-      saveNameForTraining(chatbot.unknownName, chatbot.nameGender, chatbot.nameOrigin);
-      res.json({answer: `${chatbot.unknownName} saved as a ${chatbot.nameGender}, ${detail} name. How can I assist you further?`});
-  } else {
-      // Handle other languages
-      saveNameForTraining(chatbot.unknownName, chatbot.nameGender, "Other");
-      res.json({answer: "Thank you for your input. I have saved this name for future learning. How can I assist you further?"});
-  }
-}
-
-// Not used -> for NOW
-function saveNameForTraining(name, gender, origin) {
-  // Logic to save the name to  database or a training set
-  console.log(`Saving name: ${name}, Gender: ${gender}, Origin: ${origin}`);
-}
 
 
 
 
-
-
-
-
-*/

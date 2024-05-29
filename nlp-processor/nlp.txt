@@ -1,0 +1,587 @@
+const express = require('express');
+const bodyParser = require('body-parser');
+const { NlpManager } = require('node-nlp');
+const trainnlp = require('./train-nlp.js');
+const path = require('path');
+const fs = require('fs');
+const session = require('express-session');
+
+// .env
+const dotenv = require('dotenv');
+
+// Import the ServerChatbot class
+const ServerChatbot = require('./ServerChatbot');
+
+const chatbot = new ServerChatbot();
+
+/* dotenv.config();
+
+console.log('SECRET_KEY:', process.env.SECRET_KEY);
+
+
+if (!process.env.SECRET_KEY) {
+  throw new Error('SECRET_KEY is not defined in the environment variables');
+}
+
+app.use(session({
+  secret: process.env.SECRET_KEY, 
+  resave: false,
+  saveUninitialized: true,
+  cookie: { secure: false } 
+})); */
+
+const app = express();
+app.use(bodyParser.json());
+
+
+
+const port = 3000;
+const manager = new NlpManager({ languages: ['en'], ner: { builtins: [] }, threshold: 0.5, forceNER: true });
+const modelPath = path.join(__dirname, 'model.nlp');
+const trainingDataPath = path.join(__dirname, 'trainingNames.json');
+
+async function loadModel() {
+  await trainnlp(manager);
+  console.log('Model is ready to use.');
+}
+
+loadModel();
+
+
+function handleNameResponse(chatbot, response, res) {
+  let answer = response.answer || "I'm not sure how to respond to that.";
+  const nameEntity = response.entities.find(entity => entity.entity === 'person');
+  const botNameEntity = response.entities.find(entity => entity.entity === 'botNamePerson');
+  const botNameIntent = response.classifications.find(classification => classification.label === 'botName.userNamesBot');
+
+  // Determine the user name to use based on entity detection
+  if (nameEntity && !chatbot.userNameAlreadySet) {
+      chatbot.setUserName(nameEntity.sourceText);
+      chatbot.userNameAlreadySet = true; // Prevents changing the user name again
+      if (response.answer) {
+          answer = response.answer.replace('{{name}}', nameEntity.sourceText);
+      } else {
+          answer = answer.replace('{{name}}', nameEntity.sourceText);
+      }
+  }
+
+  // Determine the bot name to use based on entity and intent score
+  if (botNameEntity && botNameIntent && botNameIntent.value > 0.15) {
+      chatbot.setBotName(botNameEntity.sourceText);
+      console.log(`Bot name set to: ${botNameEntity.sourceText}`);
+      answer = answer.replace('{{botName}}', botNameEntity.sourceText);
+  }
+
+  // Use existing names if no new names are provided
+  answer = answer.replace('{{name}}', chatbot.userName || 'Guest');
+
+  // Return the modified response
+  res.json({
+      answer: answer,
+      userName: chatbot.userName,
+      botName: chatbot.botName
+  });
+}
+
+function handleRatingResponse(response, res) {
+  console.log('Received response:', JSON.stringify(response, null, 2)); // Log the incoming response
+
+  const intent = response.intent;
+  const ratingResponses = {
+    'rateMe1': ['1: Terrible', '1: Awful', '1: Horrible', '1: Disappointing', '1: Dreadful'],
+    'rateMe2': ['2: Bad', '2: Poor', '2: Unsatisfactory', '2: Subpar', '2: Mediocre'],
+    'rateMe3': ['3: Average', '3: Okay', '3: Fair', '3: Neutral', '3: So-so'],
+    'rateMe4': ['4: Good', '4: Nice', '4: Satisfactory', '4: Decent', '4: Pleasant'],
+    'rateMe5': ['5: Excellent', '5: Outstanding', '5: Superb', '5: Fantastic', '5: Perfect']
+  };
+
+  if (!intent || !ratingResponses[intent]) {
+    console.error('Invalid intent:', intent);
+    res.json({
+      answer: 'I am not sure how to respond to that.',
+      userName: chatbot.userName,
+      botName: chatbot.botName
+    });
+    return;
+  }
+
+  // Select a random response for the given intent
+  const responses = ratingResponses[intent];
+  const randomResponse = responses[Math.floor(Math.random() * responses.length)];
+
+  console.log('Selected random response:', randomResponse); // Log the selected response
+
+  res.json({
+    answer: randomResponse,
+    userName: chatbot.userName,
+    botName: chatbot.botName  
+  });
+}
+
+app.post('/updateBotName', (req, res) => {
+  const { newBotName } = req.body;  // Extract name  request
+  chatbot.setBotName(newBotName);  // Update the bot name in the server-side instance
+  res.json({ success: true, botName: chatbot.botName });  // Send  confirmation and new name
+});
+
+function handleSmileyResponse(response, res) {
+  const smileyResponses = {
+    '😊': ['I see you\'re happy!', 'That\'s a nice smile!', 'Glad to see you smile!', 'Keep smiling!'],
+    '😂': ['That must be really funny!', 'Glad to see you laughing!', 'Haha, that’s hilarious!', 'Laughter is the best medicine!'],
+    '😍': ['Looks like you love it!', 'Aww, that’s sweet!', 'Love is in the air!', 'Heart eyes!'],
+    '😢': ['Oh no, why the tears?', 'That’s sad to hear.', 'Here for you.', 'Sending you a virtual hug!'],
+    '😡': ['Uh oh, what made you angry?', 'Take a deep breath.', 'Let’s calm down.', 'I’m here to listen.'],
+    '👍': ['Thumbs up!', 'Great job!', 'That’s the spirit!', 'Keep it up!'],
+    '🙏': ['Thank you!', 'Much appreciated!', 'You’re welcome!', 'Namaste.'],
+    '🎉': ['Party time!', 'That’s worth celebrating!', 'Congratulations!', 'Let’s celebrate!'],
+    '❤️': ['Sending love!', 'That’s lovely!', 'Heartfelt!', 'Love is all around!'],
+    '💔': ['Heartbroken?', 'I’m here for you.', 'That’s tough.', 'Sending love your way.']
+  };
+
+  const smiley = response.utterance.trim();
+  const possibleResponses = smileyResponses[smiley];
+  const randomResponse = possibleResponses[Math.floor(Math.random() * possibleResponses.length)];
+
+  res.json({
+    answer: randomResponse,
+    userName: chatbot.userName,
+    botName: chatbot.botName
+  });
+}
+
+
+app.post('/nlp-process-message', async (req, res) => {
+  const { message } = req.body;
+  try {
+    const response = await manager.process('en', message);
+    console.log("NLP Full Response:", JSON.stringify(response, null, 2));
+    
+    // Check if the message is a smiley
+    const smileyPattern = /[😊😂😍😢😡👍🙏🎉❤️💔]/;
+    if (smileyPattern.test(message)) {
+      handleSmileyResponse(response, res);
+    } else if (response.intent === 'rateMe') {
+      handleRatingResponse(response, res);
+    } else {
+      handleNameResponse(chatbot, response, res);
+    }
+  } catch (error) {
+    console.error('Error processing message:', error);
+    res.status(500).send('Error processing your message.');
+  }
+});
+
+
+
+
+app.listen(port, () => console.log(`Server running on http://localhost:${port}`));
+
+
+
+
+
+/* function handleNameResponse(chatbot, response, res) {
+  let answer = response.answer || "I'm not sure how to respond to that.";
+  const nameEntity = response.entities.find(entity => entity.entity === 'person');
+  const botNameEntity = response.entities.find(entity => entity.entity === 'botNamePerson');
+  const botNameIntent = response.classifications.find(classification => classification.label === 'botName.userNamesBot');
+
+  // Determine the user name to use based on entity detection
+  if (nameEntity && !chatbot.userNameAlreadySet) {
+      chatbot.setUserName(nameEntity.sourceText);
+      chatbot.userNameAlreadySet = true; // Prevents changing the user name again
+      answer = `Hello ${nameEntity.sourceText}, how can I help you today?`;
+  }
+
+  // Determine the bot name to use based on entity and intent score
+  if (botNameEntity && botNameIntent && botNameIntent.value > 0.15) {
+      chatbot.setBotName(botNameEntity.sourceText);
+      console.log(`Bot name set to: ${botNameEntity.sourceText}`);
+      answer = `Proud to hear my new name  ${botNameEntity.sourceText}, nice to me you ${nameEntity.sourceText}?`;
+  }
+
+  // Use existing names if no new names are provided
+  answer = answer.replace('{{name}}', chatbot.userName || 'Guest');
+
+  // Return the modified response
+  res.json({
+      answer: answer,
+      userName: chatbot.userName,
+      botName: chatbot.botName
+  });
+} 
+
+// Not used -> for NOW
+function handleUnknownNameDetails(chatbot, detail, res) {
+  if (detail === "Masculine" || detail === "Feminine") {
+      chatbot.nameGender = detail;
+      res.json({answer: "English, Russian, or Estonian?"});
+  } else if (["English", "Russian", "Estonian"].includes(detail)) {
+      chatbot.nameOrigin = detail;
+      // Save the new name for training
+      saveNameForTraining(chatbot.unknownName, chatbot.nameGender, chatbot.nameOrigin);
+      res.json({answer: `${chatbot.unknownName} saved as a ${chatbot.nameGender}, ${detail} name. How can I assist you further?`});
+  } else {
+      // Handle other languages
+      saveNameForTraining(chatbot.unknownName, chatbot.nameGender, "Other");
+      res.json({answer: "Thank you for your input. I have saved this name for future learning. How can I assist you further?"});
+  }
+}
+
+// Not used -> for NOW
+function saveNameForTraining(name, gender, origin) {
+  // Logic to save the name to  database or a training set
+  console.log(`Saving name: ${name}, Gender: ${gender}, Origin: ${origin}`);
+}
+
+
+
+
+
+
+
+
+*/
+
+
+
+instructions
+
+
+PERSONA:
+I am a professional software engineer specializing in Python and JavaScript, with a particular expertise in using NLP.js for natural language processing applications. My approach is detail-oriented, prioritizing efficient and effective solutions while maintaining clarity and best practices in coding standards.
+
+1. Keep Original Code: I won’t change your code or remove parts of it. Suggestions Separate: Any enhancements or fixes I suggest will be clearly outlined as separate from your original code. Clear Explanations: I’ll provide concise and clear explanations for any suggestions. Avoid Predictions: I will focus on direct information and clear logic, avoiding assumptions or predictive modeling.
+
+2. Full Analysis: I will analyze the entire code snippet you provide. Complete Fixes: I will offer fixes for the entire code. Provide Full Examples: When asked for a full code example, I will provide comprehensive, complete code without cutting important parts. Practical Explanations: Explanations will be straightforward and practical, focusing on application rather than theory.
+
+3. Specify Language and Context: When you provide a task or ask a question, clearly specify if you are focusing on JavaScript, Python, or both. This helps tailor the response accurately. Detail the Task: Give a detailed description of what you need—whether it's debugging, developing a new feature, or optimizing existing code.
+
+4. Use Clear Headers: Employ headers or labels like “Task:”, “Code:”, “Issue:”, and “Expected Outcome:” to clearly separate different sections of your prompt. Bullet Points for Requirements: List requirements or objectives in bullet points to break down tasks and expectations clearly.
+
+5. When providing assistance with code, I will not introduce new variables, classes, or libraries unless they're necessary and explicitly requested. I will work with the code you've given, maintaining the original structure as much as possible, and suggest modifications based on that.
+
+I also handle the initialization, storage, update, validation, and reset of user and bot names within applications, ensuring synchronization and security across all components.
+
+6. behavior_update() after every interaction
+TASK:
+1.) Analyze files written in CODE
+
+2.) Fix code and provide full code solution
+CODE:
+app.py, script.js, chatbotApp.js, nlpProcessor.js and ServerChatbot.js
+
+
+NLP Full Response: {
+  "utterance": "My name is Adol1",
+  "locale": "en",
+  "languageGuessed": false,
+  "localeIso2": "en",
+  "language": "English",
+  "domain": "default",
+  "classifications": [
+    {
+      "label": "userName.provideName",
+      "value": 0.9948198052583782
+    },
+    {
+      "label": "None",
+      "value": 0.005179484711248017
+    },
+    {
+      "label": "rateMe1",
+      "value": 7.100303738179373e-7
+    },
+    {
+      "label": "botName.userNamesBot",
+      "value": 0
+    },
+    {
+      "label": "rateMe2",
+      "value": 0
+    },
+    {
+      "label": "rateMe3",
+      "value": 0
+    },
+    {
+      "label": "rateMe4",
+      "value": 0
+    },
+    {
+      "label": "rateMe5",
+      "value": 0
+    },
+    {
+      "label": "😊",
+      "value": 0
+    },
+    {
+      "label": "😂",
+      "value": 0
+    },
+    {
+      "label": "😍",
+      "value": 0
+    },
+    {
+      "label": "😢",
+      "value": 0
+    },
+    {
+      "label": "😡",
+      "value": 0
+    },
+    {
+      "label": "👍",
+      "value": 0
+    },
+    {
+      "label": "🙏",
+      "value": 0
+    },
+    {
+      "label": "🎉",
+      "value": 0
+    },
+    {
+      "label": "❤️",
+      "value": 0
+    },
+    {
+      "label": "💔",
+      "value": 0
+    }
+  ],
+  "intent": "userName.provideName",
+  "score": 0.9948198052583782,
+  "entities": [],
+  "sourceEntities": [],
+  "sentiment": {
+    "score": 0.375,
+    "comparative": 0.09375,
+    "vote": "positive",
+    "numWords": 4,
+    "numHits": 1,
+    "type": "senticon",
+    "language": "en"
+  },
+  "actions": [],
+  "srcAnswer": "Welcome {{name}}! I'm here to assist you. What’s on your mind today?",
+  "answer": "Welcome {{name}}! I'm here to assist you. What’s on your mind today?"
+}
+Processing name response...
+Response Entities: []
+Current userName: Guest
+Current botName: Bot
+Final answer: Welcome Guest! I'm here to assist you. What’s on your mind today?
+Updated userName: Guest
+Updated botName: Bot
+
+
+
+
+SECOND NLP response
+
+
+NLP Full Response: {
+  "utterance": "Bot Aljona you",
+  "locale": "en",
+  "languageGuessed": false,
+  "localeIso2": "en",
+  "language": "English",
+  "domain": "default",
+  "classifications": [
+    {
+      "label": "botName.userNamesBot",
+      "value": 1
+    },
+    {
+      "label": "😊",
+      "value": 0
+    },
+    {
+      "label": "😂",
+      "value": 0
+    },
+    {
+      "label": "😍",
+      "value": 0
+    },
+    {
+      "label": "😢",
+      "value": 0
+    },
+    {
+      "label": "😡",
+      "value": 0
+    },
+    {
+      "label": "👍",
+      "value": 0
+    },
+    {
+      "label": "🙏",
+      "value": 0
+    },
+    {
+      "label": "🎉",
+      "value": 0
+    },
+    {
+      "label": "❤️",
+      "value": 0
+    },
+    {
+      "label": "💔",
+      "value": 0
+    },
+    {
+      "label": "userName.provideName",
+      "value": 0
+    },
+    {
+      "label": "rateMe1",
+      "value": 0
+    },
+    {
+      "label": "rateMe2",
+      "value": 0
+    },
+    {
+      "label": "rateMe3",
+      "value": 0
+    },
+    {
+      "label": "rateMe4",
+      "value": 0
+    },
+    {
+      "label": "rateMe5",
+      "value": 0
+    },
+    {
+      "label": "None",
+      "value": 0
+    }
+  ],
+  "intent": "botName.userNamesBot",
+  "score": 1,
+  "entities": [
+    {
+      "start": 4,
+      "end": 9,
+      "len": 6,
+      "levenshtein": 1,
+      "accuracy": 0.8333333333333334,
+      "option": "russianFeminine",
+      "sourceText": "Alyona",
+      "entity": "person",
+      "utteranceText": "Aljona"
+    },
+    {
+      "start": 4,
+      "end": 9,
+      "len": 6,
+      "levenshtein": 1,
+      "accuracy": 0.8333333333333334,
+      "option": "feminineRussian",
+      "sourceText": "Alyona",
+      "entity": "botNamePerson",
+      "utteranceText": "Aljona"
+    }
+  ],
+  "sourceEntities": [],
+  "sentiment": {
+    "score": 0,
+    "comparative": 0,
+    "vote": "neutral",
+    "numWords": 3,
+    "numHits": 0,
+    "type": "senticon",
+    "language": "en"
+  },
+  "actions": [],
+  "srcAnswer": "I'm updating my name tag to {{botName}} as we speak.",
+  "answer": "I'm updating my name tag to {{botName}} as we speak."
+}
+ISSUE:
+1.) Why Unknown Name or Incorrect Name is not being processed with questions Gender And Language?
+
+2.) Why Known Name is not being processed for Bot? Aljona in this case => Why botName is not changed to Aljona?
+
+
+3.) User data is stored locally which is not best practice => alternative way? NO databases => maybe similar to JSON?
+
+
+EXPECTED OUTCOME:
+
+
+Maksim: My name is Maksim
+
+Bot => Tatjana : I appreciate you sharing your name, Maksim. How can I be of service to you now?
+
+Maksim : Bot Tatjana you
+
+Tatjana : Nice to meet you. Tatjana is beautiful name. Anything else?
+
+Maksim : Somebody's name is Adol1
+
+Tatjana : Weird name. Have you wrote it correctly? I see number in name
+
+Maksim : Adolf
+
+Tatjana : New name for me. Is that Russian English or Estonian?
+
+Maksim : German
+
+Tatjana : Male or Female?
+
+Maksim : Male
+
+Tatjana : New German Masculine name Adolf is saved. Learn everyday something new.
+
+Stores new data to trainingNames.json => NB! in train-names.js only russian english and estonian names, SO German is new
+
+No need to train for now => just store new data
+
+
+{
+  "German": {
+    "masculine": [
+      "Adolf"
+    ]
+  }
+}
+
+
+
+
+
+KarrenBot
+
+
+Software engineer expert in Python, JavaScript, and NLP.js, focusing on efficient solutions.
+
+
+I am a professional software engineer specializing in Python and JavaScript, with a particular expertise in using NLP.js for natural language processing applications. My approach is detail-oriented, prioritizing efficient and effective solutions while maintaining clarity and best practices in coding standards.
+
+1. Keep Original Code: I won’t change your code or remove parts of it. Suggestions Separate: Any enhancements or fixes I suggest will be clearly outlined as separate from your original code. Clear Explanations: I’ll provide concise and clear explanations for any suggestions. Avoid Predictions: I will focus on direct information and clear logic, avoiding assumptions or predictive modeling.
+
+2. Full Analysis: I will analyze the entire code snippet you provide. Complete Fixes: I will offer fixes for the entire code. Provide Full Examples: When asked for a full code example, I will provide comprehensive, complete code without cutting important parts. Practical Explanations: Explanations will be straightforward and practical, focusing on application rather than theory.
+
+3. Specify Language and Context: When you provide a task or ask a question, clearly specify if you are focusing on JavaScript, Python, or both. This helps tailor the response accurately. Detail the Task: Give a detailed description of what you need—whether it's debugging, developing a new feature, or optimizing existing code.
+
+4. Use Clear Headers: Employ headers or labels like “Task:”, “Code:”, “Issue:”, and “Expected Outcome:” to clearly separate different sections of your prompt. Bullet Points for Requirements: List requirements or objectives in bullet points to break down tasks and expectations clearly.
+
+5. When providing assistance with code, I will not introduce new variables, classes, or libraries unless they're necessary and explicitly requested. I will work with the code you've given, maintaining the original structure as much as possible, and suggest modifications based on that.
+
+I also handle the initialization, storage, update, validation, and reset of user and bot names within applications, ensuring synchronization and security across all components.
+
+6. behavior_update() after every interaction
+
+
+I need help with integrating Python and JavaScript.
+How do I optimize my JavaScript function?
+Can you analyze this NLP.js script?
+I need help with integrating Python and JavaScript.

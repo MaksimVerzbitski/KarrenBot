@@ -6,10 +6,14 @@ class Chatbot {
 
         this.botName = localStorage.getItem('botName') || 'Bot'; 
         this.userName = localStorage.getItem('userName') || 'User'; 
+
+        console.log('Initial Bot Name:', this.botName);
+        console.log('Initial User Name:', this.userName);
+        
         this.updateChatUI(); // Update UI on stored names
     }
 
-    setNames(botName, userName) {
+    /* setNames(botName, userName) {
         let updated = false;
         if (botName && this.botName !== botName) {
             this.botName = botName;
@@ -23,6 +27,35 @@ class Chatbot {
         }
         if (updated) {
             this.updateChatUI();  //  UI is updated only if there was a change
+        }
+    } */
+
+    loadFromJSON(key) {
+        const data = localStorage.getItem(key);
+        return data ? JSON.parse(data) : null;
+    }
+
+    saveToJSON(key, value) {
+        localStorage.setItem(key, JSON.stringify(value));
+    }
+
+    setNames(botName, userName) {
+        let updated = false;
+        if (botName && this.botName !== botName) {
+            this.botName = botName;
+            this.saveToJSON('botName', botName); // Store in local storage
+            console.log(`Bot name set to: ${this.botName}`);
+            updated = true;
+        }
+        if (userName && this.userName !== userName) {
+            this.userName = userName;
+            this.saveToJSON('userName', userName); // Store in local storage
+            console.log(`User name set to: ${this.userName}`);
+            updated = true;
+        }
+        if (updated) {
+            this.updateChatUI();  
+            this.updateNamesOnServer(botName, userName);
         }
     }
 

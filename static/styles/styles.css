@@ -32,22 +32,22 @@ button:hover {
     position: fixed;
     bottom: 30px;
     right: 30px;
-    width: 60px; /* Circle width */
-    height: 60px; /* Circle height */
+    width: 60px; 
+    height: 60px; 
     border-radius: 50%;
     background-color: #7a7a7a;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     cursor: pointer;
     z-index: 1000;
-    display: flex; /* Flexbox for centering text */
-    justify-content: center; /* Center text horizontally */
-    align-items: center; /* Center text vertically */
-    color: #fff; /* Text color */
-    font-size: 14px; /* Text size */
-    font-weight: bold; /* Text weight */
-    text-align: center; /* Center text alignment */
-    padding: 5px; /* Padding to ensure text fits well */
-    box-sizing: border-box; /* Include padding in the element's size */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    color: #fff; 
+    font-size: 14px; 
+    font-weight: bold; 
+    text-align: center; 
+    padding: 5px; 
+    box-sizing: border-box; 
     animation: vibrate 4s infinite; /* Vibration animation */
 }
 
@@ -988,13 +988,13 @@ button:hover {
     transform: none !important;
     display: flex;
     flex-direction: column;
-    max-width: none; /* Ensure it covers the entire viewport */
-    max-height: none; /* Ensure it covers the entire viewport */
+    max-width: none; 
+    max-height: none; 
 }
 
 #chat-container.maximized #chat-log {
-    flex-grow: 1; /* Ensure chat log takes up available space */
-    max-height: none; /* Ensure chat log takes up full height */
+    flex-grow: 1; 
+    max-height: none; 
 }
 
 #chat-container.minimized {
@@ -1046,8 +1046,8 @@ button:hover {
     }
 
     #rate-me {
-        flex-direction: row; /* Change to row to fit more buttons in a row */
-        flex-wrap: wrap; /* Allow buttons to wrap to the next line */
+        flex-direction: row;
+        flex-wrap: wrap; 
     }
 
     .rate-button {
@@ -1063,20 +1063,20 @@ button:hover {
 
 /* Custom scrollbar styles */
 #chat-log::-webkit-scrollbar {
-    width: 12px; /* Width of the scrollbar */
+    width: 12px; 
 }
 
 #chat-log::-webkit-scrollbar-track {
-    background: #f0f0f0; /* Background of the track */
+    background: #f0f0f0;
     border-radius: 10px;
 }
 
 #chat-log::-webkit-scrollbar-thumb {
-    background-color: #616060; /* Scrollbar color */
+    background-color: #616060; 
     border-radius: 10px;
-    border: 3px solid #080808; /* Adds padding around the scrollbar */
+    border: 3px solid #080808; 
 }
 
 #chat-log::-webkit-scrollbar-thumb:hover {
-    background-color: #747474; /* Scrollbar color on hover */
+    background-color: #747474; 
 }
