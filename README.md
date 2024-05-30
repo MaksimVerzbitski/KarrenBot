@@ -75,13 +75,6 @@ Maksim Verzbitski – [@LinkedIN](https://www.linkedin.com/in/maksim-ver%C5%BEbi
 Project Link: https://github.com/MaksimVerzbitski/KarrenBot.git
 
 
-### Additional Styling Tips:
-
-- **Headers**: Use headers to organize sections clearly.
-- **Code Blocks**: Use code blocks for installation commands and examples.
-- **Links**: Include links to personal or project-related pages.
-- **Lists**: Use bullet points for features, requirements, and steps.
-
 
 
 
